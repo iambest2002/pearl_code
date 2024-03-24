@@ -1,0 +1,12 @@
+// http.proto
+syntax="proto2";
+package pearl;
+
+option cc_generic_services = true;
+
+message HttpRequest {};
+message HttpResponse {};
+
+service FusionService {
+  rpc query(HttpRequest) returns (HttpResponse);
+};
