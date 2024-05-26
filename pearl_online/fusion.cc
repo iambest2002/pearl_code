@@ -11,6 +11,8 @@
 #include "rapidjson/document.h"
 #include "src/query_anaylsis.h"
 #include "src/packer.h"
+#include "src/recaller.h"
+#include "src/rank.h"
 namespace pearl {
 
 bool HttpServiceImpl::init() {
@@ -20,6 +22,17 @@ bool HttpServiceImpl::init() {
     } 
     dag.push_back(queryanalysis);
 
+    std::shared_ptr<Recaller> recaller = std::make_shared<Recaller>();
+    if (!recaller->init("todo")) {
+        return false;
+    } 
+    dag.push_back(recaller);
+
+    std::shared_ptr<Rank> rank = std::make_shared<Rank>();
+    if (!rank->init("todo")) {
+        return false;
+    } 
+    dag.push_back(rank);
     std::shared_ptr<Packer> packer = std::make_shared<Packer>();
     if (!packer->init("todo")) {
         return false;

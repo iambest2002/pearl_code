@@ -15,5 +15,7 @@ public:
     bool init(const std::string& url);
     std::string url_;
     rapidjson::Document json_response;
+    int status_code_ = 0;
+    std::string key_;
 };
 }

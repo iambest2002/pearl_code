@@ -45,6 +45,7 @@ public:
     int ngram_next(std::wstring& text, std::wstring& token, int& position);
     int search(std::string& query);
     double calc_tf_idf(std::vector<std::pair<int, std::wstring>>& query_token, int doc_id);
+    int rank() {}
     std::string csv_file_;
     int max_index_count_ = 0;
     int ii_buffer_update_threshold_ = 0;

@@ -165,6 +165,52 @@ int IndexManager::token_postings_list(const int document_id, std::wstring& token
 }
 
 int IndexManager::search(std::string& query) {
+    int ret = 0;
+    std::vector<std::pair<int,std::wstring>> query_tokens;
+    std::wstring_convert<std::codecvt_utf8<wchar_t>,wchar_t> converter; // make data as wstring format
+    std::wstring query_wstr = converter.from_bytes(query);
+
+    std::wstring token;
+    int position = 0;
+    while(ret = ngram_next(query_wstr, token, position) == 0) {
+        if (token.size() < token_len_) {
+            break;
+        }
+        LOG(ERROR) << "text_to_postings_lists info " << converter.to_bytes(query_wstr) << " token:" 
+        << converter.to_bytes(token) << " pos:" <<position - token_len_;
+        if (position - token_len_ >= 0) {
+            query_tokens.push_back(std::make_pair(position - token_len_, token));
+        }
+        // move one step every times.
+        position = position - token_len_ + 1;
+    }
+     LOG(ERROR) << "token size : " << query_tokens.size();
+
+    // 从 token 中找到 词元id, 找到词元id 中文档id 一样的内容。 
+    std::map<int, int> doc_cnt;
+    for (auto& it : query_tokens) {
+        int index = it.first;
+        std::wstring token_content = it.second;
+
+        if (tokens_info_.count(token_content) > 0) {
+            int token_index  = tokens_info_[token_content];
+            // 每个单词出现的 文章 id 都统计一下。 这样如果 ++ n次的话， 就代表都出现过。
+            for (auto doc_id_it : tokens_[token_index].doc_numbers_) {
+                doc_cnt[doc_id_it]++;
+            }
+        }
+
+        // 找到词元都出现的文档， 但是不一定词顺序一致。所以不是最终的。
+        std::vector<int> related_docs;
+        for (auto& one_doc : doc_cnt) {
+            if (one_doc.second == query_tokens.size()) {
+                related_docs.push_back(one_doc.first);
+                LOG(ERROR) << "relate doc id :" << one_doc.first;
+            }
+        }
+
+        // 将所有的索引都放到一个 vector中， 词源 1 给 1 ， 词源 2 给 2， 词源 3 给 3， 找到 123 同时出现的地方就是匹配到了， 如果次数多的话， 就是代表高频。
+    }
     return 0;
 }
 
