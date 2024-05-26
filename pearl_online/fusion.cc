@@ -9,8 +9,23 @@
 #include "rapidjson/rapidjson.h"
 #include "rapidjson/writer.h"
 #include "rapidjson/document.h"
-
+#include "src/query_anaylsis.h"
+#include "src/packer.h"
 namespace pearl {
+
+bool HttpServiceImpl::init() {
+    std::shared_ptr<QueryAnalysis> queryanalysis = std::make_shared<QueryAnalysis>();
+    if (!queryanalysis->init("todo")) {
+        return false;
+    } 
+    dag.push_back(queryanalysis);
+
+    std::shared_ptr<Packer> packer = std::make_shared<Packer>();
+    if (!packer->init("todo")) {
+        return false;
+    } 
+    dag.push_back(packer);
+}
 void HttpServiceImpl::query(google::protobuf::RpcController* cntl_base,
             const HttpRequest*,
             HttpResponse*,
@@ -34,16 +49,13 @@ std::string HttpServiceImpl::handle(std::string& url) {
     if (!session_ptr->init(url)) {
         return "";
     }
-
-    
-
-    if (session_ptr->json_response.HasMember("result_code")) {
-        rapidjson::StringBuffer buffer;
-        rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
-        session_ptr->json_response.Accept(writer);  // Serialize the content
-        return buffer.GetString();  // Get the serialized string
-    } else {
-        return "";
+    for (auto& node : dag) {
+        node->handleRequest(session_ptr);
     }
+    rapidjson::StringBuffer buffer;
+    rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+    session_ptr->json_response.Accept(writer);  // Serialize the content
+    LOG(ERROR) << buffer.GetString();
+    return buffer.GetString();  // Get the serialized string
 }
 }  // namespace example

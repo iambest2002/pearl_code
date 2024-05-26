@@ -58,7 +58,6 @@ int main(int argc, char* argv[]) {
 
     pearl::HttpServiceImpl http_svc;
     http_svc.init();
-    
     // Add services into server. Notice the second parameter, because the
     // service is put on stack, we don't want server to delete it, otherwise
     // use brpc::SERVER_OWNS_SERVICE.
