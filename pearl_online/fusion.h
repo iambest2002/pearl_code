@@ -12,6 +12,7 @@ public:
               const HttpRequest*,
               HttpResponse*,
               google::protobuf::Closure* done);
+    std::string handle(std::string& url);
 
 };
 }

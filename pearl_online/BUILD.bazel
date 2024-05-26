@@ -41,7 +41,7 @@ cc_library(
         "@apache_brpc//:brpc",
         "@apache_brpc//:butil",
         "@apache_brpc//:bvar",
-        "//src:src_lib"
+        "//src:src_lib",
     ],
     copts = COPTS,
     visibility = ["//visibility:public"],
@@ -51,7 +51,7 @@ cc_library(
 cc_binary(
     name = "fusion",
     srcs = [
-        "main.cc",
+        "main.cpp",
     ],
     deps = [
         ":fusion_lib",

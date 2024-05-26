@@ -1,8 +1,8 @@
 
 #pragma once
-#include <iostream>
 #include <mutex>
 #include <string>
+
 namespace pearl {
 class Config {
 public:
@@ -13,24 +13,16 @@ public:
     Config& operator=(const Config&) = delete;
     ~Config() {}
 
-    bool init(const std::string& file_path);
+    bool init(const std::string& server_conf_file);
 
     // Method to get the singleton instance
     static Config* GetInstance() {
-        std::lock_guard<std::mutex> lock(mutex);
         if (!instance) {
             instance = new Config();
         }
         return instance;
     }
 
-    int port;
+    int port = 80;
 };
-
-// Initialize static members outside the class definition
-Config* Config::instance = nullptr;
-std::mutex Config::mutex;
-
-
-
 }
