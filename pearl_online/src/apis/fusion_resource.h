@@ -3,6 +3,7 @@
 #include <mutex>
 #include <string>
 #include "fusion_config.h"
+#include "index_manager.h"
 
 namespace pearl {
 class Resource {
@@ -13,7 +14,7 @@ public:
     static std::mutex mutex;
     Resource& operator=(const Resource&) = delete;
     ~Resource() {}
-    
+
     bool init(Config* conf_ptr);
 
     // Method to get the singleton instance
@@ -23,5 +24,6 @@ public:
         }
         return instance;
     }
+    IndexManager index_fetcher_;
 };
 }

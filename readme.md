@@ -53,7 +53,9 @@ http://193.112.111.178/query
 1. ref https://github.com/google/glog#bazel , 一般工业界都是用 a 文件保存到云上加载。 
 2. 和 brpc 的定义冲突了， 参照https://github.com/apache/brpc/issues/101 加上配置再运行。 
 
-## 添加责任链模式
+## 添加责任链模式并且跑通流程 done
+
+## 将召回的功能添加进来  done
 
 ## todo
 1. 支持动态的更改配置
