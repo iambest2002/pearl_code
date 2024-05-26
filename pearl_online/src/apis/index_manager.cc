@@ -4,6 +4,7 @@
 #include <codecvt>
 #include <fstream>
 #include <string>
+#include <cmath>
 namespace pearl {
 int IndexManager::init(Config* config) {
     csv_file_ = config->csv_file_;
@@ -164,9 +165,13 @@ int IndexManager::token_postings_list(const int document_id, std::wstring& token
     return 0;
 }
 
-int IndexManager::search(std::string& query) {
+bool IndexManager::search(std::shared_ptr<Session> session) {
+    std::string& query = session->key_;
+    std::vector<std::pair<int,std::wstring>>& query_tokens = session->query_tokens_;
+    std::vector<int>& result = session->related_doc_ids_;
     int ret = 0;
-    std::vector<std::pair<int,std::wstring>> query_tokens;
+     
+    
     std::wstring_convert<std::codecvt_utf8<wchar_t>,wchar_t> converter; // make data as wstring format
     std::wstring query_wstr = converter.from_bytes(query);
 
@@ -210,11 +215,112 @@ int IndexManager::search(std::string& query) {
         }
 
         // 将所有的索引都放到一个 vector中， 词源 1 给 1 ， 词源 2 给 2， 词源 3 给 3， 找到 123 同时出现的地方就是匹配到了， 如果次数多的话， 就是代表高频。
-    }
-    return 0;
+        std::vector<int> find_query_features;
+        for(auto& relate_doc_id : related_docs) {
+            // 这里是不是有问题， resize 这个大小？ 
+            find_query_features.resize(documents_[relate_doc_id].body.size());
+                int query_index = 1;
+                for (auto it : query_tokens) {
+                    std::wstring token_content = it.second;
+                    LOG(ERROR) << converter.to_bytes(token_content);
+
+                    if (tokens_info_.count(token_content) > 0) {
+                        int token_index = tokens_info_[token_content];
+                        auto& posting_list = tokens_[token_index].postings_list_;
+                        // 找到 doc id 对应中倒排的起始位置
+                        auto lef_it = std::lower_bound(posting_list.begin(), posting_list.end(), relate_doc_id, 
+                        [](const new_postings_list& a, int target)  {
+                            return a.document_id < target;
+                        });
+
+                        // 从起始位置开始， 将词源在这个文档的位置都设置为 query index
+                        if (lef_it != posting_list.end() && lef_it->document_id == relate_doc_id) {
+                            for (auto& pos :lef_it->new_positions)  {
+                                if (find_query_features.size() > pos) {
+                                    find_query_features[pos] = query_index;
+                                    LOG(ERROR) << "token index" << query_index << ",pos:" << pos;
+                                } else {
+                                    LOG(ERROR) << pos << "out of range";
+                                }
+                            }
+                        }
+                    } 
+                    query_index++;
+                }
+
+                for(auto featrue_it : find_query_features) {
+                    LOG(ERROR) << featrue_it;
+                }
+
+                // 构建连续的字符串， 例如 1234， 然后在find_query_features中找。
+                std::vector<int> sub_squence;
+                sub_squence.resize(query_tokens.size());
+                for (int i = 0; i < query.size(); i++) {
+                    sub_squence[i] = i + 1;
+                }
+
+                for(auto sub_squence_it : sub_squence) {
+                    LOG(ERROR) << sub_squence_it;
+                }
+
+                int match_count = 0;
+                auto it = find_query_features.begin();
+                for(int i = 0; i < find_query_features.size(); i++) {
+                    for (int j = 0; j <sub_squence.size(); j++) {
+                        if (sub_squence[j] != find_query_features[i]) {
+                            break;
+                        }
+                        if (j == sub_squence.size() -1) {
+                            match_count++;
+                            LOG(ERROR) << "find it" << i;
+                            //找到之后继续向下找
+                            i += sub_squence.size();
+                        }
+                    }
+                }
+
+                if (match_count > 0) {
+                    LOG(ERROR) << "recaller doc_id " << relate_doc_id;
+                    result.push_back(relate_doc_id);
+                }
+        }
+     }
+    return true;
+}
+
+std::vector<int> IndexManager::rank(std::vector<int>& related_doc_ids, int display_limit) {
+    std::vector<int> result;
+
+
 }
 
 double IndexManager::calc_tf_idf(std::vector<std::pair<int, std::wstring>>& query_token, int doc_id) {
+    double score = 0.0;
+    for(auto& it : query_token) {
+        int index = it.first;
+        std::wstring token_content = it.second;
+        // 获取对应的 token, 拿到倒排长度等信息用于计算tf/idf。
+        if (tokens_info_.count(token_content) > 0) {
+            int token_index = tokens_info_[token_content];
+            // 总的文档数量
+            int all_doc = indexed_count_;
+            // 这个词原出现过的文档数量
+            int this_token_all_doc = tokens_[token_index].docs_count;
+
+            // 这个文档出现过的该词源次数
+            int doc_token_cnt = 0;
+            if(tokens_.count(token_index) > 0) {
+                doc_token_cnt = tokens_[token_index].postings_list_.size();
+            }
+            // 这个文档的总单词数量
+            int doc_all_tokens = 0;
+            doc_token_cnt = documents_[doc_id].body.size();
+
+            double idf = log2((double)this_token_all_doc/all_doc );
+            score += ((double)doc_token_cnt / doc_all_tokens) * idf;
+
+        }
+    }
     return 0;
 }
 

@@ -8,7 +8,7 @@ void Recaller::handleRequest(std::shared_ptr<Session> session) {
 
     if (session->key_.size() > 0) {
            pearl::Resource* resoure = pearl::Resource::GetInstance();
-           resoure->index_fetcher_.search(session->key_);
+           resoure->index_fetcher_.search(session);
     } else {
         session->status_code_ = 999;
     }

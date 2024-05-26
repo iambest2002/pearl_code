@@ -8,5 +8,6 @@ public:
     Rank() {}
     virtual ~Rank() {}
     virtual void handleRequest(std::shared_ptr<Session> session);
+    int display_limit = 3;
 };
 }
