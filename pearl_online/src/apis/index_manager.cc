@@ -199,13 +199,9 @@ bool IndexManager::search(std::shared_ptr<Session> session) {
         if (tokens_info_.count(token_content) > 0) {
             int token_index  = tokens_info_[token_content];
             // 每个单词出现的 文章 id 都统计一下。 这样如果 ++ n次的话， 就代表都出现过。
-            if (token_index < tokens_.size()) {
 	       for (auto doc_id_it : tokens_[token_index].doc_numbers_) {
-                    if (doc_id_it < doc_cnt.size()) {
-                        doc_cnt[doc_id_it]++;
-                    }
-                }
-	    }
+                doc_cnt[doc_id_it]++;
+            }
         }
 
         // 找到词元都出现的文档， 但是不一定词顺序一致。所以不是最终的。
