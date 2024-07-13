@@ -8,7 +8,6 @@
 namespace pearl {
 int IndexManager::init(Config* config) {
     csv_file_ = config->csv_file_;
-    db_file_ = config->db_file_;
     token_len_ = config->token_len_;
     max_index_count_ = config->max_index_count_;
     ii_buffer_update_threshold_  = config->ii_buffer_update_threshold_;
@@ -52,7 +51,7 @@ void IndexManager::load_csv() {
             tmp_doc.body = converter.from_bytes(one_line[1] + one_line[2]); //make tile and body into body.
         }
 
-        tmp_doc.cmd = one_line[4]; //command into line;
+        tmp_doc.response = one_line[3]; //command into line;
 
         documents_[tmp_doc.document_id] = tmp_doc;
         document_info_[tmp_doc.title] = tmp_doc.document_id;
@@ -111,7 +110,7 @@ int IndexManager::ngram_next(std::wstring& text, std::wstring& token, int& posit
     token.clear();
 
     // todo , skip , "" char, using really word.
-
+    // 爷爷的手机， 爷爷， 爷的， 的手， 手机
     // get split word.
     for (int i = 0; i < token_len_ && position < text.length(); i++) {
         token.push_back(text[position]);
@@ -200,9 +199,13 @@ bool IndexManager::search(std::shared_ptr<Session> session) {
         if (tokens_info_.count(token_content) > 0) {
             int token_index  = tokens_info_[token_content];
             // 每个单词出现的 文章 id 都统计一下。 这样如果 ++ n次的话， 就代表都出现过。
-            for (auto doc_id_it : tokens_[token_index].doc_numbers_) {
-                doc_cnt[doc_id_it]++;
-            }
+            if (token_index < tokens_.size()) {
+	       for (auto doc_id_it : tokens_[token_index].doc_numbers_) {
+                    if (doc_id_it < doc_cnt.size()) {
+                        doc_cnt[doc_id_it]++;
+                    }
+                }
+	    }
         }
 
         // 找到词元都出现的文档， 但是不一定词顺序一致。所以不是最终的。

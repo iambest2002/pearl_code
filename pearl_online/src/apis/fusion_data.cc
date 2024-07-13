@@ -1,10 +1,10 @@
-#include "fusion_resource.h"
+#include "fusion_data.h"
 #include <glog/logging.h>
 #include "sys/stat.h"
 
 namespace pearl {
-Resource* Resource::instance = nullptr;
-bool Resource::init(Config* conf_ptr) {
+Data* Data::instance = nullptr;
+bool Data::init(Config* conf_ptr) {
     LOG(INFO) << "server_conf_file:" << conf_ptr;
     pearl::Config* config = pearl::Config::GetInstance();
     struct stat buffer;

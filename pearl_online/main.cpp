@@ -21,7 +21,7 @@
 #include <brpc/server.h>
 #include <brpc/restful.h>
 #include "src//apis/fusion_config.h"
-#include "src//apis/fusion_resource.h"
+#include "src//apis/fusion_data.h"
 
 
 DEFINE_int32(port, 80, "TCP Port of this server");
@@ -51,9 +51,9 @@ int main(int argc, char* argv[]) {
     if (!config->init(FLAGS_server_config_file)) {
         LOG(ERROR) << "config init error";
     }
-    pearl::Resource* resoure = pearl::Resource::GetInstance();
-    if (!resoure->init(config)) {
-        LOG(ERROR) << "resource init error";
+    pearl::Data* data = pearl::Data::GetInstance();
+    if (!data->init(config)) {
+        LOG(ERROR) << "Data init error";
     }   
 
     pearl::HttpServiceImpl http_svc;

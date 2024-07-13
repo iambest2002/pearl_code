@@ -1,5 +1,5 @@
 #pragma once
-#include "kernel.h"
+#include "node.h"
 
 namespace pearl {
 class Recaller : public Node {

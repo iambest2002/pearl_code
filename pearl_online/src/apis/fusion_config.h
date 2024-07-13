@@ -24,7 +24,6 @@ public:
     }
     int port_ = 80;
     std::string csv_file_;
-    std::string db_file_;
     int max_index_count_ = 0;
     int ii_buffer_update_threshold_ = 0;
     int token_len_ = 2;

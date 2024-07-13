@@ -1,15 +1,15 @@
 #include "rank.h"
 #include "apis/fusion_utils.h"
 #include <glog/logging.h>
-#include "src/apis/fusion_resource.h"
+#include "src/apis/fusion_data.h"
 #include <algorithm>
 namespace pearl {
 
 void Rank::handleRequest(std::shared_ptr<Session> session) {
     if (session->key_.size() > 0) {
-           pearl::Resource* resoure = pearl::Resource::GetInstance();
+           pearl::Data* data = pearl::Data::GetInstance();
         for (auto& doc_id : session->related_doc_ids_) {
-            double score = resoure->index_fetcher_.calc_tf_idf(session->query_tokens_, doc_id);
+            double score = data->index_fetcher_.calc_tf_idf(session->query_tokens_, doc_id);
             rank_resluts tmp_result;
             tmp_result.document_id = doc_id;
             tmp_result.score = score;

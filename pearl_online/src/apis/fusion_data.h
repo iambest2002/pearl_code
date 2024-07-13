@@ -6,21 +6,21 @@
 #include "index_manager.h"
 
 namespace pearl {
-class Resource {
+class Data {
 public:
     // Private constructor to prevent instantiation
-    Resource() {}
-    static Resource* instance;
+    Data() {}
+    static Data* instance;
     static std::mutex mutex;
-    Resource& operator=(const Resource&) = delete;
-    ~Resource() {}
+    Data& operator=(const Data&) = delete;
+    ~Data() {}
 
     bool init(Config* conf_ptr);
 
     // Method to get the singleton instance
-    static Resource* GetInstance() {
+    static Data* GetInstance() {
         if (!instance) {
-            instance = new Resource();
+            instance = new Data();
         }
         return instance;
     }

@@ -1,7 +1,7 @@
 #include "query_anaylsis.h"
 #include "apis/fusion_utils.h"
 #include <glog/logging.h>
-#include "src/apis/fusion_resource.h"
+#include "src/apis/fusion_data.h"
 namespace pearl {
 
 void QueryAnalysis::handleRequest(std::shared_ptr<Session> session) {

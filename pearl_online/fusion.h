@@ -1,6 +1,6 @@
 #include "proto/http.pb.h"
 #include "memory"
-#include "src/kernel.h"
+#include "src/node.h"
 namespace pearl {
 
 // Service with static path.

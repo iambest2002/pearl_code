@@ -12,7 +12,7 @@ struct documents {
     int document_id = 0;
     std::wstring title;
     std::wstring body;
-    std::string cmd;
+    std::string response;
 };
 
 struct  new_postings_list {
@@ -48,7 +48,6 @@ public:
     int max_index_count_ = 0;
     int ii_buffer_update_threshold_ = 0;
     int indexed_count_ = 0;
-    std::string db_file_;
     int token_len_ = 2;
 
     std::map<std::wstring, int> document_info_; //存储所有文档， key是名字， value是编号。 

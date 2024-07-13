@@ -2,7 +2,6 @@
     "name": "fusion",
     "port": 80,
     "csv_file" : "offline_data.csv",
-    "db_file" : "205.db",
     "max_index_count" : "20",
     "token" : "2",
     "ii_buffer_update_threshold" : "2048"

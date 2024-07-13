@@ -2,7 +2,7 @@
 build_target=$1
 
 if [ "$build_target" = "fusion" ]; then 
-    bazelisk build fusion 
+    bazelisk  build --jobs=1  fusion 
 elif [ "$build_target" = "packer" ]; then 
     desc_directory="/code/fusion/"
     shell_directory="script/start.sh"
