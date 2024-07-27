@@ -36,14 +36,47 @@ def filter_by_date_and_time(df, date_col, time_col, picker_value2):
 
     # 删除临时的 datetime 列
     filtered_df = filtered_df.drop(columns=['datetime'])
-
+    filtered_df['时间'] = filtered_df['时间'].apply(lambda t: t.strftime('%H:%M:%S') if pd.notnull(t) else '')
     return filtered_df
+
+
+def filter_by_month(df, date_col, picker_value3):
+    # 将月份映射到数值
+    month_map = {
+        '1月': 1, '2月': 2, '3月': 3, '4月': 4, '5月': 5,
+        '6月': 6, '7月': 7, '8月': 8, '9月': 9, '10月': 10,
+        '11月': 11, '12月': 12
+    }
+    selected_month = month_map.get(picker_value3)
+    if selected_month is None:
+        return None  # 如果 picker_value3 不在预期值范围内，返回 None
+
+    # 获取当前年份
+    current_year = datetime.now().year
+
+    # 创建开始日期和结束日期
+    start_date = datetime(current_year, selected_month, 1)
+    if selected_month == 12:
+        end_date = datetime(current_year + 1, 1, 1) - timedelta(days=1)
+    else:
+        end_date = datetime(current_year, selected_month + 1, 1) - timedelta(days=1)
+
+    # 将日期列转换为 datetime 格式，并筛选出符合日期范围的记录
+    df[date_col] = pd.to_datetime(df[date_col], errors='coerce')
+    
+    filtered_df = df[(df[date_col] >= start_date) & (df[date_col] <= end_date)]
+    print(filtered_df)
+    return filtered_df
+
+
 
 def excel_data(request):
     if request.method == 'GET':
         try:
             picker_value2 = cache.get('picker_value2', default=None)
-            file_path = r'/root/DC/wx_app/csv/consume_log.csv'
+            picker_value3 = cache.get('picker_value3', default=None)
+            print(picker_value2,picker_value3)
+            file_path = r'/root/DC/pearl_code/pearl_server/wx_app/csv/consume_log.csv'
             try:
                 # 读取 CSV 文件
                 df = pd.read_csv(file_path)
@@ -51,14 +84,24 @@ def excel_data(request):
                 return JsonResponse({'status': 'error', 'message': f'文件 {file_path} 不存在'}, status=400)
 
             # 根据 picker_value2 筛选日期和时间列中的数据
-            filtered_df = filter_by_date_and_time(df, '日期', '时间', picker_value2)
+            filtered_df = df.copy()
 
-            if filtered_df is None or filtered_df.empty:
-                return JsonResponse({'status': 'error', 'message': '没有符合条件的数据'}, status=200)
+
+            # if picker_value2:
+            #     filtered_df = filter_by_date_and_time(filtered_df, '日期', '时间', picker_value2)
+
+            #     if filtered_df is None or filtered_df.empty:
+            #         return JsonResponse({'status': 'error', 'message': '没有符合条件的数据'}, status=200)
+
+            #根据 picker_value3 筛选月份中的数据
+            if picker_value3:
+                filtered_df = filter_by_month(filtered_df, '日期', picker_value3)
+
+                if filtered_df is None or filtered_df.empty:
+                    return JsonResponse({'status': 'error', 'message': '没有符合条件的数据'}, status=300)
 
              # 将时间列格式化为仅包含小时和分钟
-            filtered_df['时间'] = filtered_df['时间'].apply(lambda t: t.strftime('%H:%M') if pd.notnull(t) else '')
-
+            
             # 将筛选后的 DataFrame 转换为 CSV 格式的字符串
             csv_buffer = io.StringIO()
             filtered_df.to_csv(csv_buffer, index=False)

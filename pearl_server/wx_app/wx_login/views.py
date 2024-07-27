@@ -13,6 +13,7 @@ def save_data(request):
         input2_data = request.GET.get('input2_data', '')
         picker_value1 = request.GET.get('picker_value', '')
         picker_value2 = request.GET.get('picker_value2', '')
+        picker_value3 = request.GET.get('picker_value3', '')
         picker_date = request.GET.get('picker_date', '')
         picker_time = request.GET.get('picker_time', '')
 
@@ -20,9 +21,9 @@ def save_data(request):
         ts = pytz.timezone('Asia/Shanghai')
         timestamp = datetime.now(ts).replace(microsecond=0,tzinfo=None)
 
-        # 根据 datacode 值决定将数据写入哪个工作表
+        # 根据 datacode 值决定将数据写入哪个工作表r'/root/DC/pearl_code/pearl_server
         if datacode == '1':
-            file_path = r'/root/DC/wx_app/csv/consume_log.csv'
+            file_path = r'/root/DC/pearl_code/pearl_server/wx_app/csv/consume_log.csv'
             new_data = {
                 '消费类型': [picker_value1],
                 '消费价格': [input2_data],
@@ -31,7 +32,7 @@ def save_data(request):
                 '服务器时间': [timestamp],
             }
         elif datacode == '0':
-            file_path = r'/root/DC/wx_app/csv/Query_date.csv'
+            file_path = r'/root/DC/pearl_code/pearl_server/wx_app/csv/Query_date.csv'
             new_data = {
                 '最近天数': [picker_value2],
                 '服务器时间': [timestamp],
@@ -56,6 +57,7 @@ def save_data(request):
 
             # 设置缓存
             cache.set('picker_value2', picker_value2, timeout=300)
+            cache.set('picker_value3', picker_value3, timeout=300)
             
             return JsonResponse(new_data)
             
@@ -64,5 +66,4 @@ def save_data(request):
 
     else:
         return JsonResponse({'status': 'error', 'message': '仅支持 GET 请求'})
-
 
