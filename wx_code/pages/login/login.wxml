@@ -1,27 +1,2 @@
-<view>
-	<view style="display: flex; align-items: center; margin-top: 10px;">
-		<text class="title" style="margin-right: 10px;">头像</text>
-		<!-- 判断并显示本地或服务器上的头像 -->
-		<image wx:if="{{bean['avatarUrlType'] == 1}}" class="avatarUrl" src="{{bean['avatarUrl']}}" style="width: 50px; height: 50px; border-radius: 50%;" />
-		<image wx:if="{{bean['avatarUrlType'] != 1}}" class="avatarUrl" src="{{baseUrl + bean['avatarUrl']}}" style="width: 50px; height: 50px; border-radius: 50%;" />
-
-		<!-- 获取微信头像的按钮 -->
-		<van-button round type="primary" size="small" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" style="margin-left: auto;">获取微信头像
-		</van-button>
-	</view>
-
-	<view style="margin-top: 20px;">
-		<text class="title" decode="true">昵称</text>
-		<input type="text" value="{{bean.nickName}}" bindinput="handleChangeInput" data-field="nickName" maxlength="30" placeholder="请输入昵称" style="margin-left: 10px; width: 70%;"></input>
-	</view>
-
-	<view style="margin-top: 20px;">
-		<text class="title" decode="true">手机号</text>
-		<input type="number" value="{{bean['phone']}}" bindinput="handleChangeInput" data-field="phone" maxlength="11" placeholder="请输入手机号" style="margin-left: 10px; width: 70%;"></input>
-	</view>
-
-	<view style="margin-top: 30px; text-align: center;">
-		<van-button type="info" class="btn-opentype btn-share" catchtap="userInfoUpdateSelect" block style="width: 40%;">保存
-		</van-button>
-	</view>
-</view>
+<!--pages/login/login.wxml-->
+<text>pages/login/login.wxml</text>

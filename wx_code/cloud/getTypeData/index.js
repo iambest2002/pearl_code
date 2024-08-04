@@ -10,7 +10,9 @@ cloud.init({
 exports.main = async (event, context) => {
   const db = cloud.database();
   const $ = db.command.aggregate;
-  const { date, skip = 0, limit = 100 } = event;
+	const { date, skip = 0, limit = 100 ,openid} = event;
+	console.log('接收到的日期:', date);
+  console.log('接收到的 openid:', openid);
 
   const year = date.split('-')[0];
 	const month = date.split('-')[1];
@@ -23,13 +25,15 @@ exports.main = async (event, context) => {
         type: true,
         price: true,
         date: true,
-        note: true,
+				note: true,
+				_openid:true,
         year: $.substr(['$date', 0, 4]),
         month: $.substr(['$date', 5, 2]),
       })
       .match({
         year: year,
-        month: month,
+				month: month,
+				_openid:openid,
       })
       .skip(skip) // 跳过前 skip 条数据
       .limit(limit) // 获取 limit 条数据
@@ -41,13 +45,15 @@ exports.main = async (event, context) => {
         type: true,
         price: true,
         date: true,
-        note: true,
+				note: true,
+				_openid:true,
         year: $.substr(['$date', 0, 4]),
         month: $.substr(['$date', 5, 2]),
       })
       .match({
         year: year,
-        month: month,
+				month: month,
+				_openid:openid,
       })
       .skip(skip)
       .limit(limit)

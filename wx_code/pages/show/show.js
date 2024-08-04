@@ -35,7 +35,9 @@ Page({
 				if (res.confirm) {
 					wx.cloud.callFunction({
 						name: 'remove',
-						data: { _id: this.data.recordId }, // 传递记录ID
+						data: {
+							_id: this.data.recordId
+						}, // 传递记录ID
 						success: (result) => {
 							console.log('删除数据结果:', result);
 							if (result.result.success) {
@@ -44,7 +46,7 @@ Page({
 									icon: 'success',
 									duration: 2000
 								});
-	
+
 								// 删除成功后，返回上一页
 								const pages = getCurrentPages();
 								const prevPage = pages[pages.length - 2]; // 上一页
@@ -109,13 +111,7 @@ Page({
 					icon: 'success',
 					duration: 2000
 				});
-				const pages = getCurrentPages();
-				const prevPage = pages[pages.length - 2]; // 上一页
-
-				// 更新上一页的数据
-				if (prevPage && typeof prevPage.fetchData === 'function') {
-					prevPage.fetchData(prevPage.data.selectedDate); // 刷新数据
-				}
+				
 
 				wx.navigateBack(); // 返回上一页
 

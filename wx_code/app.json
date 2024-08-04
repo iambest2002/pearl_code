@@ -1,15 +1,14 @@
 {
   "pages": [
-
+    "pages/user/user",
     "pages/bill/bill",
     "pages/demo/demo",
     "pages/query/query",
     "pages/show/show",
     "pages/Accounting/Accounting",
-		"pages/English/English",
-		"pages/user/user",
-    "pages/test/test"
-
+    "pages/English/English",
+		"pages/test/test",
+    "pages/change/change"
   ],
   "window": {
     "backgroundColor": "#ffffff",

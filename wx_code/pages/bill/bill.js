@@ -76,19 +76,40 @@ Page({
 
 	// 页面加载时
 	onLoad(options) {
-		const now = new Date();
-		const dateString = this.formatDate(now);
+    const now = new Date();
+    const dateString = this.formatDate(now);
 		this.setData({
 			selectedDate: dateString
 		});
-		// 查询支出数据
-		this.fetchData(dateString);
-	},
+
+		// 获取并保存 openid
+		this.getOpenidAndFetchData(dateString);
+    
+  },
 	onShow() {
-		this.fetchData(this.data.selectedDate); // 每次页面显示时刷新数据
+		const openid = wx.getStorageSync('openid');
+		if (openid) {
+			this.setData({ openid });
+			this.fetchData(this.data.selectedDate); // 使用获取的 openid 调用 fetchData
+		}
 	},
 
+	getOpenidAndFetchData(dateString) {
+		wx.cloud.callFunction({
+			name: 'getOpenid',
+			success: res => {
+				console.log('用户的openid:', res.result.openid);
+				wx.setStorageSync('openid', res.result.openid); // 保存 openid 到本地存储
+				this.setData({
+					openid: res.result.openid
+				});
 
+			},
+			fail: err => {
+				console.error('获取 openid 失败', err);
+			}
+		});
+	},
 
 	// 日期选择器变化
 	onChange(event) {
@@ -117,24 +138,28 @@ Page({
 
 	// 获取数据
 	fetchData(dateString, skip = 0, allData = []) {
+
+		const openid = this.data.openid;
 		this.setData({
 			filteredData: [],
 			expenseTotalPrice: 0,
 			incomeTotalPrice: 0
 		});
+		
 		wx.cloud.callFunction({
 				name: 'getTypeData',
 				data: {
 					date: dateString,
 					skip: skip, // 跳过前 skip 条记录
 					limit: 100, // 每次获取的记录数
+					openid: openid,
 				},
 			})
 			.then((res) => {
 				console.log(res.result)
 				const {
 					expensesData,
-					incomeData
+					incomeData,
 				} = res.result;
 				const newData = [...expensesData, ...incomeData];
 				const uniqueData = Array.from(new Set(newData.map(item => item._id)))
