@@ -1,0 +1,11 @@
+/* pages/customButton/customButton.wxss */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}

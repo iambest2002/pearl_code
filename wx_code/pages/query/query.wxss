@@ -1,0 +1,43 @@
+/* pages/query/query.wxss */
+
+.record {
+  display: flex; /* 使用 flex 布局 */
+	flex-wrap: wrap; /* 自动换行 */
+  flex-direction: column;  /* 垂直排列子元素 */
+  justify-content: space-between; /* 左右对齐 */
+  margin-bottom: 10rpx;
+	padding: 10rpx;
+	border: 1px solid rgb(180, 168, 168);
+  background-color: #ffffff;
+  border-radius: 5rpx;
+}
+
+.label {
+  flex: 1; /* 占据一定比例，使其在水平方向上均匀分布 */
+  font-weight: bold;
+	color: #333;
+	margin-right: 5px;
+  width: 100px;  /* 确保标签部分对齐 */
+}
+
+.value {
+  flex: 1; /* 占据两倍的比例，使其在水平方向上均匀分布 */
+  color: #666;
+}
+
+
+/* container 样式，确保容器有适当的边距和背景颜色 */
+.container {
+  padding: 10px;
+	background-color: #f5f5f5;
+}
+
+
+
+/* field 样式，确保每个字段有适当的布局 */
+.field {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+

@@ -1,0 +1,44 @@
+<view class="record">
+	<block>
+		<view class="record">
+			<view class="field">
+				<view class="label">总价格：</view>
+				<view class="value">{{totalPrice}}</view>
+			</view>
+		</view>
+	</block>
+</view>
+
+<scroll-view class="container" type="custom" scroll-y>
+	<view class="record">
+		<block wx:for="{{filteredData}}" wx:key="index">
+			<view class="field">
+				<view class="label">{{item['消费类型']}}:</view>
+				<view class="value">{{item['消费价格']}}</view>
+			</view>
+
+		</block>
+	</view>
+</scroll-view>
+<scroll-view class="container" type="custom" scroll-y>
+	<block wx:for="{{filteredData}}" wx:key="index">
+		<view class="record">
+			<view class="field">
+				<view class="label">消费类型：</view>
+				<view class="value">{{item['消费类型']}}</view>
+			</view>
+			<view class="field">
+				<view class="label">消费金额：</view>
+				<view class="value">{{item['消费价格']}}</view>
+			</view>
+			<view class="field">
+				<view class="label">日期：</view>
+				<view class="value">{{item['日期']}}</view>
+			</view>
+			<view class="field">
+				<view class="label">时间：</view>
+				<view class="value">{{item['时间']}}</view>
+			</view>
+		</view>
+	</block>
+</scroll-view>

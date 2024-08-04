@@ -1,0 +1,19 @@
+/* pages/English/English.wxss */
+/* pages/dictionary/dictionary.wxss */
+.container {
+  padding: 20px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}

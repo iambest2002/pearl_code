@@ -1,0 +1,15 @@
+<!--pages/English/English.wxml-->
+<text>英语词库开发</text>
+<!-- pages/dictionary/dictionary.wxml -->
+<view class="container">
+  <input type="text" placeholder="Enter a word" bindinput="onWordInput" />
+  <button bindtap="searchWord">Search</button>
+  
+  <view wx:if="{{definition}}">
+    <text>{{definition}}</text>
+  </view>
+  
+  <view wx:if="{{error}}">
+    <text style="color: red;">{{error}}</text>
+  </view>
+</view>

@@ -1,0 +1,111 @@
+.center-box {
+  display: flex;
+  align-items: center; /* 垂直方向居中对齐 */
+  justify-content: space-between; /* 元素两端对齐 */
+  background-color: #96e3fa;
+  border-radius: 10rpx;
+}
+
+.date-key {
+	margin-left: 10px;
+  width: 120px;
+  height: 30px;
+  background-color: #96e3fa;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	border: none;
+	border-color: transparent;
+	background: none !important;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.date-key::after{
+	border: none;
+	background: none !important;
+}
+
+.left, .right {
+  display: flex;
+	align-items: center;
+	flex-direction: column;
+  justify-content: space-between; /* 元素两端对齐 */
+	padding: 10px;
+	justify-content: center; /* 内容居中对齐 */
+  background-color: #96e3fa;
+  flex: 1; /* 占据剩余空间 */
+}
+
+
+.expense-item {
+  display: flex;
+	align-items: center;
+	font-family: cursive;
+  justify-content: space-between; /* 让图标、类型和价格之间保持合理的间距 */
+  margin-bottom: 10px; /* 设置每行数据项之间的垂直间距 */
+}
+
+.expense-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px; /* 图标与消费类型之间的间距 */
+}
+
+.total-price {
+  font-size: 14px;
+	font-weight: bold;
+	font-family: cursive;
+  margin-top: 5px; /* 添加上边距以分隔数据和总价格 */
+}
+.expense-type {
+  flex: 1; /* 消费类型占据剩余的可用空间 */
+	font-size: 16px;
+	font-family: cursive;
+  margin-right: 10px; /* 消费类型与消费价格之间的间距 */
+}
+
+.expense-price {
+	font-size: 16px;
+	font-family: cursive;
+  font-weight: bold;
+}
+.button {
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  width: 60px; /* 固定按钮宽度 */
+  height: 60px; /* 固定按钮高度 */
+  background-color: #d1cfcf;
+	font-size: 10px;
+	font-family: cursive;
+  border: 1px solid #ffffff;
+  border-radius: 50%; /* 将按钮设计成圆形 */
+  box-sizing: border-box; /* 包括 padding 和 border 在内进行宽度计算 */
+  text-align: center; /* 水平居中 */
+  transition: background-color 0.3s; /* 动画效果 */
+}
+.expense-remark {
+  font-size: 14px;
+  color: #666;
+}
+/* 页面样式 */
+.custom-button {
+  position: fixed;
+  bottom: 10px; /* 距离底部的距离 */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1c1c1c;
+  color: white;
+  width: 60px; /* 按钮宽度 */
+  height: 60px; /* 按钮高度 */
+  border-radius: 50%; /* 圆形按钮 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* 确保按钮在 `tabBar` 上方 */
+}
+

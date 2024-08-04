@@ -1,0 +1,52 @@
+<view class="center-box">
+  <view class="center">
+    <image src="{{detailIcon}}" class="detail-icon"></image>
+  </view>
+</view>
+
+<view class="detail-container">
+  <van-divider />
+  <view class="detail-type">类型: {{detailType}}</view>
+  <van-divider />
+  <view class="detail-price">价格: {{detailPrice}}</view>
+  <van-divider />
+  <view class="detail-date">日期: {{detailDate}}</view>
+  <van-divider />
+  <view class="detail-remark">备注: {{fieldValue}}</view>
+  <van-divider />
+</view>
+
+<view class="button-container">
+  <button class="edit-button" bindtap="onEdit">编辑</button>
+  <button class="delete-button" bindtap="onDeleteData">删除</button>
+</view>
+
+<van-popup show="{{showKeyboard}}" position="bottom" bind:close="onCancel" class="keyboard-popup">
+		<view class="input-container">
+			<van-button color="#1f72d1" plain class="cancellation" bind:tap="onCancel">取消</van-button>
+			<input class="input-box" value="{{inputValue}}" disabled />
+			<van-button color="#1f72d1" plain class="confirm" bind:tap="onConfirm">确认</van-button>
+		</view>
+		<view >
+			<van-cell-group >
+				<van-field value="{{ fieldValue }}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" bind:change="notes" />
+			</van-cell-group>
+		</view>
+		<view class="keyboard-body">
+			<block wx:for="{{['1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '日期', '0', '.', '删除', '清除']}}" wx:key="index">
+				<button wx:if="{{item !== '删除' && item !== '日期' && item !== '确认' && item !== '清除'}}" data-value="{{item}}" bind:tap="onInput" class="key">{{item}}</button>
+				<button wx:if="{{item === '删除'}}" bind:tap="onDelete" class="key delete-key">
+					<image src="/image/delete.png" class="delete-icon"></image>
+				</button>
+				<button wx:if="{{item === '日期'}}" bind:tap="onShowDatePicker" class="date-key">{{dateValue ? dateValue : '日期'}}</button>
+				<button wx:if="{{item === '清除'}}" bind:tap="onClear" class="key clear-key">
+					<image src="/image/clear.png" class="clear-icon"></image>
+				</button>
+			</block>
+		</view>
+	</van-popup>
+
+	<!-- 日期选择器 -->
+	<van-popup show="{{showDatePicker}}" position="bottom" bind:close="onDateCancel" class="date-popup">
+		<van-datetime-picker type="date" value="{{currentDate}}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" min-date="{{minDate}}" max-date="{{maxDate}}" />
+	</van-popup>

@@ -1,0 +1,10 @@
+/* app.wxss */
+image {
+  display: block;
+  margin: 10px auto;
+}
+text {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}

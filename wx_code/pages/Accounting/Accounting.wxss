@@ -1,0 +1,215 @@
+@import "/miniprogram_npm/@vant/weapp/common/index.wxss"; /* 引入 vant 样式 */
+
+.container {
+  padding: 5px;
+}
+
+.center-box {
+	height: 700px;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 20rpx;
+  -webkit-filter: drop-shadow(0 0 8rpx #44ADFB);
+  filter: drop-shadow(0 0 8rpx #44ADFB);
+}
+
+.nav {
+  display: flex;
+  text-align: center;
+  font-size: 30rpx;
+  margin-bottom: 1%;
+}
+
+.left, .right {
+  flex: 1;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	
+	transition: background-color 0.3s;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap; /* 允许子元素换行 */
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column; /* 纵向排列子元素 */
+  align-items: center; /* 垂直居中 */
+  margin: 7px; /* 调整容器之间的间距 */
+}
+
+.option-button {
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  width: 60px; /* 固定按钮宽度 */
+  height: 60px; /* 固定按钮高度 */
+  background-color: #d1cfcf;
+  font-size: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50%; /* 将按钮设计成圆形 */
+  box-sizing: border-box; /* 包括 padding 和 border 在内进行宽度计算 */
+  text-align: center; /* 水平居中 */
+  transition: background-color 0.3s; /* 动画效果 */
+}
+
+.option-button.active {
+  background-color: #186ac2; /* 按钮激活后的背景颜色 */
+}
+
+.icon {
+  width: 30px; /* 设置图标的宽度 */
+  height: 30px; /* 设置图标的高度 */
+  background-size: cover;
+	transition: filter 0.3s; /* 动画效果 */
+	
+}
+.income-icon{
+	width: 30px; /* 设置图标的宽度 */
+  height: 30px; /* 设置图标的高度 */
+  background-size: cover;
+	transition: filter 0.3s; /* 动画效果 */
+	margin-top: 5px; /* 图标和文本之间的间距 */
+  font-size: 12px;
+  font-family: cursive;
+}
+.expenses-icon{
+	width: 30px; /* 设置图标的宽度 */
+  height: 30px; /* 设置图标的高度 */
+  background-size: cover;
+	transition: filter 0.3s; /* 动画效果 */
+	margin-top: 5px; /* 图标和文本之间的间距 */
+  font-size: 12px;
+  font-family: cursive;
+}
+
+.option-button.active .icon {
+  filter: brightness(0) invert(1); /* 图标激活后的颜色效果 */
+}
+
+.option-text {
+  margin-top: 5px; /* 图标和文本之间的间距 */
+  font-size: 12px;
+  font-family: cursive;
+}
+.NavigationBar-text{
+	margin-top: 5px; /* 图标和文本之间的间距 */
+  font-size: 14px;
+  font-family: cursive;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.cancellation{
+	width: 86px;
+	height: 40px;
+	border: none;
+	border-color: transparent;
+	background: none !important;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .cancellation::after{
+		border: none;
+		background: none !important;
+} */
+.confirm{
+	width: 86px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-box {
+  width: 97%;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-align: center;
+	line-height: 40px;
+  font-size: 16px;
+}
+.field-container{
+	width: 100%;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-align: center;
+	font-size: 16px;
+	background-color:darkgray;
+
+}
+
+.keyboard-body {
+  height: 210px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 四列布局 */
+  gap: 0; /* 按键之间的间距 */
+}
+
+.key {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border: none; /* 去除边框 */
+  text-align: center;
+  line-height: 50px;
+}
+
+.delete-key {
+  background-color: #ffffff;
+  color: #fff;
+  position: relative; /* 确保图标在按钮中心 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clear-key {
+  background-color: #ffffff;
+  color: #fff;
+  position: relative; /* 确保图标在按钮中心 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-icon {
+  width: 24px; /* 设置图标的宽度 */
+  height: 24px; /* 设置图标的高度 */
+}
+.clear-icon {
+  width: 24px; /* 设置图标的宽度 */
+  height: 24px; /* 设置图标的高度 */
+}
+
+.date-key {
+  color: #000000; /* 你想要的字体颜色 */
+	font-size: 12px; /* 根据需要调整字体大小 */
+	width: 100%;
+  height: 50px;
+  /* background-color: #ffffff; */
+  border: none; /* 去除边框 */
+  text-align: center;
+  line-height: 50px;
+}
+
+.date-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

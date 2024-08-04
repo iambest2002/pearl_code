@@ -1,0 +1,4 @@
+<!-- pages/customButton/customButton.wxml -->
+<view class="container">
+  <button bindtap="onNavigateToAccounting">前往记账</button>
+</view>

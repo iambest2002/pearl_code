@@ -1,0 +1,34 @@
+<view class="center-box">
+	<button class="date-key" bindtap="onShowDatePicker">{{selectedDate || '选择年月'}}</button>
+
+	<view class="left">
+		<text class="NavigationBar-text">支出</text>
+		<view class="total-price">
+			<text>{{expenseTotalPrice}}</text>
+		</view>
+	</view>
+
+	<view class="right">
+		<text class="NavigationBar-text">收入</text>
+		<view class="total-price">
+			<text>{{incomeTotalPrice}}</text>
+		</view>
+	</view>
+
+	<!-- 日期选择器弹出层 -->
+	<van-popup show="{{showDatePicker}}" position="bottom" custom-style="height: 40%;" bind:close="onDateCancel">
+		<van-datetime-picker type="year-month" value="{{currentDate}}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" />
+	</van-popup>
+</view>
+
+<block wx:for="{{filteredData}}" wx:key="ID" class="block">
+	<van-divider />
+	<view class="expense-item" bindtap="showDetail" data-id="{{item['_id']}}" data-type="{{item['category']}}" data-price="{{item['price']}}" data-icon="{{typeIconMapping[item.type]}}" data-date="{{item['date']}}" data-remark="{{item['note']}}">
+		<image src="{{typeIconMapping[item['type']]}}" class="expense-icon"></image>
+		<text class="expense-type">{{item['category']}}-{{item.type}}</text>
+		<text class="expense-price">{{item.price}}</text>
+	</view>
+	<van-divider />
+</block>
+
+
