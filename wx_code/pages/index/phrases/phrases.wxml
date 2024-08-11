@@ -1,0 +1,13 @@
+<view class="container">
+  <view wx:if="{{phrases.length > 0}}">
+    <block wx:for="{{phrases}}" wx:key="index">
+      <view class="phrase-box">
+        <text class="phrase">{{item.phrase}}</text>
+        <text class="translation">{{item.translation}}</text>
+      </view>
+    </block>
+  </view>
+  <view wx:else>
+    <text class="no-data">没有短语数据</text>
+  </view>
+</view>

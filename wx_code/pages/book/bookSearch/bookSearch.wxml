@@ -1,0 +1,25 @@
+<!-- 搜索 -->
+<view class="search-wrap" bindtap="toSearch">
+  <view class="search-box">
+
+    <input bindinput="getValue" type="text" placeholder="请输入关键词" class="input-cell"/>
+    <image src="/image/search.png" class="search-img" bindtap="search"></image>
+
+  </view>
+</view>
+
+
+<block wx:for="{{list}}">
+  <view class="good-box" bindtap="" data-index="{{index}}">
+    <!-- <image src="{{item.cover}}" class="good-img"></image> -->
+
+    <view class="right-box">
+      <!-- <view>{{item.key}}</view> -->
+      <navigator class="right-bottom-box" url="/pages/book/bookDetail/bookDetail?id={{item._id}}">
+        <view class="tag">{{item.name}}</view>
+        <view class="price">进入单词本</view>
+      </navigator>
+    </view>
+
+  </view>
+</block>

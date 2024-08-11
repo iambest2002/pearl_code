@@ -137,7 +137,7 @@
 .input-box {
   width: 97%;
   height: 40px;
-  border: 1px solid #ffffff;
+  border:   #ffffff;
   border-radius: 4px;
   text-align: center;
 	line-height: 40px;

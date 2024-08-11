@@ -1,4 +1,5 @@
 <view class="center-box">
+	
 	<button class="date-key" bindtap="onShowDatePicker">{{selectedDate || '选择年月'}}</button>
 
 	<view class="left">
@@ -14,21 +15,35 @@
 			<text>{{incomeTotalPrice}}</text>
 		</view>
 	</view>
+	<view class="switch">
+		<!-- <text>备注</text> -->
+	<van-switch size="24px"  active-color="#96e3fa" inactive-color="#ffffff" bind:change="onSwitchChange" checked="{{ checked }}" />
+	</view>
+	
 
-	<!-- 日期选择器弹出层 -->
+		<!-- 日期选择器弹出层 -->
 	<van-popup show="{{showDatePicker}}" position="bottom" custom-style="height: 40%;" bind:close="onDateCancel">
-		<van-datetime-picker type="year-month" value="{{currentDate}}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" />
+		<view class="date-picker-container">
+		<van-datetime-picker class="date-picker" type="year-month" value="{{currentDate}}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" />
+		
+		</view>
 	</van-popup>
+	
 </view>
 
+<van-divider />
 <block wx:for="{{filteredData}}" wx:key="ID" class="block">
-	<van-divider />
+
 	<view class="expense-item" bindtap="showDetail" data-id="{{item['_id']}}" data-type="{{item['category']}}" data-price="{{item['price']}}" data-icon="{{typeIconMapping[item.type]}}" data-date="{{item['date']}}" data-remark="{{item['note']}}">
 		<image src="{{typeIconMapping[item['type']]}}" class="expense-icon"></image>
 		<text class="expense-type">{{item['category']}}-{{item.type}}</text>
 		<text class="expense-price">{{item.price}}</text>
+
 	</view>
+	<van-collapse  value="{{ activeNames}}" bind:change="onFoldChange" data-id="{{item['_id']}}" >
+		<van-collapse-item  icon='notes-o' title="备注" name="{{item['_id']}}" is-link="true" >
+			{{item.note}}
+		</van-collapse-item>
+	</van-collapse>
 	<van-divider />
 </block>
-
-

@@ -4,8 +4,14 @@
   justify-content: space-between; /* 元素两端对齐 */
   background-color: #96e3fa;
   border-radius: 10rpx;
+  padding: 10px; /* 内边距 */
 }
 
+
+
+.switch-control {
+  margin-right: 10px; /* 调整 switch 与其他元素的间距 */
+}
 .date-key {
 	margin-left: 10px;
   width: 120px;
@@ -27,7 +33,7 @@
 	background: none !important;
 }
 
-.left, .right {
+.left, .right ,.switch{
   display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -63,7 +69,7 @@
   flex: 1; /* 消费类型占据剩余的可用空间 */
 	font-size: 16px;
 	font-family: cursive;
-  margin-right: 10px; /* 消费类型与消费价格之间的间距 */
+  margin-right: 5px; /* 消费类型与消费价格之间的间距 */
 }
 
 .expense-price {
@@ -108,4 +114,20 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* 确保按钮在 `tabBar` 上方 */
 }
+.note-title {
+  display: flex;
+  align-items: center;
+}
 
+.note-title .van-icon {
+  margin-right: 8px; /* 调整图标与文字之间的间距 */
+}
+van-collapse-item .van-collapse-item__content {
+  white-space: normal;
+  word-wrap: break-word;
+}
+.date-picker-container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}

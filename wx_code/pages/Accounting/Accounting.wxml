@@ -39,17 +39,17 @@
 	<!-- 数字键盘选择框 -->
 <van-popup show="{{showKeyboard}}" position="bottom" bind:close="onCancel" class="keyboard-popup">
 		<view class="input-container">
-			<van-button color="#1f72d1" plain class="cancellation" bind:tap="onCancel">取消</van-button>
+			<van-button  plain class="cancellation" bind:tap="onCancel">取消</van-button>
 			<input class="input-box" value="{{inputValue}}" disabled />
-			<van-button color="#1f72d1" plain class="confirm" bind:tap="onConfirm">确认</van-button>
+			<van-button  plain class="confirm" bind:tap="onConfirm">确认</van-button>
 		</view>
 		<view >
 			<van-cell-group >
-				<van-field value="{{ fieldValue }}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" bind:change="notes" />
+				<van-field value="{{ fieldValue }}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" bind:change="notes" maxlength="512"/>
 			</van-cell-group>
 		</view>
 		<view class="keyboard-body">
-			<block wx:for="{{['1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '日期', '0', '.', '删除', '清除']}}" wx:key="index">
+			<block wx:for="{{['1', '2', '3', '+', '4', '5', '6', '-', '7', '8', '9', '日期', '.', '0', '删除', '清除']}}" wx:key="index">
 				<button wx:if="{{item !== '删除' && item !== '日期' && item !== '确认' && item !== '清除'}}" data-value="{{item}}" bind:tap="onInput" class="key">{{item}}</button>
 				<button wx:if="{{item === '删除'}}" bind:tap="onDelete" class="key delete-key">
 					<image src="/image/delete.png" class="delete-icon"></image>

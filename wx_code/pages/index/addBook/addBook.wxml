@@ -1,0 +1,23 @@
+
+
+
+<view class="wrap">
+  <textarea placeholder="亲输入备注" bindinput="getValue"></textarea>
+</view>
+
+
+
+<view class="choose-book">
+
+  <picker bindchange="bindPickerChange" range="{{bookNameList}}">添加到生词本</picker>
+
+</view>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+.book-name {
+  margin: 40rpx 40rpx;
+  border: 4rpx solid #a0a0a0;
+  padding: 20rpx 20rpx;
+}
+.book-note {
+  margin: 40rpx 40rpx;
+  border: 4rpx solid #a0a0a0;
+  padding: 20rpx 20rpx;
+  width: 85%;
+}
+

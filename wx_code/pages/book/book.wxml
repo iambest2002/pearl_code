@@ -1,0 +1,58 @@
+<view class="action-bar">
+  <van-button icon="delete"  color="linear-gradient(to right, #96e3fa, #00CCCC)" bindtap="deleteBook" class="new-book-btn"></van-button>
+  <!-- 搜索框 -->
+  <van-search value="{{ searchValue }}" placeholder="请输入搜索关键词" show-action="true" use-action-slot bind:change="onChangeSearch" bind:cancel="onCancel" bind:search="onSearch" class="search-bar">
+    <!-- 自定义“搜索”按钮 -->
+    <view slot="action" bind:tap="onClick">
+      <image class="icon" src="../../image/search.png"></image>
+    </view>
+  </van-search>
+  <!-- 新建生词本按钮 -->
+  <van-button icon="add-o"  color="linear-gradient(to right, #96e3fa, #00CCCC)" bindtap="addNewBook" class="new-book-btn"></van-button>
+</view>
+
+<van-tabs active="{{active}}" bind:change="onChangeTab" animated="true" swipeable="true" type="card" color="#fff" title-active-color="#96e3fa" title-inactive-color="#000">
+  <block wx:for="{{bookList}}" wx:key="index">
+    <van-tab title="{{item.name}}" info="2">
+      <!-- 每个标签页显示单词本中的单词 -->
+      <view class="word-list">
+        <block wx:for="{{wordsByBook[item._id]}}" wx:key="index">
+          <view class="word-item" bindtap="onWordTap" id="word-{{item._id}}">
+            <navigator class="word" url="/pages/book/wordDetail/wordDetail?id={{item._id}}">
+            <view>
+            {{item.word.query}}
+            </view>
+            <view class="tag">
+            {{item.word.basic.tags}}
+            </view>
+            </navigator>
+          </view>
+        </block>
+      </view>
+    </van-tab>
+  </block>
+</van-tabs>
+<!-- 新建生词本的弹出层 -->
+<van-popup show="{{ showNewBookPopup }}" round position="bottom" bind:close="addPopupClose">
+  <view class="popup-content">
+    <van-field value="{{newBookNameValue}}" bind:input="newBookNameInput" label="生词本名" placeholder="请输入生词本名称" />
+    <van-field value="{{newBookRemarkValue}}" bind:input="newBookRemarkInput" label="备注" placeholder="请输入备注" />
+    <van-button  block type="info" bind:tap="onCreateNewBook">创建</van-button>
+  </view>
+</van-popup>
+<!-- 删除弹出层 -->
+<van-popup show="{{ showDeleteBookPopup }}" position="bottom" bind:close="deletePopupClose">
+  <view class="popup-content">
+    <view class="picker-wrapper">
+      <van-picker 
+        columns="{{ deleteOptions }}" 
+        bind:change="onChangeDelete" 
+        show-toolbar="true" 
+        bind:cancel="deletePopupClose" 
+        bind:confirm="onConfirmDelete" 
+      />
+    </view>
+  </view>
+</van-popup>
+
+

@@ -1,0 +1,37 @@
+
+<view class="search-wrap" bindtap="toSearch">
+  <view class="search-box">
+
+    <input bindinput="getValue" type="text" placeholder="请输入关键词" class="input-cell"/>
+    <image src="/image/search.png" class="search-img" bindtap="search"></image>
+
+  </view>
+</view>
+
+
+<view class="note">{{book.note}}</view>
+
+<block wx:for="{{bookList}}">
+
+
+  <navigator class="word" url="/pages/book/wordDetail/wordDetail?id={{item._id}}">{{item.word.query}}</navigator>
+
+
+
+
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

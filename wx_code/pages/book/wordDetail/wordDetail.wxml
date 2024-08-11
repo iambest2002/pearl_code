@@ -1,0 +1,45 @@
+<view class="word-wrap"> 
+
+<view class="word-line">
+  <view class="word">{{word.word.query}}</view>
+  
+</view>
+
+<view class="tag-wrap">
+  <block wx:for="{{word.word.basic.tags}}">
+    <view class="tag">{{item}}</view>
+  </block>
+</view>
+
+<audio controls="true" name="{{word.word.query}}" author="词典" src="http://dict.youdao.com/dictvoice?audio={{word.word.query}}"></audio>
+
+</view>
+
+<view class="word-wrap">
+<view class="word-title">音标</view>
+<view>英式：{{word.word.basic.ph}}</view>
+<view>美式：{{word.word.basic.usPh}}</view>
+</view>
+
+
+<view class="word-wrap">
+<view class="word-title">备注</view>
+<view>
+  {{word.note}}
+</view>
+</view>
+
+
+<view class="word-wrap">
+<view class="word-title">常用释义</view>
+<view wx:for="{{word.word.basic.explains}}">
+  {{item}}
+</view>
+</view>
+
+<view class="word-wrap">
+<view class="word-title">词态变化</view>
+<view wx:for="{{word.word.basic.tense}}">
+  {{item.name}} : {{item.value}}
+</view>
+</view>

@@ -1,19 +1,78 @@
-/* pages/English/English.wxss */
-/* pages/dictionary/dictionary.wxss */
-.container {
-  padding: 20px;
+Page {
+  background-color: rgb(245, 245, 245);
 }
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+
+/* 搜索 */
+.search-wrap {
+  padding: 0 20rpx 20rpx 20rpx;
+  background-color: #00CCCC;
 }
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007aff;
+.search-box {
+
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #e6e6e6;
+  
+  padding: 0 20rpx;
+  /* border-radius: 20rpx; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.search-img {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #fff;
+}
+.input-cell {
+  padding: 20rpx 20rpx;
+  width: 600rpx;
+  background-color: #fff;
+}
+
+
+
+
+.word-wrap {
+  background-color: #fff;
+  border-radius: 50rpx;
+  margin: 30rpx 20rpx;
+  padding: 20rpx 30rpx;
+}
+.word-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.word {
+  margin-left: 10rpx;
+  font-weight: 550;
+  font-size: 80rpx;
+  margin-bottom: 20rpx;
+}
+.add-book {
+  background-color: #00CCCC;
+  padding: 5rpx 10rpx;
+  border-radius: 20rpx;
   color: #fff;
-  border: none;
-  border-radius: 5px;
+}
+.tag-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+  flex-wrap: wrap;
+}
+.tag {
+  margin-right: 20rpx;
+  background-color: rgb(198, 198, 255);
+  padding: 0rpx 20rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+.word-title {
+  font-weight: 550;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
 }

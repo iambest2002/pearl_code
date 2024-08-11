@@ -1,0 +1,13 @@
+
+
+
+
+
+<input type="text" placeholder="请输入生词本名称" class="book-name" bindinput="getName"/>
+
+
+<textarea placeholder="请输入备注内容" class="book-note" bindinput="getText"></textarea>
+
+
+
+<button type="primary" bindtap="submit">提交</button>

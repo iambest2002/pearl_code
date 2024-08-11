@@ -4,7 +4,6 @@ Page({
 		currentDate: new Date().getTime(), // 当前时间戳
 		selectedDate: '', // 用户选择的日期
 		filteredData: [], // 保存过滤后的数据
-		activeNames: [],
 		expenseTotalPrice: 0, // 保存支出的总价格
 		incomeTotalPrice: 0, // 保存收入的总价格
 		detailType: '',
@@ -12,6 +11,8 @@ Page({
 		detailIcon: '',
 		detailDate: '',
 		fieldValue: '',
+		activeNames: [],
+		checked: false,
 		showDetail: false,
 		processFetchedData: '',
 		listData: [],
@@ -79,6 +80,7 @@ Page({
     const now = new Date();
     const dateString = this.formatDate(now);
 		this.setData({
+			
 			selectedDate: dateString
 		});
 
@@ -92,6 +94,8 @@ Page({
 			this.setData({ openid });
 			this.fetchData(this.data.selectedDate); // 使用获取的 openid 调用 fetchData
 		}
+
+		
 	},
 
 	getOpenidAndFetchData(dateString) {
@@ -112,12 +116,22 @@ Page({
 	},
 
 	// 日期选择器变化
-	onChange(event) {
-		this.setData({
-			activeNames: event.detail
-		});
-	},
+	onFoldChange(event) {
 
+		  this.setData({
+			activeNames: event.detail
+		  });
+
+		
+	  },
+  
+	  onSwitchChange({ detail: checked }) {
+		this.setData({ 
+		  checked,
+		  activeNames: checked ? this.data.filteredData.map(item => item._id) : []
+		});
+	  }
+	  ,
 	// 显示日期选择器
 	onShowDatePicker() {
 		this.setData({

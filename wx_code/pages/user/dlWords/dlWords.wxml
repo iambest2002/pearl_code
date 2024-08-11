@@ -1,0 +1,2 @@
+<van-button bind:tap="dlCET4Words">下载</van-button>
+

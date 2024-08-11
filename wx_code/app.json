@@ -2,13 +2,20 @@
   "pages": [
     "pages/user/user",
     "pages/bill/bill",
-    "pages/demo/demo",
-    "pages/query/query",
     "pages/show/show",
+    "pages/book/book",
+    "pages/index/index",
+    "pages/index/addBook/addBook",
+    "pages/book/newBook/newBook",
+    "pages/book/bookDetail/bookDetail",
+    "pages/book/wordDetail/wordDetail",
+    "pages/book/bookSearch/bookSearch",
+    "pages/book/search/search",
+    "pages/wordDetail/wordDetail",
     "pages/Accounting/Accounting",
-    "pages/English/English",
-		"pages/test/test",
-    "pages/change/change"
+    "pages/user/userInfo/userInfo",
+    "pages/user/dlWords/dlWords",
+    "pages/index/phrases/phrases"
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -17,6 +24,9 @@
     "navigationBarBackgroundColor": "#96e3fa"
   },
   "usingComponents": {
+    "van-switch": "@vant/weapp/switch/index",
+    "van-index-bar": "@vant/weapp/index-bar/index",
+    "van-index-anchor": "@vant/weapp/index-anchor/index",
     "van-button": "@vant/weapp/button/index",
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
@@ -73,10 +83,10 @@
         "selectedIconPath": "image/bill-active.png"
       },
       {
-        "pagePath": "pages/demo/demo",
-        "text": "日志",
-        "iconPath": "image/log.png",
-        "selectedIconPath": "image/log-active.png"
+        "pagePath": "pages/book/book",
+        "text": "生词本",
+        "iconPath": "image/book.png",
+        "selectedIconPath": "image/book_yes.png"
       },
       {
         "pagePath": "pages/Accounting/Accounting",
@@ -85,7 +95,7 @@
         "selectedIconPath": "image/add-active.png"
       },
       {
-        "pagePath": "pages/English/English",
+        "pagePath": "pages/index/index",
         "text": "词库",
         "iconPath": "image/english.png",
         "selectedIconPath": "image/english-active.png"
