@@ -30,6 +30,19 @@ Page({
 			url: './dlWords/dlWords',
 		})
 	},
+	toScheduleAccounting() {
+		wx.navigateTo({
+		  url: './accounting/accounting'
+		});
+	  },
+	loginOut() {
+		app.globalData.userInfo = null
+		this.setData({
+			userInfo: null
+		})
+		wx.removeStorageSync('userInfo')
+	},
+	
 	onShow() {
 		setTimeout(() => {
 			this.setData({
@@ -77,13 +90,6 @@ Page({
 				}
 			})
 	},
-	loginOut() {
-		app.globalData.userInfo = null
-		this.setData({
-			userInfo: null
-		})
-		wx.removeStorageSync('userInfo')
-	},
-
+	
 
 })

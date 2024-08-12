@@ -11,9 +11,9 @@
   <van-button icon="add-o"  color="linear-gradient(to right, #96e3fa, #00CCCC)" bindtap="addNewBook" class="new-book-btn"></van-button>
 </view>
 
-<van-tabs active="{{active}}" bind:change="onChangeTab" animated="true" swipeable="true" type="card" color="#fff" title-active-color="#96e3fa" title-inactive-color="#000">
+<van-tabs sticky  active="{{active}}" dot="true" bind:change="onChangeTab" animated="true" swipeable="true" type="card" color="#fff" title-active-color="#96e3fa" title-inactive-color="#000">
   <block wx:for="{{bookList}}" wx:key="index">
-    <van-tab title="{{item.name}}" info="2">
+    <van-tab title="{{item.name}}" info="{{wordsByBook[item._id].length}}">
       <!-- 每个标签页显示单词本中的单词 -->
       <view class="word-list">
         <block wx:for="{{wordsByBook[item._id]}}" wx:key="index">

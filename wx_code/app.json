@@ -15,7 +15,8 @@
     "pages/Accounting/Accounting",
     "pages/user/userInfo/userInfo",
     "pages/user/dlWords/dlWords",
-    "pages/index/phrases/phrases"
+    "pages/index/phrases/phrases",
+    "pages/user/accounting/accounting"
   ],
   "window": {
     "backgroundColor": "#ffffff",

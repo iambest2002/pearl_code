@@ -44,3 +44,11 @@
   border-radius: 20rpx;
   color: #000000;
 }
+
+.custom-badge {
+  background-color: blue;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+}

@@ -1,0 +1,10 @@
+<!-- 定时记账组件 -->
+<view class="schedule-accounting">
+  <view class="schedule-title">定时记账</view>
+  <picker mode="time" bindchange="onTimeChange">
+    <view class="picker">
+      选择时间: {{selectedTime || '请选择时间'}}
+    </view>
+  </picker>
+  <button class="schedule-button" bindtap="setSchedule">设置定时记账</button>
+</view>

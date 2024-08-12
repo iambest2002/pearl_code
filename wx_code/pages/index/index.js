@@ -88,6 +88,10 @@ Page({
         });
       },
       fail: err => {
+        wx.showToast({
+          title: '加载失败，请稍后再试！',
+          icon: 'none'
+        });
         console.error('请求失败', err);
         this.setData({ loading: false });
       }
