@@ -3,20 +3,22 @@ const app = getApp()
 
 Page({
   data: {
-    
+    wordDetails: null,
   },
   
   onLoad(options) {
-    // if(wx.getStorageSync('word')){
-    //   this.setData({
-    //     word:wx.getStorageSync('word')
-    //   })
-    // }
-
-    this.setData({
-      inputValue:options.word,
-    })
-    this.search()
+    // 从 URL 参数中获取传递的数据
+    const data = decodeURIComponent(options.data);
+    if (data) {
+      this.setData({
+        wordDetails: JSON.parse(data)
+      });
+    } else {
+      wx.showToast({
+        title: '没有接收到数据',
+        icon: 'none'
+      });
+    }
   },
   onShow(){
     wx.cloud.database().collection('word_books').get()

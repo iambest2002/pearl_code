@@ -1,10 +1,54 @@
 <!-- 定时记账组件 -->
 <view class="schedule-accounting">
-  <view class="schedule-title">定时记账</view>
-  <picker mode="time" bindchange="onTimeChange">
-    <view class="picker">
-      选择时间: {{selectedTime || '请选择时间'}}
-    </view>
-  </picker>
-  <button class="schedule-button" bindtap="setSchedule">设置定时记账</button>
+  <van-notice-bar color="#96e3fa" mode="closeable" text="定时记账默认时间为每天6:00！" />
+  <button class="schedule-button" bindtap="setSchedule">添加定时记账</button>
 </view>
+
+<!-- 已添加的定时记账信息展示 -->
+<view class="schedule-list">
+  <block wx:for="{{scheduleList}}" wx:key="index">
+    <van-swipe-cell
+      id="swipe-cell-{{index}}"
+      right-width="{{ 65 }}"
+      bind:close="onClose"
+      data-index="{{index}}"
+    >
+      <van-cell-group>
+        <van-cell
+          title="类型：{{item.type}}"
+          label="备注：{{item.notes}}"
+          border="{{false}}"
+        >
+          <text slot="right-icon">金额：{{item.price}}</text>
+        </van-cell> 
+      </van-cell-group>
+      <view slot="right" class="delete-button" bindtap="deleteAccounting" data-id="{{item._id}}" >删除</view> <!-- 自定义删除按钮 -->
+    </van-swipe-cell>
+  </block>
+</view>
+	<!-- 数字键盘选择框 -->
+  <van-popup show="{{showKeyboard}}" position="bottom" bind:close="onCancel" >
+		<view class="input-container">
+			<van-button  plain class="cancellation" bind:tap="onCancel">取消</van-button>
+			<van-button  plain class="confirm" bind:tap="onConfirm">确认</van-button>
+		</view>
+		<view >
+      <van-cell-group >
+				<van-field value="{{ priceValue }}" label="价格" type="textarea" placeholder="请输入价格" autosize border="{{ false }}" bind:change="priceInput" maxlength="512"/>
+			</van-cell-group>
+			<van-cell-group >
+				<van-field value="{{ fieldValue }}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" bind:change="notes" maxlength="512"/>
+			</van-cell-group>
+		</view>
+		<view class="keyboard-body">
+			<block wx:for="{{['类型', '日期']}}" wx:key="index">
+        <button wx:if="{{item === '类型'}}" bind:tap="onTypePicker" class="date-key">{{selectedType ? selectedType : '类型'}}</button>
+			</block>
+		</view>
+	</van-popup>
+
+
+  <van-popup show="{{showTypePicker}}" position="bottom" bind:close="onTypeCancel" class="date-popup">
+		<van-picker show-toolbar  columns="{{pickerColumns}}" bind:change="onPickerChange" bind:confirm="onTypeConfirm" bind:cancel="onTypeCancel" />
+	</van-popup>
+  

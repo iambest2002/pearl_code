@@ -25,9 +25,9 @@ Page({
 			url: './userInfo/userInfo',
 		})
 	},
-	toDownload(){
+	toGetWords(){
 		wx.navigateTo({
-			url: './dlWords/dlWords',
+			url: './getWords/getWords',
 		})
 	},
 	toScheduleAccounting() {

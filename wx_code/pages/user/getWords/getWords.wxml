@@ -1,0 +1,3 @@
+<button bind:tap="getWords">获取单词</button>
+<button bind:tap="getStorageInfo">查看内存</button>
+<button bind:tap="removeStorageSync">清除缓存</button>

@@ -51,3 +51,7 @@
 <view class="menu-cell"  bindtap="toScheduleAccounting">
   定时记账
 </view>
+<!-- 定时记账按钮 -->
+<view class="menu-cell"  bindtap="toGetWords">
+  获取单词
+</view>

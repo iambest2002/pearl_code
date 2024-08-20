@@ -5,7 +5,7 @@
 }
 
 .center-box {
-	height: 700px;
+	min-height: 700px;
   background-color: #ffffff;
   padding: 5px;
   border-radius: 20rpx;

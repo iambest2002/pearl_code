@@ -54,8 +54,6 @@
       {{item.name}} : {{item.value}}
     </view>
   </view>
-
-
 </block>
 
 

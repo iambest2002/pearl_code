@@ -1,29 +1,16 @@
-<!-- 搜索 -->
-<!-- <view class="search-wrap">
-  <view class="search-box">
 
-    <input type="text" placeholder="请输入单词" class="input-cell" bindinput="getValue"/>
-    <image src="/images/search.png" class="search-img" bindtap="search"></image>
-
-  </view>
-</view> -->
-
-
-
-
-<block wx:if="{{word}}">
-
-  <view class="word-wrap"> 
-
+<block wx:if="{{word}}" wx:key="index">
+  <view class="word-wrap">
     <view class="word-line">
       <view class="word">{{inputValue}}</view>
-      <view class="add-book" wx:if="{{bookNameList.length!=0}}">
-        <picker bindchange="bindPickerChange" range="{{bookNameList}}">+加入生词本</picker>
-      </view>
-      <view class="add-book" bindtap="toBook" wx:if="{{bookNameList.length==0}}">
+      <button class="add-book" bindtap="showPopup" wx:if="{{bookNameList.length!=0}}">
         +加入生词本
-      </view>
+      </button>
+      <button class="add-book" bindtap="toBook" wx:if="{{bookNameList.length==0}}">
+        +加入生词本
+      </button>
     </view>
+
 
     <view class="tag-wrap">
       <block wx:for="{{word.basic.tags}}">
@@ -54,10 +41,4 @@
       {{item.name}} : {{item.value}}
     </view>
   </view>
-
-
 </block>
-
-
-
-

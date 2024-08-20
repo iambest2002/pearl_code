@@ -94,8 +94,6 @@ Page({
 			this.setData({ openid });
 			this.fetchData(this.data.selectedDate); // 使用获取的 openid 调用 fetchData
 		}
-
-		
 	},
 
 	getOpenidAndFetchData(dateString) {
@@ -117,7 +115,6 @@ Page({
 
 	// 日期选择器变化
 	onFoldChange(event) {
-
 		  this.setData({
 			activeNames: event.detail
 		  });
@@ -130,8 +127,7 @@ Page({
 		  checked,
 		  activeNames: checked ? this.data.filteredData.map(item => item._id) : []
 		});
-	  }
-	  ,
+	  },
 	// 显示日期选择器
 	onShowDatePicker() {
 		this.setData({
