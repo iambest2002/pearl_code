@@ -1,3 +1,31 @@
 <button bind:tap="getWords">获取单词</button>
 <button bind:tap="getStorageInfo">查看内存</button>
 <button bind:tap="removeStorageSync">清除缓存</button>
+
+<van-popup custom-style="height: 40%;" show="{{ onShowGetWordsPicker }}" round position="bottom"  custom-style="height: 40%;" >
+    <van-picker
+  show-toolbar
+  title="获取单词缓存"
+  columns="{{ GetWordsCache }}"
+  bind:cancel="onShowGetWordsPickerCancel"
+  bind:confirm="onGetWordsConfirm"
+/>
+</van-popup>
+<van-popup custom-style="height: 40%;" show="{{ onShowRemoveWordsPicker }}" round position="bottom"   custom-style="height: 40%;">
+    <van-picker
+  show-toolbar
+  title="删除单词缓存"
+  columns="{{ RemoveWordsCache }}"
+  bind:cancel="onShowRemoveWordsPickerCancel"
+  bind:confirm="onRemoveConfirm"
+/>
+</van-popup>
+<van-popup custom-style="height: 40%;" show="{{ onShowGetStorageInfoPicker }}" round position="bottom"   custom-style="height: 40%;">
+    <van-picker
+  show-toolbar
+  title="查看单词缓存"
+  columns="{{ ViewWordsCache }}"
+  bind:cancel="onShowGetStorageInfoPickerCancel"
+  bind:confirm="ongetStorageInfoConfirm"
+/>
+</van-popup>

@@ -42,6 +42,70 @@
   </view>
 </view>
 </view>
+
+<view class="container" hidden="{{current!=1}}">
+<view class="options">
+  <van-index-bar sticky highlight-color="#96e3fa">
+    <block wx:for="{{alphabet}}" wx:key="_id">
+      <view wx:if="{{cet6WordsGrouped[item]}}">
+        <van-index-anchor index="{{item}}" />
+        <block wx:for="{{cet6WordsGrouped[item]}}" wx:key="_id">
+          <view class="word-box">
+            <text class="word">{{item.word}}</text>
+            <block wx:for="{{item.translations}}" wx:key="_id">
+              <text class="translation">{{item.translation}} ({{item.type}})</text>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block>
+  </van-index-bar>
+
+  <!-- 加载更多按钮 -->
+  <view wx:if="{{hasMore}}" class="load-more">
+    <button bindtap="loadWordsBatch" loading="{{loading}}" disabled="{{loading}}">
+      {{loading ? '加载中...' : '加载更多'}}
+    </button>
+  </view>
+
+  <!-- 没有更多数据的提示 -->
+  <view wx:if="{{!hasMore}}" class="no-more">
+    <text>没有更多数据了</text>
+  </view>
+</view>
+</view>
+
+<view class="container" hidden="{{current!=2}}">
+<view class="options">
+  <van-index-bar sticky highlight-color="#96e3fa">
+    <block wx:for="{{alphabet}}" wx:key="_id">
+      <view wx:if="{{pgeeWordsGrouped[item]}}">
+        <van-index-anchor index="{{item}}" />
+        <block wx:for="{{pgeeWordsGrouped[item]}}" wx:key="_id">
+          <view class="word-box">
+            <text class="word">{{item.word}}</text>
+            <block wx:for="{{item.translations}}" wx:key="_id">
+              <text class="translation">{{item.translation}} ({{item.type}})</text>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block>
+  </van-index-bar>
+
+  <!-- 加载更多按钮 -->
+  <view wx:if="{{hasMore}}" class="load-more">
+    <button bindtap="loadWordsBatch" loading="{{loading}}" disabled="{{loading}}">
+      {{loading ? '加载中...' : '加载更多'}}
+    </button>
+  </view>
+
+  <!-- 没有更多数据的提示 -->
+  <view wx:if="{{!hasMore}}" class="no-more">
+    <text>没有更多数据了</text>
+  </view>
+</view>
+</view>
 </view>
 <view class="scroll-buttons-container">
   <!-- 一键上滑按钮 -->

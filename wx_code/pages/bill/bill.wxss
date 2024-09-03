@@ -69,7 +69,14 @@
   flex: 1; /* 消费类型占据剩余的可用空间 */
 	font-size: 16px;
 	font-family: cursive;
-  margin-right: 5px; /* 消费类型与消费价格之间的间距 */
+  /* margin-right: 5px; 消费类型与消费价格之间的间距 */
+}
+.expense-date {
+  flex: 1; /* 消费类型占据剩余的可用空间 */
+	font-size: 14px;
+	font-family: cursive;
+  margin-left:5px; /* 消费类型与消费价格之间的间距 */
+  margin-right: 90px; /* 消费类型与消费价格之间的间距 */
 }
 
 .expense-price {

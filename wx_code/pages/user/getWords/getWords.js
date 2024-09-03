@@ -1,80 +1,154 @@
-Page({
+import Toast from '@vant/weapp/toast/toast';
 
-  /**
-   * 页面的初始数据
-   */
+Page({
   data: {
     cet4WordsGrouped: {}, // 按字母分组后的单词
-    alphabet: 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split(''), // 使用大写字母
-    loading: false
+    alphabet: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''), // 使用大写字母
+    loading: false,
+    onShowGetWordsPicker: false,
+    onShowRemoveWordsPicker: false,
+    onShowGetStorageInfoPicker: false,
+    GetWordsCache: ['CET4', 'CET6', 'PGEE'],
+    RemoveWordsCache: ['CET4', 'CET6', 'PGEE'],
+    ViewWordsCache: ['ALL', 'CET4', 'CET6', 'PGEE'],
+    selectGetWords: '',
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-    //this.getWords(); // 页面加载时自动获取单词数据
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
+  // 获取单词数据
   getWords() {
-    this.setData({ loading: true });
+    this.setData({
+      onShowGetWordsPicker: true
+    });
+  },
+  removeStorageSync() {
+    this.setData({
+      onShowRemoveWordsPicker: true
+    });
+  },
+  getStorageInfo() {
+    this.setData({
+      onShowGetStorageInfoPicker: true
+    })
+  },
+  // 取消选择
+  onShowGetWordsPickerCancel() {
+    this.setData({
+      onShowGetWordsPicker: false
+    });
+  },
+  onShowRemoveWordsPickerCancel() {
+    this.setData({
+      onShowRemoveWordsPicker: false
+    });
+  },
+  onShowGetStorageInfoPickerCancel() {
+    this.setData({
+      onShowGetStorageInfoPicker: false
+    });
+  },
 
-    wx.cloud.callFunction({
-      name: 'getWords',
+  // 选择确认后，下载云存储中的文件并处理
+  onGetWordsConfirm(event) {
+    const {
+      value
+    } = event.detail;
+    this.setData({
+      loading: true,
+      onShowGetWordsPicker: false
+    });
+
+    wx.showToast({
+      title: '加载中',
+      icon: 'loading',
+      duration: 10000,
+    });
+
+    // 根据用户选择的值确定文件名
+    const fileNameMap = {
+      CET4: '3-CET4-顺序_sorted.json',
+      CET6: '4-CET6-顺序_sorted.json',
+      PGEE: '5-考研-顺序_sorted.json'
+    };
+    const fileName = fileNameMap[value];
+
+    // 从云存储中下载文件
+    wx.cloud.downloadFile({
+      fileID: `cloud://daily-consumption-1eonh2e259454a.6461-daily-consumption-1eonh2e259454a-1327338363/words/${fileName}`, // 替换为实际的云存储路径
       success: res => {
-        if (res.result && res.result.data) {
-          const cet4WordsGrouped = res.result.data;
-          
-          // 将分组后的单词数据保存到本地缓存
-          wx.setStorageSync('cet4WordsGrouped', cet4WordsGrouped);
-          this.setData({
-            cet4WordsGrouped: res.result.data,
-            loading: false
-          });
-          console.log('cet4WordsGrouped:', this.data.cet4WordsGrouped);
-          
-          // 获取部分具体的单词信息
-          const firstLetter = Object.keys(cet4WordsGrouped)[0];
-          const firstWord = cet4WordsGrouped[firstLetter][0].word;
-          
-          // 增加窗口提示，显示具体的值
-          wx.showToast({
-            title: `单词数据获取成功，第一个单词：${firstWord}`,
-            icon: 'success',
-            duration:2000,
-          });
+        console.log('文件下载成功：', res.tempFilePath);
 
-        } else {
-          wx.showToast({
-            title: '获取数据失败',
-            icon: 'none',
-            duration:2000,
-          });
-        }
+        // 读取文件内容
+        wx.getFileSystemManager().readFile({
+          filePath: res.tempFilePath,
+          encoding: 'utf-8',
+          success: fileRes => {
+            const words = JSON.parse(fileRes.data); // 解析 JSON 数据
+
+            // 将单词按首字母分组
+            const wordsGrouped = this.groupWordsByLetter(words);
+
+            // 缓存分组后的数据
+            const cacheKey = `${value.toLowerCase()}WordsGrouped`;
+            wx.setStorage({
+              key: cacheKey,
+              data: wordsGrouped,
+              success: () => {
+                wx.showToast({
+                  title: `${value} 单词已缓存!`,
+                  icon: 'success',
+                  duration: 2000
+                });
+              },
+              fail: err => {
+                console.error('缓存失败:', err);
+                wx.showToast({
+                  title: '写入缓存失败!',
+                  icon: 'none',
+                  duration: 2000
+                });
+              }
+            });
+
+            // 更新页面数据
+            this.setData({
+              [`${value.toLowerCase()}WordsGrouped`]: wordsGrouped,
+              loading: false
+            });
+          },
+          fail: err => {
+            console.error('文件读取失败：', err);
+            wx.showToast({
+              title: '文件读取失败!',
+              icon: 'none',
+              duration: 2000
+            });
+            this.setData({
+              loading: false
+            });
+          }
+        });
       },
       fail: err => {
-        console.error('云函数调用失败', err);
+        console.error('文件下载失败：', err);
         wx.showToast({
-          title: '获取数据失败',
+          title: '文件下载失败!',
           icon: 'none',
-          duration:2000,
+          duration: 2000
         });
-        this.setData({ loading: false });
+        this.setData({
+          loading: false
+        });
       }
     });
   },
 
+
+
+  // 将单词按首字母分组
   groupWordsByLetter(words) {
     const grouped = {};
     words.forEach(word => {
-      const firstLetter = word.word[0].toUpperCase(); // 将首字母转为大写
+      const firstLetter = word.word[0].toUpperCase();
       if (!grouped[firstLetter]) {
         grouped[firstLetter] = [];
       }
@@ -83,98 +157,121 @@ Page({
     return grouped;
   },
 
-  getStorageInfo() {
-    const storageInfo = wx.getStorageInfoSync();
-    console.log(storageInfo);
 
-    // 异步获取缓存信息
+
+  onRemoveConfirm(event) {
+    const {
+      value
+    } = event.detail;
+    this.setData({
+      onShowRemoveWordsPicker: false
+    });
+
+    // 确定要删除的缓存键
+    const cacheKeyMap = {
+      CET4: 'cet4WordsGrouped',
+      CET6: 'cet6WordsGrouped',
+      PGEE: 'pgeeWordsGrouped'
+    };
+    const cacheKey = cacheKeyMap[value];
+
+    // 检查缓存是否存在
+    wx.getStorage({
+      key: cacheKey,
+      success: (res) => {
+        // 如果缓存存在，则执行删除操作
+        wx.removeStorage({
+          key: cacheKey,
+          success: () => {
+            wx.showToast({
+              title: `${value} 单词缓存已清除!`,
+              icon: 'success',
+              duration: 2000
+            });
+          },
+          fail: err => {
+            console.error('清除单词缓存失败:', err);
+            wx.showToast({
+              title: '清除缓存失败!',
+              icon: 'none',
+              duration: 2000
+            });
+          }
+        });
+      },
+      fail: err => {
+        // 如果缓存不存在，提示用户无该缓存
+        wx.showToast({
+          title: `无${value}缓存!`,
+          icon: 'none',
+          duration: 2000
+        });
+      }
+    });
+  },
+
+  // 获取缓存信息
+  onViewAllStorage() {
     wx.getStorageInfo({
-      success: function(res) {
+      success: res => {
         console.log(res);
-        
-        // 获取具体的缓存大小信息
-        const currentSize = res.currentSize;
-
-        // 增加窗口提示，显示具体的值
         wx.showToast({
-          title: `缓存：${currentSize}KB`,
+          title: `全部缓存：${res.currentSize}KB`,
           icon: 'success',
-          duration:2000,
+          duration: 2000
         });
       },
-      fail: function(err) {
+      fail: err => {
         console.error('获取缓存信息失败', err);
-
-        // 增加窗口提示
         wx.showToast({
-          title: '获取缓存信息失败',
+          title: '获取缓存信息失败!',
           icon: 'none',
-          duration:2000,
-        });
-      }
-    });
-
-    wx.getStorage({
-      key: 'userInfo',
-      success: function(res) {
-        console.log('userInfo:', res.data);
-
-      },
-      fail: function(err) {
-        console.error('获取用户信息失败', err);
-
-        // 增加窗口提示
-        wx.showToast({
-          title: '获取用户信息失败',
-          icon: 'none',
-          duration:2000,
-        });
-      }
-    });
-     
-    wx.getStorage({
-      key: 'cet4WordsGrouped',
-      success: function(res) {
-        console.log('cet4WordsGrouped:', res.data);
-      
-      },
-      fail: function(err) {
-        console.error('获取分组单词失败', err);
-
-        // 增加窗口提示
-        wx.showToast({
-          title: '获取分组单词失败',
-          icon: 'none',
-          duration:2000,
+          duration: 2000
         });
       }
     });
   },
-
-  removeStorageSync() {
-    wx.removeStorage({
-      key: 'wordsGrouped',
-      success: function() {
-        console.log("单词缓存已清除");
-
-        // 增加窗口提示
-        wx.showToast({
-          title: '单词缓存已清除',
-          icon: 'success',
-          duration:2000,
-        });
-      },
-      fail: function(err) {
-        console.error("清除单词缓存失败", err);
-
-        // 增加窗口提示
-        wx.showToast({
-          title: '清除单词缓存失败',
-          icon: 'none',
-          duration:2000,
-        });
-      }
+  ongetStorageInfoConfirm(event) {
+    const {
+      value
+    } = event.detail;
+    this.setData({
+      onShowGetStorageInfoPicker: false
     });
+
+    if (value === 'ALL') {
+      this.onViewAllStorage();
+    } else {
+      // 确定要查看的缓存键
+      const cacheKeyMap = {
+        CET4: 'cet4WordsGrouped',
+        CET6: 'cet6WordsGrouped',
+        PGEE: 'pgeeWordsGrouped'
+      };
+      const cacheKey = cacheKeyMap[value];
+
+      wx.getStorage({
+        key: cacheKey,
+        success: (res) => {
+          console.log(`${value} 缓存内容:`, res.data);
+          const size = JSON.stringify(res.data).length / 1024; // 计算缓存大小 (KB)
+          wx.showToast({
+            title: `${value} 缓存: ${size.toFixed()} KB`,
+            icon: 'none',
+            duration: 2000
+          });
+        },
+        fail: err => {
+          console.error(`获取${value}缓存失败`, err);
+          wx.showToast({
+            title: `${value} 无缓存!`,
+            icon: 'none',
+            duration: 2000
+          });
+        }
+      });
+    }
   },
 
-})
+
+});

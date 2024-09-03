@@ -24,12 +24,12 @@
 <van-popup show="{{showKeyboard}}" position="bottom" bind:close="onCancel" class="keyboard-popup">
 		<view class="input-container">
 			<van-button color="#1f72d1" plain class="cancellation" bind:tap="onCancel">取消</van-button>
-			<input class="input-box" value="{{inputValue}}" disabled />
+			<input class="input-box" value="{{inputValue}}" disabled maxlength="8"/>
 			<van-button color="#1f72d1" plain class="confirm" bind:tap="onConfirm">确认</van-button>
 		</view>
-		<view >
+		<view>
 			<van-cell-group >
-				<van-field value="{{ remark  }}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" bind:change="notes" maxlength="512"/>
+				<van-field value="{{initialFieldValue}}" label="备注" type="textarea" placeholder="请输入备注" autosize border="{{ false }}" bind:change="notes" maxlength="512"/>
 			</van-cell-group>
 		</view>
 		<view class="keyboard-body">

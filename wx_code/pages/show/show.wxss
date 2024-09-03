@@ -52,7 +52,7 @@
   flex: 1;
   margin: 0 10rpx;
   height: 80rpx;
-  background-color: #007aff;
+  background-color: #96e3fa;
   color: #fff;
   font-size: 32rpx;
   border-radius: 10rpx;

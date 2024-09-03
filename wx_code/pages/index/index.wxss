@@ -151,9 +151,8 @@ Page {
 
 
 .center-box {
-	min-height: 700px;
+	min-height: 900px;
   background-color: #ffffff;
-  padding: 5px;
   border-radius: 20rpx;
   -webkit-filter: drop-shadow(0 0 8rpx #44ADFB);
   filter: drop-shadow(0 0 8rpx #44ADFB);
@@ -162,7 +161,7 @@ Page {
 .nav {
   display: flex;
   justify-content: space-around; /* 水平分布标签 */
-  background-color: #fff; /* 设置背景色 */
+  background-color: #96e3fa; /* 设置背景色 */
   padding: 20rpx 0; /* 设置内边距 */
   box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
   border-bottom: 1rpx solid #e6e6e6; /* 添加底部边框 */
@@ -177,7 +176,7 @@ Page {
   cursor: pointer; /* 鼠标指针效果 */
 }
 
-.left.active, .right.active {
-  border-bottom: 2rpx solid #00CCCC; /* 激活状态下的边框颜色 */
-  color: #00CCCC; /* 激活状态下的文本颜色 */
+.left.select, .right.select {
+  border-bottom: 2rpx solid #0575f5; /* 激活状态下的边框颜色 */
+  color: #0575f5; /* 激活状态下的文本颜色 */
 }

@@ -34,6 +34,7 @@
 	<view class="expense-item" bindtap="showDetail" data-id="{{item['_id']}}" data-type="{{item['category']}}" data-price="{{item['price']}}" data-icon="{{typeIconMapping[item.type]}}" data-date="{{item['date']}}" data-remark="{{item['note']}}">
 		<image src="{{typeIconMapping[item['type']]}}" class="expense-icon"></image>
 		<text class="expense-type">{{item['category']}}-{{item.type}}</text>
+		<text class="expense-date">{{item.date}}</text>
 		<text class="expense-price">{{item.price}}</text>
 
 	</view>

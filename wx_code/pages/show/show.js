@@ -82,7 +82,7 @@ Page({
 		this.setData({
 			showKeyboard: true,
 			inputValue: this.data.detailPrice, // 将价格填入输入框
-			fieldValue: this.data.fieldValue, // 将备注填入备注框
+			initialFieldValue: this.data.fieldValue, // 将备注填入备注框
 			dateValue: this.data.detailDate, // 将日期填入日期选择器
 			currentDate: new Date(this.data.detailDate).getTime(), // 将日期设置为选择器的当前值
 		});
@@ -154,7 +154,7 @@ Page({
 		this.setData({
 			showKeyboard: false,
 			inputValue: '',
-			fieldValue: '',
+			fieldValue: this.data.initialFieldValue, // 恢复为初始备注内容
 			dateValue: ''
 		});
 		wx.showToast({

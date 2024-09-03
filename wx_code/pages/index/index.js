@@ -6,7 +6,6 @@ Page({
     current: "0",
     active: 0,  // 默认显示第一个标签页
     currentLetter:'',
-    wordsGrouped: {}, // 按字母分组的单
     cet4WordsGrouped: {}, // CET4 单词
     cet6WordsGrouped: {}, // CET6 单词
     pgeeWordsGrouped: {}, // PGEE 单词
@@ -38,32 +37,68 @@ Page({
     } else if (this.data.current === "2") {
       cachedWordsGrouped = wx.getStorageSync('pgeeWordsGrouped') || {};
     }
-
-  
-   
-    const currentLetter = this.data.alphabet[this.data.batchIndex];
     
+    const currentLetter = this.data.alphabet[this.data.batchIndex];
     // 获取当前字母的单词数据
     const currentLetterWords = cachedWordsGrouped[currentLetter] || [];
     
     console.log('当前字母:', currentLetter);
     console.log('当前字母的单词:', currentLetterWords);
     
+    // 判断缓存数据是否为空
+    if (currentLetterWords.length === 0) {
+      wx.showToast({
+        title: '无单词数据，请获取单词数据!',
+        icon: 'none',
+        duration: 2000
+      });
+      this.setData({
+        loading: false
+      });
+      return;
+    }
+
     // 更新数据
+    if (this.data.current === "0") {
+      this.setData({
+        cet4WordsGrouped: {
+          ...this.data.cet4WordsGrouped,
+          [currentLetter]: currentLetterWords
+        }
+      });
+    } else if (this.data.current === "1") {
+      this.setData({
+        cet6WordsGrouped: {
+          ...this.data.cet6WordsGrouped,
+          [currentLetter]: currentLetterWords
+        }
+      });
+    } else if (this.data.current === "2") {
+      this.setData({
+        pgeeWordsGrouped: {
+          ...this.data.pgeeWordsGrouped,
+          [currentLetter]: currentLetterWords
+        }
+      });
+    }
+  
+    // 更新批次索引
     this.setData({
-      cet4WordsGrouped: {
-        ...this.data.cet4WordsGrouped,
-        [currentLetter]: currentLetterWords
-      },
       loading: false,
       hasMore: this.data.batchIndex < this.data.alphabet.length - 1
     });
-  
-    // 更新批次索引
+
     if (this.data.hasMore) {
       this.setData({
         batchIndex: this.data.batchIndex + 1
       });
+    }
+  },
+
+  // 页面触底事件，自动加载更多数据
+  onReachBottom() {
+    if (this.data.hasMore) {
+      this.loadWordsBatch(); // 触底时加载更多数据
     }
   },
 
@@ -141,7 +176,7 @@ Page({
     let index = e.currentTarget.dataset.code;
     this.setData({
       current: index,
-      wordsGrouped: {}, // 清空上一个标签页的分组数据
+      cet4wordsGrouped: {}, // 清空上一个标签页的分组数据
       batchIndex: 0, // 重置批次索引
       hasMore: true // 重置加载更多标志
     });

@@ -26,6 +26,7 @@
     "navigationBarBackgroundColor": "#96e3fa"
   },
   "usingComponents": {
+    "van-toast": "@vant/weapp/toast/index",
     "van-swipe-cell": "@vant/weapp/swipe-cell/index",
     "van-switch": "@vant/weapp/switch/index",
     "van-index-bar": "@vant/weapp/index-bar/index",
