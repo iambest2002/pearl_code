@@ -115,18 +115,41 @@ Page({
 		this.setData({
 			inputValue: ''
 		});
+  },
+  // 保存支出或收入信息到缓存中
+	saveToCache(data, type) {
+		let cacheKey = type === "expenses" ? 'expenses' : 'income';
+		let cachedData = wx.getStorageSync(cacheKey) || [];
+		
+		// 打印原有的缓存数据
+		console.log(`保存前的${type}缓存数据:`, cachedData);
+
+		cachedData.push(data);
+		wx.setStorageSync(cacheKey, cachedData);
+
+		// 打印更新后的缓存数据
+		console.log(`保存后的${type}缓存数据:`, cachedData);
 	},
 
 	onConfirm() {
-		const data_code = this.data.current;
+    const data_code = this.data.current;
+    const dataToSave = {
+			price: this.data.inputValue,
+			note: this.data.fieldValue,
+			type: this.data.selectedType,
+			date: this.data.dateValue || this.formatDate(new Date())
+		};
+
 		if (!this.data.dateValue) {
       const today = new Date();
       const dateString = this.formatDate(today);
       this.setData({
         dateValue: dateString
       });
+      console.log('准备保存的数据:', dataToSave);
     }
 		if (data_code === "1") {
+      this.saveToCache(dataToSave, 'expenses');
 			wx.cloud.database().collection('expenses').add({
 				data: {
 					price: this.data.inputValue,
@@ -148,6 +171,7 @@ Page({
 				dateValue: ''
 			});
 		} else {
+      this.saveToCache(dataToSave, 'income');
 			wx.cloud.database().collection('income').add({
 				data: {
 					price: this.data.inputValue,

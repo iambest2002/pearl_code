@@ -6,12 +6,15 @@ Page({
     current: "0",
     active: 0,  // 默认显示第一个标签页
     currentLetter:'',
+    searchValue: '',  // 搜索框中的输入值
     cet4WordsGrouped: {}, // CET4 单词
     cet6WordsGrouped: {}, // CET6 单词
     pgeeWordsGrouped: {}, // PGEE 单词
     alphabet: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.toUpperCase().split(''), // 使用大写字母
     batchIndex: 0, // 当前批次索引
     loading: false,
+    goToWordsaPage: ['CET4', 'CET6', 'PGEE'],
+    goToCet4WordsPicker:false,
     hasMore: true // 是否还有更多批次
   },
   
@@ -22,6 +25,42 @@ Page({
   onShow() {
     
   },
+  goToCet4WordsPage(){
+    wx.navigateTo({
+      url: '/pages/index/showCET4Words/showCET4Words',
+    });
+  },
+  goToCet6WordsPage(){
+    wx.navigateTo({
+      url: '/pages/index/showCET6Words/showCET6Words',
+    });
+  },
+  goToPgeeWordsPage(){
+    wx.navigateTo({
+      url: '/pages/index/showPGEEWords/showPGEEWords',
+    });
+  },
+  
+  onChangeSearch(e) {
+    console.log('搜索框内容改变:', e.detail);
+    this.setData({
+      searchValue: e.detail,
+    // },()=>{
+    //   this.onClick();
+     });
+  },
+
+  onCancel() {
+    console.log('取消搜索');
+    this.setData({
+      searchValue: ''
+    });
+    //this.fetchBookListAndWords(); // 重置数据
+  },
+  onClick(){
+
+  },
+
 
   // 加载更多数据
   loadWordsBatch() {

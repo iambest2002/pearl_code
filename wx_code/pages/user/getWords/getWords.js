@@ -8,9 +8,10 @@ Page({
     onShowGetWordsPicker: false,
     onShowRemoveWordsPicker: false,
     onShowGetStorageInfoPicker: false,
+    //['CET4', 'CET6', 'PGEE'],['CET4', 'CET6', 'PGEE'],
     GetWordsCache: ['CET4', 'CET6', 'PGEE'],
     RemoveWordsCache: ['CET4', 'CET6', 'PGEE'],
-    ViewWordsCache: ['ALL', 'CET4', 'CET6', 'PGEE'],
+    ViewWordsCache: ['ALL','CET4','EXPENSES','INCOME', 'CET6', 'PGEE'],
     selectGetWords: '',
   },
 
@@ -171,7 +172,8 @@ Page({
     const cacheKeyMap = {
       CET4: 'cet4WordsGrouped',
       CET6: 'cet6WordsGrouped',
-      PGEE: 'pgeeWordsGrouped'
+      PGEE: 'pgeeWordsGrouped',
+
     };
     const cacheKey = cacheKeyMap[value];
 
@@ -246,7 +248,9 @@ Page({
       const cacheKeyMap = {
         CET4: 'cet4WordsGrouped',
         CET6: 'cet6WordsGrouped',
-        PGEE: 'pgeeWordsGrouped'
+        PGEE: 'pgeeWordsGrouped',
+        EXPENSES:'expenses',
+        INCOME:'income',
       };
       const cacheKey = cacheKeyMap[value];
 

@@ -45,8 +45,20 @@ Page {
   font-size: 60rpx; /* 调整字体大小 */
   margin-bottom: 20rpx;
 }
+.search-bar {
+  flex: 1;
+  background-color: #96e3fa;
+}
+.search-icon {
+  width: 20px; /* 设置图标的宽度 */
+  height: 20px; /* 设置图标的高度 */
+  flex: 1;
+  background-size: cover;
+	transition: filter 0.3s; /* 动画效果 */
+	display: flex;
+}
 
-.icon {
+.button-icon {
   width: 40rpx; /* 设置图标的宽度 */
   height: 40rpx; /* 设置图标的高度 */
   flex: 0 0 40rpx; /* 确保图标不被压缩 */
@@ -179,4 +191,23 @@ Page {
 .left.select, .right.select {
   border-bottom: 2rpx solid #0575f5; /* 激活状态下的边框颜色 */
   color: #0575f5; /* 激活状态下的文本颜色 */
+}
+
+.words-button{
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  background-color: #96e3fa;
+}
+.cet4-button{
+  background-color: #96e3fa;
+  flex: 1;
+}
+.cet6-button{
+  background-color: #96e3fa;
+  flex: 1;
+}
+.pgee-button{
+  background-color: #96e3fa;
+  flex: 1;
 }

@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/user/user",
+    "pages/Accounting/Accounting",
     "pages/bill/bill",
+    "pages/user/user",
     "pages/show/show",
     "pages/book/book",
     "pages/index/index",
@@ -12,12 +13,14 @@
     "pages/book/bookSearch/bookSearch",
     "pages/book/search/search",
     "pages/wordDetail/wordDetail",
-    "pages/Accounting/Accounting",
     "pages/user/userInfo/userInfo",
     "pages/user/dlWords/dlWords",
     "pages/index/phrases/phrases",
     "pages/user/accounting/accounting",
-    "pages/user/getWords/getWords"
+    "pages/user/getWords/getWords",
+    "pages/index/showCET4Words/showCET4Words",
+    "pages/index/showCET6Words/showCET6Words",
+    "pages/index/showPGEEWords/showPGEEWords"
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -51,7 +54,6 @@
     "van-tabbar-item": "@vant/weapp/tabbar-item/index",
     "van-nav-bar": "@vant/weapp/nav-bar/index",
     "van-dialog": "@vant/weapp/dialog/index",
-    "van-toast": "@vant/weapp/toast/index",
     "van-loading": "@vant/weapp/loading/index",
     "van-overlay": "@vant/weapp/overlay/index",
     "van-tab": "@vant/weapp/tab/index",

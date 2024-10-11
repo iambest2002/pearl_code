@@ -145,6 +145,26 @@ Page({
 		});
 		this.fetchData(dateString); // 获取指定日期的数据
 	},
+  showData(){
+    const cacheExpenses = 'expenses';
+    const cacheIncome = 'income';
+    const cachedData = wx.getStorageSync(cacheExpenses);
+    const cachedData1 = wx.getStorageSync(cacheIncome);
+
+    if (cachedData || cachedData1) {
+      // 如果缓存中有数据，直接从缓存中读取
+      console.log('从缓存中读取数据:', cachedData);console.log('从缓存中读取数据:', cachedData1);
+      this.setData({
+        filteredData: cachedData.filteredData,
+        expenseTotalPrice: cachedData.expenseTotalPrice,
+        incomeTotalPrice: cachedData.incomeTotalPrice,
+      });
+    } else {
+      // 如果缓存中没有数据，则调用云函数获取数据
+      this.fetchData(dateString);
+    }
+  },
+
 
 	// 获取数据
 	fetchData(dateString, skip = 0, allData = []) {

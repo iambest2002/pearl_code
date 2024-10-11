@@ -43,77 +43,56 @@ Page({
   },
 
   onClick() {
-    const { bookList, searchValue, wordsByBook } = this.data;
-    console.log('点击搜索按钮, 搜索值:', searchValue);
-  
-    if (!searchValue.trim()) {
-      wx.showToast({
-        title: '请输入单词表名称或单词',
-        icon: 'none'
-      });
-      return;
-    }
+    const { searchValue, cet4WordsGrouped, alphabet } = this.data;
     const searchValueLower = searchValue.toLowerCase();
-    // 查找与输入值匹配的单词表
-    let foundBook = false;
-    let activeTab = 0;
+    let filteredWords = [];
+    let foundWord = '';
   
-    for (let i = 0; i < bookList.length; i++) {
-      const book = bookList[i];
-      console.log(`正在搜索单词表: ${book.name}`);
+    // 遍历字母表，过滤出匹配的单词
+    for (let letter of alphabet) {
+      const words = cet4WordsGrouped[letter] || [];
+      const matchingWords = words.filter(word => 
+        word.word && word.word.toLowerCase().startsWith(searchValueLower)
+      );
   
-      if (book.name.toLowerCase().includes(searchValueLower)) {
-        foundBook = true;
-        activeTab = i;
-        break;
+      if (matchingWords.length > 0) {
+        filteredWords.push(...matchingWords);
+        if (!foundWord) {
+          foundWord = matchingWords[0].word; // 找到第一个匹配的单词
+        }
       }
     }
   
-    if (foundBook) {
-      console.log('找到匹配的单词表:', bookList[activeTab].name);
-      this.setData({
-        active: activeTab
+    // 更新页面数据
+    this.setData({
+      words: filteredWords
+    });
+  
+    if (filteredWords.length > 0) {
+      wx.showToast({
+        title: `找到 ${filteredWords.length} 个匹配的单词`,
+        icon: 'success',
+        duration: 2000
       });
-    } else {
-      // 如果未找到匹配的单词表，检查所有标签中的单词
-      let foundWord = false;
-      let word = '';
-      for (let i = 0; i < bookList.length; i++) {
-        const bookId = bookList[i]._id;
-        const words = wordsByBook[bookId];
   
-        for (let j = 0; j < words.length; j++) {
-          if (words[j].word.query.toLowerCase().includes(searchValueLower)) {
-            foundWord = true;
-            activeTab = i;
-            word = words[j].word.query
-            break;
-          }
+      // 滚动到第一个匹配的单词位置
+      wx.createSelectorQuery().select(`[data-word="${foundWord}"]`).boundingClientRect((rect) => {
+        if (rect) {
+          wx.pageScrollTo({
+            scrollTop: rect.top + wx.getSystemInfoSync().windowHeight * 0.5, // 调整位置以便可见
+            duration: 300
+          });
         }
-  
-        if (foundWord) break;
-      }
-  
-      if (foundWord) {
-        console.log('找到匹配的单词, 切换到对应标签页');
-        this.setData({
-          active: activeTab,
-
-        });
-        wx.showToast({
-          title: `已找到单词: ${word}`,
-          icon: 'none',
-          time:3000
-        });
-      } else {
-        wx.showToast({
-          title: '未找到相关单词表或单词',
-          icon: 'none',
-          time:2000
-        });
-      }
+      }).exec();
+    } else {
+      wx.showToast({
+        title: '未找到相关单词',
+        icon: 'none',
+        duration: 2000
+      });
     }
   },
+  
   
   
 

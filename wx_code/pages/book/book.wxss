@@ -9,7 +9,6 @@
   width: 20px; /* 设置图标的宽度 */
   height: 20px; /* 设置图标的高度 */
   flex: 1;
-
   background-size: cover;
 	transition: filter 0.3s; /* 动画效果 */
 	display: flex;
