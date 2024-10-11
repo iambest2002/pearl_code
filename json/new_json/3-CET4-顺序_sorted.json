@@ -1039,7 +1039,7 @@
         "word": "after",
         "translations": [
             {
-                "translation": "在…以后；次于",
+                "translation": "在...以后；次于",
                 "type": "prep"
             }
         ]
@@ -1709,7 +1709,7 @@
         "word": "ancient",
         "translations": [
             {
-                "translation": "古代的",
+                "translation": "古代的；古老的",
                 "type": "adj"
             }
         ]
@@ -2233,7 +2233,7 @@
         "word": "approximately",
         "translations": [
             {
-                "translation": "大约",
+                "translation": "近似地，大约",
                 "type": "adv"
             }
         ]
@@ -2350,8 +2350,8 @@
         "word": "arouse",
         "translations": [
             {
-                "translation": "引起，唤起；唤醒",
-                "type": "v"
+                "translation": "唤起",
+                "type": "vt"
             }
         ]
     },
@@ -2849,8 +2849,12 @@
         "word": "attribute",
         "translations": [
             {
-                "translation": "归因于",
+                "translation": "把...归因于，把...归咎于",
                 "type": "v"
+            },
+            {
+                "translation": "特征；属性；标志；象征",
+                "type": "n"
             }
         ]
     },
@@ -2997,7 +3001,7 @@
         "word": "avenue",
         "translations": [
             {
-                "translation": "林荫道，道路；大街",
+                "translation": "大街；林荫道，道路",
                 "type": "n"
             }
         ]
@@ -5730,7 +5734,7 @@
         "word": "cancer",
         "translations": [
             {
-                "translation": "癌，癌症，肿瘤",
+                "translation": "癌症，肿瘤",
                 "type": "n"
             }
         ]
@@ -9251,7 +9255,7 @@
         "word": "convince",
         "translations": [
             {
-                "translation": "使相信",
+                "translation": "使确信，使相信",
                 "type": "v"
             }
         ]
@@ -10114,7 +10118,7 @@
         "word": "crystal",
         "translations": [
             {
-                "translation": "水晶，结晶体；晶粒",
+                "translation": "水晶，晶体；结晶",
                 "type": "n"
             }
         ]
@@ -12848,7 +12852,7 @@
         "word": "drawer",
         "translations": [
             {
-                "translation": "抽屉",
+                "translation": "抽屉;开票人，出票人；制图员",
                 "type": "n"
             }
         ]
@@ -13966,7 +13970,7 @@
         "word": "employee",
         "translations": [
             {
-                "translation": "受雇者，雇员，雇工",
+                "translation": "雇员",
                 "type": "n"
             }
         ]
@@ -14916,7 +14920,7 @@
         "word": "exceedingly",
         "translations": [
             {
-                "translation": "极端地，非常",
+                "translation": "过分地；非常；极其",
                 "type": "adv"
             }
         ]
@@ -16244,7 +16248,7 @@
         "word": "fibre",
         "translations": [
             {
-                "translation": "纤维，纤维质",
+                "translation": "纤维（=fiber）",
                 "type": "n"
             }
         ]
@@ -17709,7 +17713,7 @@
         "word": "fundamental",
         "translations": [
             {
-                "translation": "基础的，基本的",
+                "translation": "基本的；根本的；至关重要的",
                 "type": "adj"
             }
         ]
@@ -17852,7 +17856,7 @@
         "word": "gallery",
         "translations": [
             {
-                "translation": "美术馆",
+                "translation": "美术馆，画廊",
                 "type": "n"
             }
         ]
@@ -18767,7 +18771,7 @@
         "word": "grandmother",
         "translations": [
             {
-                "translation": "祖母，外祖母",
+                "translation": "奶奶，祖母；外婆，外祖母",
                 "type": "n"
             }
         ]
@@ -18901,7 +18905,7 @@
         "word": "greedy",
         "translations": [
             {
-                "translation": "贪吃的；贪婪的",
+                "translation": "贪婪的，贪心的，贪吃的",
                 "type": "adj"
             }
         ]
@@ -18941,7 +18945,7 @@
         "word": "greeting",
         "translations": [
             {
-                "translation": "问候，招呼，致敬",
+                "translation": "问候，致敬；招呼",
                 "type": "n"
             }
         ]
@@ -19368,7 +19372,7 @@
         "word": "hammer",
         "translations": [
             {
-                "translation": "锤，榔头",
+                "translation": "锤子",
                 "type": "n"
             },
             {
@@ -20115,6 +20119,10 @@
             {
                 "translation": "英雄的；英勇的",
                 "type": "adj"
+            },
+            {
+                "translation": "夸张的言行；史诗；英勇行为",
+                "type": "n"
             }
         ]
     },
@@ -23558,7 +23566,7 @@
         "word": "ladder",
         "translations": [
             {
-                "translation": "梯子，梯状物",
+                "translation": "阶梯；梯子",
                 "type": "n"
             }
         ]
@@ -24243,7 +24251,7 @@
         "word": "letter",
         "translations": [
             {
-                "translation": "信；证书；字母",
+                "translation": "字母；信；证书",
                 "type": "n"
             }
         ]
@@ -25303,7 +25311,7 @@
         "word": "mainly",
         "translations": [
             {
-                "translation": "主要地，大体上",
+                "translation": "主要地；大部分地；总体上",
                 "type": "adv"
             }
         ]
@@ -26813,7 +26821,7 @@
         "word": "modify",
         "translations": [
             {
-                "translation": "更改，修改；修饰",
+                "translation": "更改，改造；改装；修饰",
                 "type": "v"
             }
         ]
@@ -28922,7 +28930,7 @@
         "word": "operate",
         "translations": [
             {
-                "translation": "操作；施行手术",
+                "translation": "操作；运营；运转；做手术",
                 "type": "v"
             }
         ]
@@ -29204,8 +29212,12 @@
         "word": "original",
         "translations": [
             {
-                "translation": "原始的，最初的",
+                "translation": "最初的，原始的，原来的",
                 "type": "adj"
+            },
+            {
+                "translation": "原作",
+                "type": "n"
             }
         ]
     },
@@ -31681,7 +31693,7 @@
         "word": "portrait",
         "translations": [
             {
-                "translation": "消像，画像",
+                "translation": "消像；（人物）描写",
                 "type": "n"
             }
         ]
@@ -31971,7 +31983,7 @@
         "word": "precaution",
         "translations": [
             {
-                "translation": "预防；警惕",
+                "translation": "预防措施",
                 "type": "n"
             }
         ]
@@ -32400,7 +32412,7 @@
         "word": "prince",
         "translations": [
             {
-                "translation": "王子，亲王",
+                "translation": "亲王；王子",
                 "type": "n"
             }
         ]
@@ -33506,7 +33518,7 @@
         "word": "quotation",
         "translations": [
             {
-                "translation": "引文",
+                "translation": "引文，语录；行情；报价",
                 "type": "n"
             }
         ]
@@ -34855,11 +34867,11 @@
         "word": "rent",
         "translations": [
             {
-                "translation": "租金，租",
+                "translation": "租金",
                 "type": "n"
             },
             {
-                "translation": "出租",
+                "translation": "租；出租",
                 "type": "v"
             }
         ]
@@ -36609,7 +36621,7 @@
         "word": "seldom",
         "translations": [
             {
-                "translation": "很少，罕见",
+                "translation": "很少，不常；难得",
                 "type": "adv"
             }
         ]
@@ -37226,12 +37238,25 @@
         "word": "sigh",
         "translations": [
             {
-                "translation": " 叹气， 叹息",
+                "translation": "叹气，叹息",
                 "type": "vi"
             },
             {
                 "translation": "叹息",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "sight",
+        "translations": [
+            {
+                "translation": "景象，情景；视力",
+                "type": "n"
+            },
+            {
+                "translation": "看见",
+                "type": "v"
             }
         ]
     },
@@ -38556,7 +38581,7 @@
         "word": "stale",
         "translations": [
             {
-                "translation": "乏味的，没有新意的",
+                "translation": "（食物）不新鲜的；（空气）不清新的",
                 "type": "adj"
             }
         ]
@@ -38893,6 +38918,15 @@
             {
                 "translation": "炉，火炉，电炉",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "straight",
+        "translations": [
+            {
+                "translation": "直接地；不断地，一直地",
+                "type": "adv"
             }
         ]
     },
@@ -39333,6 +39367,15 @@
         "translations": [
             {
                 "translation": "足够的",
+                "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "sufficiently",
+        "translations": [
+            {
+                "translation": "足够地；充分地",
                 "type": "adj"
             }
         ]
@@ -39887,7 +39930,7 @@
         "word": "sympathize",
         "translations": [
             {
-                "translation": "同情；同感，共鸣",
+                "translation": "同情，同感，共鸣",
                 "type": "v"
             }
         ]
@@ -40113,8 +40156,8 @@
                 "type": "n"
             },
             {
-                "translation": " 对…征税； 使负担重， 使费尽力气",
-                "type": "vt"
+                "translation": "征税；使负担重",
+                "type": "v"
             }
         ]
     },
@@ -41096,7 +41139,7 @@
         "word": "transmit",
         "translations": [
             {
-                "translation": "传送，传达；发射",
+                "translation": "传播；传送，传达；发射",
                 "type": "v"
             }
         ]
@@ -41242,7 +41285,7 @@
         "word": "trial",
         "translations": [
             {
-                "translation": "试，试验；审判",
+                "translation": "试验；审判；试用",
                 "type": "n"
             }
         ]
@@ -42289,7 +42332,7 @@
         "word": "vertical",
         "translations": [
             {
-                "translation": "垂直的，竖式的",
+                "translation": "垂直的；顶点的",
                 "type": "adj"
             }
         ]
@@ -43399,7 +43442,7 @@
         "word": "writer",
         "translations": [
             {
-                "translation": " 作者， 作家",
+                "translation": "作家；作者",
                 "type": "n"
             }
         ]
