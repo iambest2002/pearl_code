@@ -2489,7 +2489,7 @@
         "word": "aside",
         "translations": [
             {
-                "translation": "在旁边，到旁边",
+                "translation": "在旁边；到旁边",
                 "type": "adv"
             }
         ]
@@ -4147,7 +4147,7 @@
         "word": "biology",
         "translations": [
             {
-                "translation": "生物学；生态学",
+                "translation": "生物学",
                 "type": "n"
             }
         ]
@@ -4331,7 +4331,7 @@
         "translations": [
             {
                 "translation": "混和",
-                "type": "vt&vi&n"
+                "type": "v"
             }
         ]
     },
@@ -5018,6 +5018,10 @@
             {
                 "translation": "桥，桥梁；桥牌",
                 "type": "n"
+            },
+            {
+                "translation": "把...连接起来",
+                "type": "v"
             }
         ]
     },
@@ -6003,7 +6007,7 @@
         "word": "carry",
         "translations": [
             {
-                "translation": "携带；运载；传送",
+                "translation": "携带（疾病、病菌）；拿，提，搬，扛",
                 "type": "v"
             }
         ]
@@ -8420,7 +8424,7 @@
         "word": "condense",
         "translations": [
             {
-                "translation": "压缩，使缩短",
+                "translation": "精炼；压缩；冷凝；聚集",
                 "type": "v"
             }
         ]
@@ -9125,11 +9129,11 @@
         "word": "control",
         "translations": [
             {
-                "translation": "控制，克制",
+                "translation": "控制，管理",
                 "type": "v"
             },
             {
-                "translation": "控制",
+                "translation": "控制，管理",
                 "type": "n"
             }
         ]
@@ -9899,7 +9903,7 @@
         "word": "crime",
         "translations": [
             {
-                "translation": "罪，罪行；犯罪",
+                "translation": "犯罪活动；罪行",
                 "type": "n"
             }
         ]
@@ -10875,7 +10879,7 @@
         "word": "defect",
         "translations": [
             {
-                "translation": "缺点，缺陷，欠缺",
+                "translation": "缺陷，缺点",
                 "type": "n"
             }
         ]
@@ -11538,7 +11542,7 @@
         "word": "devote",
         "translations": [
             {
-                "translation": "奉献，致力于",
+                "translation": "献身于，专心致力于，把...专用于",
                 "type": "v"
             }
         ]
@@ -14055,7 +14059,7 @@
         "word": "end",
         "translations": [
             {
-                "translation": "末端；目标",
+                "translation": "末端，终点；终止，结束",
                 "type": "n"
             },
             {
@@ -15867,7 +15871,7 @@
         "word": "farther",
         "translations": [
             {
-                "translation": "更远地",
+                "translation": "更远地；更远",
                 "type": "adv"
             },
             {
@@ -15925,11 +15929,11 @@
         "word": "fast",
         "translations": [
             {
-                "translation": "快的；偏快的",
+                "translation": "迅速的，动作敏捷的",
                 "type": "adj"
             },
             {
-                "translation": "快",
+                "translation": "迅速地",
                 "type": "adv"
             }
         ]
@@ -16435,6 +16439,10 @@
         "word": "fine",
         "translations": [
             {
+                "translation": "好的",
+                "type": "adj"
+            },
+            {
                 "translation": "罚款",
                 "type": "v"
             }
@@ -16638,7 +16646,7 @@
         "word": "flavour",
         "translations": [
             {
-                "translation": "味，味道；风味",
+                "translation": "味道",
                 "type": "n"
             }
         ]
@@ -18183,7 +18191,7 @@
         "word": "gentleman",
         "translations": [
             {
-                "translation": "绅士；有教养的人",
+                "translation": "先生，男士",
                 "type": "n"
             }
         ]
@@ -18255,8 +18263,12 @@
         "word": "get",
         "translations": [
             {
-                "translation": "变得，成为；到达",
+                "translation": "变得，获得，赢得；使得",
                 "type": "v"
+            },
+            {
+                "translation": "成为，变成，变得",
+                "type": "link-v"
             }
         ]
     },
@@ -19684,7 +19696,11 @@
         "word": "hate",
         "translations": [
             {
-                "translation": "恨，憎恨；不喜欢",
+                "translation": "恨，憎恨",
+                "type": "n"
+            },
+            {
+                "translation": "恨，憎恨",
                 "type": "v"
             }
         ]
@@ -21316,7 +21332,7 @@
         "word": "impress",
         "translations": [
             {
-                "translation": "给…深刻印象",
+                "translation": "给...留下深刻印象",
                 "type": "v"
             }
         ]
@@ -23509,6 +23525,15 @@
         ]
     },
     {
+        "word": "labor",
+        "translations": [
+            {
+                "translation": "劳动，劳力；劳工",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "laboratory",
         "translations": [
             {
@@ -23597,7 +23622,7 @@
         "word": "lake",
         "translations": [
             {
-                "translation": "湖",
+                "translation": "湖泊",
                 "type": "n"
             }
         ]
@@ -23953,7 +23978,7 @@
         "word": "leading",
         "translations": [
             {
-                "translation": "指导的；最主要的",
+                "translation": "首位的，居前的",
                 "type": "adj"
             }
         ]
@@ -24899,7 +24924,7 @@
         "word": "logical",
         "translations": [
             {
-                "translation": "逻辑的；符合逻辑的",
+                "translation": "合情合理的；逻辑的；符合逻辑的",
                 "type": "adj"
             }
         ]
@@ -25154,7 +25179,7 @@
         "word": "lunch",
         "translations": [
             {
-                "translation": "午餐，(美)便餐",
+                "translation": "午餐",
                 "type": "n"
             }
         ]
@@ -25583,7 +25608,7 @@
         "word": "marriage",
         "translations": [
             {
-                "translation": "结婚，婚姻；婚礼",
+                "translation": "结婚；婚姻；婚礼",
                 "type": "n"
             }
         ]
@@ -26052,7 +26077,7 @@
         "word": "meeting",
         "translations": [
             {
-                "translation": "聚集，会合，会见",
+                "translation": "会议；会合，聚集",
                 "type": "n"
             }
         ]
@@ -26281,7 +26306,7 @@
         "word": "metre",
         "translations": [
             {
-                "translation": "米，公尺",
+                "translation": "米，公尺(=meter)",
                 "type": "n"
             }
         ]
@@ -27159,7 +27184,7 @@
         "word": "mouthful",
         "translations": [
             {
-                "translation": "满口，一口，少量",
+                "translation": "一口，满口",
                 "type": "n"
             }
         ]
@@ -31451,7 +31476,7 @@
         "word": "poisonous",
         "translations": [
             {
-                "translation": "有毒的，有害的",
+                "translation": "引起中毒的，有毒的",
                 "type": "adj"
             }
         ]
@@ -31737,7 +31762,7 @@
         "word": "possess",
         "translations": [
             {
-                "translation": "占用，拥有(财产)",
+                "translation": "拥有(财产)，占用",
                 "type": "v"
             }
         ]
@@ -31889,7 +31914,7 @@
         "word": "powder",
         "translations": [
             {
-                "translation": "粉末；药粉；火药",
+                "translation": "粉末；细面；药粉",
                 "type": "n"
             }
         ]
@@ -32073,7 +32098,7 @@
         "word": "preference",
         "translations": [
             {
-                "translation": "偏爱",
+                "translation": "偏爱，喜好",
                 "type": "n"
             }
         ]
@@ -33211,7 +33236,7 @@
         "word": "pull",
         "translations": [
             {
-                "translation": "拉，拖；拉，拉力",
+                "translation": "拉，拖，扯，拔",
                 "type": "v"
             }
         ]
@@ -33326,8 +33351,12 @@
         "word": "purse",
         "translations": [
             {
-                "translation": "钱包，小钱袋，手袋",
+                "translation": "钱包（尤指女用的），小钱袋，手袋",
                 "type": "n"
+            },
+            {
+                "translation": "使皱起",
+                "type": "v"
             }
         ]
     },
@@ -35300,7 +35329,7 @@
         "word": "response",
         "translations": [
             {
-                "translation": "反应",
+                "translation": "反应；回应；回答，答复；响应",
                 "type": "n"
             }
         ]
@@ -36398,7 +36427,7 @@
         "word": "scold",
         "translations": [
             {
-                "translation": " 责骂， 训斥",
+                "translation": "怒骂，责骂，训斥",
                 "type": "v"
             }
         ]
@@ -37469,7 +37498,7 @@
         "word": "situation",
         "translations": [
             {
-                "translation": "情况",
+                "translation": "情况，场景；形式，情形",
                 "type": "n"
             }
         ]
@@ -37868,10 +37897,19 @@
         ]
     },
     {
+        "word": "softly",
+        "translations": [
+            {
+                "translation": "轻声地，柔和地",
+                "type": "adv"
+            }
+        ]
+    },
+    {
         "word": "software",
         "translations": [
             {
-                "translation": " 软件",
+                "translation": "软件",
                 "type": "n"
             }
         ]
@@ -40717,7 +40755,16 @@
         "word": "timber",
         "translations": [
             {
-                "translation": " 木料；树木；性格，素质",
+                "translation": "木料；树木；性格，素质",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "timetable",
+        "translations": [
+            {
+                "translation": "时间表，时刻表；课程表",
                 "type": "n"
             }
         ]
@@ -40726,7 +40773,7 @@
         "word": "tin",
         "translations": [
             {
-                "translation": "锡；罐头",
+                "translation": "罐头；锡",
                 "type": "n"
             }
         ]
@@ -43223,6 +43270,10 @@
             {
                 "translation": "目击者，目击",
                 "type": "n"
+            },
+            {
+                "translation": "见证；目击",
+                "type": "v"
             }
         ]
     },
@@ -43492,6 +43543,19 @@
         ]
     },
     {
+        "word": "yet",
+        "translations": [
+            {
+                "translation": "尚，还，仍然",
+                "type": "adv"
+            },
+            {
+                "translation": "但是",
+                "type": "conj"
+            }
+        ]
+    },
+    {
         "word": "yield",
         "translations": [
             {
@@ -43697,6 +43761,15 @@
             {
                 "translation": "加拿大的",
                 "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "chin",
+        "translations": [
+            {
+                "translation": "下巴",
+                "type": "n"
             }
         ]
     },
