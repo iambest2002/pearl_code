@@ -2965,7 +2965,7 @@
         "word": "autumn",
         "translations": [
             {
-                "translation": "秋，秋季",
+                "translation": "秋季",
                 "type": "n"
             }
         ]
@@ -3117,7 +3117,7 @@
         "word": "awfully",
         "translations": [
             {
-                "translation": "令人畏惧的；很",
+                "translation": "十分，非常，很",
                 "type": "adv"
             }
         ]
@@ -3390,7 +3390,7 @@
         "word": "bar",
         "translations": [
             {
-                "translation": "酒吧间；条，杆；栅",
+                "translation": "（金属）棒；标杆",
                 "type": "n"
             }
         ]
@@ -4264,7 +4264,7 @@
         "word": "blame",
         "translations": [
             {
-                "translation": "指责，责怪",
+                "translation": "责备",
                 "type": "v"
             }
         ]
@@ -5460,7 +5460,7 @@
         "word": "busy",
         "translations": [
             {
-                "translation": "忙的，繁忙的",
+                "translation": "忙碌的，正被占用的",
                 "type": "adj"
             }
         ]
@@ -5505,7 +5505,7 @@
         "word": "button",
         "translations": [
             {
-                "translation": "扣子；按钮",
+                "translation": "扣子；按钮，开关",
                 "type": "n"
             },
             {
@@ -5944,7 +5944,7 @@
         "word": "careless",
         "translations": [
             {
-                "translation": "粗心的",
+                "translation": "粗心的；漫不经心的；不小心的",
                 "type": "adj"
             }
         ]
@@ -6254,7 +6254,7 @@
         "word": "cellar",
         "translations": [
             {
-                "translation": "地窑，地下室",
+                "translation": "酒窖；地窑；地下室",
                 "type": "n"
             }
         ]
@@ -7263,11 +7263,11 @@
         "word": "clear",
         "translations": [
             {
-                "translation": "清晰的",
+                "translation": "清楚的",
                 "type": "adj"
             },
             {
-                "translation": "清除",
+                "translation": "（使）变清醒，变清晰；使人离开",
                 "type": "v"
             }
         ]
@@ -9102,11 +9102,11 @@
         "word": "contrast",
         "translations": [
             {
-                "translation": "对比，反差",
+                "translation": "对照，对比",
                 "type": "n"
             },
             {
-                "translation": "对比",
+                "translation": "对照，对比",
                 "type": "v"
             }
         ]
@@ -11166,7 +11166,7 @@
         "word": "dependent",
         "translations": [
             {
-                "translation": "依靠的，依赖的",
+                "translation": "依赖的",
                 "type": "adj"
             }
         ]
@@ -11417,8 +11417,12 @@
         "word": "detail",
         "translations": [
             {
-                "translation": "细节",
+                "translation": "细节；细微之处；详情",
                 "type": "n"
+            },
+            {
+                "translation": "详细说明",
+                "type": "v"
             }
         ]
     },
@@ -13969,7 +13973,7 @@
         "word": "employ",
         "translations": [
             {
-                "translation": "雇用；用；使忙于",
+                "translation": "雇用；使用",
                 "type": "v"
             }
         ]
@@ -14296,7 +14300,7 @@
         "word": "ensure",
         "translations": [
             {
-                "translation": "确保",
+                "translation": "确保；保证",
                 "type": "v"
             }
         ]
@@ -15589,7 +15593,7 @@
         "word": "facility",
         "translations": [
             {
-                "translation": "设施",
+                "translation": "设施，设备；场所",
                 "type": "n"
             }
         ]
@@ -16641,8 +16645,12 @@
         "word": "flat",
         "translations": [
             {
-                "translation": "平的，扁平的",
+                "translation": "平坦的",
                 "type": "adj"
+            },
+            {
+                "translation": "公寓；平面",
+                "type": "n"
             }
         ]
     },
@@ -19580,7 +19588,7 @@
         "word": "hare",
         "translations": [
             {
-                "translation": "野兔",
+                "translation": "兔子；野兔",
                 "type": "n"
             }
         ]
@@ -23799,7 +23807,7 @@
         "word": "late",
         "translations": [
             {
-                "translation": "迟的",
+                "translation": "晚期的，后期的；迟的",
                 "type": "adj"
             },
             {
@@ -25308,7 +25316,7 @@
         "word": "mail",
         "translations": [
             {
-                "translation": "邮件",
+                "translation": "邮件，信件",
                 "type": "n"
             },
             {
@@ -26978,7 +26986,7 @@
         "word": "mood",
         "translations": [
             {
-                "translation": "心情",
+                "translation": "情绪，心情",
                 "type": "n"
             }
         ]
@@ -28377,6 +28385,10 @@
     {
         "word": "nowhere",
         "translations": [
+            {
+                "translation": "无名之地",
+                "type": "n"
+            },
             {
                 "translation": "任何地方都不",
                 "type": "adv"
@@ -31265,7 +31277,7 @@
         "word": "play",
         "translations": [
             {
-                "translation": "玩，游戏；演奏",
+                "translation": "玩；游戏；演奏；演奏",
                 "type": "v"
             }
         ]
@@ -34213,7 +34225,7 @@
         "word": "reception",
         "translations": [
             {
-                "translation": "接待",
+                "translation": "前台，接待处；接收，欢迎",
                 "type": "n"
             }
         ]
@@ -35608,7 +35620,7 @@
         "word": "revise",
         "translations": [
             {
-                "translation": "修订",
+                "translation": "修改；修订；温习（功课）",
                 "type": "v"
             }
         ]
@@ -36366,11 +36378,11 @@
         "word": "scare",
         "translations": [
             {
-                "translation": " 吓， 使害怕； 受惊吓， 感到害怕",
+                "translation": "使害怕；受惊吓",
                 "type": "v"
             },
             {
-                "translation": "惊恐，恐慌",
+                "translation": "惊恐，恐慌；惊吓",
                 "type": "n"
             }
         ]
@@ -37513,7 +37525,7 @@
         "word": "singular",
         "translations": [
             {
-                "translation": "单一的；非凡的",
+                "translation": "单独的，单个的；非凡的",
                 "type": "adj"
             }
         ]
@@ -37717,11 +37729,11 @@
         "word": "slit",
         "translations": [
             {
-                "translation": "裂缝",
+                "translation": "投币口裂缝",
                 "type": "n"
             },
             {
-                "translation": "切开，撕开",
+                "translation": "切开",
                 "type": "v"
             }
         ]
@@ -38093,7 +38105,7 @@
         "word": "sophisticated",
         "translations": [
             {
-                "translation": "复杂的；世故的",
+                "translation": "复杂的",
                 "type": "adj"
             }
         ]
@@ -38795,7 +38807,7 @@
         "word": "steady",
         "translations": [
             {
-                "translation": "稳定的，逐步的",
+                "translation": "稳定的，平稳的",
                 "type": "adj"
             }
         ]
@@ -39392,7 +39404,7 @@
         "translations": [
             {
                 "translation": "代替",
-                "type": "v&n"
+                "type": "v"
             }
         ]
     },
@@ -39705,6 +39717,15 @@
         ]
     },
     {
+        "word": "surely",
+        "translations": [
+            {
+                "translation": "冲无疑，肯定",
+                "type": "adv"
+            }
+        ]
+    },
+    {
         "word": "surf",
         "translations": [
             {
@@ -39741,6 +39762,15 @@
             {
                 "translation": "超过",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "surprisingly",
+        "translations": [
+            {
+                "translation": "意外地；惊人地",
+                "type": "adv"
             }
         ]
     },
@@ -39974,11 +40004,11 @@
         "word": "swing",
         "translations": [
             {
-                "translation": "摇摆；回转",
+                "translation": "摇摆；荡秋千",
                 "type": "v"
             },
             {
-                "translation": "摇摆",
+                "translation": "秋千；摇摆",
                 "type": "n"
             }
         ]
@@ -40222,8 +40252,8 @@
                 "type": "n"
             },
             {
-                "translation": " 把…作为目标； 瞄准",
-                "type": "vt"
+                "translation": "瞄准；把…作为目标",
+                "type": "v"
             }
         ]
     },
@@ -40536,6 +40566,15 @@
         ]
     },
     {
+        "word": "theatre",
+        "translations": [
+            {
+                "translation": "戏院，剧院",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "theme",
         "translations": [
             {
@@ -40643,10 +40682,23 @@
         ]
     },
     {
+        "word": "thirst",
+        "translations": [
+            {
+                "translation": "干渴，缺水",
+                "type": "n"
+            },
+            {
+                "translation": "渴求",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "thirsty",
         "translations": [
             {
-                "translation": "口渴的； 渴望的",
+                "translation": "口渴的；渴望的",
                 "type": "adj"
             }
         ]
@@ -40690,7 +40742,7 @@
         "word": "thread",
         "translations": [
             {
-                "translation": "线；丝；螺纹；头绪",
+                "translation": "头绪，线索；丝路",
                 "type": "n"
             }
         ]
@@ -40874,6 +40926,15 @@
             {
                 "translation": "疲劳，累；厌倦",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "tired",
+        "translations": [
+            {
+                "translation": "疲倦的，疲劳的；厌倦的，厌烦的",
+                "type": "adj"
             }
         ]
     },
@@ -41449,12 +41510,16 @@
         "word": "trim",
         "translations": [
             {
+                "translation": "修剪；整理；装饰",
+                "type": "v&n"
+            },
+            {
                 "translation": "整齐的",
                 "type": "adj"
             },
             {
-                "translation": "使整齐",
-                "type": "v"
+                "translation": "整齐地；整洁地",
+                "type": "adv"
             }
         ]
     },
@@ -41845,7 +41910,11 @@
         "word": "underneath",
         "translations": [
             {
-                "translation": "在下面，在底下",
+                "translation": "在...下面",
+                "type": "prep"
+            },
+            {
+                "translation": "在...底下",
                 "type": "adv"
             }
         ]
