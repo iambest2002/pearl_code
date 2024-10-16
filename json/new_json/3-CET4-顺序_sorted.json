@@ -2732,7 +2732,7 @@
         "word": "attach",
         "translations": [
             {
-                "translation": "缚，系，贴；附加",
+                "translation": "贴上，使依附；认为...有重要性",
                 "type": "v"
             }
         ]
@@ -5060,7 +5060,7 @@
         "word": "brilliant",
         "translations": [
             {
-                "translation": "光辉的；卓越的",
+                "translation": "极好的；卓越的",
                 "type": "adj"
             }
         ]
@@ -6101,7 +6101,7 @@
         "word": "casual",
         "translations": [
             {
-                "translation": "偶然的，随便的",
+                "translation": "随便的；偶然的；冷漠的",
                 "type": "adj"
             }
         ]
@@ -7419,7 +7419,7 @@
         "word": "clothes",
         "translations": [
             {
-                "translation": "衣服，服装；被褥",
+                "translation": "衣服；被褥",
                 "type": "n"
             }
         ]
@@ -7455,7 +7455,7 @@
         "word": "club",
         "translations": [
             {
-                "translation": "俱乐部，夜总会",
+                "translation": "社团，俱乐部",
                 "type": "n"
             }
         ]
@@ -7857,7 +7857,7 @@
         "word": "commit",
         "translations": [
             {
-                "translation": "犯罪，承担义务",
+                "translation": "致力于；犯罪，承担义务",
                 "type": "v"
             }
         ]
@@ -7902,7 +7902,7 @@
         "word": "communicate",
         "translations": [
             {
-                "translation": "通讯；传达；传播",
+                "translation": "沟通，交流",
                 "type": "v"
             }
         ]
@@ -8158,7 +8158,7 @@
         "word": "completely",
         "translations": [
             {
-                "translation": "十分，完全地",
+                "translation": "彻底地；完全地",
                 "type": "adv"
             }
         ]
@@ -8999,7 +8999,7 @@
         "word": "contempt",
         "translations": [
             {
-                "translation": "轻蔑；藐视；受辱",
+                "translation": "鄙视，轻视",
                 "type": "n"
             }
         ]
@@ -9053,7 +9053,7 @@
         "word": "continue",
         "translations": [
             {
-                "translation": "继续，连续；延伸",
+                "translation": "持续；继续",
                 "type": "v"
             }
         ]
@@ -9164,7 +9164,7 @@
         "word": "convenience",
         "translations": [
             {
-                "translation": "便利，方便；厕所",
+                "translation": "方便；公共厕所",
                 "type": "n"
             }
         ]
@@ -9956,7 +9956,7 @@
         "word": "critic",
         "translations": [
             {
-                "translation": "批评家，评论家",
+                "translation": "批判者；评论家",
                 "type": "n"
             }
         ]
@@ -10318,7 +10318,7 @@
         "word": "curtain",
         "translations": [
             {
-                "translation": "帘，窗帘；幕(布)",
+                "translation": "窗帘；幕(布)",
                 "type": "n"
             }
         ]
@@ -11702,8 +11702,8 @@
         "word": "differ",
         "translations": [
             {
-                "translation": "不同，相异",
-                "type": "v"
+                "translation": "相异，不同于；有异议",
+                "type": "vi"
             }
         ]
     },
@@ -12784,7 +12784,7 @@
         "word": "drag",
         "translations": [
             {
-                "translation": "拖，拉；拖曳",
+                "translation": "拖，拉；拽，扯",
                 "type": "v"
             }
         ]
@@ -14161,7 +14161,7 @@
         "word": "engage",
         "translations": [
             {
-                "translation": "忙于，从事；吸引",
+                "translation": "加入，参加（活动）；与...建立密切关系；雇，聘；使订婚",
                 "type": "v"
             }
         ]
@@ -14968,8 +14968,8 @@
         "word": "excess",
         "translations": [
             {
-                "translation": "过量，过度",
-                "type": "n"
+                "translation": "额外的，过量的，过度的",
+                "type": "adj"
             }
         ]
     },
@@ -16233,7 +16233,7 @@
         "word": "fetch",
         "translations": [
             {
-                "translation": "取回",
+                "translation": "取来",
                 "type": "v"
             }
         ]
@@ -16561,12 +16561,12 @@
         "word": "fit",
         "translations": [
             {
-                "translation": "适合；安装",
+                "translation": "合得来，                                                                                                                                                      适应",
                 "type": "v"
             },
             {
-                "translation": "适合",
-                "type": "v"
+                "translation": "匹配，相配",
+                "type": "n"
             }
         ]
     },
@@ -17376,7 +17376,7 @@
         "word": "fraction",
         "translations": [
             {
-                "translation": "小部分；片断；分数",
+                "translation": "部分，片断；分数",
                 "type": "n"
             }
         ]
@@ -18871,7 +18871,7 @@
         "word": "gratitude",
         "translations": [
             {
-                "translation": "感激，感谢，感恩",
+                "translation": "感激，感谢",
                 "type": "adj"
             }
         ]
@@ -18920,7 +18920,7 @@
         "word": "greatly",
         "translations": [
             {
-                "translation": "大大地，非常",
+                "translation": "大大地；很；非常",
                 "type": "adv"
             }
         ]
@@ -20414,7 +20414,7 @@
         "word": "holiday",
         "translations": [
             {
-                "translation": "假日，节日；假期",
+                "translation": "节日，假期",
                 "type": "n"
             }
         ]
@@ -21196,7 +21196,7 @@
         "word": "immense",
         "translations": [
             {
-                "translation": "巨大的；极好的",
+                "translation": "巨大的，广大的",
                 "type": "adj"
             }
         ]
@@ -22786,7 +22786,7 @@
         "word": "invitation",
         "translations": [
             {
-                "translation": "邀请，招待；请柬",
+                "translation": "请帖，请柬",
                 "type": "n"
             }
         ]
@@ -22973,7 +22973,7 @@
         "word": "jar",
         "translations": [
             {
-                "translation": "罐子，坛子，广口瓶",
+                "translation": "罐子，坛子，瓶子，缸",
                 "type": "n"
             }
         ]
@@ -25392,11 +25392,15 @@
         "word": "major",
         "translations": [
             {
-                "translation": "主要的",
+                "translation": "主要的；重要的；较大的；严重的",
                 "type": "adj"
             },
             {
-                "translation": "主修",
+                "translation": "主修（科目）",
+                "type": "n"
+            },
+            {
+                "translation": "专功",
                 "type": "v"
             }
         ]
@@ -26473,7 +26477,7 @@
         "word": "mill",
         "translations": [
             {
-                "translation": "工厂",
+                "translation": "磨坊",
                 "type": "n"
             }
         ]
@@ -27181,7 +27185,7 @@
         "word": "mourn",
         "translations": [
             {
-                "translation": "哀痛，哀悼",
+                "translation": "哀悼，哀伤",
                 "type": "v"
             }
         ]
@@ -27351,7 +27355,7 @@
         "word": "mushroom",
         "translations": [
             {
-                "translation": "蘑菇，菌类植物",
+                "translation": "蘑菇",
                 "type": "n"
             }
         ]
@@ -29430,7 +29434,7 @@
         "word": "outlet",
         "translations": [
             {
-                "translation": "出口，出路；排遣",
+                "translation": "插座；出口",
                 "type": "n"
             }
         ]
@@ -32184,7 +32188,7 @@
         "word": "prepare",
         "translations": [
             {
-                "translation": "做准备",
+                "translation": "准备；做好准备",
                 "type": "v"
             }
         ]
@@ -34538,11 +34542,7 @@
         "word": "refuse",
         "translations": [
             {
-                "translation": "拒绝",
-                "type": "v"
-            },
-            {
-                "translation": "拒绝",
+                "translation": "拒绝，谢绝",
                 "type": "v"
             }
         ]
@@ -36249,7 +36249,7 @@
         "word": "satisfactory",
         "translations": [
             {
-                "translation": "令人满意的，良好的",
+                "translation": "令人满意的；良好的",
                 "type": "adj"
             }
         ]
@@ -36369,7 +36369,7 @@
         "word": "scarcely",
         "translations": [
             {
-                "translation": "仅仅；几乎不",
+                "translation": "几乎不；简直不；刚刚",
                 "type": "adv"
             }
         ]
@@ -36539,11 +36539,11 @@
         "word": "scream",
         "translations": [
             {
-                "translation": "尖叫，呼啸",
+                "translation": "（因愤怒或恐惧）高声喊；大声叫",
                 "type": "vi"
             },
             {
-                "translation": " 尖叫声",
+                "translation": " 尖叫",
                 "type": "n"
             }
         ]
@@ -37858,6 +37858,15 @@
         ]
     },
     {
+        "word": "sob",
+        "translations": [
+            {
+                "translation": "呜咽，抽泣",
+                "type": "vi"
+            }
+        ]
+    },
+    {
         "word": "sober",
         "translations": [
             {
@@ -38182,6 +38191,15 @@
             {
                 "translation": "获得",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "southern",
+        "translations": [
+            {
+                "translation": "南方的，南部的",
+                "type": "adj"
             }
         ]
     },
@@ -40863,6 +40881,19 @@
         ]
     },
     {
+        "word": "tie",
+        "translations": [
+            {
+                "translation": "联系，关系，纽带",
+                "type": "n"
+            },
+            {
+                "translation": "连接，使紧密结合",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "tighten",
         "translations": [
             {
@@ -41235,6 +41266,15 @@
         "translations": [
             {
                 "translation": "性格",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "tramp",
+        "translations": [
+            {
+                "translation": "流浪汉；无业游民",
                 "type": "n"
             }
         ]
@@ -42306,7 +42346,7 @@
         "word": "utter",
         "translations": [
             {
-                "translation": "完全的，彻底的",
+                "translation": "完全的；彻底的",
                 "type": "adj"
             }
         ]
@@ -43349,6 +43389,15 @@
             {
                 "translation": "愿意的，心甘情愿的",
                 "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "wine",
+        "translations": [
+            {
+                "translation": "葡萄酒",
+                "type": "n"
             }
         ]
     },
