@@ -2830,7 +2830,7 @@
         "word": "attract",
         "translations": [
             {
-                "translation": "吸引；引起，诱惑",
+                "translation": "吸引；引起...的注意",
                 "type": "v"
             }
         ]
@@ -3451,11 +3451,11 @@
         "word": "bark",
         "translations": [
             {
-                "translation": "吠叫声",
+                "translation": "树皮；吠声",
                 "type": "n"
             },
             {
-                "translation": "吠，叫",
+                "translation": "狗吠，叫",
                 "type": "vi"
             }
         ]
@@ -3939,8 +3939,12 @@
         "word": "below",
         "translations": [
             {
-                "translation": "在…下面(以下)",
+                "translation": "低于；在...之下",
                 "type": "prep"
+            },
+            {
+                "translation": "在（或到）下面",
+                "type": "adv"
             }
         ]
     },
@@ -5010,7 +5014,7 @@
         "word": "brick",
         "translations": [
             {
-                "translation": "砖，砖块；砖状物",
+                "translation": "砖",
                 "type": "n"
             }
         ]
@@ -5615,8 +5619,12 @@
         "word": "cake",
         "translations": [
             {
-                "translation": "饼，糕，蛋糕",
+                "translation": "蛋糕，饼",
                 "type": "n"
+            },
+            {
+                "translation": "（使）结块",
+                "type": "v"
             }
         ]
     },
@@ -5840,7 +5848,7 @@
         "word": "capacity",
         "translations": [
             {
-                "translation": "容量；能力；能量",
+                "translation": "能力",
                 "type": "n"
             }
         ]
@@ -5965,7 +5973,7 @@
         "word": "cargo",
         "translations": [
             {
-                "translation": "船货，货物",
+                "translation": "货物",
                 "type": "n"
             }
         ]
@@ -6010,7 +6018,7 @@
         "word": "carrot",
         "translations": [
             {
-                "translation": "胡罗卜",
+                "translation": "胡萝卜",
                 "type": "n"
             }
         ]
@@ -6716,8 +6724,12 @@
         "word": "chemical",
         "translations": [
             {
-                "translation": "化学的 n. 化学制品",
+                "translation": "化学的,与化学有关的",
                 "type": "adj"
+            },
+            {
+                "translation": "化学品，化学物质",
+                "type": "n"
             }
         ]
     },
@@ -7310,7 +7322,7 @@
         "word": "clever",
         "translations": [
             {
-                "translation": "聪明的；机敏的",
+                "translation": "聪明的",
                 "type": "adj"
             }
         ]
@@ -7381,7 +7393,7 @@
         "word": "cloak",
         "translations": [
             {
-                "translation": "斗篷；覆盖(物)",
+                "translation": "斗篷，披风；覆盖物",
                 "type": "n"
             }
         ]
@@ -7672,7 +7684,7 @@
         "word": "college",
         "translations": [
             {
-                "translation": "学院；大学",
+                "translation": "大学",
                 "type": "n"
             }
         ]
@@ -7850,7 +7862,7 @@
         "word": "commerce",
         "translations": [
             {
-                "translation": "商业，贸易；社交",
+                "translation": "商业，贸易",
                 "type": "n"
             }
         ]
@@ -8250,7 +8262,7 @@
         "word": "compound",
         "translations": [
             {
-                "translation": "化合物；复合词",
+                "translation": "（化学）化合物",
                 "type": "n"
             }
         ]
@@ -10898,7 +10910,7 @@
         "word": "defeat",
         "translations": [
             {
-                "translation": "战胜，击败；挫败",
+                "translation": "挫败",
                 "type": "v"
             }
         ]
@@ -11037,7 +11049,7 @@
         "word": "delicious",
         "translations": [
             {
-                "translation": "美味的，怡人的",
+                "translation": "美味的，可口的",
                 "type": "adj"
             }
         ]
@@ -11347,8 +11359,12 @@
         "word": "desire",
         "translations": [
             {
-                "translation": "渴望，欲望",
+                "translation": "渴望；愿望",
                 "type": "n"
+            },
+            {
+                "translation": "希望，渴望",
+                "type": "vt"
             }
         ]
     },
@@ -11663,7 +11679,7 @@
         "word": "diamond",
         "translations": [
             {
-                "translation": "金钢石，钻石；菱形",
+                "translation": "钻石",
                 "type": "n"
             }
         ]
@@ -14056,7 +14072,7 @@
         "word": "enclose",
         "translations": [
             {
-                "translation": "围住，圈起；附上",
+                "translation": "围住；圈起；装入信封",
                 "type": "v"
             }
         ]
@@ -15614,7 +15630,7 @@
         "word": "fact",
         "translations": [
             {
-                "translation": "事实；实际，实情",
+                "translation": "事实，现实；实际",
                 "type": "n"
             }
         ]
@@ -22917,8 +22933,12 @@
         "word": "isolate",
         "translations": [
             {
-                "translation": "使隔离，使孤立",
+                "translation": "使孤立",
                 "type": "v"
+            },
+            {
+                "translation": "孤立的",
+                "type": "adj"
             }
         ]
     },
@@ -23265,7 +23285,7 @@
         "word": "justify",
         "translations": [
             {
-                "translation": "证明……正当",
+                "translation": "证明...正确或有理；辩解",
                 "type": "v"
             }
         ]
@@ -23444,7 +23464,7 @@
         "word": "kitchen",
         "translations": [
             {
-                "translation": "厨房，灶间",
+                "translation": "厨房",
                 "type": "n"
             }
         ]
@@ -24814,7 +24834,7 @@
         "word": "lively",
         "translations": [
             {
-                "translation": "活泼的；逼真的",
+                "translation": "活泼的",
                 "type": "adj"
             }
         ]
@@ -25612,7 +25632,7 @@
         "word": "margin",
         "translations": [
             {
-                "translation": "边缘，范围",
+                "translation": "页边的空白，边缘；优势；利润",
                 "type": "n"
             }
         ]
@@ -25863,7 +25883,7 @@
         "translations": [
             {
                 "translation": "最大值的，最大量的",
-                "type": "n & a"
+                "type": "adj"
             }
         ]
     },
@@ -26108,8 +26128,12 @@
         "word": "medium",
         "translations": [
             {
-                "translation": "媒质；中间a中等的",
+                "translation": "媒介",
                 "type": "n"
+            },
+            {
+                "translation": "中等的；中号的",
+                "type": "adj"
             }
         ]
     },
@@ -26720,7 +26744,7 @@
         "word": "mislead",
         "translations": [
             {
-                "translation": "误导",
+                "translation": "误导，使误信，欺骗",
                 "type": "v"
             }
         ]
@@ -27741,7 +27765,7 @@
         "word": "necessarily",
         "translations": [
             {
-                "translation": "必然，必定",
+                "translation": "必定",
                 "type": "adv"
             }
         ]
@@ -27777,7 +27801,7 @@
         "word": "necklace",
         "translations": [
             {
-                "translation": "项链，项圈",
+                "translation": "项链",
                 "type": "n"
             }
         ]
@@ -31186,11 +31210,11 @@
         "word": "pity",
         "translations": [
             {
-                "translation": "怜悯；遗憾",
+                "translation": "憾事；怜悯；同情；遗憾",
                 "type": "n"
             },
             {
-                "translation": "同情",
+                "translation": "（觉得）可怜",
                 "type": "v"
             }
         ]
@@ -34060,7 +34084,7 @@
         "word": "readily",
         "translations": [
             {
-                "translation": " 乐意地， 欣然地； 容易地； 很快地， 立即",
+                "translation": "容易地",
                 "type": "adv"
             }
         ]
@@ -34507,7 +34531,7 @@
         "word": "reflection",
         "translations": [
             {
-                "translation": "反射；映象；反映",
+                "translation": "反省，沉思；反射",
                 "type": "n"
             }
         ]
@@ -34870,7 +34894,7 @@
         "word": "reluctant",
         "translations": [
             {
-                "translation": "不愿意的，勉强的",
+                "translation": "不愿意的",
                 "type": "adj"
             }
         ]
@@ -36556,7 +36580,11 @@
         "word": "schedule",
         "translations": [
             {
-                "translation": "日程表",
+                "translation": "预订，安排",
+                "type": "v"
+            },
+            {
+                "translation": "时间表，计划表；日程安排",
                 "type": "n"
             }
         ]
@@ -37033,7 +37061,7 @@
         "word": "session",
         "translations": [
             {
-                "translation": "开会，会议",
+                "translation": "一段时间的（活动）；讲习会；会议",
                 "type": "n"
             }
         ]
@@ -37356,6 +37384,15 @@
         "translations": [
             {
                 "translation": "店主",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "shopping",
+        "translations": [
+            {
+                "translation": "购物",
                 "type": "n"
             }
         ]
@@ -39746,7 +39783,7 @@
         "word": "successive",
         "translations": [
             {
-                "translation": "连续的；接连的",
+                "translation": "接连的",
                 "type": "adj"
             }
         ]
@@ -41769,7 +41806,7 @@
         "word": "treat",
         "translations": [
             {
-                "translation": "对待；处理",
+                "translation": "治疗；对待；请客，款待；视为",
                 "type": "v"
             },
             {
@@ -42072,6 +42109,15 @@
             {
                 "translation": "孪生儿",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "twice",
+        "translations": [
+            {
+                "translation": "两倍",
+                "type": "adv"
             }
         ]
     },
@@ -42463,6 +42509,15 @@
         "translations": [
             {
                 "translation": "不知道的，未知的",
+                "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "unkind",
+        "translations": [
+            {
+                "translation": "不仁慈的，不厚道的，不和善的",
                 "type": "adj"
             }
         ]
@@ -43726,8 +43781,12 @@
         "word": "wicked",
         "translations": [
             {
-                "translation": "坏的；令人厌恶的",
+                "translation": "邪恶的；淘气的",
                 "type": "adj"
+            },
+            {
+                "translation": "恶人；邪恶的人",
+                "type": "n"
             }
         ]
     },
