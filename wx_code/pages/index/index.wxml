@@ -2,8 +2,16 @@
 <van-button class="cet4-button" color="#96e3fa" bind:tap="goToCet4WordsPage" type="primary" square >CET4</van-button>
   <van-button class="cet6-button" color="#96e3fa" bind:tap="goToCet6WordsPage" type="primary" square >CET6</van-button>
   <van-button class="pgee-button" color="#96e3fa" bind:tap="goToPgeeWordsPage" type="primary" square >PGEE</van-button>
+  <van-button class="pgee-button" color="#96e3fa" bind:tap="goToWordsBookPage" type="primary" square >单词本</van-button>
 </view>
-<van-search value="{{ searchValue }}" placeholder="请输入搜索关键词" show-action="true" use-action-slot bind:change="onChangeSearch" bind:cancel="onCancel" bind:search="onSearch" class="search-bar">
+<!-- <van-tabs sticky active="{{ active }}" bind:change="onChange">
+  <van-tab title="标签 1">内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+</van-tabs> -->
+
+<van-search disabled value="{{ searchValue }}" placeholder="请输入搜索关键词" show-action="true" use-action-slot bind:change="onChangeSearch" bind:cancel="onCancel" bind:search="onSearch" class="search-bar">
     <!-- 自定义“搜索”按钮 -->
     <view slot="action" bind:tap="onClick">
       <image class="search-icon" src="../../image/search.png"></image>

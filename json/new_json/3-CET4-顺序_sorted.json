@@ -398,7 +398,7 @@
         "word": "accuracy",
         "translations": [
             {
-                "translation": "准确(性)；准确度",
+                "translation": "准确度",
                 "type": "n"
             }
         ]
@@ -4332,7 +4332,7 @@
         "word": "blaze",
         "translations": [
             {
-                "translation": "火；闪光",
+                "translation": "火焰；烈火",
                 "type": "n"
             },
             {
@@ -4982,7 +4982,7 @@
         "word": "breath",
         "translations": [
             {
-                "translation": "气息，呼吸；气味",
+                "translation": "呼吸",
                 "type": "n"
             }
         ]
@@ -5855,7 +5855,7 @@
         "word": "capable",
         "translations": [
             {
-                "translation": "能干的，有能力的",
+                "translation": "有本领的，有能力的；足以胜任的；能干的，有能力的",
                 "type": "adj"
             }
         ]
@@ -6330,8 +6330,12 @@
         "word": "centigrade",
         "translations": [
             {
-                "translation": "百分度的",
+                "translation": "摄氏度的",
                 "type": "adj"
+            },
+            {
+                "translation": "摄氏度",
+                "type": "n"
             }
         ]
     },
@@ -6487,7 +6491,7 @@
         "word": "chance",
         "translations": [
             {
-                "translation": "机会，机遇；可能性",
+                "translation": "机会；可能性",
                 "type": "n"
             }
         ]
@@ -6713,7 +6717,7 @@
         "word": "cheerful",
         "translations": [
             {
-                "translation": "快乐的，愉快的",
+                "translation": "高兴的",
                 "type": "adj"
             }
         ]
@@ -7226,7 +7230,7 @@
         "word": "classical",
         "translations": [
             {
-                "translation": "古典的；经典的",
+                "translation": "古典的",
                 "type": "adj"
             }
         ]
@@ -12468,7 +12472,7 @@
         "word": "disturb",
         "translations": [
             {
-                "translation": "打扰，扰乱；弄乱",
+                "translation": "搅乱",
                 "type": "v"
             }
         ]
@@ -13006,12 +13010,12 @@
         "word": "drill",
         "translations": [
             {
-                "translation": "钻头；操练",
-                "type": "n"
-            },
-            {
                 "translation": "钻孔",
                 "type": "v"
+            },
+            {
+                "translation": "训练",
+                "type": "n"
             }
         ]
     },
@@ -13499,8 +13503,12 @@
         "word": "edge",
         "translations": [
             {
-                "translation": "边缘，边；刀口",
+                "translation": "（悬崖、峭壁的）边缘；优势",
                 "type": "n"
+            },
+            {
+                "translation": "（使）徐徐移动",
+                "type": "v"
             }
         ]
     },
@@ -15021,7 +15029,7 @@
         "word": "excellent",
         "translations": [
             {
-                "translation": "卓越的，杰出的，极好的",
+                "translation": "优秀的",
                 "type": "adj"
             }
         ]
@@ -16209,7 +16217,7 @@
         "word": "fee",
         "translations": [
             {
-                "translation": "费，酬金；赏金",
+                "translation": "费用",
                 "type": "n"
             }
         ]
@@ -16450,7 +16458,7 @@
         "word": "fill",
         "translations": [
             {
-                "translation": "装满，盛满；占满",
+                "translation": "装满",
                 "type": "v"
             }
         ]
@@ -17155,7 +17163,7 @@
         "word": "foreign",
         "translations": [
             {
-                "translation": "外国的；外来的",
+                "translation": "外国的,外来的；陌生的，非自身的",
                 "type": "adj"
             }
         ]
@@ -20170,7 +20178,7 @@
         "word": "helpless",
         "translations": [
             {
-                "translation": "无助的；无能的",
+                "translation": "无助的",
                 "type": "adj"
             }
         ]
@@ -21117,7 +21125,7 @@
         "word": "idiom",
         "translations": [
             {
-                "translation": "习语，成语",
+                "translation": "习语",
                 "type": "n"
             }
         ]
@@ -22320,7 +22328,7 @@
         "word": "instead",
         "translations": [
             {
-                "translation": "代替，顶替；反而",
+                "translation": "代替，顶替；更换；反而",
                 "type": "adv"
             }
         ]
@@ -23024,7 +23032,7 @@
         "word": "item",
         "translations": [
             {
-                "translation": "条，条款",
+                "translation": "物品；条款，项目",
                 "type": "n"
             }
         ]
@@ -23490,7 +23498,7 @@
         "word": "kingdom",
         "translations": [
             {
-                "translation": "王国；领域，界",
+                "translation": "王国；领域",
                 "type": "n"
             }
         ]
@@ -25581,7 +25589,7 @@
         "word": "management",
         "translations": [
             {
-                "translation": "管理；经营，处理",
+                "translation": "管理，经营，处理；资方",
                 "type": "n"
             }
         ]
@@ -25893,7 +25901,7 @@
         "word": "mathematical",
         "translations": [
             {
-                "translation": "数学的，数学上的",
+                "translation": "数学的",
                 "type": "adj"
             }
         ]
@@ -26045,7 +26053,7 @@
         "word": "meanwhile",
         "translations": [
             {
-                "translation": "同时，当时",
+                "translation": "同时，与此同时",
                 "type": "adv"
             }
         ]
@@ -29575,7 +29583,7 @@
         "word": "outset",
         "translations": [
             {
-                "translation": "开始，开端",
+                "translation": "开始",
                 "type": "n"
             }
         ]
@@ -31285,6 +31293,10 @@
             {
                 "translation": "地方，地点；住所",
                 "type": "n"
+            },
+            {
+                "translation": "（尤指小心地）放置",
+                "type": "v"
             }
         ]
     },
@@ -31715,7 +31727,7 @@
         "word": "politics",
         "translations": [
             {
-                "translation": "政治，政治学；政纲",
+                "translation": "政治，政治事务",
                 "type": "n"
             }
         ]
@@ -33408,6 +33420,15 @@
         ]
     },
     {
+        "word": "puff",
+        "translations": [
+            {
+                "translation": "喷出",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "pull",
         "translations": [
             {
@@ -34118,7 +34139,7 @@
         "word": "reaction",
         "translations": [
             {
-                "translation": "反应；反作用",
+                "translation": "反应",
                 "type": "n"
             }
         ]
@@ -35268,11 +35289,11 @@
         "word": "republican",
         "translations": [
             {
-                "translation": "共和政体的；共和党的",
+                "translation": "共和国的；共和党的",
                 "type": "adj"
             },
             {
-                "translation": " 共和党人",
+                "translation": " 共和主义者共和党员",
                 "type": "n"
             }
         ]
@@ -36512,7 +36533,7 @@
         "word": "sauce",
         "translations": [
             {
-                "translation": " 调味汁， 作料",
+                "translation": "酱，调味汁",
                 "type": "n"
             }
         ]
@@ -36587,7 +36608,7 @@
         "word": "scale",
         "translations": [
             {
-                "translation": "规模，比例",
+                "translation": "鳞片，鳞状物；等级，级别，等级体系",
                 "type": "n"
             }
         ]
@@ -37480,11 +37501,11 @@
         "word": "shiver",
         "translations": [
             {
-                "translation": "颤抖，哆嗦",
+                "translation": "颤抖，打颤",
                 "type": "v"
             },
             {
-                "translation": "冷颤",
+                "translation": "颤抖，打颤",
                 "type": "n"
             }
         ]
@@ -37555,7 +37576,7 @@
         "word": "shortcoming",
         "translations": [
             {
-                "translation": " 短处， 缺点",
+                "translation": "短处，缺点",
                 "type": "n"
             }
         ]
@@ -38628,7 +38649,7 @@
         "word": "spade",
         "translations": [
             {
-                "translation": "铲，铁锹",
+                "translation": "铲子，铁锹",
                 "type": "n"
             }
         ]
@@ -39132,10 +39153,19 @@
         ]
     },
     {
+        "word": "star",
+        "translations": [
+            {
+                "translation": "明星，名角；星，恒星",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "stare",
         "translations": [
             {
-                "translation": " 盯， 凝视",
+                "translation": "盯，凝视",
                 "type": "n&vi"
             }
         ]
@@ -39764,8 +39794,12 @@
         "word": "struggle",
         "translations": [
             {
-                "translation": "搏斗",
+                "translation": "挣扎；努力；抗争",
                 "type": "v"
+            },
+            {
+                "translation": "挣扎",
+                "type": "n"
             }
         ]
     },
@@ -39814,6 +39848,15 @@
             {
                 "translation": "绊倒；失足；失误",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "stupid",
+        "translations": [
+            {
+                "translation": "愚蠢的，笨的；讨厌的",
+                "type": "adj"
             }
         ]
     },
@@ -41524,12 +41567,12 @@
         "word": "tip",
         "translations": [
             {
-                "translation": "轻击",
+                "translation": "倾斜；给小费",
                 "type": "v"
             },
             {
-                "translation": "给小费",
-                "type": "v"
+                "translation": "（比赛的）内部消息；实用的提示",
+                "type": "n"
             }
         ]
     },
@@ -42909,6 +42952,10 @@
             {
                 "translation": "垂直的；正直的",
                 "type": "adj"
+            },
+            {
+                "translation": "直立地",
+                "type": "adv"
             }
         ]
     },
@@ -44493,11 +44540,7 @@
         "word": "wreck",
         "translations": [
             {
-                "translation": "失事；残骸",
-                "type": "n"
-            },
-            {
-                "translation": "破坏",
+                "translation": "破坏，使毁坏",
                 "type": "v"
             }
         ]

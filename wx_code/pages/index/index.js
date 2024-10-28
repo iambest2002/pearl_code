@@ -40,6 +40,11 @@ Page({
       url: '/pages/index/showPGEEWords/showPGEEWords',
     });
   },
+  goToWordsBookPage(){
+    wx.navigateTo({
+      url: '/pages/book/book',
+    });
+  },
   
   onChangeSearch(e) {
     console.log('搜索框内容改变:', e.detail);

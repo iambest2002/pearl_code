@@ -1,6 +1,6 @@
-<button bind:tap="getWords">获取单词</button>
-<button bind:tap="getStorageInfo">查看内存</button>
-<button bind:tap="removeStorageSync">清除缓存</button>
+<button plain class="menu-button" bind:tap="getWords">获取单词</button>
+<button plain class="menu-button" bind:tap="getStorageInfo">查看内存</button>
+<button plain class="menu-button" bind:tap="removeStorageSync">清除缓存</button>
 
 <van-popup custom-style="height: 40%;" show="{{ onShowGetWordsPicker }}" round position="bottom"  custom-style="height: 40%;" >
     <van-picker

@@ -1,61 +1,91 @@
-<!-- 搜索 -->
-<view class="search-wrap">
-  <view class="search-box">
+<!--pages/Remenber.wxml-->
 
-    <input type="text" placeholder="请输入单词" class="input-cell" bindinput="getValue"/>
-    <image src="/image/search.png" class="search-img" bindtap="search"></image>
-
-  </view>
+<!-- 标题 -->
+<view class="title_view" style="height: {{navBarHeight}}px;">
+  <text class="title_text">{{appname}}</text>
+</view>
+<view style="padding-top:  {{navBarHeight}}px;margin: 0;">
 </view>
 
+<view class="remenber_contain" src="">
+
+  <image class="bg-image" mode="scaleToFill" src="../../images/background/blueback.png"></image>
+  <!-- 内容 -->
+  <view style="padding-left: 15px;padding-right: 15px;">
+
+    <!-- <view style="padding-top: 40rpx;">
+      <van-notice-bar background="#ecf9ff" left-icon="volume-o" text="Panda老师最新英语语法课上线啦！             Panda老师最新英语语法课上线啦！ " />
+    </view> -->
 
 
+    <view class="top_view">
 
-<block wx:if="{{word}}">
+      <!-- <text class="top_title_text" decode="{{true}}">今天学习了&nbsp;</text>
+      <text style="font-weight: 700;font-size: 2.4rem;padding: 0px;margin: opx;">{{studyTime}}</text>
+      <text class="top_title_text" decode="{{true}}">&nbsp;分钟</text> -->
+    </view>
 
-  <view class="word-wrap"> 
-
-    <view class="word-line">
-      <view class="word">{{inputValue}}</view>
-      <view class="add-book" bindtap="toAddWord"  wx:if="{{bookNameList.length!=0}}">
-        +加入生词本
+    <!-- 记单词 -->
+    <view class="rem-container">
+      <!-- 学习计划 标题 -->
+      <view class="plan_title_view">
+        <text style="font-weight: 800;font-size: 1.1em;">学习计划</text>
       </view>
-      <view class="add-book" bindtap="toBook" wx:if="{{bookNameList.length==0}}">
-        +加入生词本
+      <!-- 计划设置 -->
+      <view style="padding-top: 20px;">
+        <text style="font-size: 1.3rem;font-weight: 600;">{{book.name}}</text>
+        <view style="display: flex;justify-content: space-between;align-items: flex-end;">
+          <text style="display: block;font-size: 0.9em;padding-top: 3px;color:#2693ff ;">{{learnedWord}}/{{book.wordsNumber}}</text>
+          <navigator class="setplan_view" url="../setmyplan/setmyplan">
+            设置计划
+          </navigator>
+        </view>
       </view>
+
+      <!--记单词 蓝色框 -->
+      <view class="remenber_word_view">
+        <text style="font-size: 0.8em;font-weight: 700;color: white;">今日任务</text>
+        <!-- 今日数据 -->
+        <view class="today_data_view">
+          <view class="data_view">
+            <text>{{newWordToday}}</text>
+            <text style="font-size: 0.8em;">新词</text>
+          </view>
+          <view class="data_view">
+            <text>{{reviewWordToday}}</text>
+            <text style="font-size: 0.8em;">复习</text>
+          </view>
+          <view class="data_view">
+            <text>{{remaindWordToday}}</text>
+            <text style="font-size: 0.8em;">未学</text>
+          </view>
+        </view>
+
+        <!-- 开始学习 -->
+        <view class="begin_study_view">
+          
+          <navigator url="../startStudy/startStudy" class="begin_study_view_button">
+            开始学习
+          </navigator>
+        </view>
+
+
+
+
+      </view>
+
+
+
     </view>
 
-    <view class="tag-wrap">
-      <block wx:for="{{word.basic.tags}}">
-        <view class="tag">{{item}}</view>
-      </block>
-    </view>
 
-    <audio controls="true" name="{{inputValue}}" author="词典" src="http://dict.youdao.com/dictvoice?audio={{inputValue}}"></audio>
-    
   </view>
 
-  <view class="word-wrap">
-    <view class="word-title">音标</view>
-    <view>英式：{{word.basic.ph}}</view>
-    <view>美式：{{word.basic.usPh}}</view>
-  </view>
 
-  <view class="word-wrap">
-    <view class="word-title">常用释义</view>
-    <view wx:for="{{word.basic.explains}}">
-      {{item}}
-    </view>
-  </view>
 
-  <view class="word-wrap">
-    <view class="word-title">词态变化</view>
-    <view wx:for="{{word.basic.tense}}">
-      {{item.name}} : {{item.value}}
-    </view>
-  </view>
-</block>
 
+
+</view>
 
 
 

@@ -1,57 +1,58 @@
 <view class="header">
-    <!-- 未登陆 -->
-    <image wx:if="{{!userInfo}}" bindtap="getUserProfile" class="userinfo_avatar" src="/image/wode.png"></image>
-    <view wx:if="{{!userInfo}}" bindtap="getUserProfile" class="userinfo_nickname">点击登陆</view>
-    <!-- 已登陆 -->
-    <image wx:if="{{userInfo.avatarUrl}}" class="userinfo_avatar" src="{{userInfo.avatarUrl}}" bindtap="previewImg"></image>
-    <view wx:if="{{userInfo}}" class="header_right">
-        <view class="userinfo_nickname">{{userInfo.nickName}}</view>
-        <view class="userinfo_nickname" wx:if="{{userInfo.school}}">{{userInfo.school}}</view>
-        <text class="tuichu" bindtap="loginOut">退出登录</text>
-    </view>
+  <!-- 未登陆 -->
+  <image wx:if="{{!userInfo}}" bindtap="getUserProfile" class="userinfo_avatar" src="/image/wode.png"></image>
+  <view wx:if="{{!userInfo}}" bindtap="getUserProfile" class="userinfo_nickname">点击登陆</view>
+  <!-- 已登陆 -->
+  <image wx:if="{{userInfo.avatarUrl}}" class="userinfo_avatar" src="{{userInfo.avatarUrl}}" bindtap="previewImg"></image>
+  <view wx:if="{{userInfo}}" class="header_right">
+    <view class="userinfo_nickname">{{userInfo.nickName}}</view>
+    <view class="userinfo_nickname" wx:if="{{userInfo.school}}">{{userInfo.school}}</view>
+    <text class="tuichu" bindtap="loginOut">退出登录</text>
+  </view>
 </view>
 
 <!-- 头像昵称基本信息弹框 -->
 <view>
-    <view class="userInfo_tank_bg" bindtap="closeTank" wx:if="{{userInfo_tank}}"></view>
-    <view class="userInfo_tank {{userInfo_tank?'transfromjoin':'transfromout'}}">
-        <view class="tank_title">
-            <text>申请获取您的头像、昵称</text>
-        </view>
-        <view class="tank_content">
-            <text>头像：</text>
-            <button class="avatar_button" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-                <image class="avatar_url" src="{{avatarUrl}}"></image>
-                <view class="pos_photo">
-                    <text class="iconfont icon-paizhao"></text>
-                </view>
-            </button>
-        </view>
-        <view class="tank_content">
-            <text>昵称：</text>
-            <input form-type='submit' bindblur="getNickName" placeholder="请输入昵称" type="nickname" />
-        </view>
-        <view class="confirm_button">
-            <view>
-                <button bindtap="closeTank">拒绝</button>
-            </view>
-            <view>
-                <button bindtap="submit" type="primary">允许</button>
-            </view>
-        </view>
+  <view class="userInfo_tank_bg" bindtap="closeTank" wx:if="{{userInfo_tank}}"></view>
+  <view class="userInfo_tank {{userInfo_tank?'transfromjoin':'transfromout'}}">
+    <view class="tank_title">
+      <text>申请获取您的头像、昵称</text>
     </view>
+    <view class="tank_content">
+      <text>头像：</text>
+      <button class="avatar_button" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image class="avatar_url" src="{{avatarUrl}}"></image>
+        <view class="pos_photo">
+          <text class="iconfont icon-paizhao"></text>
+        </view>
+      </button>
+    </view>
+    <view class="tank_content">
+      <text>昵称：</text>
+      <input form-type='submit' bindblur="getNickName" placeholder="请输入昵称" type="nickname" />
+    </view>
+    <view class="confirm_button">
+      <view>
+        <button bindtap="closeTank">拒绝</button>
+      </view>
+      <view>
+        <button bindtap="submit" type="primary">允许</button>
+      </view>
+    </view>
+  </view>
 </view>
+<view class="function-buttons">
+  <!-- 个人信息按钮 -->
+  <button class="menu-button" plain wx:if="{{userInfo}}" bindtap="toUserInfo">
+    个人信息
+  </button>
 
-<!-- 个人信息按钮 -->
-<view class="menu-cell" wx:if="{{userInfo}}" bindtap="toUserInfo">
-  个人信息
-</view>
-
-<!-- 定时记账按钮 -->
-<view class="menu-cell"  bindtap="toScheduleAccounting">
-  定时记账
-</view>
-<!-- 定时记账按钮 -->
-<view class="menu-cell"  bindtap="toGetWords">
-  获取单词
+  <!-- 定时记账按钮 -->
+  <button disabled="true" plain class="menu-button" bindtap="toScheduleAccounting">
+    定时记账
+  </button>
+  <!-- 定时记账按钮 -->
+  <button plain class="menu-button" bindtap="toGetWords">
+    获取单词
+  </button>
 </view>

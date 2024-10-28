@@ -5,6 +5,7 @@
     "pages/user/user",
     "pages/show/show",
     "pages/book/book",
+    "pages/English/English",
     "pages/index/index",
     "pages/index/addBook/addBook",
     "pages/book/newBook/newBook",
@@ -20,7 +21,8 @@
     "pages/user/getWords/getWords",
     "pages/index/showCET4Words/showCET4Words",
     "pages/index/showCET6Words/showCET6Words",
-    "pages/index/showPGEEWords/showPGEEWords"
+    "pages/index/showPGEEWords/showPGEEWords",
+    "pages/index/book/book"
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -89,8 +91,8 @@
         "selectedIconPath": "image/bill-active.png"
       },
       {
-        "pagePath": "pages/book/book",
-        "text": "生词本",
+        "pagePath": "pages/English/English",
+        "text": "复习",
         "iconPath": "image/book.png",
         "selectedIconPath": "image/book_yes.png"
       },
