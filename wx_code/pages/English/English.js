@@ -3,15 +3,17 @@ const app = getApp()
 
 Page({
   data: {
-    
+    books:[],
+
   },
   
   onLoad() {
-    if(wx.getStorageSync('word')){
+    if(wx.getStorageSync('keys')){
       this.setData({
-        word:wx.getStorageSync('word'),
-        inputValue:wx.getStorageSync('word').query
+        word:wx.getStorageSync('keys'),
+        inputValue:wx.getStorageSync('keys')
       })
+      console(word);
     }
     
   },

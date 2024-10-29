@@ -9,7 +9,7 @@
 
 <view class="remenber_contain" src="">
 
-  <image class="bg-image" mode="scaleToFill" src="../../images/background/blueback.png"></image>
+  <!-- <image class="bg-image" mode="scaleToFill" src="../../images/background/blueback.png"></image> -->
   <!-- 内容 -->
   <view style="padding-left: 15px;padding-right: 15px;">
 
@@ -36,7 +36,7 @@
         <text style="font-size: 1.3rem;font-weight: 600;">{{book.name}}</text>
         <view style="display: flex;justify-content: space-between;align-items: flex-end;">
           <text style="display: block;font-size: 0.9em;padding-top: 3px;color:#2693ff ;">{{learnedWord}}/{{book.wordsNumber}}</text>
-          <navigator class="setplan_view" url="../setmyplan/setmyplan">
+          <navigator class="setplan_view" url="../setMyPlan/setMyPlan">
             设置计划
           </navigator>
         </view>

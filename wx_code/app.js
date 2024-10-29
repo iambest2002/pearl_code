@@ -48,6 +48,47 @@ App({
   globalData: {
     userInfo: null,
     openid:null,
-    wordObject: null
+    wordObject: null,
+    daySentence1: "",
+    daySentence2: "",
+    daySentence3: "",
+    navBarHeight: 0, // 导航栏高度
+    menuRight: 0, // 胶囊距右方间距（方保持左、右间距一致）
+    menuTop: 0, // 胶囊距底部间距（保持底部间距一致）
+    menuHeight: 0, // 胶囊高度（自定义内容可与胶囊高度保证一致）
+    books: [
+      {
+        "_id": "CET4Full",
+        "title": "四级大纲词 『CET4+』",
+        "desc": "CET4+",
+        "name": "四级大纲词",
+        "wordsNumber": 3739,
+        "peopleNumber": 0.0,
+        "image": "../../image/book-CET4Full.png"
+      },
+      {
+        "_id": "CET6Full",
+        "title": "六级大纲词 『CET6+』",
+        "desc": "CET6+",
+        "name": "六级大纲词",
+        "wordsNumber": 2078,
+        "peopleNumber": 0.0,
+        "image": "../../image/book-CET6Full.png"
+      },
+      {
+        "_id": "kaoYanFull",
+        "title": "考研大纲词汇 『考研+』",
+        "desc": "考研+",
+        "name": "考研大纲词汇",
+        "wordsNumber": 4533,
+        "peopleNumber": 0.0,
+        "image": "../../image/book-kaoYanFull.png"
+      },
+      
+    ],
+    value:0,
+    mybook: 0,
+    everydayWord: 100,
+    learnedWord: 0,
   }
 })

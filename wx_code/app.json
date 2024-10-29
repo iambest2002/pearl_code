@@ -22,7 +22,8 @@
     "pages/index/showCET4Words/showCET4Words",
     "pages/index/showCET6Words/showCET6Words",
     "pages/index/showPGEEWords/showPGEEWords",
-    "pages/index/book/book"
+    "pages/index/book/book",
+    "pages/setMyPlan/setMyPlan"
   ],
   "window": {
     "backgroundColor": "#ffffff",

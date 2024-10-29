@@ -1,7 +1,7 @@
 import json
 
-file_path = 'C:/Users/98140/Desktop/json/3-CET4-顺序_no_phrases.json'
-output_path = 'C:/Users/98140/Desktop/json/new_json/3-CET4-顺序_no_phrases.json'
+file_path = 'C:/Users/98140/Desktop/json/old_json/3-CET4-顺序.json'
+output_path = 'C:/Users/98140/Desktop/json/old_json/3-CET4-顺序_词组.json'
 
 # 读取JSON文件
 with open(file_path, 'r', encoding='utf-8') as file:
