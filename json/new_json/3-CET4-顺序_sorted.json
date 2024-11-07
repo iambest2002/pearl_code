@@ -1436,7 +1436,7 @@
         "word": "aloud",
         "translations": [
             {
-                "translation": "出声地，大声地",
+                "translation": "大声地",
                 "type": "adv"
             }
         ]
@@ -2009,8 +2009,8 @@
         "word": "apologize",
         "translations": [
             {
-                "translation": "道歉，谢罪，认错",
-                "type": "v"
+                "translation": "道歉",
+                "type": "vi"
             }
         ]
     },
@@ -3684,7 +3684,7 @@
         "word": "beard",
         "translations": [
             {
-                "translation": "胡须，络腮胡子",
+                "translation": "（下巴上的）胡须",
                 "type": "n"
             }
         ]
@@ -5090,7 +5090,7 @@
         "word": "brim",
         "translations": [
             {
-                "translation": "边，边缘；帽沿",
+                "translation": "边缘",
                 "type": "n"
             }
         ]
@@ -5807,7 +5807,7 @@
         "word": "cannon",
         "translations": [
             {
-                "translation": "大炮，火炮；榴弹炮",
+                "translation": "大炮",
                 "type": "n"
             }
         ]
@@ -8710,7 +8710,7 @@
         "word": "conquer",
         "translations": [
             {
-                "translation": "征服，战胜；破除",
+                "translation": "征服，攻克",
                 "type": "v"
             }
         ]
@@ -9360,8 +9360,8 @@
         "word": "cooperate",
         "translations": [
             {
-                "translation": "合作，协作；配合",
-                "type": "v"
+                "translation": "合作",
+                "type": "vi"
             }
         ]
     },
@@ -10413,7 +10413,7 @@
         "word": "cushion",
         "translations": [
             {
-                "translation": "垫子，坐垫，靠垫",
+                "translation": "坐垫",
                 "type": "n"
             }
         ]
@@ -11958,7 +11958,7 @@
         "word": "director",
         "translations": [
             {
-                "translation": "指导者；理事；导演",
+                "translation": "主任；经理，董事；（电影、戏剧等的）导演",
                 "type": "n"
             }
         ]
@@ -12173,7 +12173,11 @@
         "word": "disgust",
         "translations": [
             {
-                "translation": "厌恶，憎恶",
+                "translation": "使作呕，使厌恶",
+                "type": "v"
+            },
+            {
+                "translation": "厌恶",
                 "type": "n"
             }
         ]
@@ -12429,8 +12433,8 @@
         "word": "distress",
         "translations": [
             {
-                "translation": "使痛苦，悲痛",
-                "type": "v"
+                "translation": "悲伤，痛苦，忧虑",
+                "type": "n"
             }
         ]
     },
@@ -17436,7 +17440,7 @@
         "word": "fountain",
         "translations": [
             {
-                "translation": "泉水，喷泉；源泉",
+                "translation": "源泉",
                 "type": "n"
             }
         ]
@@ -18952,7 +18956,7 @@
         "word": "grant",
         "translations": [
             {
-                "translation": "授予；允许",
+                "translation": "拨款；授予，给予",
                 "type": "v"
             }
         ]
@@ -19986,7 +19990,7 @@
         "word": "heal",
         "translations": [
             {
-                "translation": "治愈；使和解",
+                "translation": "恢复",
                 "type": "v"
             }
         ]
@@ -24715,7 +24719,7 @@
         "word": "limb",
         "translations": [
             {
-                "translation": "肢，臂，翼；树枝",
+                "translation": "肢体",
                 "type": "n"
             }
         ]
@@ -25818,7 +25822,7 @@
         "word": "married",
         "translations": [
             {
-                "translation": "已婚的；婚姻的",
+                "translation": "已婚的，夫妇的；婚姻的",
                 "type": "adj"
             }
         ]
@@ -25947,7 +25951,7 @@
         "word": "material",
         "translations": [
             {
-                "translation": "材料；素材a物质的",
+                "translation": "材料，原料；素材，资料",
                 "type": "n"
             }
         ]
@@ -27732,7 +27736,11 @@
         "word": "narrow",
         "translations": [
             {
-                "translation": "限制",
+                "translation": "差距小的，微小的；狭窄的",
+                "type": "adj"
+            },
+            {
+                "translation": "（使）变窄",
                 "type": "v"
             }
         ]
@@ -27808,7 +27816,7 @@
         "word": "nature",
         "translations": [
             {
-                "translation": "大自然；本性；性质",
+                "translation": "大自然；天性；性质",
                 "type": "n"
             }
         ]
@@ -28805,7 +28813,7 @@
         "word": "occasion",
         "translations": [
             {
-                "translation": "场合",
+                "translation": "场合，时候，活动",
                 "type": "n"
             }
         ]
@@ -31472,7 +31480,7 @@
         "word": "player",
         "translations": [
             {
-                "translation": "游戏的人；比赛者",
+                "translation": "参赛选手，队员；演奏者",
                 "type": "n"
             }
         ]
@@ -32472,7 +32480,7 @@
         "word": "preserve",
         "translations": [
             {
-                "translation": "保护",
+                "translation": "保存；保护",
                 "type": "v"
             }
         ]
@@ -32806,7 +32814,7 @@
         "word": "probable",
         "translations": [
             {
-                "translation": "或有的；大概的",
+                "translation": "很可能的",
                 "type": "adj"
             }
         ]
@@ -33268,7 +33276,7 @@
         "word": "prosperous",
         "translations": [
             {
-                "translation": "繁荣的，昌盛的",
+                "translation": "富裕的",
                 "type": "adj"
             }
         ]
@@ -33705,8 +33713,12 @@
         "word": "quality",
         "translations": [
             {
-                "translation": "品质",
+                "translation": "质量；品质",
                 "type": "n"
+            },
+            {
+                "translation": "优质的",
+                "type": "adj"
             }
         ]
     },
@@ -33986,11 +33998,7 @@
         "word": "rage",
         "translations": [
             {
-                "translation": " 狂吹； 汹涌； 激烈进行； 发怒， 发火",
-                "type": "vi"
-            },
-            {
-                "translation": "狂怒，盛怒；风靡一时的事物，时尚",
+                "translation": "极怒",
                 "type": "n"
             }
         ]
@@ -34459,7 +34467,7 @@
         "word": "recent",
         "translations": [
             {
-                "translation": "新近的，最近的",
+                "translation": "最近的",
                 "type": "adj"
             }
         ]
@@ -36018,7 +36026,7 @@
         "word": "rib",
         "translations": [
             {
-                "translation": "肋，肋骨",
+                "translation": "肋骨，伞骨",
                 "type": "n"
             }
         ]
@@ -36028,6 +36036,15 @@
         "translations": [
             {
                 "translation": "缎带，丝带；带状物",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "rice",
+        "translations": [
+            {
+                "translation": "米饭",
                 "type": "n"
             }
         ]
@@ -39863,8 +39880,12 @@
         "word": "store",
         "translations": [
             {
-                "translation": "贮藏；贮存品；商店",
+                "translation": "商店；储存品",
                 "type": "n"
+            },
+            {
+                "translation": "贮藏，储存",
+                "type": "v"
             }
         ]
     },
@@ -40522,7 +40543,7 @@
         "word": "summit",
         "translations": [
             {
-                "translation": " 最高点， 峰顶； 最高级会议",
+                "translation": "最高点，峰顶；最高级会议",
                 "type": "n"
             }
         ]
@@ -40531,7 +40552,7 @@
         "word": "sunlight",
         "translations": [
             {
-                "translation": " 日光， 阳光",
+                "translation": "日光，阳光",
                 "type": "n"
             }
         ]
@@ -40540,7 +40561,7 @@
         "word": "sunrise",
         "translations": [
             {
-                "translation": " 日出； 朝霞",
+                "translation": "日出；朝霞",
                 "type": "n"
             }
         ]
@@ -40549,7 +40570,7 @@
         "word": "sunset",
         "translations": [
             {
-                "translation": " 日落； 晚霞",
+                "translation": "日落",
                 "type": "n"
             }
         ]
@@ -40558,7 +40579,7 @@
         "word": "sunshine",
         "translations": [
             {
-                "translation": " 日光， 阳光",
+                "translation": "日光，阳光",
                 "type": "n"
             }
         ]
@@ -41260,6 +41281,19 @@
         ]
     },
     {
+        "word": "tape",
+        "translations": [
+            {
+                "translation": "胶带",
+                "type": "n"
+            },
+            {
+                "translation": "录音",
+                "type": "vt"
+            }
+        ]
+    },
+    {
         "word": "target",
         "translations": [
             {
@@ -41764,6 +41798,19 @@
             {
                 "translation": "但",
                 "type": "prep"
+            }
+        ]
+    },
+    {
+        "word": "thought",
+        "translations": [
+            {
+                "translation": "思想，想法；思维，思考",
+                "type": "n"
+            },
+            {
+                "translation": "想，以为",
+                "type": "v"
             }
         ]
     },
@@ -42299,8 +42346,17 @@
         "word": "tradition",
         "translations": [
             {
-                "translation": " 传统，惯例",
+                "translation": "传统，惯例",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "traditional",
+        "translations": [
+            {
+                "translation": "传统的",
+                "type": "adj"
             }
         ]
     },
@@ -42909,6 +42965,15 @@
         "translations": [
             {
                 "translation": "打字机",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "typhoon",
+        "translations": [
+            {
+                "translation": "台风",
                 "type": "n"
             }
         ]
@@ -43905,6 +43970,15 @@
         ]
     },
     {
+        "word": "vine",
+        "translations": [
+            {
+                "translation": "藤，蔓",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "vinegar",
         "translations": [
             {
@@ -44017,6 +44091,23 @@
         "translations": [
             {
                 "translation": "视觉；构想，展望",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "visit",
+        "translations": [
+            {
+                "translation": "参观，访问",
+                "type": "v"
+            },
+            {
+                "translation": "拜访",
+                "type": "vt"
+            },
+            {
+                "translation": "访问参观，游览；拜访",
                 "type": "n"
             }
         ]
@@ -44632,11 +44723,7 @@
         "word": "whisper",
         "translations": [
             {
-                "translation": "低声地讲",
-                "type": "v"
-            },
-            {
-                "translation": "低语",
+                "translation": "小声说，耳语，低语",
                 "type": "v"
             }
         ]
@@ -45170,6 +45257,19 @@
             {
                 "translation": "叫喊",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "yesterday",
+        "translations": [
+            {
+                "translation": "昨天",
+                "type": "n"
+            },
+            {
+                "translation": "在昨天",
+                "type": "adv"
             }
         ]
     },
