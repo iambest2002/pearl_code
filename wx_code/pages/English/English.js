@@ -4,37 +4,60 @@ const app = getApp()
 Page({
   data: {
     books:[],
+    bookName: '',      // 单词书名
+    wordsNumber: 0,    // 单词数
+    everydayWord: 0    // 每日单词数
 
   },
-  
-  onLoad() {
-    if(wx.getStorageSync('keys')){
-      this.setData({
-        word:wx.getStorageSync('keys'),
-        inputValue:wx.getStorageSync('keys')
-      })
-      console(word);
-    }
-    
+  updatePlan(data) {
+    console.log("接收到的数据:", data);
+    // 更新页面数据
+    this.setData({
+      bookName: data.bookName,
+      wordsNumber: data.wordsNumber,
+      everydayWord: data.everydayWord
+    });
   },
-  onShow(){
-    wx.cloud.database().collection('word_books').get()
-    .then(res=>{
-      console.log(res)
-      
-      let bookNameList = []
-      for(let i in res.data){
-        bookNameList.push(res.data[i].name)
-      }
-      this.setData({
-        bookNameList,
-        book:res.data
-      })
+  toSetMyBook(){
+    wx.navigateTo({
+      url: '/pages/setMyPlan/setMyPlan',
     })
   },
+  onLoad: function (){
+
+    // if(wx.getStorageSync('keys')){
+    //   this.setData({
+    //     word:wx.getStorageSync('keys'),
+    //     inputValue:wx.getStorageSync('keys')
+    //   })
+    //   console(word);
+    // }
+    // console.log("更新数据:", data); // 添加此行以检查传递的数据
+    // this.setData({
+    //   bookName: data.bookName,
+    //   wordsNumber: data.wordsNumber,
+    //   everydayWord: data.everydayWord
+    // });
+    console.log("页面加载");
+    console.log("当前数据:", this.data);
+  },
+  onShow(){
+    // wx.cloud.database().collection('word_books').get()
+    // .then(res=>{
+    //   console.log(res)
+      
+    //   let bookNameList = []
+    //   for(let i in res.data){
+    //     bookNameList.push(res.data[i].name)
+    //   }
+    //   this.setData({
+    //     bookNameList,
+    //     book:res.data
+    //   })
+    // })
+    //updatePlan(data);
+  },
   toBook(){
-
-
     wx.switchTab({
       url: '/pages/book/book',
       success(){

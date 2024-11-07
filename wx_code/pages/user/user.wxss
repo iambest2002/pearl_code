@@ -21,10 +21,10 @@
   align-items: center; /* 垂直居中 */
   transition: background 0.2s; /* 添加过渡效果 */
 }
-
+/* 
 .menu-button:hover {
-  background: #f5f5f5; /* 悬停时的背景颜色 */
-}
+  background: #f5f5f5; /* 悬停时的背景颜色 
+} */
 
 .menu-button:last-of-type {
   border-bottom: none; /* 去掉最后一个按钮的边框 */

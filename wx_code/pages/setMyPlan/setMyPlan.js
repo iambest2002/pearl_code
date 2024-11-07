@@ -73,6 +73,41 @@ Page({
   onClose() {
     this.setData({ show: false });
   },
+
+  savePlan() {
+    var bookIndex = app.globalData.mybook;
+    var book = app.globalData.books[bookIndex] || {};
+    const everydayWord = app.globalData.everydayWord;
+
+    const dataToPass = {
+      bookName: book.name,
+      wordsNumber: book.wordsNumber,
+      everydayWord: everydayWord
+    };
+
+    console.log("要传递的数据:", dataToPass); // 检查数据
+
+      const pages = getCurrentPages();
+      console.log("当前页面栈:", pages); // 输出当前页面栈
+
+      if (pages.length >= 2) {
+        const prevPage = pages[pages.length - 2]; // 获取上一页
+        console.log("上一页:", prevPage); // 输出上一页对象
+
+        if (typeof prevPage.updatePlan === 'function') {
+          console.log("调用上一页的 updatePlan "); // 检查调用
+          prevPage.updatePlan(dataToPass);
+        } else {
+          console.log("上一页没有 updatePlan 方法");
+        }
+      } else {
+        console.log("上一页不存在");
+      }
+    
+    wx.navigateBack();
+},
+  
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -11,3 +11,31 @@
   font-size: 0.7em;
   padding: 3px;
 }
+
+
+.menu-button {
+  margin: 10rpx;
+  height: 40px;
+  width: 100%; /* 按钮宽度100% */
+  padding: 15rpx; /* 内边距 */
+  border: none !important; /* 强制去掉边框 */
+  background: #fff; /* 按钮背景 */
+  font-size: 32rpx; /* 字体大小 */
+  text-align: left; /* 文本左对齐 */
+  color: #333; /* 字体颜色 */
+  text-align: center; /* 文本居中 */
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  transition: background 0.2s; /* 添加过渡效果 */
+}
+
+
+
+.menu-button:last-of-type {
+  border-bottom: none; /* 去掉最后一个按钮的边框 */
+}
+
+.menu-button:active {
+  background: #e0e0e0; /* 点击时的背景颜色 */
+}

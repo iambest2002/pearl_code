@@ -5,7 +5,8 @@
     "compileHotReLoad": true,
     "urlCheck": false,
     "preloadBackgroundData": false,
-    "skylineRenderEnable": false
+    "skylineRenderEnable": false,
+    "autoAudits": false
   },
   "libVersion": "3.4.7"
 }

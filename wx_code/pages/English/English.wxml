@@ -36,9 +36,9 @@
         <text style="font-size: 1.3rem;font-weight: 600;">{{book.name}}</text>
         <view style="display: flex;justify-content: space-between;align-items: flex-end;">
           <text style="display: block;font-size: 0.9em;padding-top: 3px;color:#2693ff ;">{{learnedWord}}/{{book.wordsNumber}}</text>
-          <navigator class="setplan_view" url="../setMyPlan/setMyPlan">
+          <button class="setplan_view" bind:tap="toSetMyBook" >
             设置计划
-          </navigator>
+          </button>
         </view>
       </view>
 
@@ -48,15 +48,15 @@
         <!-- 今日数据 -->
         <view class="today_data_view">
           <view class="data_view">
-            <text>{{newWordToday}}</text>
+            <text>{{bookName}}</text>
             <text style="font-size: 0.8em;">新词</text>
           </view>
           <view class="data_view">
-            <text>{{reviewWordToday}}</text>
+            <text>{{wordsNumber}}</text>
             <text style="font-size: 0.8em;">复习</text>
           </view>
           <view class="data_view">
-            <text>{{remaindWordToday}}</text>
+            <text>{{bookName}}</text>
             <text style="font-size: 0.8em;">未学</text>
           </view>
         </view>
@@ -88,4 +88,9 @@
 </view>
 
 
+<view style="padding: 20rpx;">
+  <text>单词书名: {{bookName}}</text>
+  <text>单词数: {{wordsNumber}}</text>
+  <text>每日单词: {{everydayWord}}</text>
+</view>
 

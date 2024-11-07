@@ -12,7 +12,7 @@ Page({
 		maxDate: new Date().getTime(), // 最大日期
 		dateValue: '', // 选择的日期
 	},
-
+  
 	onLoad: function (options) {
 		console.log('onLoad options:', options);
 

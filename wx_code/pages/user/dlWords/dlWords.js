@@ -14,34 +14,53 @@ Page({
   onLoad(options) {
 
   },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
 
   },
-  dlCET4Words(){
-    wx.cloud.downloadFile({
-      fileID: 'cloud://daily-consumption-1eonh2e259454a.6461-daily-consumption-1eonh2e259454a-1327338363/3-CET4-顺序.json', // 上传后获得的文件ID
-      success: res => {
-        const filePath = res.tempFilePath;
-        // 保存文件到用户设备
-        wx.saveFile({
-          tempFilePath: filePath,
-          success: saveRes => {
-            console.log('文件保存成功', saveRes.savedFilePath);
-          },
-          fail: err => {
-            console.error('文件保存失败', err);
-          }
-        });
-      },
-      fail: err => {
-        console.error('文件下载失败', err);
-      }
-    });
-    
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
   },
 
- 
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
 })

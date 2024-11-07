@@ -60,7 +60,7 @@ App({
       {
         "_id": "CET4Full",
         "title": "四级大纲词 『CET4+』",
-        "desc": "CET4+",
+        "desc": "cet4WordsGrouped",
         "name": "四级大纲词",
         "wordsNumber": 3739,
         "peopleNumber": 0.0,
