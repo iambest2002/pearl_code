@@ -1119,7 +1119,7 @@
         "word": "agent",
         "translations": [
             {
-                "translation": "代理商",
+                "translation": "代理商，代理人",
                 "type": "n"
             }
         ]
@@ -2781,7 +2781,7 @@
         "word": "attend",
         "translations": [
             {
-                "translation": "出席；照顾，护理",
+                "translation": "上（学），去（教堂）；处理；出席",
                 "type": "v"
             }
         ]
@@ -2853,7 +2853,7 @@
         "word": "attractive",
         "translations": [
             {
-                "translation": "有吸引力的",
+                "translation": "（事物）有吸引力的，诱人的",
                 "type": "adj"
             }
         ]
@@ -4637,7 +4637,7 @@
         "word": "border",
         "translations": [
             {
-                "translation": "边，边缘；边界",
+                "translation": "边界",
                 "type": "n"
             }
         ]
@@ -4890,7 +4890,7 @@
         "word": "brass",
         "translations": [
             {
-                "translation": "黄铜；黄铜器",
+                "translation": "黄铜",
                 "type": "n"
             }
         ]
@@ -5279,6 +5279,15 @@
             {
                 "translation": "水桶；吊桶；铲斗",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "buckle",
+        "translations": [
+            {
+                "translation": "扣紧，扣住",
+                "type": "v"
             }
         ]
     },
@@ -5717,7 +5726,7 @@
         "word": "camp",
         "translations": [
             {
-                "translation": "野营，营地，兵营",
+                "translation": "野营",
                 "type": "n"
             }
         ]
@@ -7540,7 +7549,11 @@
         "translations": [
             {
                 "translation": "教练",
-                "type": "v&n"
+                "type": "n"
+            },
+            {
+                "translation": "训练，指导",
+                "type": "vt"
             }
         ]
     },
@@ -9065,7 +9078,7 @@
         "word": "content",
         "translations": [
             {
-                "translation": "内容",
+                "translation": "内容；含量；（书、讲话、节目等）主题",
                 "type": "n"
             }
         ]
@@ -9378,7 +9391,7 @@
         "word": "coordinate",
         "translations": [
             {
-                "translation": "使协调，调节",
+                "translation": "使协调，使一致，调整",
                 "type": "v"
             }
         ]
@@ -9695,7 +9708,7 @@
         "word": "countryside",
         "translations": [
             {
-                "translation": "乡下，农村",
+                "translation": "乡村，郊野",
                 "type": "n"
             }
         ]
@@ -9842,8 +9855,12 @@
         "word": "craft",
         "translations": [
             {
-                "translation": "工艺；手艺，行业",
+                "translation": "航天器",
                 "type": "n"
+            },
+            {
+                "translation": "手工制作，精心制作",
+                "type": "vt"
             }
         ]
     },
@@ -12817,7 +12834,7 @@
         "word": "downstairs",
         "translations": [
             {
-                "translation": "在楼下",
+                "translation": "在楼下，往楼下",
                 "type": "adv"
             },
             {
@@ -13585,7 +13602,7 @@
         "word": "efficient",
         "translations": [
             {
-                "translation": "效率高的，有能力的",
+                "translation": "效率高的",
                 "type": "adj"
             }
         ]
@@ -13692,7 +13709,7 @@
         "word": "elbow",
         "translations": [
             {
-                "translation": "肘，肘部；弯管",
+                "translation": "手肘",
                 "type": "n"
             }
         ]
@@ -16212,8 +16229,12 @@
         "word": "feature",
         "translations": [
             {
-                "translation": "特点",
+                "translation": "特征，特点，特色",
                 "type": "n"
+            },
+            {
+                "translation": "以……为主要组成；起重要作用，作为主要角色",
+                "type": "v"
             }
         ]
     },
@@ -17913,7 +17934,7 @@
         "word": "furnace",
         "translations": [
             {
-                "translation": "炉子，熔炉；鼓风炉",
+                "translation": "炉子，熔炉",
                 "type": "n"
             }
         ]
@@ -19187,7 +19208,7 @@
         "word": "groan",
         "translations": [
             {
-                "translation": "哼，呻吟",
+                "translation": "呻吟；抱怨",
                 "type": "v"
             },
             {
@@ -20504,7 +20525,7 @@
         "word": "history",
         "translations": [
             {
-                "translation": "历史；个人经历",
+                "translation": "历史，历史学",
                 "type": "n"
             }
         ]
@@ -21913,7 +21934,7 @@
         "word": "infant",
         "translations": [
             {
-                "translation": "婴儿",
+                "translation": "幼儿，婴儿",
                 "type": "n"
             },
             {
@@ -23299,7 +23320,7 @@
         "word": "judge",
         "translations": [
             {
-                "translation": "法官；裁判员",
+                "translation": "判决，审判",
                 "type": "n"
             }
         ]
@@ -24630,8 +24651,12 @@
         "word": "lifetime",
         "translations": [
             {
-                "translation": "一生，终身",
+                "translation": "一生，终生，寿命",
                 "type": "n"
+            },
+            {
+                "translation": "一生的，终生的",
+                "type": "adj"
             }
         ]
     },
@@ -26313,7 +26338,7 @@
         "word": "member",
         "translations": [
             {
-                "translation": "成员，会员",
+                "translation": "成员；会员",
                 "type": "n"
             }
         ]
@@ -26430,7 +26455,7 @@
         "word": "merely",
         "translations": [
             {
-                "translation": "仅仅，只不过",
+                "translation": "只是，仅仅，只不过",
                 "type": "adv"
             }
         ]
@@ -27018,7 +27043,7 @@
         "word": "model",
         "translations": [
             {
-                "translation": "模型；模式；模特儿",
+                "translation": "模型；模式；模特；模范，榜样，典型；型号",
                 "type": "n"
             }
         ]
@@ -31059,7 +31084,7 @@
         "word": "physician",
         "translations": [
             {
-                "translation": "医生，内科医生",
+                "translation": "内科医生",
                 "type": "n"
             }
         ]
@@ -31413,8 +31438,12 @@
         "word": "plant",
         "translations": [
             {
-                "translation": "工厂",
+                "translation": "植物；工厂",
                 "type": "n"
+            },
+            {
+                "translation": "种植",
+                "type": "v"
             }
         ]
     },
@@ -31891,6 +31920,15 @@
         "translations": [
             {
                 "translation": "人口；人口总数；动物数量",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "porch",
+        "translations": [
+            {
+                "translation": "门廊",
                 "type": "n"
             }
         ]
@@ -32729,7 +32767,7 @@
         "word": "prior",
         "translations": [
             {
-                "translation": "在先的；优先的",
+                "translation": "先前的；在……的前面",
                 "type": "adj"
             }
         ]
@@ -32834,6 +32872,15 @@
             {
                 "translation": "问题",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "proclaim",
+        "translations": [
+            {
+                "translation": "宣告；声明，声称",
+                "type": "v"
             }
         ]
     },
@@ -33272,7 +33319,7 @@
             }
         ]
     },
-    {
+    {                   
         "word": "prosperous",
         "translations": [
             {
@@ -33953,7 +34000,7 @@
         "word": "radio",
         "translations": [
             {
-                "translation": "无线电；收音机",
+                "translation": "无线电",
                 "type": "n"
             }
         ]
@@ -34096,12 +34143,8 @@
         "word": "range",
         "translations": [
             {
-                "translation": "范围",
+                "translation": "一系列；范围，界限",
                 "type": "n"
-            },
-            {
-                "translation": "在范围内变化",
-                "type": "v"
             }
         ]
     },
@@ -34328,7 +34371,7 @@
         "word": "realize",
         "translations": [
             {
-                "translation": "实现；认识到",
+                "translation": "认识到，意识到",
                 "type": "v"
             }
         ]
@@ -34712,7 +34755,7 @@
         "word": "reflect",
         "translations": [
             {
-                "translation": "反映",
+                "translation": "反映；反射；显示",
                 "type": "v"
             }
         ]
@@ -35300,6 +35343,15 @@
         ]
     },
     {
+        "word": "repent",
+        "translations": [
+            {
+                "translation": "后悔",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "repetition",
         "translations": [
             {
@@ -35861,7 +35913,7 @@
         "word": "retain",
         "translations": [
             {
-                "translation": "保留,留用",
+                "translation": "保持，保留，保存",
                 "type": "v"
             }
         ]
@@ -36291,6 +36343,15 @@
             {
                 "translation": " 用绳捆",
                 "type": "vt"
+            }
+        ]
+    },
+    {
+        "word": "rot",
+        "translations": [
+            {
+                "translation": "（使）腐烂",
+                "type": "v"
             }
         ]
     },
@@ -38100,6 +38161,23 @@
         ]
     },
     {
+        "word": "since",
+        "translations": [
+            {
+                "translation": "自……以来，自从",
+                "type": "prep"
+            },
+            {
+                "translation": "由于；自从",
+                "type": "conj"
+            },
+            {
+                "translation": "从……以来",
+                "type": "adv"
+            }
+        ]
+    },
+    {
         "word": "sincere",
         "translations": [
             {
@@ -38234,6 +38312,19 @@
         ]
     },
     {
+        "word": "sleep",
+        "translations": [
+            {
+                "translation": "睡觉，睡眠",
+                "type": "n"
+            },
+            {
+                "translation": "睡觉",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "sleepy",
         "translations": [
             {
@@ -38358,6 +38449,15 @@
             {
                 "translation": "切开",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "slum",
+        "translations": [
+            {
+                "translation": "贫民窟，贫民区",
+                "type": "n"
             }
         ]
     },
@@ -38949,8 +39049,12 @@
         "word": "spare",
         "translations": [
             {
-                "translation": "空闲的",
+                "translation": "备用的",
                 "type": "adj"
+            },
+            {
+                "translation": "抽出，腾出",
+                "type": "vt"
             }
         ]
     },
@@ -41319,8 +41423,12 @@
         "word": "taste",
         "translations": [
             {
-                "translation": "味觉，品味",
+                "translation": "味觉；品尝；品味；味道",
                 "type": "n"
+            },
+            {
+                "translation": "品尝，尝（……的味道），尝起来",
+                "type": "v"
             }
         ]
     },
@@ -41475,7 +41583,7 @@
         "word": "temporary",
         "translations": [
             {
-                "translation": "暂时的，临时的",
+                "translation": "暂时的；短暂的",
                 "type": "adj"
             }
         ]
@@ -44831,6 +44939,19 @@
         ]
     },
     {
+        "word": "wild",
+        "translations": [
+            {
+                "translation": "野生的",
+                "type": "adj"
+            },
+            {
+                "translation": "自然环境；野生状态",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "willing",
         "translations": [
             {
@@ -45357,7 +45478,7 @@
         "word": "African",
         "translations": [
             {
-                "translation": "非洲的",
+                "translation": "非洲的；非洲人的",
                 "type": "adj"
             },
             {
