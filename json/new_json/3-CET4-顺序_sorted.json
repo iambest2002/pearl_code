@@ -228,11 +228,11 @@
         "word": "access",
         "translations": [
             {
-                "translation": "获取",
+                "translation": "进入，使用，获取；（计算机）访问",
                 "type": "v"
             },
             {
-                "translation": "接近，入口",
+                "translation": "访问；（使用或见到的）机会，权利；使用权",
                 "type": "n"
             }
         ]
@@ -443,7 +443,7 @@
         "word": "accustomed",
         "translations": [
             {
-                "translation": "惯常的；习惯的",
+                "translation": "习惯于",
                 "type": "adj"
             }
         ]
@@ -452,12 +452,8 @@
         "word": "ache",
         "translations": [
             {
-                "translation": "痛；想念",
-                "type": "v"
-            },
-            {
                 "translation": "疼痛",
-                "type": "n"
+                "type": "v"
             }
         ]
     },
@@ -930,7 +926,7 @@
         "word": "advise",
         "translations": [
             {
-                "translation": "劝告；建议；通知",
+                "translation": "建议；出主意",
                 "type": "v"
             }
         ]
@@ -984,7 +980,7 @@
         "word": "affect",
         "translations": [
             {
-                "translation": "影响；感动",
+                "translation": "影响；（疾病）侵袭",
                 "type": "v"
             }
         ]
@@ -2497,7 +2493,7 @@
         "word": "ashamed",
         "translations": [
             {
-                "translation": "害羞的",
+                "translation": "羞耻的",
                 "type": "adj"
             }
         ]
@@ -2533,7 +2529,7 @@
         "word": "aspect",
         "translations": [
             {
-                "translation": "方面；样子，外表",
+                "translation": "（问题等的）方面",
                 "type": "n"
             }
         ]
@@ -2722,7 +2718,7 @@
         "word": "atmospheric",
         "translations": [
             {
-                "translation": "大气的；大气层的",
+                "translation": "大气的，大气层的",
                 "type": "adj"
             }
         ]
@@ -3343,8 +3339,8 @@
         "word": "balloon",
         "translations": [
             {
-                "translation": "气球，玩具气球",
-                "type": "n"
+                "translation": "猛增",
+                "type": "v"
             }
         ]
     },
@@ -3388,7 +3384,7 @@
         "word": "bank",
         "translations": [
             {
-                "translation": "银行；库；岩，堤",
+                "translation": "银行；库；岸",
                 "type": "n"
             }
         ]
@@ -4390,8 +4386,12 @@
         "word": "block",
         "translations": [
             {
-                "translation": "阻碍；街区",
+                "translation": "阻挡，妨碍，阻塞",
                 "type": "v"
+            },
+            {
+                "translation": "积木；街区",
+                "type": "n"
             }
         ]
     },
@@ -6626,7 +6626,7 @@
         "word": "chart",
         "translations": [
             {
-                "translation": "图，图表；海图",
+                "translation": "图表，表格",
                 "type": "n"
             }
         ]
@@ -7347,7 +7347,7 @@
         "word": "clerk",
         "translations": [
             {
-                "translation": "店员；办事员，职员",
+                "translation": "职员",
                 "type": "n"
             }
         ]
@@ -7503,7 +7503,7 @@
         "word": "cloud",
         "translations": [
             {
-                "translation": "云；云状物；阴影",
+                "translation": "一团，一大片",
                 "type": "n"
             }
         ]
@@ -7615,7 +7615,7 @@
         "word": "coffee",
         "translations": [
             {
-                "translation": "咖啡，咖啡茶",
+                "translation": "咖啡",
                 "type": "n"
             }
         ]
@@ -9351,11 +9351,7 @@
         "word": "cook",
         "translations": [
             {
-                "translation": "烹调，煮",
-                "type": "v"
-            },
-            {
-                "translation": "烧菜",
+                "translation": "烹饪",
                 "type": "v"
             }
         ]
@@ -10065,7 +10061,7 @@
         "word": "criticize",
         "translations": [
             {
-                "translation": "批评；评论",
+                "translation": "批评，评论，责难；评价",
                 "type": "v"
             }
         ]
@@ -10506,11 +10502,11 @@
         "word": "damage",
         "translations": [
             {
-                "translation": "损害，毁坏",
+                "translation": "损害，毁坏，破坏",
                 "type": "v"
             },
             {
-                "translation": "损害",
+                "translation": "损害，毁坏，破坏",
                 "type": "n"
             }
         ]
@@ -12288,8 +12284,12 @@
         "word": "display",
         "translations": [
             {
+                "translation": "展示",
+                "type": "v"
+            },
+            {
                 "translation": "展览",
-                "type": "n&v"
+                "type": "n"
             }
         ]
     },
@@ -13135,7 +13135,7 @@
         "word": "drunk",
         "translations": [
             {
-                "translation": "醉的；陶醉的",
+                "translation": "喝醉的",
                 "type": "adj"
             }
         ]
@@ -19319,11 +19319,7 @@
         "word": "guard",
         "translations": [
             {
-                "translation": "守卫；看守",
-                "type": "v"
-            },
-            {
-                "translation": "卫兵",
+                "translation": "哨兵，警卫员",
                 "type": "n"
             }
         ]
@@ -19542,11 +19538,11 @@
         "word": "halt",
         "translations": [
             {
-                "translation": "停止；立定",
+                "translation": "使停止",
                 "type": "v"
             },
             {
-                "translation": "停住",
+                "translation": "停止；终止",
                 "type": "n"
             }
         ]
@@ -21489,7 +21485,7 @@
         "word": "importance",
         "translations": [
             {
-                "translation": "重要；重要性",
+                "translation": "重要性",
                 "type": "n"
             }
         ]
@@ -24094,7 +24090,7 @@
         "word": "lawn",
         "translations": [
             {
-                "translation": "草地，草坪，草场",
+                "translation": "草地；草坪",
                 "type": "n"
             }
         ]
@@ -26936,7 +26932,7 @@
         "word": "missing",
         "translations": [
             {
-                "translation": "缺掉的，失去的",
+                "translation": "失踪的",
                 "type": "adj"
             }
         ]
@@ -28458,7 +28454,7 @@
         "word": "nose",
         "translations": [
             {
-                "translation": "鼻子；突出部分",
+                "translation": "鼻子",
                 "type": "n"
             }
         ]
@@ -29784,8 +29780,8 @@
         "word": "overcome",
         "translations": [
             {
-                "translation": "战胜，克服",
-                "type": "v"
+                "translation": "克服",
+                "type": "vt"
             }
         ]
     },
@@ -34205,8 +34201,12 @@
         "word": "rate",
         "translations": [
             {
-                "translation": "比率，速率",
+                "translation": "率，比率",
                 "type": "n"
+            },
+            {
+                "translation": "定等级，评级；评估，评价",
+                "type": "v"
             }
         ]
     },
@@ -34344,7 +34344,7 @@
         "word": "real",
         "translations": [
             {
-                "translation": "真的；现实的",
+                "translation": "真是的，实际存在的；真的",
                 "type": "adj"
             }
         ]
@@ -35529,8 +35529,8 @@
         "word": "resemble",
         "translations": [
             {
-                "translation": "像，相似",
-                "type": "v"
+                "translation": "类似，相似",
+                "type": "vt"
             }
         ]
     },
@@ -36568,12 +36568,12 @@
         "word": "rust",
         "translations": [
             {
-                "translation": "锈",
-                "type": "n"
-            },
-            {
                 "translation": "生锈，氧化",
                 "type": "v"
+            },
+            {
+                "translation": "锈",
+                "type": "n"
             }
         ]
     },
@@ -37035,8 +37035,12 @@
         "word": "score",
         "translations": [
             {
-                "translation": "得分，比数，成绩",
+                "translation": "得分，分数；成绩",
                 "type": "n"
+            },
+            {
+                "translation": "得分",
+                "type": "v"
             }
         ]
     },
@@ -38222,7 +38226,7 @@
         "word": "sketch",
         "translations": [
             {
-                "translation": "略图；速写；概略",
+                "translation": "素描",
                 "type": "n"
             }
         ]
@@ -38503,6 +38507,19 @@
             {
                 "translation": " 破碎 ； 猛击， 猛撞； 轰动的演出， 巨大的成功",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "smoke",
+        "translations": [
+            {
+                "translation": "烟，烟尘",
+                "type": "n"
+            },
+            {
+                "translation": "抽（烟）",
+                "type": "v"
             }
         ]
     },
@@ -39162,7 +39179,7 @@
         "word": "specimen",
         "translations": [
             {
-                "translation": "样本，标本，样品",
+                "translation": "标本",
                 "type": "n"
             }
         ]
@@ -39193,8 +39210,17 @@
         "word": "speculate",
         "translations": [
             {
-                "translation": " 推测， 推断； 投机， 做投机买卖",
+                "translation": "推测，推断；投机，做投机买卖",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "speech",
+        "translations": [
+            {
+                "translation": "演说，讲话，发言",
+                "type": "n"
             }
         ]
     },
@@ -39229,7 +39255,7 @@
         "word": "sphere",
         "translations": [
             {
-                "translation": "球体, 范围",
+                "translation": "球",
                 "type": "n"
             }
         ]
@@ -40150,8 +40176,12 @@
         "word": "stress",
         "translations": [
             {
-                "translation": "压力,重音",
+                "translation": "压力",
                 "type": "n"
+            },
+            {
+                "translation": "强调；使紧张",
+                "type": "v"
             }
         ]
     },
@@ -40234,7 +40264,7 @@
         "word": "stripe",
         "translations": [
             {
-                "translation": "条纹，条子",
+                "translation": "条纹",
                 "type": "n"
             }
         ]
@@ -41107,6 +41137,19 @@
         ]
     },
     {
+        "word": "sweat",
+        "translations": [
+            {
+                "translation": "汗水",
+                "type": "n"
+            },
+            {
+                "translation": "出汗",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "sweater",
         "translations": [
             {
@@ -41786,8 +41829,17 @@
         "word": "theme",
         "translations": [
             {
-                "translation": " 主题， 题目",
+                "translation": "主题，题目",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "themselves",
+        "translations": [
+            {
+                "translation": "他/她/它们自己",
+                "type": "pron"
             }
         ]
     },
@@ -43773,7 +43825,7 @@
         "word": "vacant",
         "translations": [
             {
-                "translation": "空的；未被占用的",
+                "translation": "空的，未被占用的",
                 "type": "adj"
             }
         ]
@@ -43851,6 +43903,15 @@
             {
                 "translation": "消失",
                 "type": "vi"
+            }
+        ]
+    },
+    {
+        "word": "vanity",
+        "translations": [
+            {
+                "translation": "自负",
+                "type": "n"
             }
         ]
     },
