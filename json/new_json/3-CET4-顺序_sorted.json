@@ -1101,7 +1101,7 @@
         "word": "agency",
         "translations": [
             {
-                "translation": "机构",
+                "translation": "代理机构；地区政府",
                 "type": "n"
             }
         ]
@@ -1191,8 +1191,8 @@
         "word": "aid",
         "translations": [
             {
-                "translation": "帮助，救护；助手",
-                "type": "n"
+                "translation": "援助，帮助",
+                "type": "v"
             }
         ]
     },
@@ -2166,7 +2166,7 @@
         "word": "appointment",
         "translations": [
             {
-                "translation": "约会",
+                "translation": "预约；约会",
                 "type": "n"
             }
         ]
@@ -2403,7 +2403,7 @@
         "word": "arrival",
         "translations": [
             {
-                "translation": "到达；到来；到达者",
+                "translation": "到来，到达；新来的人",
                 "type": "n"
             }
         ]
@@ -6519,7 +6519,7 @@
         "word": "channel",
         "translations": [
             {
-                "translation": "海峡；渠道；频道",
+                "translation": "频道",
                 "type": "n"
             }
         ]
@@ -9485,7 +9485,7 @@
         "word": "corn",
         "translations": [
             {
-                "translation": "谷物；(英)小麦",
+                "translation": "玉米",
                 "type": "n"
             }
         ]
@@ -10852,7 +10852,7 @@
         "word": "decision",
         "translations": [
             {
-                "translation": "决定，决心；果断",
+                "translation": "决定",
                 "type": "n"
             }
         ]
@@ -12477,7 +12477,7 @@
         "word": "district",
         "translations": [
             {
-                "translation": "区",
+                "translation": "区域；地区；行政区",
                 "type": "n"
             }
         ]
@@ -13007,7 +13007,7 @@
         "word": "drift",
         "translations": [
             {
-                "translation": "漂流，漂泊",
+                "translation": "游荡；漂流",
                 "type": "v"
             },
             {
@@ -13180,9 +13180,13 @@
         "word": "dumb",
         "translations": [
             {
-                "translation": "哑的；无言的",
+                "translation": "哑的；暂不说话的，愚笨的",
                 "type": "adj"
-            }
+            },
+            {
+                "translation": "使沉默",
+                "type": "v"
+            } 
         ]
     },
     {
@@ -13300,7 +13304,7 @@
         "word": "dynamic",
         "translations": [
             {
-                "translation": "有活力的；动力的",
+                "translation": "动态的；不断变化的",
                 "type": "adj"
             }
         ]
@@ -13402,8 +13406,12 @@
         "word": "ease",
         "translations": [
             {
-                "translation": "轻松，舒适",
+                "translation": "安逸；轻松",
                 "type": "n"
+            },
+            {
+                "translation": "减轻",
+                "type": "v"
             }
         ]
     },
@@ -13411,7 +13419,7 @@
         "word": "easily",
         "translations": [
             {
-                "translation": "容易地；舒适的",
+                "translation": "容易地",
                 "type": "adv"
             }
         ]
@@ -13892,8 +13900,8 @@
         "word": "eliminate",
         "translations": [
             {
-                "translation": "消除",
-                "type": "v"
+                "translation": "消除，根除",
+                "type": "vt"
             }
         ]
     },
@@ -14317,7 +14325,7 @@
         "word": "enjoy",
         "translations": [
             {
-                "translation": "享受；欣赏，喜爱",
+                "translation": "享受……的乐趣；欣赏，喜爱",
                 "type": "v"
             }
         ]
@@ -14483,8 +14491,12 @@
         "word": "entrance",
         "translations": [
             {
-                "translation": "入口，门口；进入",
+                "translation": "入口，通道；大门口；出场，登场；进入",
                 "type": "n"
+            },
+            {
+                "translation": "使出神，使入迷",
+                "type": "v"
             }
         ]
     },
@@ -14881,7 +14893,7 @@
         "word": "everything",
         "translations": [
             {
-                "translation": "每件事，事事",
+                "translation": "一切；所有事务",
                 "type": "pron"
             }
         ]
@@ -17617,7 +17629,7 @@
         "word": "frequency",
         "translations": [
             {
-                "translation": "屡次；次数；频率",
+                "translation": "频繁；次数；频率",
                 "type": "n"
             }
         ]
@@ -19056,8 +19068,8 @@
         "word": "grave",
         "translations": [
             {
-                "translation": "坟墓",
-                "type": "n"
+                "translation": "严重的",
+                "type": "adj"
             }
         ]
     },
@@ -19529,7 +19541,7 @@
         "word": "hall",
         "translations": [
             {
-                "translation": "门厅；过道；会堂",
+                "translation": "会堂，礼堂",
                 "type": "n"
             }
         ]
@@ -20592,7 +20604,7 @@
         "word": "holy",
         "translations": [
             {
-                "translation": "神圣的；圣洁的",
+                "translation": "神圣的，圣洁的",
                 "type": "adj"
             }
         ]
@@ -21842,6 +21854,10 @@
             {
                 "translation": "个人",
                 "type": "n"
+            },
+            {
+                "translation": "个人的；独特的；个别的",
+                "type": "adj"
             }
         ]
     },
@@ -22235,7 +22251,7 @@
         "word": "insect",
         "translations": [
             {
-                "translation": "昆虫，虫",
+                "translation": "昆虫",
                 "type": "n"
             }
         ]
@@ -24903,7 +24919,7 @@
         "word": "listen",
         "translations": [
             {
-                "translation": "听，留神听；听从",
+                "translation": "听，倾听",
                 "type": "v"
             }
         ]
@@ -26258,7 +26274,7 @@
         "word": "medical",
         "translations": [
             {
-                "translation": "医学的；内科的",
+                "translation": "医学的；医疗的",
                 "type": "adj"
             }
         ]
@@ -27137,7 +27153,7 @@
         "word": "moment",
         "translations": [
             {
-                "translation": "片刻，瞬间，时刻",
+                "translation": "时刻；瞬间，片刻",
                 "type": "n"
             }
         ]
@@ -27493,7 +27509,7 @@
         "word": "mug",
         "translations": [
             {
-                "translation": "大杯",
+                "translation": "（有炳）大杯",
                 "type": "n"
             }
         ]
@@ -29516,7 +29532,7 @@
         "word": "otherwise",
         "translations": [
             {
-                "translation": "另外；要不然",
+                "translation": "否则",
                 "type": "adv"
             }
         ]
@@ -33614,7 +33630,7 @@
         "word": "pupil",
         "translations": [
             {
-                "translation": "学生，小学生",
+                "translation": "小学生",
                 "type": "n"
             }
         ]
@@ -33858,7 +33874,7 @@
         "word": "quit",
         "translations": [
             {
-                "translation": "放弃",
+                "translation": "离开，迁出；离开（工作职位，学校等）",
                 "type": "v"
             }
         ]
@@ -36538,6 +36554,15 @@
         ]
     },
     {
+        "word": "rule",
+        "translations": [
+            {
+                "translation": " 规则，规定，规章，条例",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "rumour",
         "translations": [
             {
@@ -37005,6 +37030,15 @@
         ]
     },
     {
+        "word": "scientist",
+        "translations": [
+            {
+                "translation": "科学家",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "scissors",
         "translations": [
             {
@@ -37319,10 +37353,6 @@
     {
         "word": "semiconductor",
         "translations": [
-            {
-                "translation": "n.",
-                "type": "n"
-            },
             {
                 "translation": "半导体",
                 "type": "n"
@@ -39445,12 +39475,12 @@
         "word": "spot",
         "translations": [
             {
-                "translation": "点，斑点；地点，处所；少量",
+                "translation": "地点；排名位置；点，斑点",
                 "type": "n"
             },
             {
-                "translation": " 认出， 发现； 玷污",
-                "type": "vt"
+                "translation": "看见，注意到，发现",
+                "type": "v"
             }
         ]
     },
@@ -41411,12 +41441,12 @@
         "word": "talk",
         "translations": [
             {
-                "translation": "讲话",
+                "translation": "讨论；商讨；讲话",
                 "type": "v"
             },
             {
-                "translation": "谈论",
-                "type": "v"
+                "translation": "谈话",
+                "type": "n"
             }
         ]
     },
@@ -42386,6 +42416,15 @@
             {
                 "translation": "火炬，火把；手电筒",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "toss",
+        "translations": [
+            {
+                "translation": "扔，抛，掷",
+                "type": "v"
             }
         ]
     },
@@ -43680,6 +43719,15 @@
         ]
     },
     {
+        "word": "up-to-date",
+        "translations": [
+            {
+                "translation": "跟上时代的",
+                "type": "adj"
+            }
+        ]
+    },
+    {
         "word": "upper",
         "translations": [
             {
@@ -44080,8 +44128,8 @@
         "word": "vibrate",
         "translations": [
             {
-                "translation": "（使）颤动",
-                "type": "v"
+                "translation": "（使）颤动，震动",
+                "type": "vi"
             }
         ]
     },
@@ -44371,7 +44419,7 @@
         "word": "vocabulary",
         "translations": [
             {
-                "translation": "词汇",
+                "translation": "词汇（量）",
                 "type": "n"
             }
         ]
@@ -44517,10 +44565,6 @@
     {
         "word": "waken",
         "translations": [
-            {
-                "translation": "醒来",
-                "type": "v"
-            },
             {
                 "translation": "弄醒",
                 "type": "v"
@@ -44822,6 +44866,15 @@
         "translations": [
             {
                 "translation": "西方的",
+                "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "wet",
+        "translations": [
+            {
+                "translation": "湿的",
                 "type": "adj"
             }
         ]
@@ -45691,7 +45744,7 @@
         "word": "Britain",
         "translations": [
             {
-                "translation": "不列颠，英国",
+                "translation": "大不列颠，英国",
                 "type": "n"
             }
         ]
@@ -45977,6 +46030,15 @@
             {
                 "translation": "意大利的n意大利人",
                 "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "ltaly",
+        "translations": [
+            {
+                "translation": "意大利",
+                "type": "n"
             }
         ]
     },
