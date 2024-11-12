@@ -2,8 +2,8 @@
 	min-height: 900px;
   background-color: #ffffff;
   border-radius: 20rpx;
-  -webkit-filter: drop-shadow(0 0 8rpx #44ADFB);
-  filter: drop-shadow(0 0 8rpx #44ADFB);
+  /* -webkit-filter: drop-shadow(0 0 8rpx #44ADFB);
+  filter: drop-shadow(0 0 8rpx #44ADFB); */
 }
 
 .word-box {
