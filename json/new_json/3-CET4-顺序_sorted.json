@@ -1588,7 +1588,7 @@
         "word": "ambulance",
         "translations": [
             {
-                "translation": "救护车；野战医院",
+                "translation": "救护车",
                 "type": "n"
             }
         ]
@@ -3059,7 +3059,11 @@
         "word": "await",
         "translations": [
             {
-                "translation": "等候",
+                "translation": "等候；期待",
+                "type": "vt"
+            },
+            {
+                "translation": "等候……发生",
                 "type": "v"
             }
         ]
@@ -3192,7 +3196,7 @@
         "word": "background",
         "translations": [
             {
-                "translation": "背景",
+                "translation": "出身，经历；背景",
                 "type": "n"
             }
         ]
@@ -4429,8 +4433,8 @@
         "word": "bloom",
         "translations": [
             {
-                "translation": "花；开花，开花期",
-                "type": "n"
+                "translation": "开花",
+                "type": "v"
             }
         ]
     },
@@ -5005,11 +5009,11 @@
         "word": "breed",
         "translations": [
             {
-                "translation": "品种",
+                "translation": "品种，种类",
                 "type": "n"
             },
             {
-                "translation": "使繁殖",
+                "translation": "繁殖；导致",
                 "type": "v"
             }
         ]
@@ -9958,8 +9962,8 @@
         "word": "creep",
         "translations": [
             {
-                "translation": "爬行；缓慢地行进",
-                "type": "v"
+                "translation": "爬行",
+                "type": "vi"
             }
         ]
     },
@@ -10114,8 +10118,12 @@
         "word": "crowd",
         "translations": [
             {
-                "translation": "群；大众；一伙人",
+                "translation": "人群，观众",
                 "type": "n"
+            },
+            {
+                "translation": "聚集在……周围",
+                "type": "v"
             }
         ]
     },
@@ -10789,7 +10797,7 @@
         "word": "decade",
         "translations": [
             {
-                "translation": "十年，十年期",
+                "translation": "十年，一个年代",
                 "type": "n"
             }
         ]
@@ -10928,7 +10936,7 @@
         "word": "deed",
         "translations": [
             {
-                "translation": "行为；功绩；契约",
+                "translation": "行为",
                 "type": "n"
             }
         ]
@@ -11139,7 +11147,7 @@
         "word": "delivery",
         "translations": [
             {
-                "translation": "投递；交付；分娩",
+                "translation": "递送",
                 "type": "n"
             }
         ]
@@ -11849,7 +11857,7 @@
         "word": "dig",
         "translations": [
             {
-                "translation": "掘，挖；采掘",
+                "translation": "挖掘，翻土",
                 "type": "v"
             }
         ]
@@ -11952,7 +11960,7 @@
         "word": "direct",
         "translations": [
             {
-                "translation": "直接的；直率的",
+                "translation": "直接的",
                 "type": "adj"
             }
         ]
@@ -12516,8 +12524,8 @@
         "word": "dive",
         "translations": [
             {
-                "translation": "跳水；潜水；俯冲",
-                "type": "v"
+                "translation": "潜水；骤降",
+                "type": "n"
             }
         ]
     },
@@ -13836,7 +13844,7 @@
         "word": "electronics",
         "translations": [
             {
-                "translation": "电子学",
+                "translation": "电子设备，电子产品",
                 "type": "n"
             }
         ]
@@ -19058,7 +19066,7 @@
         "word": "grateful",
         "translations": [
             {
-                "translation": "感激的；令人愉快的",
+                "translation": "感激的",
                 "type": "adj"
             }
         ]
@@ -19571,7 +19579,7 @@
         "word": "hamburger",
         "translations": [
             {
-                "translation": "汉堡包，牛肉饼",
+                "translation": "汉堡包",
                 "type": "n"
             }
         ]
@@ -20428,7 +20436,7 @@
         "word": "highly",
         "translations": [
             {
-                "translation": "高度地，很，非常",
+                "translation": "高度地，赞许地，非常",
                 "type": "adv"
             }
         ]
@@ -22187,7 +22195,7 @@
         "word": "inner",
         "translations": [
             {
-                "translation": "内部的；内心的",
+                "translation": "内心的；内部的，里面的",
                 "type": "adj"
             }
         ]
@@ -24119,7 +24127,7 @@
         "word": "lawyer",
         "translations": [
             {
-                "translation": "律师；法学家",
+                "translation": "律师",
                 "type": "n"
             }
         ]
@@ -24941,7 +24949,7 @@
         "word": "liter",
         "translations": [
             {
-                "translation": "升(容量单位)",
+                "translation": "升，公升",
                 "type": "n"
             }
         ]
@@ -26853,7 +26861,7 @@
         "word": "minute",
         "translations": [
             {
-                "translation": "分，分钟；一会儿",
+                "translation": "分钟；片刻",
                 "type": "n"
             }
         ]
@@ -29020,7 +29028,11 @@
         "word": "official",
         "translations": [
             {
-                "translation": "官员的；官方的",
+                "translation": "官员",
+                "type": "n"
+            },
+            {
+                "translation": "官方的，正式的",
                 "type": "adj"
             }
         ]
@@ -29443,7 +29455,7 @@
         "word": "organization",
         "translations": [
             {
-                "translation": "组织；团体，机构",
+                "translation": "组织，体制，团体，机构",
                 "type": "n"
             }
         ]
@@ -29706,7 +29718,7 @@
         "word": "outskirt",
         "translations": [
             {
-                "translation": "外边，郊区",
+                "translation": "郊区",
                 "type": "n"
             }
         ]
@@ -31122,7 +31134,7 @@
         "word": "physics",
         "translations": [
             {
-                "translation": "物理，物理学",
+                "translation": "物理（学）",
                 "type": "n"
             }
         ]
@@ -31353,6 +31365,15 @@
         "translations": [
             {
                 "translation": "管子，导管；烟斗",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "pistol",
+        "translations": [
+            {
+                "translation": "手枪，信号",
                 "type": "n"
             }
         ]
@@ -32117,7 +32138,7 @@
         "word": "postage",
         "translations": [
             {
-                "translation": "邮费，邮资",
+                "translation": "邮费；邮戳",
                 "type": "n"
             }
         ]
@@ -32605,7 +32626,7 @@
         "word": "prevail",
         "translations": [
             {
-                "translation": "流行，盛行",
+                "translation": "战胜",
                 "type": "v"
             }
         ]
@@ -32681,7 +32702,7 @@
         "word": "priest",
         "translations": [
             {
-                "translation": " 神父， 牧师",
+                "translation": "教士，神父",
                 "type": "n"
             }
         ]
@@ -32947,7 +32968,7 @@
         "word": "procession",
         "translations": [
             {
-                "translation": "队伍，行列",
+                "translation": "队伍，行列，列队行进",
                 "type": "n"
             }
         ]
@@ -33771,7 +33792,11 @@
         "word": "qualify",
         "translations": [
             {
-                "translation": "使……有资格",
+                "translation": "胜任，使具有资格",
+                "type": "vt"
+            },
+            {
+                "translation": "限定；（使）合格",
                 "type": "v"
             }
         ]
@@ -33866,6 +33891,15 @@
             {
                 "translation": "快的；敏捷的",
                 "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "quicken",
+        "translations": [
+            {
+                "translation": "使加快",
+                "type": "v"
             }
         ]
     },
@@ -33982,6 +34016,15 @@
             {
                 "translation": "雷达，无线电探测器",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "radiate",
+        "translations": [
+            {
+                "translation": "辐射，发出（光或热）",
+                "type": "v"
             }
         ]
     },
@@ -37689,6 +37732,19 @@
         ]
     },
     {
+        "word": "share",
+        "translations": [
+            {
+                "translation": "一份，份额",
+                "type": "n"
+            },
+            {
+                "translation": "分享",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "sharp",
         "translations": [
             {
@@ -37719,11 +37775,7 @@
         "word": "shave",
         "translations": [
             {
-                "translation": "剃，刮",
-                "type": "v"
-            },
-            {
-                "translation": "修面",
+                "translation": "剃（须发），刮脸",
                 "type": "v"
             }
         ]
@@ -37860,6 +37912,19 @@
         ]
     },
     {
+        "word": "shirt",
+        "translations": [
+            {
+                "translation": "（尤指男式的）衬衫",
+                "type": "n"
+            },
+            {
+                "translation": "给……穿上衬衫",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "shiver",
         "translations": [
             {
@@ -37979,8 +38044,12 @@
         "word": "shower",
         "translations": [
             {
-                "translation": "阵雨；(一)阵；淋浴",
+                "translation": "淋浴，淋浴器",
                 "type": "n"
+            },
+            {
+                "translation": "淋浴，淋湿",
+                "type": "v"
             }
         ]
     },
@@ -39566,7 +39635,11 @@
         "word": "spread",
         "translations": [
             {
-                "translation": "传播，扩撒",
+                "translation": "传播",
+                "type": "n"
+            },
+            {
+                "translation": "扩散",
                 "type": "v"
             }
         ]
@@ -39577,6 +39650,15 @@
             {
                 "translation": "春天",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "sprinkle",
+        "translations": [
+            {
+                "translation": "撒，洒",
+                "type": "v"
             }
         ]
     },
@@ -41758,7 +41840,7 @@
         "word": "temple",
         "translations": [
             {
-                "translation": "圣堂，神殿，庙宇",
+                "translation": "神殿，庙宇",
                 "type": "n"
             }
         ]
@@ -42183,6 +42265,15 @@
         "translations": [
             {
                 "translation": "咽喉，喉咙",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "throne",
+        "translations": [
+            {
+                "translation": "王座；君主",
                 "type": "n"
             }
         ]
@@ -43217,11 +43308,11 @@
         "word": "tune",
         "translations": [
             {
-                "translation": "调子；和谐",
+                "translation": "协调",
                 "type": "n"
             },
             {
-                "translation": "调谐",
+                "translation": "调频道",
                 "type": "v"
             }
         ]
@@ -43590,7 +43681,7 @@
         "word": "uneasy",
         "translations": [
             {
-                "translation": "心神不安的，忧虑的",
+                "translation": "心神不安的",
                 "type": "adj"
             }
         ]
@@ -43831,7 +43922,7 @@
         "word": "unwilling",
         "translations": [
             {
-                "translation": "不愿意的",
+                "translation": "不愿意的，不情愿的",
                 "type": "adj"
             }
         ]
@@ -45669,6 +45760,15 @@
             {
                 "translation": "裹，包，捆",
                 "type": "vt"
+            }
+        ]
+    },
+    {
+        "word": "wreath",
+        "translations": [
+            {
+                "translation": "花圈",
+                "type": "n"
             }
         ]
     },
