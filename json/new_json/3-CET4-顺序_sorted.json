@@ -3,7 +3,7 @@
         "word": "abandon",
         "translations": [
             {
-                "translation": "丢弃；放弃，抛弃",
+                "translation": "放弃；抛弃；舍弃，废弃",
                 "type": "v"
             }
         ]
@@ -483,8 +483,8 @@
         "word": "acid",
         "translations": [
             {
-                "translation": "酸；酸的，酸性的",
-                "type": "n"
+                "translation": "酸味的",
+                "type": "adj"
             }
         ]
     },
@@ -1896,7 +1896,7 @@
         "word": "anticipate",
         "translations": [
             {
-                "translation": "预感",
+                "translation": "预测，预料",
                 "type": "v"
             }
         ]
@@ -2263,7 +2263,7 @@
         "word": "arbitrary",
         "translations": [
             {
-                "translation": "随心所欲的；专断的",
+                "translation": "随意的，任性的，随心所欲的",
                 "type": "adj"
             }
         ]
@@ -2465,7 +2465,7 @@
         "word": "artist",
         "translations": [
             {
-                "translation": "艺术家，美术家",
+                "translation": "艺术家，画家",
                 "type": "n"
             }
         ]
@@ -5608,7 +5608,7 @@
         "word": "cabinet",
         "translations": [
             {
-                "translation": "橱，柜；内阁",
+                "translation": "柜",
                 "type": "n"
             }
         ]
@@ -5764,7 +5764,7 @@
         "word": "campus",
         "translations": [
             {
-                "translation": "校园，学校场地",
+                "translation": "校园",
                 "type": "n"
             }
         ]
@@ -6369,7 +6369,7 @@
         "word": "centimetre",
         "translations": [
             {
-                "translation": "公分，厘米",
+                "translation": "厘米",
                 "type": "n"
             }
         ]
@@ -6526,7 +6526,11 @@
         "word": "change",
         "translations": [
             {
-                "translation": "改变，变化；零钱",
+                "translation": "改变",
+                "type": "vt"
+            },
+            {
+                "translation": "改变，变化",
                 "type": "n"
             }
         ]
@@ -9169,8 +9173,12 @@
         "word": "contract",
         "translations": [
             {
-                "translation": "合同",
+                "translation": "合同，契约",
                 "type": "n"
+            },
+            {
+                "translation": "感染（疾病）；收缩",
+                "type": "v"
             }
         ]
     },
@@ -9213,7 +9221,7 @@
         "word": "contribute",
         "translations": [
             {
-                "translation": "捐款，贡献",
+                "translation": "贡献；促成，导致；有助于",
                 "type": "v"
             }
         ]
@@ -9553,7 +9561,7 @@
                 "type": "adj"
             },
             {
-                "translation": "纠正",
+                "translation": "纠正；矫正；批改",
                 "type": "v"
             }
         ]
@@ -11422,8 +11430,8 @@
         "word": "deserve",
         "translations": [
             {
-                "translation": "值得",
-                "type": "v"
+                "translation": "值得，应得",
+                "type": "vt"
             }
         ]
     },
@@ -12404,6 +12412,10 @@
         "word": "distance",
         "translations": [
             {
+                "translation": "远距离的",
+                "type": "adj"
+            },
+            {
                 "translation": "距离",
                 "type": "n"
             }
@@ -12422,7 +12434,7 @@
         "word": "distinct",
         "translations": [
             {
-                "translation": "明显的；有区别的",
+                "translation": "截然不同的",
                 "type": "adj"
             }
         ]
@@ -13042,7 +13054,7 @@
         "word": "dress",
         "translations": [
             {
-                "translation": "女服，童装；服装",
+                "translation": "连衣裙",
                 "type": "n"
             }
         ]
@@ -14928,7 +14940,7 @@
         "word": "everyone",
         "translations": [
             {
-                "translation": "每人，人人",
+                "translation": "每个人，人人",
                 "type": "pron"
             }
         ]
@@ -16222,7 +16234,7 @@
         "word": "favourable",
         "translations": [
             {
-                "translation": "有利的；赞成的",
+                "translation": "赞许的，称赞的，肯定的；有利的，顺利的，良好的",
                 "type": "adj"
             }
         ]
@@ -17005,7 +17017,7 @@
         "word": "fluent",
         "translations": [
             {
-                "translation": "流利的，流畅的",
+                "translation": "（语言）讲得流利的",
                 "type": "adj"
             }
         ]
@@ -19679,7 +19691,7 @@
         "word": "handwriting",
         "translations": [
             {
-                "translation": "笔迹，手迹，书法",
+                "translation": "书写，手写；笔迹",
                 "type": "n"
             }
         ]
@@ -19867,7 +19879,7 @@
         "word": "haste",
         "translations": [
             {
-                "translation": "急速，急忙；草率",
+                "translation": "匆忙",
                 "type": "n"
             }
         ]
@@ -22609,7 +22621,7 @@
         "word": "intelligent",
         "translations": [
             {
-                "translation": "智能的",
+                "translation": "有智慧的，聪明的；智能的",
                 "type": "adj"
             }
         ]
@@ -24315,7 +24327,7 @@
         "word": "learning",
         "translations": [
             {
-                "translation": "学习；学问，知识",
+                "translation": "学习",
                 "type": "n"
             }
         ]
@@ -24475,7 +24487,7 @@
         "word": "lens",
         "translations": [
             {
-                "translation": "透镜，镜片；镜头",
+                "translation": "镜头",
                 "type": "n"
             }
         ]
@@ -24889,12 +24901,12 @@
         "word": "link",
         "translations": [
             {
-                "translation": "有环连接",
-                "type": "v"
+                "translation": "联系",
+                "type": "n"
             },
             {
-                "translation": "环",
-                "type": "n"
+                "translation": "联系，连接",
+                "type": "v"
             }
         ]
     },
@@ -24902,7 +24914,7 @@
         "word": "lion",
         "translations": [
             {
-                "translation": "狮子；勇猛的人",
+                "translation": "狮子",
                 "type": "n"
             }
         ]
@@ -27072,7 +27084,7 @@
         "word": "mixture",
         "translations": [
             {
-                "translation": "混合；混合物",
+                "translation": "混合",
                 "type": "n"
             }
         ]
@@ -27977,7 +27989,7 @@
         "word": "nearly",
         "translations": [
             {
-                "translation": "差不多；密切地",
+                "translation": "将近，几乎，差不多",
                 "type": "adv"
             }
         ]
@@ -29456,7 +29468,7 @@
         "word": "ore",
         "translations": [
             {
-                "translation": "矿，矿石，矿砂",
+                "translation": "矿，矿石",
                 "type": "n"
             }
         ]
@@ -33233,7 +33245,7 @@
         "word": "promote",
         "translations": [
             {
-                "translation": "促进，提升，推销",
+                "translation": "促进；宣传；推动；升职；促动",
                 "type": "v"
             }
         ]
@@ -33730,6 +33742,15 @@
         ]
     },
     {
+        "word": "purity",
+        "translations": [
+            {
+                "translation": "纯洁；纯净",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "purple",
         "translations": [
             {
@@ -33852,7 +33873,7 @@
         "word": "quantity",
         "translations": [
             {
-                "translation": "量，数量",
+                "translation": "数量，数额",
                 "type": "n"
             }
         ]
@@ -34342,7 +34363,7 @@
         "word": "raw",
         "translations": [
             {
-                "translation": "未煮过的；未加工的",
+                "translation": "未加工的；生的，未煮过的",
                 "type": "adj"
             }
         ]
@@ -35135,7 +35156,7 @@
         "word": "relationship",
         "translations": [
             {
-                "translation": "关系，联系",
+                "translation": "关系；关联",
                 "type": "n"
             }
         ]
@@ -36380,8 +36401,8 @@
         "word": "roast",
         "translations": [
             {
-                "translation": "烤，炙，烘",
-                "type": "vt&vi"
+                "translation": "烤，烘",
+                "type": "v"
             }
         ]
     },
@@ -36763,7 +36784,7 @@
         "word": "saddle",
         "translations": [
             {
-                "translation": "鞍子，马鞍",
+                "translation": "鞍",
                 "type": "n"
             }
         ]
@@ -37314,12 +37335,8 @@
         "word": "seal",
         "translations": [
             {
-                "translation": "封蜡；印记",
-                "type": "n"
-            },
-            {
-                "translation": "封",
-                "type": "v"
+                "translation": "封锁",
+                "type": "vt"
             }
         ]
     },
@@ -37372,7 +37389,11 @@
         "word": "secure",
         "translations": [
             {
-                "translation": "确保……安全",
+                "translation": "安全的",
+                "type": "adj"
+            },
+            {
+                "translation": "确保",
                 "type": "v"
             }
         ]
@@ -37548,6 +37569,15 @@
         ]
     },
     {
+        "word": "sense",
+        "translations": [
+            {
+                "translation": "感觉；意义；常识",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "sensible",
         "translations": [
             {
@@ -37638,6 +37668,15 @@
             {
                 "translation": "严重地；认真地",
                 "type": "adv"
+            }
+        ]
+    },
+    {
+        "word": "servant",
+        "translations": [
+            {
+                "translation": "佣人，仆人",
+                "type": "n"
             }
         ]
     },
@@ -39202,6 +39241,15 @@
         ]
     },
     {
+        "word": "soul",
+        "translations": [
+            {
+                "translation": "人；灵魂",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "soup",
         "translations": [
             {
@@ -39683,6 +39731,15 @@
             {
                 "translation": "自发的，无意识的",
                 "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "spoon",
+        "translations": [
+            {
+                "translation": "钥，勺子，调羹",
+                "type": "n"
             }
         ]
     },
@@ -41241,6 +41298,15 @@
         ]
     },
     {
+        "word": "surname",
+        "translations": [
+            {
+                "translation": "姓",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "surpass",
         "translations": [
             {
@@ -41895,6 +41961,15 @@
         ]
     },
     {
+        "word": "tea",
+        "translations": [
+            {
+                "translation": "茶（叶）",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "tear",
         "translations": [
             {
@@ -41929,7 +42004,7 @@
         "word": "technique",
         "translations": [
             {
-                "translation": "技术，技能；技巧，手艺",
+                "translation": "技术，方法；技巧，技能",
                 "type": "n"
             }
         ]
@@ -43492,6 +43567,15 @@
         ]
     },
     {
+        "word": "tumble",
+        "translations": [
+            {
+                "translation": "（使）跌倒，摔下",
+                "type": "v"
+            }
+        ]
+    },
+    {
         "word": "tumor",
         "translations": [
             {
@@ -43681,7 +43765,7 @@
         "word": "ultimate",
         "translations": [
             {
-                "translation": "最后的，最终的",
+                "translation": "最终的",
                 "type": "adj"
             }
         ]
@@ -44548,6 +44632,15 @@
         ]
     },
     {
+        "word": "verb",
+        "translations": [
+            {
+                "translation": "动词",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "verify",
         "translations": [
             {
@@ -44950,7 +45043,7 @@
         "word": "volume",
         "translations": [
             {
-                "translation": "卷，册；容积；音量",
+                "translation": "数量",
                 "type": "n"
             }
         ]
@@ -45695,6 +45788,15 @@
         ]
     },
     {
+        "word": "window",
+        "translations": [
+            {
+                "translation": "窗",
+                "type": "n"
+            }
+        ]
+    },
+    {
         "word": "wing",
         "translations": [
             {
@@ -46080,7 +46182,7 @@
         "word": "writing",
         "translations": [
             {
-                "translation": " 书写， 写； 著作",
+                "translation": "写作；书写；著作",
                 "type": "n"
             }
         ]
@@ -46819,6 +46921,15 @@
             {
                 "translation": "罗马的，罗马文字的，罗马人的",
                 "type": "adj"
+            }
+        ]
+    },
+    {
+        "word": "September",
+        "translations": [
+            {
+                "translation": "九月",
+                "type": "n"
             }
         ]
     },
