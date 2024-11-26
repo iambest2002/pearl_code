@@ -1507,7 +1507,7 @@
         "word": "although",
         "translations": [
             {
-                "translation": "尽管，虽然",
+                "translation": "尽管，虽然，即使",
                 "type": "conj"
             }
         ]
@@ -1995,8 +1995,12 @@
         "word": "anywhere",
         "translations": [
             {
-                "translation": "在什么地方",
+                "translation": "任何地方，无论何处",
                 "type": "adv"
+            },
+            {
+                "translation": "任何（一个）地方",
+                "type": "pron"
             }
         ]
     },
@@ -2017,7 +2021,7 @@
         "word": "apartment",
         "translations": [
             {
-                "translation": "公寓",
+                "translation": "一套住房，公寓套房",
                 "type": "n"
             }
         ]
@@ -3940,7 +3944,7 @@
         "word": "belief",
         "translations": [
             {
-                "translation": "信任，相信；信念",
+                "translation": "信念；信仰；信条",
                 "type": "n"
             }
         ]
@@ -4185,7 +4189,7 @@
         "word": "bill",
         "translations": [
             {
-                "translation": "账单；招贴；票据",
+                "translation": "议案，法案；账单；纸币，钞票",
                 "type": "n"
             }
         ]
@@ -4311,8 +4315,12 @@
         "word": "black",
         "translations": [
             {
-                "translation": "黑色的；黑暗的",
+                "translation": "黑色的",
                 "type": "adj"
+            },
+            {
+                "translation": "黑人",
+                "type": "n"
             }
         ]
     },
@@ -4970,7 +4978,7 @@
         "word": "breadth",
         "translations": [
             {
-                "translation": "宽度，幅度；幅面",
+                "translation": "宽度",
                 "type": "n"
             }
         ]
@@ -7034,7 +7042,7 @@
         "word": "church",
         "translations": [
             {
-                "translation": "教堂，礼拜堂；教会",
+                "translation": "教会",
                 "type": "n"
             }
         ]
@@ -7306,7 +7314,7 @@
         "word": "classification",
         "translations": [
             {
-                "translation": "分类，级别",
+                "translation": "分类，归类",
                 "type": "n"
             }
         ]
@@ -9509,11 +9517,11 @@
         "word": "copy",
         "translations": [
             {
-                "translation": "抄件",
+                "translation": "副本，拷贝；（报刊等的）稿件",
                 "type": "n"
             },
             {
-                "translation": "抄写，复制",
+                "translation": "模仿",
                 "type": "v"
             }
         ]
@@ -9540,7 +9548,7 @@
         "word": "cordial",
         "translations": [
             {
-                "translation": "真诚的，诚恳的",
+                "translation": "热情友好的，衷心的",
                 "type": "adj"
             }
         ]
@@ -11324,8 +11332,12 @@
         "word": "depend",
         "translations": [
             {
-                "translation": "依靠，依赖；相信",
+                "translation": "取决于",
                 "type": "v"
+            },
+            {
+                "translation": "依靠；依赖",
+                "type": "vi"
             }
         ]
     },
@@ -11980,7 +11992,7 @@
         "word": "dimension",
         "translations": [
             {
-                "translation": "尺寸，尺度；面积",
+                "translation": "维，维度",
                 "type": "n"
             }
         ]
@@ -12855,7 +12867,11 @@
         "word": "double",
         "translations": [
             {
-                "translation": "两倍的；双的",
+                "translation": "使……翻倍",
+                "type": "v"
+            },
+            {
+                "translation": "两倍的，双的；双重的",
                 "type": "adj"
             }
         ]
@@ -12962,12 +12978,8 @@
         "word": "draft",
         "translations": [
             {
-                "translation": "草稿；汇票",
+                "translation": "草稿",
                 "type": "n"
-            },
-            {
-                "translation": "起草",
-                "type": "v"
             }
         ]
     },
@@ -13129,10 +13141,6 @@
     {
         "word": "drink",
         "translations": [
-            {
-                "translation": "饮",
-                "type": "v"
-            },
             {
                 "translation": "喝",
                 "type": "v"
@@ -13360,7 +13368,7 @@
         "word": "dust",
         "translations": [
             {
-                "translation": "灰尘",
+                "translation": "尘土，沙土",
                 "type": "n"
             }
         ]
@@ -13679,7 +13687,7 @@
         "word": "education",
         "translations": [
             {
-                "translation": "教育；训导；教育学",
+                "translation": "教育，培养",
                 "type": "n"
             }
         ]
@@ -14582,7 +14590,7 @@
         "word": "enthusiastic",
         "translations": [
             {
-                "translation": "热情的，热心的",
+                "translation": "狂热的，极感兴趣的；热心的",
                 "type": "adj"
             }
         ]
@@ -14715,8 +14723,8 @@
         "word": "equip",
         "translations": [
             {
-                "translation": "装备，配备",
-                "type": "v"
+                "translation": "使有能力；装备",
+                "type": "vt"
             }
         ]
     },
@@ -15231,7 +15239,7 @@
         "word": "excite",
         "translations": [
             {
-                "translation": "使激动；引起",
+                "translation": "使激动，使兴奋",
                 "type": "v"
             }
         ]
@@ -15377,7 +15385,11 @@
         "word": "exhibit",
         "translations": [
             {
-                "translation": "显示；陈列，展览",
+                "translation": "展览会，陈列品",
+                "type": "n"
+            },
+            {
+                "translation": "展览，陈列；表现出",
                 "type": "v"
             }
         ]
@@ -17030,7 +17042,7 @@
         "word": "flour",
         "translations": [
             {
-                "translation": "面粉，粉；粉状物质",
+                "translation": "面粉",
                 "type": "n"
             }
         ]
@@ -17409,11 +17421,11 @@
         "word": "form",
         "translations": [
             {
-                "translation": "形式；形状",
+                "translation": "方式；表格",
                 "type": "n"
             },
             {
-                "translation": "形成",
+                "translation": "形成，产生，（使）出现",
                 "type": "v"
             }
         ]
@@ -17453,12 +17465,8 @@
         "word": "former",
         "translations": [
             {
-                "translation": "在前的",
+                "translation": "以前的；前任的",
                 "type": "adj"
-            },
-            {
-                "translation": "前者",
-                "type": "n"
             }
         ]
     },
@@ -17833,7 +17841,7 @@
         "word": "frog",
         "translations": [
             {
-                "translation": "蛙",
+                "translation": "青蛙",
                 "type": "n"
             }
         ]
@@ -17962,7 +17970,7 @@
         "word": "full",
         "translations": [
             {
-                "translation": "满的；完全的",
+                "translation": "满的，充满的",
                 "type": "adj"
             }
         ]
@@ -18982,7 +18990,7 @@
         "word": "gradual",
         "translations": [
             {
-                "translation": "逐渐的；渐进的",
+                "translation": "逐渐的",
                 "type": "adj"
             }
         ]
@@ -19183,7 +19191,7 @@
         "word": "gravity",
         "translations": [
             {
-                "translation": "重力，引力；严重性",
+                "translation": "重力，引力",
                 "type": "n"
             }
         ]
@@ -19812,8 +19820,12 @@
         "word": "hard",
         "translations": [
             {
-                "translation": "硬的；困难的",
+                "translation": "困难的；辛苦的，艰难的",
                 "type": "adj"
+            },
+            {
+                "translation": "努力地，艰难地，费力地",
+                "type": "adv"
             }
         ]
     },
@@ -22074,7 +22086,7 @@
         "word": "infer",
         "translations": [
             {
-                "translation": "推论，推断；猜想",
+                "translation": "推断",
                 "type": "v"
             }
         ]
@@ -22326,7 +22338,7 @@
         "word": "input",
         "translations": [
             {
-                "translation": "输入；投入的资金",
+                "translation": "（计算机）输入",
                 "type": "n"
             }
         ]
@@ -22689,7 +22701,7 @@
         "word": "intense",
         "translations": [
             {
-                "translation": "强烈的",
+                "translation": "强烈的，激烈的",
                 "type": "adj"
             }
         ]
@@ -22725,7 +22737,7 @@
         "word": "intentional",
         "translations": [
             {
-                "translation": "故意的，有意识的",
+                "translation": "故意的",
                 "type": "adj"
             }
         ]
@@ -22958,8 +22970,8 @@
         "word": "introduce",
         "translations": [
             {
-                "translation": "介绍；引进，传入",
-                "type": "v"
+                "translation": "传入，引进",
+                "type": "vt"
             }
         ]
     },
@@ -23102,7 +23114,7 @@
         "word": "invite",
         "translations": [
             {
-                "translation": "邀请，聘请；招待",
+                "translation": "邀请",
                 "type": "v"
             }
         ]
@@ -23156,7 +23168,7 @@
         "word": "irregular",
         "translations": [
             {
-                "translation": "不规律的",
+                "translation": "（时间）不规律的",
                 "type": "adj"
             }
         ]
@@ -24190,7 +24202,7 @@
         "word": "lavatory",
         "translations": [
             {
-                "translation": "盥洗室，厕所",
+                "translation": "厕所，盥洗室",
                 "type": "n"
             }
         ]
@@ -25290,7 +25302,7 @@
         "word": "lonely",
         "translations": [
             {
-                "translation": "孤独的；荒凉的",
+                "translation": "孤独的",
                 "type": "adj"
             }
         ]
@@ -26705,8 +26717,8 @@
         "word": "metric",
         "translations": [
             {
-                "translation": "公制的，米制的",
-                "type": "adj"
+                "translation": "（数学）度量",
+                "type": "n"
             }
         ]
     },
@@ -27001,10 +27013,6 @@
             {
                 "translation": "镜子",
                 "type": "n"
-            },
-            {
-                "translation": "反映，反射",
-                "type": "v"
             }
         ]
     },
@@ -27548,7 +27556,7 @@
         "word": "mouse",
         "translations": [
             {
-                "translation": "鼠，耗子",
+                "translation": "鼠；鼠标",
                 "type": "n"
             }
         ]
@@ -27838,7 +27846,7 @@
         "word": "mystery",
         "translations": [
             {
-                "translation": "迷，神秘的事物",
+                "translation": "神秘的事物",
                 "type": "n"
             }
         ]
@@ -28311,7 +28319,7 @@
         "word": "new",
         "translations": [
             {
-                "translation": "新的；新近出现的",
+                "translation": "新的",
                 "type": "adj"
             }
         ]
@@ -29302,11 +29310,11 @@
         "word": "open",
         "translations": [
             {
-                "translation": "开的；开放的",
+                "translation": "开放的，空缺的",
                 "type": "adj"
             },
             {
-                "translation": "开",
+                "translation": "开张，开业，开放，开幕；打开，开门",
                 "type": "v"
             }
         ]
@@ -29378,7 +29386,7 @@
         "word": "opponent",
         "translations": [
             {
-                "translation": "对手",
+                "translation": "对手，敌人，对抗者",
                 "type": "n"
             }
         ]
@@ -32322,7 +32330,7 @@
         "word": "pound",
         "translations": [
             {
-                "translation": "磅；英磅",
+                "translation": "英镑；磅",
                 "type": "n"
             }
         ]
@@ -33112,7 +33120,7 @@
         "word": "product",
         "translations": [
             {
-                "translation": "产品，产物；(乘)积",
+                "translation": "产品，制品；产物",
                 "type": "n"
             }
         ]
@@ -33823,6 +33831,15 @@
         ]
     },
     {
+        "word": "purely",
+        "translations": [
+            {
+                "translation": "完全的",
+                "type": "adv"
+            }
+        ]
+    },
+    {
         "word": "purify",
         "translations": [
             {
@@ -34387,11 +34404,11 @@
         "word": "rank",
         "translations": [
             {
-                "translation": "分等级",
+                "translation": "排名",
                 "type": "v"
             },
             {
-                "translation": "衔，阶层",
+                "translation": "组织中的全体成员",
                 "type": "n"
             }
         ]
@@ -34726,7 +34743,7 @@
         "word": "recall",
         "translations": [
             {
-                "translation": "回想；叫回；收回",
+                "translation": "回想起，记起，回忆",
                 "type": "v"
             }
         ]
@@ -34967,7 +34984,7 @@
         "word": "reduce",
         "translations": [
             {
-                "translation": "减少",
+                "translation": "减少，减小，降低",
                 "type": "v"
             }
         ]
@@ -35178,7 +35195,7 @@
         "word": "region",
         "translations": [
             {
-                "translation": "地区，地带；领域",
+                "translation": "地区，区域，地带",
                 "type": "n"
             }
         ]
@@ -36567,7 +36584,7 @@
         "word": "rival",
         "translations": [
             {
-                "translation": "对手",
+                "translation": "竞争对手",
                 "type": "n"
             }
         ]
@@ -36576,11 +36593,7 @@
         "word": "roar",
         "translations": [
             {
-                "translation": "吼叫；呼喊",
-                "type": "v"
-            },
-            {
-                "translation": "吼",
+                "translation": "吼叫声，轰鸣声",
                 "type": "n"
             }
         ]
@@ -36888,7 +36901,7 @@
         "word": "rug",
         "translations": [
             {
-                "translation": "小地毯；毛毯",
+                "translation": "（小）地毯",
                 "type": "n"
             }
         ]
@@ -37001,6 +37014,15 @@
             {
                 "translation": "鞍",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "sadly",
+        "translations": [
+            {
+                "translation": "令人遗憾地，不幸地",
+                "type": "adv"
             }
         ]
     },
@@ -38281,12 +38303,8 @@
         "word": "shield",
         "translations": [
             {
-                "translation": "盾；防护物",
+                "translation": "盾牌",
                 "type": "n"
-            },
-            {
-                "translation": "保护",
-                "type": "v"
             }
         ]
     },
@@ -39882,6 +39900,19 @@
             {
                 "translation": "演说，讲话，发言",
                 "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "speed",
+        "translations": [
+            {
+                "translation": "速度，速率",
+                "type": "n"
+            },
+            {
+                "translation": "加速",
+                "type": "v"
             }
         ]
     },
@@ -43533,7 +43564,7 @@
         "word": "tractor",
         "translations": [
             {
-                "translation": "拖拉机；牵引车",
+                "translation": "拖拉机，牵引车",
                 "type": "n"
             }
         ]
@@ -43658,7 +43689,7 @@
         "word": "transform",
         "translations": [
             {
-                "translation": "改变",
+                "translation": "改变，转换",
                 "type": "v"
             }
         ]
@@ -43805,7 +43836,7 @@
         "word": "treasure",
         "translations": [
             {
-                "translation": "珍爱",
+                "translation": "诊视；珍宝",
                 "type": "v"
             }
         ]
@@ -44673,11 +44704,7 @@
         "word": "unload",
         "translations": [
             {
-                "translation": "卸(货)",
-                "type": "v"
-            },
-            {
-                "translation": "卸货",
+                "translation": "卸（货）",
                 "type": "v"
             }
         ]
@@ -45232,6 +45259,15 @@
         "translations": [
             {
                 "translation": "血管",
+                "type": "n"
+            }
+        ]
+    },
+    {
+        "word": "vest",
+        "translations": [
+            {
+                "translation": "汗衫，背心，马甲",
                 "type": "n"
             }
         ]
@@ -45929,7 +45965,7 @@
         "word": "weapon",
         "translations": [
             {
-                "translation": " 武器， 兵器",
+                "translation": "武器",
                 "type": "n"
             }
         ]
@@ -46081,6 +46117,15 @@
             {
                 "translation": "称重；认真考虑",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "weight",
+        "translations": [
+            {
+                "translation": "体重；重量，分量",
+                "type": "n"
             }
         ]
     },
@@ -46391,12 +46436,8 @@
         "word": "wind",
         "translations": [
             {
-                "translation": "绕，缠绕",
-                "type": "v"
-            },
-            {
-                "translation": "卷曲",
-                "type": "v"
+                "translation": "风",
+                "type": "n"
             }
         ]
     },
@@ -46600,7 +46641,7 @@
         "word": "worker",
         "translations": [
             {
-                "translation": "工作者；工人，雇员",
+                "translation": "工人，工匠",
                 "type": "n"
             }
         ]
@@ -46799,7 +46840,7 @@
         "word": "wrist",
         "translations": [
             {
-                "translation": "腕，腕关节",
+                "translation": "腕部",
                 "type": "n"
             }
         ]
