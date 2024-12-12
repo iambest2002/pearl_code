@@ -11,7 +11,7 @@
       <view wx:if="{{cet6WordsGrouped[item]}}">
         <van-index-anchor index="{{item}}" />
         <block wx:for="{{cet6WordsGrouped[item]}}" wx:key="_id">
-          <view class="word-box">
+          <view class="word-box" data-word="{{item.word}}" id="{{item.word}}">
             <text class="word">{{item.word}}</text>
             <block wx:for="{{item.translations}}" wx:key="_id">
               <text class="translation">{{item.translation}} ({{item.type}})</text>

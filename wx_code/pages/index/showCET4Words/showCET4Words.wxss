@@ -5,6 +5,18 @@
   /* -webkit-filter: drop-shadow(0 0 8rpx #44ADFB);
   filter: drop-shadow(0 0 8rpx #44ADFB); */
 }
+.options {
+
+  right: 0px; /* 索引紧贴屏幕右侧 */
+  top: 50px; /* 距离顶部一定的距离，根据实际需要调整 */
+  z-index: 999; /* 确保始终显示在页面上方 */
+  background-color: transparent; /* 索引背景色透明 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center;
+  gap: 5px; /* 索引之间的间距 */
+  padding: 10px 5px; /* 内边距确保点击区域不会过小 */
+}
 
 .word-box {
   display: flex;

@@ -91,12 +91,7 @@
         "iconPath": "image/bill.png",
         "selectedIconPath": "image/bill-active.png"
       },
-      {
-        "pagePath": "pages/English/English",
-        "text": "复习",
-        "iconPath": "image/book.png",
-        "selectedIconPath": "image/book_yes.png"
-      },
+      
       {
         "pagePath": "pages/Accounting/Accounting",
         "text": "记账",

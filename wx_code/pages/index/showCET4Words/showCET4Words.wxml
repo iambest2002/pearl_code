@@ -1,51 +1,51 @@
 <van-search value="{{ searchValue }}" placeholder="请输入搜索关键词" show-action="true" use-action-slot bind:change="onChangeSearch" bind:cancel="onCancel" bind:search="onSearch" class="search-bar">
-    <!-- 自定义“搜索”按钮 -->
-    <view slot="action" bind:tap="onClick">
-      <image class="search-icon" src="../../../image/search.png"></image>
-    </view>
-  </van-search>
+  <!-- 自定义“搜索”按钮 -->
+  <view slot="action" bind:tap="onClick">
+    <image class="search-icon" src="../../../image/search.png"></image>
+  </view>
+</van-search>
 <view class="center-box">
-<view class="options">
-  <van-index-bar sticky highlight-color="#96e3fa">
-    <block wx:for="{{alphabet}}" wx:key="_id">
-      <view wx:if="{{cet4WordsGrouped[item]}}">
-        <van-index-anchor index="{{item}}" />
-        <block wx:for="{{cet4WordsGrouped[item]}}" wx:key="_id">
-          <view class="word-box" data-word="{{item.word}}">
-            <text class="word">{{item.word}}</text>
-            <block wx:for="{{item.translations}}" wx:key="_id">
-              <text class="translation">{{item.translation}} ({{item.type}})</text>
-            </block>
-          </view>
-        </block>
-      </view>
-    </block>
-  </van-index-bar>
+  <view class="options">
+    <van-index-bar sticky highlight-color="#96e3fa">
+      <block wx:for="{{alphabet}}" wx:key="_id">
+        <view wx:if="{{cet4WordsGrouped[item]}}">
+          <van-index-anchor index="{{item}}" />
+          <block wx:for="{{cet4WordsGrouped[item]}}" wx:key="_id">
+            <view class="word-box" data-word="{{item.word}}" id="{{item.word}}">
+              <text class="word">{{item.word}}</text>
+              <block wx:for="{{item.translations}}" wx:key="_id">
+                <text class="translation">{{item.translation}} ({{item.type}})</text>
+              </block>
+            </view>
+          </block>
+        </view>
+      </block>
+    </van-index-bar>
 
-  <!-- 加载更多按钮 -->
-  <!-- <view wx:if="{{hasMore}}" class="load-more">
+    <!-- 加载更多按钮 -->
+    <!-- <view wx:if="{{hasMore}}" class="load-more">
     
   </view> -->
-  
 
-  <!-- 没有更多数据的提示 -->
-  <view wx:if="{{!hasMore}}" class="no-more">
-    <text>没有更多数据了</text>
+
+    <!-- 没有更多数据的提示 -->
+    <view wx:if="{{!hasMore}}" class="no-more">
+      <text>没有更多数据了</text>
+    </view>
   </view>
-</view>
 </view>
 <view class="scroll-buttons-container">
   <!--加载-->
-    <view  class="scroll-button-up" bindtap="loadWordsBatch"  loading="{{loading}}" disabled="{{loading}}">
-      <image class="button-icon" src="../../../image/more-two.png"></image>
-    </view>
+  <view class="scroll-button-up" bindtap="loadWordsBatch" loading="{{loading}}" disabled="{{loading}}">
+    <image class="button-icon" src="../../../image/more-two.png"></image>
+  </view>
 
   <!-- 一键上滑按钮 -->
   <view class="scroll-button-up" bindtap="scrollToTop">
     <image class="button-icon" src="../../../image/up.png"></image>
   </view>
 
-  <!-- 一键下滑按钮 -->      
+  <!-- 一键下滑按钮 -->
   <view class="scroll-button" bindtap="scrollToBottom">
     <image class="button-icon" src="../../../image/down.png"></image>
   </view>

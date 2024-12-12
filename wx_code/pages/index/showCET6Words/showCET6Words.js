@@ -11,14 +11,26 @@ Page({
     batchIndex: 0, // 当前批次索引
     loading: false,
     hasMore: true, // 是否还有更多批次
-    words: [] // 当前显示的单词
+    words: [], // 当前显示的单词
+    windowHeight:'',
+    windowWidth:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
+  onLoad() {
+    this.loadWordsBatch();
     console.log("页面加载，初始数据为:", this.data);  // 打印初始数据
+     // 在页面加载时通过 wx.getSystemInfoSync 获取窗口信息
+    const windowInfo = wx.getWindowInfo();
+    this.setData({
+      windowHeight: windowInfo.windowHeight,
+      windowWidth: windowInfo.windowWidth,
+    });
+
+    console.log('窗口高度:', windowInfo.windowHeight);  // 打印窗口高度
+    console.log('窗口宽度:', windowInfo.windowWidth);   // 打印窗口宽度
   },
 
   /**
@@ -142,8 +154,6 @@ Page({
     console.log('搜索框内容改变:', e.detail);
     this.setData({
       searchValue: e.detail,
-    // },()=>{
-    //   this.onClick();
      });
   },
 
@@ -155,9 +165,47 @@ Page({
     //this.fetchBookListAndWords(); // 重置数据
   },
   onClick(){
+    console.log("点击搜索")
+    const {searchValue, cet6WordsGrouped, alphabet } = this.data;
+    const searchValueLower = searchValue.toLowerCase();
+    let foundWord = '';
 
-  },
-  onSearch(){
+    // 查找匹配的单词
+    for (let letter of alphabet) {
+      const words = cet6WordsGrouped[letter] || [];
+      const matchingWords = words.filter(word => 
+        word.word && word.word.toLowerCase().startsWith(searchValueLower)
+      );
 
+      if (matchingWords.length > 0) {
+        foundWord = matchingWords[0].word; // 找到第一个匹配的单词
+        break; // 找到后退出循环
+      }
+    }
+
+    if (foundWord) {
+      // 滚动到找到的单词的位置
+      wx.createSelectorQuery().select(`#${foundWord}`).boundingClientRect((rect) => {
+        if (rect) {
+          wx.pageScrollTo({
+            scrollTop: rect.top + this.data.windowHeight * (-0.05),  // 调整位置以便可见
+            duration: 100  // 滚动动画时间
+          });
+        }
+      }).exec();
+
+      wx.showToast({
+        title: `找到单词: ${foundWord}`,
+        icon: 'success',
+        duration: 2000
+      });
+    } else {
+      wx.showToast({
+        title: '未找到相关单词',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
+
 });
