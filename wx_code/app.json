@@ -16,6 +16,7 @@
     "pages/wordDetail/wordDetail",
     "pages/user/userInfo/userInfo",
     "pages/user/dlWords/dlWords",
+    "pages/user/showNotice/showNotice",
     "pages/index/phrases/phrases",
     "pages/user/accounting/accounting",
     "pages/user/getWords/getWords",
@@ -87,11 +88,10 @@
     "list": [
       {
         "pagePath": "pages/bill/bill",
-        "text": "首页",
+        "text": "账单",
         "iconPath": "image/bill.png",
         "selectedIconPath": "image/bill-active.png"
       },
-      
       {
         "pagePath": "pages/Accounting/Accounting",
         "text": "记账",

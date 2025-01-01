@@ -40,6 +40,19 @@
       </view>
     </view>
   </view>
+  <van-popup show="{{showNotice}}" bind:close="onCloseNotice" round position="top"  custom-style="height: auto;">
+    <view class="notice-bar">
+      <text class="notice-title">公告栏</text>
+      <view class="notice-content">
+        <text>{{noticeContent}}</text>
+      </view>
+      <view class="notice-actions">
+        <button bindtap="onNotToday">今天不再显示</button>
+        <button bindtap="onCloseNotice">关闭</button>
+      </view>
+    </view>
+  </van-popup>
+
 </view>
 <view class="function-buttons">
   <!-- 个人信息按钮 -->

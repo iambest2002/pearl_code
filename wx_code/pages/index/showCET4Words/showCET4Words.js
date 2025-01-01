@@ -13,17 +13,17 @@ Page({
     loading: false,
     hasMore: true, // 是否还有更多批次
     words: [], // 当前显示的单词
-    windowHeight:'',
-    windowWidth:'',
+    windowHeight: '',
+    windowWidth: '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  getWindowInfo(){
-    
+  getWindowInfo() {
+
   },
-  onLoad () {
+  onLoad() {
     this.loadWordsBatch();
     console.log("页面加载，初始数据为:", this.data); // 
     // 在页面加载时通过 wx.getSystemInfoSync 获取窗口信息
@@ -33,10 +33,10 @@ Page({
       windowWidth: windowInfo.windowWidth,
     });
 
-    console.log('窗口高度:', windowInfo.windowHeight);  // 打印窗口高度
-    console.log('窗口宽度:', windowInfo.windowWidth);   // 打印窗口宽度
+    console.log('窗口高度:', windowInfo.windowHeight); // 打印窗口高度
+    console.log('窗口宽度:', windowInfo.windowWidth); // 打印窗口宽度
   },
-  
+
   /**
    * 点击加载按钮，获取CET4的单词
    */
@@ -170,15 +170,21 @@ Page({
     //this.fetchBookListAndWords(); // 重置数据
   },
   onClick() {
-    console.log("点击搜索")
-    const {searchValue, cet4WordsGrouped, alphabet } = this.data;
+    console.log("点击搜索");
+    const {
+      searchValue,
+      cet4WordsGrouped,
+      alphabet,
+      windowHeight
+    } = this.data;
     const searchValueLower = searchValue.toLowerCase();
     let foundWord = '';
+    let targetRect = null;
 
     // 查找匹配的单词
     for (let letter of alphabet) {
       const words = cet4WordsGrouped[letter] || [];
-      const matchingWords = words.filter(word => 
+      const matchingWords = words.filter(word =>
         word.word && word.word.toLowerCase().startsWith(searchValueLower)
       );
 
@@ -189,27 +195,56 @@ Page({
     }
 
     if (foundWord) {
-      // 滚动到找到的单词的位置
-      wx.createSelectorQuery().select(`#${foundWord}`).boundingClientRect((rect) => {
-        if (rect) {
-          wx.pageScrollTo({
-            scrollTop: rect.top + this.data.windowHeight * (-0.05),  // 调整位置以便可见(this.data.windowHeight * 0.1无用)
-            duration: 10  // 滚动动画时间
-          });
-        }
-      }).exec();
+      // 获取当前页面的滚动信息
+      wx.createSelectorQuery()
+        .selectViewport()
+        .scrollOffset((viewportRes) => {
+          const currentScrollTop = viewportRes.scrollTop;
 
-      wx.showToast({
-        title: `找到单词: ${foundWord}`,
-        icon: 'success',
-        duration: 2000
-      });
+          // 获取目标单词的位置
+          wx.createSelectorQuery()
+            .select(`#${foundWord}`)
+            .boundingClientRect((rect) => {
+              if (rect) {
+                // 如果目标单词的位置未变化，不执行滚动
+                if (targetRect && targetRect.top === rect.top) {
+                  console.log("单词位置未变化，不执行滚动");
+                  wx.showToast({
+                    title: `找到单词: ${foundWord}`,
+                    icon: 'success',
+                    duration: 2000,
+                  });
+                  return;
+                }
+
+                targetRect = rect; // 记录目标单词的位置
+
+                // 计算滚动目标位置
+                const scrollToPosition = currentScrollTop + rect.top - windowHeight * 0.1;
+
+                // 执行滚动到目标单词的位置
+                wx.pageScrollTo({
+                  scrollTop: scrollToPosition,
+                  duration: 300, // 滚动动画时间
+                });
+
+                wx.showToast({
+                  title: `找到单词: ${foundWord}`,
+                  icon: 'success',
+                  duration: 2000,
+                });
+              }
+            })
+            .exec();
+        })
+        .exec();
     } else {
       wx.showToast({
         title: '未找到相关单词',
         icon: 'none',
-        duration: 2000
+        duration: 2000,
       });
     }
   },
+
 });

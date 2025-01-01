@@ -1,4 +1,3 @@
-<!--pages/Remenber.wxml-->
 
 <!-- 标题 -->
 <view class="title_view" style="height: {{navBarHeight}}px;">

@@ -2,8 +2,7 @@
 	min-height: 900px;
   background-color: #ffffff;
   border-radius: 20rpx;
-  /* -webkit-filter: drop-shadow(0 0 8rpx #44ADFB);
-  filter: drop-shadow(0 0 8rpx #44ADFB); */
+  padding-top: 60px; /* 给内容加上额外的顶部填充，避免被搜索框遮挡 */
 }
 
 .word-box {
@@ -63,7 +62,12 @@
 }
 .search-bar {
   flex: 1;
-  background-color: #96e3fa;
+  background-color: #ffffff;
+  position: fixed; /* 固定在屏幕上 */
+  top: 0; /* 距离顶部 0 */
+  left: 0; /* 距离左边 0 */
+  width: 100%; /* 占满整个屏幕宽度 */
+  z-index: 1000; /* 确保在其他内容之上 */
 }
 .search-icon {
   width: 20px; /* 设置图标的宽度 */

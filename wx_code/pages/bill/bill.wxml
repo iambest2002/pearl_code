@@ -18,15 +18,12 @@
 	<van-switch size="24px"  active-color="#96e3fa" inactive-color="#ffffff" bind:change="onSwitchChange" checked="{{ checked }}" />
 	</view>
 	
-
 		<!-- 日期选择器弹出层 -->
 	<van-popup show="{{showDatePicker}}" round position="bottom" custom-style="height: 40%;" bind:close="onDateCancel">
 		<view class="date-picker-container">
 		<van-datetime-picker class="date-picker" type="year-month" value="{{currentDate}}" bind:confirm="onDateConfirm" bind:cancel="onDateCancel" />
-		
 		</view>
 	</van-popup>
-	
 </view>
 
 <van-divider />

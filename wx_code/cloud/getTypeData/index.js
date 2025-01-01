@@ -10,7 +10,7 @@ cloud.init({
 exports.main = async (event, context) => {
   const db = cloud.database();
   const $ = db.command.aggregate;
-	const { date, skip = 0, limit = 100 ,openid} = event;
+	const { date, skip = 0, limit = 500 ,openid} = event;
 	console.log('接收到的日期:', date);
   console.log('接收到的 openid:', openid);
 
