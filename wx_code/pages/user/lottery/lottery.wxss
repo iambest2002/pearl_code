@@ -1,0 +1,159 @@
+.container {
+  padding: 120rpx 20rpx 20rpx;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* 输入区域样式 */
+.input-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  padding: 20rpx;
+  background: #fff;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.prize-input {
+  flex: 1;
+  height: 80rpx;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+}
+
+.add-btn {
+  width: 160rpx;
+  font-size: 28rpx;
+  background: #6ed6da;
+  color: #fff;
+  border-radius: 8rpx;
+}
+
+/* 奖品格子区域样式 */
+.prize-grid {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 15rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.prize-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150rpx, 1fr));
+  gap: 15rpx;
+  padding: 10rpx;
+}
+
+.prize-item {
+  position: relative;
+  height: 80rpx;
+  background: #f8f8f8;
+  border-radius: 6rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 15rpx;
+  transition: all 0.3s;
+  border: 2rpx solid transparent;
+}
+
+.prize-item.active {
+  background: rgba(110, 214, 218, 0.1);
+  border-color: #6ed6da;
+  transform: scale(1.05);
+}
+
+.prize-item text {
+  font-size: 24rpx;
+  color: #333;
+  text-align: center;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.delete-btn {
+  position: absolute;
+  top: -8rpx;
+  right: -8rpx;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 28rpx;
+  text-align: center;
+  background: #ff4444;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24rpx;
+}
+
+/* 抽奖按钮样式 */
+.lottery-btn {
+  width: 80%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #6ed6da;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+  margin: 40rpx auto;
+  transition: all 0.3s;
+}
+
+.lottery-btn.rolling {
+  background: rgba(110, 214, 218, 0.6);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* 结果显示区域样式 */
+.result-section {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.result-content {
+  background: rgba(110, 214, 218, 0.05);
+  padding: 30rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #6ed6da;
+}
+
+.result-content text {
+  font-size: 36rpx;
+  color: #6ed6da;
+  font-weight: bold;
+}
+
+/* 添加按钮点击效果 */
+.add-btn:active,
+.lottery-btn:active {
+  opacity: 0.8;
+} 

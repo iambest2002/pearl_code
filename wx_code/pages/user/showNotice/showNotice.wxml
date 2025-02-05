@@ -1,12 +1,18 @@
-<van-popup show="{{showNotice}}" bind:close="onCloseNotice" round position="bottom" custom-style="height: auto;">
+<van-popup 
+  show="{{showNotice}}" 
+  bind:close="onCloseNotice" 
+  round 
+  position="center"
+  custom-style="width: 80%;"
+>
   <view class="notice-bar">
-    <text class="notice-title">公告栏</text>
+    <view class="notice-title">公告栏</view>
     <view class="notice-content">
       <text>{{noticeContent}}</text>
     </view>
     <view class="notice-actions">
-      <button bindtap="onNotToday">今天不再显示</button>
-      <button bindtap="onCloseNotice">关闭</button>
+      <button class="notice-btn" bindtap="onNotToday">今天不再显示</button>
+      <button class="notice-btn confirm" bindtap="onCloseNotice">我知道了</button>
     </view>
   </view>
 </van-popup>

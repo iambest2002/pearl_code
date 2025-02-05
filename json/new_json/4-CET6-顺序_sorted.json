@@ -3621,7 +3621,7 @@
         "word": "blur",
         "translations": [
             {
-                "translation": " 变模糊",
+                "translation": "变模糊",
                 "type": "v"
             },
             {
@@ -16619,6 +16619,15 @@
         ]
     },
     {
+        "word": "humiliate",
+        "translations": [
+            {
+                "translation": "羞辱；使蒙耻；使丢脸",
+                "type": "vt"
+            }
+        ]
+    },
+    {
         "word": "humorous",
         "translations": [
             {
@@ -19115,6 +19124,15 @@
             {
                 "translation": "猛地一拉，急拉",
                 "type": "v"
+            }
+        ]
+    },
+    {
+        "word": "jewel",
+        "translations": [
+            {
+                "translation": "宝石",
+                "type": "n"
             }
         ]
     },
@@ -21902,7 +21920,7 @@
         "word": "motivate",
         "translations": [
             {
-                "translation": " 作为…的动机； 激励， 激发",
+                "translation": " 作为…的动机；激励，激发",
                 "type": "vt"
             }
         ]
@@ -22612,7 +22630,7 @@
         "word": "nuisance",
         "translations": [
             {
-                "translation": " 讨厌的人； 麻烦事",
+                "translation": " 讨厌的人；麻烦事",
                 "type": "n"
             }
         ]
@@ -35126,11 +35144,11 @@
         "word": "tumble",
         "translations": [
             {
-                "translation": "跌倒，摔下，滚下；翻滚；暴跌；不由自主地卷入",
+                "translation": "(使)跌倒，摔下，滚下；翻滚；(价格等)暴跌",
                 "type": "vi"
             },
             {
-                "translation": " 跌倒， 摔倒",
+                "translation": "跌倒，摔倒",
                 "type": "n"
             }
         ]

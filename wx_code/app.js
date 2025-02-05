@@ -41,7 +41,6 @@ App({
             wx.setStorageSync('userInfo', result.data[0])
           }
         })
-
       }
     })
   },
@@ -62,27 +61,27 @@ App({
         "title": "四级大纲词 『CET4+』",
         "desc": "cet4WordsGrouped",
         "name": "四级大纲词",
-        "wordsNumber": 3739,
+        "wordsNumber": 4976,
         "peopleNumber": 0.0,
-        "image": "../../image/book-CET4Full.png"
+        "image": "/image/book-CET4Full.png"
       },
       {
         "_id": "CET6Full",
         "title": "六级大纲词 『CET6+』",
-        "desc": "CET6+",
+        "desc": "cet6WordsGrouped",
         "name": "六级大纲词",
-        "wordsNumber": 2078,
+        "wordsNumber": 3994,
         "peopleNumber": 0.0,
-        "image": "../../image/book-CET6Full.png"
+        "image": "/image/book-CET4Full.png"
       },
       {
         "_id": "kaoYanFull",
         "title": "考研大纲词汇 『考研+』",
-        "desc": "考研+",
+        "desc": "pgeeWordsGrouped",
         "name": "考研大纲词汇",
-        "wordsNumber": 4533,
+        "wordsNumber": 5058,
         "peopleNumber": 0.0,
-        "image": "../../image/book-kaoYanFull.png"
+        "image": "/image/book-CET4Full.png"
       },
       
     ],

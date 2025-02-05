@@ -10,8 +10,8 @@ Page({
     onShowGetStorageInfoPicker: false,
     //['CET4', 'CET6', 'PGEE'],['CET4', 'CET6', 'PGEE'],
     GetWordsCache: ['CET4', 'CET6', 'PGEE'],
-    RemoveWordsCache: ['CET4', 'CET6', 'PGEE'],
-    ViewWordsCache: ['ALL','CET4','EXPENSES','INCOME', 'CET6', 'PGEE'],
+    RemoveWordsCache: ['CET4', 'CET6', 'PGEE','learningProgress_cet4WordsGrouped','learningProgress_cet6WordsGrouped','learningProgress_pgeeWordsGrouped'],
+    ViewWordsCache: ['ALL','EXPENSES','INCOME','CET4','CET6', 'PGEE','PRIZELIST','learningProgress','learnedWords','learningProgress_cet4WordsGrouped','currentBook','bookInfo_cet4WordsGrouped','tempReviewData'],
     selectGetWords: '',
   },
 
@@ -173,6 +173,10 @@ Page({
       CET4: 'cet4WordsGrouped',
       CET6: 'cet6WordsGrouped',
       PGEE: 'pgeeWordsGrouped',
+      learningProgress_cet4WordsGrouped:'learningProgress_cet4WordsGrouped',
+      learningProgress_cet6WordsGrouped:'learningProgress_cet6WordsGrouped',
+      learningProgress_pgeeWordsGrouped:'learningProgress_pgeeWordsGrouped',
+      currentBook:"currentBook",
 
     };
     const cacheKey = cacheKeyMap[value];
@@ -251,6 +255,13 @@ Page({
         PGEE: 'pgeeWordsGrouped',
         EXPENSES:'expenses',
         INCOME:'income',
+        PRIZELIST:'prizeList',
+        learningProgress:'learningProgress',
+        learnedWords:'learnedWords',
+        learningProgress_cet4WordsGrouped:'learningProgress_cet4WordsGrouped',
+        currentBook:"currentBook",
+        bookInfo_cet4WordsGrouped:'bookInfo_cet4WordsGrouped',
+        tempReviewData:'tempReviewData'
       };
       const cacheKey = cacheKeyMap[value];
 
@@ -276,6 +287,4 @@ Page({
       });
     }
   },
-
-
 });

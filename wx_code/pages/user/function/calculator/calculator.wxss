@@ -1,0 +1,170 @@
+/* pages/user/function/calculator/calculator.wxss */
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.display {
+  flex: 1;
+  background-color: white;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+  min-height: 400rpx;
+  max-height: 45vh;
+}
+
+.mode-switch {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.mode-switch text {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+  color: #666;
+  font-size: 32rpx;
+}
+
+.mode-switch text.active {
+  color: #96e3fa;
+  border-bottom: 4rpx solid #96e3fa;
+}
+
+.result {
+  flex: 1;
+  text-align: right;
+  font-size: 72rpx;
+  margin: 20rpx 0;
+  min-height: 90rpx;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sub-display {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.sub-display view {
+  padding: 16rpx 20rpx;
+  border-bottom: 2rpx solid #e0e0e0;
+}
+
+.sub-display view:last-child {
+  border-bottom: none;
+}
+
+.sub-display view:active {
+  background-color: #f8f8f8;
+}
+
+.keyboard-container {
+  background-color: white;
+  border-radius: 20rpx 20rpx 0 0;
+  padding: 20rpx;
+  margin: 0 20rpx 20rpx 20rpx;
+}
+
+.keyboard {
+  transition: all 0.3s ease;
+}
+
+.keyboard.hidden {
+  display: none;
+}
+
+.row {
+  display: flex;
+  gap: 8rpx;
+  margin-bottom: 8rpx;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.row button {
+  flex: 1;
+  margin: 0;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+}
+
+.row button.equal {
+  background-color: #96e3fa;
+  color: white;
+}
+
+.programmer .base-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rpx;
+  margin-bottom: 15rpx;
+}
+
+.programmer .base-buttons button {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0;
+  font-size: 28rpx;
+}
+
+.programmer .base-buttons button.active {
+  background-color: #96e3fa;
+  color: white;
+}
+
+.programmer .hex-buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8rpx;
+  margin-bottom: 15rpx;
+}
+
+.programmer .hex-buttons button {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0;
+  font-size: 28rpx;
+}
+
+button[disabled] {
+  background-color: #f5f5f5 !important;
+  color: #999 !important;
+}
+
+/* 添加新的显示样式 */
+.calculator-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.expression {
+  text-align: right;
+  font-size: 40rpx;
+  color: #999;
+  min-height: 56rpx;
+  margin-bottom: 15rpx;
+  word-break: break-all;
+}
+
+.programmer-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

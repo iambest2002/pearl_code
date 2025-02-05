@@ -15,7 +15,7 @@
 	</view>
 	<view class="switch">
 		<!-- <text>备注</text> -->
-	<van-switch size="24px"  active-color="#96e3fa" inactive-color="#ffffff" bind:change="onSwitchChange" checked="{{ checked }}" />
+	<van-switch v-model="checked" size="24px"  active-color="#96e3fa" inactive-color="#ffffff" bind:change="onSwitchChange" checked="{{ checked }}" />
 	</view>
 	
 		<!-- 日期选择器弹出层 -->
@@ -35,8 +35,8 @@
 		<text class="expense-price">{{item.price}}</text>
 
 	</view>
-	<van-collapse  value="{{ activeNames}}" bind:change="onFoldChange" data-id="{{item['_id']}}" >
-		<van-collapse-item  icon='notes-o' title="备注" name="{{item['_id']}}" is-link="true" >
+	<van-collapse  v-modle="activeNames" value="{{ activeNames}}" bind:change="onFoldChange" data-id="{{item['_id']}}" >
+		<van-collapse-item  icon='notes-o' name="{{item['_id']}}" is-link="true" >
 			{{item.note}}
 		</van-collapse-item>
 	</van-collapse>

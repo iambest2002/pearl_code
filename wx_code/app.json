@@ -7,6 +7,7 @@
     "pages/book/book",
     "pages/English/English",
     "pages/index/index",
+    "pages/user/function/function",
     "pages/index/addBook/addBook",
     "pages/book/newBook/newBook",
     "pages/book/bookDetail/bookDetail",
@@ -24,7 +25,10 @@
     "pages/index/showCET6Words/showCET6Words",
     "pages/index/showPGEEWords/showPGEEWords",
     "pages/index/book/book",
-    "pages/setMyPlan/setMyPlan"
+    "pages/English/setMyPlan/setMyPlan",
+    "pages/English/review/review",
+    "pages/user/function/lottery/lottery",
+    "pages/user/function/calculator/calculator"
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -91,6 +95,12 @@
         "text": "账单",
         "iconPath": "image/bill.png",
         "selectedIconPath": "image/bill-active.png"
+      },
+      {
+        "pagePath": "pages/English/English",
+        "text": "复习",
+        "iconPath": "image/book.png",
+        "selectedIconPath": "image/book_yes.png"
       },
       {
         "pagePath": "pages/Accounting/Accounting",

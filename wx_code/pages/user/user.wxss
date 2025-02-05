@@ -1,39 +1,58 @@
-.function-buttons {
-  background: #fff; /* 背景颜色 */
-  /*border-radius: 10rpx;*/ /* 圆角 */
-  /*overflow: hidden; *//* 防止按钮间的边框溢出 */
+.function-container {
+  background: #f5f5f5;
+  min-height: 100vh;
+  padding: 20rpx 30rpx;
+}
+
+.function-group {
+  background: transparent;
+  border-radius: 16rpx;
+  overflow: hidden;
   margin: 20rpx 30rpx;
 }
 
 .menu-button {
-  margin: 10rpx;
-  height: 40px;
-  width: 100%; /* 按钮宽度100% */
-  padding: 15rpx; /* 内边距 */
-  border: none !important; /* 强制去掉边框 */
-  background: #fff; /* 按钮背景 */
-  font-size: 32rpx; /* 字体大小 */
-  text-align: left; /* 文本左对齐 */
-  color: #333; /* 字体颜色 */
-  text-align: center; /* 文本居中 */
-  display: flex; /* 使用flex布局 */
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  transition: background 0.2s; /* 添加过渡效果 */
+  position: relative;
+  width: 100% !important;
+  height: 88rpx !important;
+  padding: 0 30rpx !important;
+  margin: 0 0 20rpx 0 !important;
+  border: none !important;
+  background: #fff !important;
+  font-size: 34rpx;
+  color: #333;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16rpx !important;
+  line-height: 88rpx !important;
+  box-shadow: 0 1rpx 2rpx rgba(0, 0, 0, 0.05);
 }
-/* 
-.menu-button:hover {
-  background: #f5f5f5; /* 悬停时的背景颜色 
-} */
 
-.menu-button:last-of-type {
-  border-bottom: none; /* 去掉最后一个按钮的边框 */
+.menu-button::after {
+  display: none;
 }
 
 .menu-button:active {
-  background: #e0e0e0; /* 点击时的背景颜色 */
+  background-color: #f5f5f5 !important;
 }
 
+.menu-button + .menu-button {
+  border-top: none;
+}
+
+.menu-button:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* 右箭头图标 */
+.arrow {
+  position: absolute;
+  right: 30rpx;
+  color: #c7c7cc;
+  font-family: system-ui;
+}
 
 .menu-cell {
   text-align: center;
@@ -206,23 +225,89 @@
 }
 
 .notice-bar {
-  padding: 20px;
+  padding: 40rpx 30rpx;
   background-color: #fff;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20rpx;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
 .notice-title {
   text-align: center; 
-  font-size: 18px;
+  font-size: 36rpx;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-.notice-content {
-  font-size: 14px;
+  margin-bottom: 30rpx;
   color: #333;
-  margin-bottom: 20px;
 }
-.notice-actions button {
-  margin: 0 5px;
-  padding: 5px 10px;
-  font-size: 14px;
+
+.notice-content {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 40rpx;
+  line-height: 1.6;
+  padding: 0 10rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.notice-content text {
+  display: block;
+  width: 100%;
+}
+
+.notice-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rpx;
+  padding: 0 20rpx;
+}
+
+.notice-btn {
+  flex: 1;
+  margin: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  background: #f5f5f5;
+  color: #666;
+  border: none;
+  padding: 0;
+}
+
+.notice-btn.confirm {
+  background: #6ed6da;
+  color: #fff;
+}
+
+.notice-btn::after {
+  border: none;
+}
+
+/* 按钮点击效果 */
+.notice-btn:active {
+  opacity: 0.8;
+}
+
+/* 弹窗动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.van-popup {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* 禁用状态的按钮样式 */
+.menu-button[disabled] {
+  color: #999 !important;
+  background: #fff !important;
 }

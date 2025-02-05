@@ -352,7 +352,7 @@
         "word": "accompany",
         "translations": [
             {
-                "translation": "陪伴，陪同；伴随，一起发生，伴奏",
+                "translation": "陪伴，陪同；伴随；为……伴奏",
                 "type": "v"
             }
         ]
@@ -436,7 +436,7 @@
         "word": "accuracy",
         "translations": [
             {
-                "translation": "准确（性）；精确；准确度",
+                "translation": "准确(性)；精确；准确度",
                 "type": "n"
             }
         ]
@@ -885,7 +885,7 @@
                 "type": "adj"
             },
             {
-                "translation": "前进；增加；上涨（advance的过去式和过去分词形式）",
+                "translation": "前进；增加；上涨(advance的过去式和过去分词形式)",
                 "type": "v"
             }
         ]
@@ -1013,7 +1013,7 @@
         "word": "aeroplane",
         "translations": [
             {
-                "translation": "飞机（等于airplane）",
+                "translation": "飞机(等于airplane)",
                 "type": "n"
             }
         ]
@@ -1031,7 +1031,7 @@
         "word": "affair",
         "translations": [
             {
-                "translation": "事情；事务；私事；（尤指关系不长久的）风流韵事",
+                "translation": "事情；事务；私事；(尤指关系不长久的)风流韵事",
                 "type": "n"
             }
         ]
@@ -1249,7 +1249,7 @@
                 "type": "adj"
             },
             {
-                "translation": "向前地；领先地；在（某人或某事物的）前面；预先；在将来，为未来",
+                "translation": "向前地；领先地；在(某人或某事物的)前面；预先；在将来，为未来",
                 "type": "adv"
             }
         ]
@@ -1950,7 +1950,7 @@
         "word": "angry",
         "translations": [
             {
-                "translation": "生气的；愤怒的；狂暴的；（伤口等）发炎的",
+                "translation": "生气的；愤怒的；狂暴的；(伤口等)发炎的",
                 "type": "adj"
             }
         ]
@@ -1990,7 +1990,7 @@
         "word": "announce",
         "translations": [
             {
-                "translation": "正式宣布；发表；通告；广播（电台节目）",
+                "translation": "正式宣布；发表；通告；广播(电台节目)",
                 "type": "v"
             }
         ]
@@ -2003,7 +2003,7 @@
                 "type": "v"
             },
             {
-                "translation": "烦恼（等于annoyance）",
+                "translation": "烦恼(等于annoyance)",
                 "type": "n"
             }
         ]
@@ -2185,7 +2185,7 @@
         "word": "appeal",
         "translations": [
             {
-                "translation": "呼吁，恳求；上诉；诉诸，求助；有吸引力，迎合爱好；（体育比赛中）诉诸裁判",
+                "translation": "呼吁，恳求；上诉；诉诸，求助；有吸引力，迎合爱好；(体育比赛中)诉诸裁判",
                 "type": "v"
             },
             {
@@ -2243,7 +2243,7 @@
         "word": "apple",
         "translations": [
             {
-                "translation": "苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，（棒球的）球；[美俚]人，家伙。",
+                "translation": "苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，(棒球的)球；[美俚]人，家伙。",
                 "type": "n"
             }
         ]
@@ -2951,7 +2951,7 @@
         "word": "assurance",
         "translations": [
             {
-                "translation": "保证，担保；（人寿）保险；确信；断言；厚脸皮，无耻",
+                "translation": "保证，担保；(人寿)保险；确信；断言；厚脸皮，无耻",
                 "type": "n"
             }
         ]
@@ -3058,7 +3058,7 @@
         "word": "attend",
         "translations": [
             {
-                "translation": "出席；上（大学等）；照料；招待；陪伴",
+                "translation": "出席；上(大学等)；照料；招待；陪伴",
                 "type": "v"
             }
         ]
@@ -3089,7 +3089,7 @@
         "word": "attention",
         "translations": [
             {
-                "translation": "注意力；关心；立正！（口令）",
+                "translation": "注意力；关心；立正！(口令)",
                 "type": "n"
             }
         ]
@@ -3217,7 +3217,7 @@
                 "type": "adj"
             },
             {
-                "translation": "八月（简写为Aug）",
+                "translation": "八月(简写为Aug)",
                 "type": "n"
             }
         ]
@@ -3262,7 +3262,7 @@
         "word": "authority",
         "translations": [
             {
-                "translation": "权威；权力；当局",
+                "translation": "权威。威信；权力；当局",
                 "type": "n"
             }
         ]
@@ -3271,7 +3271,7 @@
         "word": "auto",
         "translations": [
             {
-                "translation": "汽车（等于automobile）；自动",
+                "translation": "汽车(等于automobile)；自动",
                 "type": "n"
             },
             {
@@ -3535,7 +3535,7 @@
         "word": "bachelor",
         "translations": [
             {
-                "translation": "学士；单身汉；（尚未交配的）小雄兽",
+                "translation": "学士；单身汉；(尚未交配的)小雄兽",
                 "type": "n"
             }
         ]
@@ -3614,7 +3614,7 @@
         "word": "bag",
         "translations": [
             {
-                "translation": "袋；猎获物；（俚）一瓶啤酒",
+                "translation": "袋；猎获物；(俚)一瓶啤酒",
                 "type": "n"
             },
             {
@@ -3627,7 +3627,7 @@
         "word": "baggage",
         "translations": [
             {
-                "translation": "行李；[交] 辎重（军队的）",
+                "translation": "行李；[交] 辎重(军队的)",
                 "type": "n"
             }
         ]
@@ -3849,16 +3849,12 @@
         "word": "banquet",
         "translations": [
             {
-                "translation": "(正式的)宴会",
+                "translation": "(正式的)宴会；盛宴",
                 "type": "n"
             },
             {
-                "translation": "参加宴会",
-                "type": "v"
-            },
-            {
-                "translation": "宴情",
-                "type": "v"
+                "translation": "宴会的",
+                "type": "adj"
             }
         ]
     },
@@ -4197,7 +4193,7 @@
                 "type": "n"
             },
             {
-                "translation": "忍受（bear的ing形式）",
+                "translation": "忍受(bear的ing形式)",
                 "type": "v"
             }
         ]
@@ -4307,7 +4303,7 @@
         "word": "behave",
         "translations": [
             {
-                "translation": "表现；（机器等）运转；举止端正；（事物）起某种作用",
+                "translation": "表现；(机器等)运转；举止端正；(事物)起某种作用",
                 "type": "v"
             }
         ]
@@ -4535,7 +4531,7 @@
         "word": "betray",
         "translations": [
             {
-                "translation": "背叛；出卖；泄露（秘密）；露出…迹象",
+                "translation": "背叛；出卖；泄露(秘密)；露出…迹象",
                 "type": "v"
             }
         ]
@@ -4724,7 +4720,7 @@
                 "type": "n"
             },
             {
-                "translation": "机内测试设备（Built-In Test Equipment）",
+                "translation": "机内测试设备(Built-In Test Equipment)",
                 "type": "abbr"
             }
         ]
@@ -4733,7 +4729,7 @@
         "word": "bizarre",
         "translations": [
             {
-                "translation": "奇异的（指态度，容貌，款式等）",
+                "translation": "奇异的(指态度，容貌，款式等)",
                 "type": "adj"
             }
         ]
@@ -4963,12 +4959,12 @@
         "word": "bloom",
         "translations": [
             {
-                "translation": "花；青春；旺盛",
-                "type": "n"
-            },
-            {
                 "translation": "使开花；使茂盛",
                 "type": "v"
+            },
+            {
+                "translation": "花；青春；旺盛",
+                "type": "n"
             }
         ]
     },
@@ -5058,11 +5054,11 @@
         "word": "blur",
         "translations": [
             {
-                "translation": "涂污；使…模糊不清；使暗淡；玷污",
+                "translation": "使…模糊；弄脏；变模糊",
                 "type": "v"
             },
             {
-                "translation": "污迹；模糊不清的事物",
+                "translation": "污点；模糊",
                 "type": "n"
             }
         ]
@@ -5088,7 +5084,7 @@
                 "type": "n"
             },
             {
-                "translation": "上（飞机、车、船等）；用板盖上；给提供膳宿",
+                "translation": "上(飞机、车、船等)；用板盖上；给提供膳宿",
                 "type": "v"
             }
         ]
@@ -5149,11 +5145,11 @@
         "word": "bolt",
         "translations": [
             {
-                "translation": "螺栓，螺钉；闪电，雷电；门闩；弩箭;（布的）一匹，一卷",
+                "translation": "螺栓，螺钉；闪电，雷电；门闩；弩箭;(布的)一匹，一卷",
                 "type": "n"
             },
             {
-                "translation": "筛选；囫囵吞下；（把门、窗等）闩上；突然说出，脱口说出",
+                "translation": "筛选；囫囵吞下；(把门、窗等)闩上；突然说出，脱口说出",
                 "type": "v"
             },
             {
@@ -5288,7 +5284,7 @@
         "word": "born",
         "translations": [
             {
-                "translation": "出世（bear的过去分词）",
+                "translation": "出世(bear的过去分词)",
                 "type": "v"
             },
             {
@@ -5465,7 +5461,7 @@
                 "type": "n"
             },
             {
-                "translation": "打保龄球（bowl的现在分词）",
+                "translation": "打保龄球(bowl的现在分词)",
                 "type": "v"
             }
         ]
@@ -5653,7 +5649,7 @@
         "word": "breath",
         "translations": [
             {
-                "translation": "呼吸，气息；一口气，（呼吸的）一次；瞬间，瞬息；微风；迹象；无声音，气音",
+                "translation": "呼吸，气息；一口气，(呼吸的)一次；瞬间，瞬息；微风；迹象；无声音，气音",
                 "type": "n"
             }
         ]
@@ -5662,7 +5658,7 @@
         "word": "breathe",
         "translations": [
             {
-                "translation": "呼吸；低语；松口气；（风）轻拂",
+                "translation": "呼吸；低语；松口气；(风)轻拂",
                 "type": "v"
             }
         ]
@@ -5836,7 +5832,7 @@
         "word": "broadcast",
         "translations": [
             {
-                "translation": "播送，播放；（无线电或电视）广播；播撒（种子）",
+                "translation": "播送，播放；(无线电或电视)广播；播撒(种子)",
                 "type": "v"
             },
             {
@@ -6069,7 +6065,7 @@
                 "type": "n"
             },
             {
-                "translation": "建筑；建立；增加（build的ing形式）",
+                "translation": "建筑；建立；增加(build的ing形式)",
                 "type": "v"
             }
         ]
@@ -6411,7 +6407,7 @@
                 "type": "n"
             },
             {
-                "translation": "乘出租马车（或汽车）",
+                "translation": "乘出租马车(或汽车)",
                 "type": "v"
             }
         ]
@@ -6420,7 +6416,7 @@
         "word": "cabbage",
         "translations": [
             {
-                "translation": "卷心菜，甘蓝菜，洋白菜；（俚)脑袋；（非正式、侮辱）植物人（常用于英式英语）；（俚）钱，尤指纸币（常用于美式俚语）",
+                "translation": "卷心菜，甘蓝菜，洋白菜；(俚)脑袋；(非正式、侮辱)植物人(常用于英式英语)；(俚)钱，尤指纸币(常用于美式俚语)",
                 "type": "n"
             }
         ]
@@ -6560,7 +6556,7 @@
         "word": "calorie",
         "translations": [
             {
-                "translation": "卡路里（热量单位）",
+                "translation": "卡路里(热量单位)",
                 "type": "n"
             }
         ]
@@ -6621,7 +6617,7 @@
         "word": "campus",
         "translations": [
             {
-                "translation": "（大学）校园；大学，大学生活；校园内的草地",
+                "translation": "(大学)校园；大学，大学生活；校园内的草地",
                 "type": "n"
             }
         ]
@@ -6691,11 +6687,11 @@
                 "type": "v"
             },
             {
-                "translation": "糖果（等于sweets）；冰糖（等于sugar candy，rock candy）；毒品",
+                "translation": "糖果(等于sweets)；冰糖(等于sugar candy，rock candy)；毒品",
                 "type": "n"
             },
             {
-                "translation": "新潮的（服饰）；甜言蜜语的",
+                "translation": "新潮的(服饰)；甜言蜜语的",
                 "type": "adj"
             }
         ]
@@ -7084,7 +7080,7 @@
         "word": "cast",
         "translations": [
             {
-                "translation": "投，抛；计算；浇铸；投射（光、影、视线等）",
+                "translation": "投，抛；计算；浇铸；投射(光、影、视线等)",
                 "type": "v"
             },
             {
@@ -7141,7 +7137,7 @@
         "word": "catalog",
         "translations": [
             {
-                "translation": "（ue）目录(册)",
+                "translation": "(ue)目录(册)",
                 "type": "n"
             },
             {
@@ -7379,7 +7375,7 @@
         "word": "cent",
         "translations": [
             {
-                "translation": "分；一分的硬币；森特（等于半音程的百分之一）",
+                "translation": "分；一分的硬币；森特(等于半音程的百分之一)",
                 "type": "n"
             }
         ]
@@ -7432,7 +7428,7 @@
         "word": "century",
         "translations": [
             {
-                "translation": "世纪，百年；（板球）一百分",
+                "translation": "世纪，百年；(板球)一百分",
                 "type": "n"
             }
         ]
@@ -7521,11 +7517,11 @@
         "word": "chair",
         "translations": [
             {
-                "translation": "椅子；讲座；（会议的）主席位；大学教授的职位",
+                "translation": "椅子；讲座；(会议的)主席位；大学教授的职位",
                 "type": "n"
             },
             {
-                "translation": "担任（会议的）主席；使…入座；使就任要职",
+                "translation": "担任(会议的)主席；使…入座；使就任要职",
                 "type": "v"
             }
         ]
@@ -7573,7 +7569,7 @@
         "word": "chamber",
         "translations": [
             {
-                "translation": "（身体或器官内的）室，膛；房间；会所",
+                "translation": "(身体或器官内的)室，膛；房间；会所",
                 "type": "n"
             },
             {
@@ -7581,7 +7577,7 @@
                 "type": "adj"
             },
             {
-                "translation": "把…关在室内；装填（弹药等）",
+                "translation": "把…关在室内；装填(弹药等)",
                 "type": "v"
             }
         ]
@@ -7616,7 +7612,7 @@
         "word": "chancellor",
         "translations": [
             {
-                "translation": "总理（德、奥等的）；（英）大臣；校长（美国某些大学的）；（英）大法官；（美）首席法官",
+                "translation": "总理(德、奥等的)；(英)大臣；校长(美国某些大学的)；(英)大法官；(美)首席法官",
                 "type": "n"
             }
         ]
@@ -7660,7 +7656,7 @@
         "word": "chapter",
         "translations": [
             {
-                "translation": "章，回；（俱乐部、协会等的）分会；人生或历史上的重要时期",
+                "translation": "章，回；(俱乐部、协会等的)分会；人生或历史上的重要时期",
                 "type": "n"
             },
             {
@@ -7752,7 +7748,7 @@
                 "type": "n"
             },
             {
-                "translation": "绘制…的图表；在海图上标出；详细计划；记录；记述；跟踪（进展或发展",
+                "translation": "绘制…的图表；在海图上标出；详细计划；记录；记述；跟踪(进展或发展",
                 "type": "v"
             }
         ]
@@ -8180,7 +8176,7 @@
         "word": "cigaret",
         "translations": [
             {
-                "translation": "香烟；纸烟（等于cigarette）",
+                "translation": "香烟；纸烟(等于cigarette)",
                 "type": "n"
             }
         ]
@@ -8423,7 +8419,7 @@
                 "type": "n"
             },
             {
-                "translation": "分类；把…分等级；把…归入某等级，把…看作（或分类、归类）；把…编入某一班级",
+                "translation": "分类；把…分等级；把…归入某等级，把…看作(或分类、归类)；把…编入某一班级",
                 "type": "v"
             },
             {
@@ -8511,7 +8507,7 @@
                 "type": "n"
             },
             {
-                "translation": "用爪抓（或挖）",
+                "translation": "用爪抓(或挖)",
                 "type": "v"
             }
         ]
@@ -8665,11 +8661,11 @@
         "word": "clip",
         "translations": [
             {
-                "translation": "（塑料或金属的）夹子；回纹针；修剪；剪报",
+                "translation": "(塑料或金属的)夹子；回纹针；修剪；剪报",
                 "type": "n"
             },
             {
-                "translation": "剪；剪掉；缩短；给…剪毛（或发）用别针别在某物上，用夹子夹在某物上",
+                "translation": "剪；剪掉；缩短；给…剪毛(或发)用别针别在某物上，用夹子夹在某物上",
                 "type": "v"
             }
         ]
@@ -8810,7 +8806,7 @@
         "word": "club",
         "translations": [
             {
-                "translation": "俱乐部，社团；夜总会；棍棒；（扑克牌中的）梅花",
+                "translation": "俱乐部，社团；夜总会；棍棒；(扑克牌中的)梅花",
                 "type": "n"
             },
             {
@@ -8827,7 +8823,7 @@
         "word": "clue",
         "translations": [
             {
-                "translation": "线索；（故事等的）情节",
+                "translation": "线索；(故事等的)情节",
                 "type": "n"
             },
             {
@@ -9033,7 +9029,7 @@
         "word": "coin",
         "translations": [
             {
-                "translation": "铸造（货币）；杜撰，创造",
+                "translation": "铸造(货币)；杜撰，创造",
                 "type": "v"
             },
             {
@@ -9064,7 +9060,7 @@
         "word": "coke",
         "translations": [
             {
-                "translation": "焦炭；可卡因；可口可乐（Coca-Cola）",
+                "translation": "焦炭；可卡因；可口可乐(Coca-Cola)",
                 "type": "n"
             },
             {
@@ -9170,7 +9166,7 @@
         "word": "collision",
         "translations": [
             {
-                "translation": "碰撞；冲突；（意见，看法）的抵触；（政党等的）倾轧",
+                "translation": "碰撞；冲突；(意见，看法)的抵触；(政党等的)倾轧",
                 "type": "n"
             }
         ]
@@ -9285,7 +9281,7 @@
                 "type": "n"
             },
             {
-                "translation": "安慰；使（痛苦等）缓和",
+                "translation": "安慰；使(痛苦等)缓和",
                 "type": "v"
             }
         ]
@@ -9399,11 +9395,11 @@
         "word": "commission",
         "translations": [
             {
-                "translation": "委员会；佣金；犯；委任；委任状",
+                "translation": "委员会；任务；权限；委任；正式委托；佣金",
                 "type": "n"
             },
             {
-                "translation": "委任；使服役；委托制作",
+                "translation": "委任；正式委托",
                 "type": "v"
             }
         ]
@@ -9502,11 +9498,11 @@
         "word": "commute",
         "translations": [
             {
-                "translation": "（搭乘车、船等）通勤；代偿",
+                "translation": "(搭乘车、船等)通勤；代偿",
                 "type": "v"
             },
             {
-                "translation": "通勤（口语）",
+                "translation": "通勤(口语)",
                 "type": "n"
             }
         ]
@@ -9940,7 +9936,7 @@
                 "type": "adj"
             },
             {
-                "translation": "（花样滑冰、竞技体操等的）规定动作",
+                "translation": "(花样滑冰、竞技体操等的)规定动作",
                 "type": "n"
             }
         ]
@@ -10055,7 +10051,7 @@
                 "type": "prep"
             },
             {
-                "translation": "涉及；使关心（concern的ing形式）；忧虑",
+                "translation": "涉及；使关心(concern的ing形式)；忧虑",
                 "type": "v"
             }
         ]
@@ -10206,7 +10202,7 @@
                 "type": "n"
             },
             {
-                "translation": "（美）诈骗的；骗得信任的",
+                "translation": "(美)诈骗的；骗得信任的",
                 "type": "adj"
             }
         ]
@@ -10511,7 +10507,7 @@
         "word": "consistent",
         "translations": [
             {
-                "translation": "(in)前后一致的；（with）一致，符合",
+                "translation": "(in)前后一致的；(with)一致，符合",
                 "type": "adj"
             }
         ]
@@ -10988,7 +10984,7 @@
         "word": "convert",
         "translations": [
             {
-                "translation": "变换,转换；改变（信仰等）；兑换（钱）",
+                "translation": "变换,转换；改变(信仰等)；兑换(钱)",
                 "type": "v"
             }
         ]
@@ -11222,7 +11218,7 @@
         "word": "corn",
         "translations": [
             {
-                "translation": "（美）玉米；（英）谷物；[皮肤] 鸡眼",
+                "translation": "(美)玉米；(英)谷物；[皮肤] 鸡眼",
                 "type": "n"
             },
             {
@@ -11318,7 +11314,7 @@
                 "type": "adj"
             },
             {
-                "translation": "类似（correspond的ing形式）；相配",
+                "translation": "类似(correspond的ing形式)；相配",
                 "type": "v"
             }
         ]
@@ -11358,7 +11354,7 @@
         "word": "cosmic",
         "translations": [
             {
-                "translation": "宇宙的（等于cosmical）",
+                "translation": "宇宙的(等于cosmical)",
                 "type": "adj"
             }
         ]
@@ -11406,7 +11402,7 @@
         "word": "cottage",
         "translations": [
             {
-                "translation": "小屋；村舍；（农舍式的）小别墅",
+                "translation": "小屋；村舍；(农舍式的)小别墅",
                 "type": "n"
             }
         ]
@@ -11581,7 +11577,7 @@
                 "type": "n"
             },
             {
-                "translation": "招致（失败、危险等）；向…献殷勤；设法获得",
+                "translation": "招致(失败、危险等)；向…献殷勤；设法获得",
                 "type": "v"
             }
         ]
@@ -11915,7 +11911,7 @@
         "word": "crisp",
         "translations": [
             {
-                "translation": "脆的,易碎的;简明扼要的；（空气）清爽的",
+                "translation": "脆的,易碎的;简明扼要的；(空气)清爽的",
                 "type": "adj"
             }
         ]
@@ -12325,7 +12321,7 @@
         "word": "cushion",
         "translations": [
             {
-                "translation": "垫子；起缓解作用之物；（猪等的）臀肉；银行储蓄",
+                "translation": "垫子；起缓解作用之物；(猪等的)臀肉；银行储蓄",
                 "type": "n"
             },
             {
@@ -12586,7 +12582,7 @@
                 "type": "n"
             },
             {
-                "translation": "过时；注明日期；始于（某一历史时期）",
+                "translation": "过时；注明日期；始于(某一历史时期)",
                 "type": "v"
             }
         ]
@@ -12713,7 +12709,7 @@
                 "type": "v"
             },
             {
-                "translation": "交易；（美）政策；待遇；份量",
+                "translation": "交易；(美)政策；待遇；份量",
                 "type": "n"
             }
         ]
@@ -12903,7 +12899,7 @@
         "word": "declaration",
         "translations": [
             {
-                "translation": "（纳税品等的）申报；宣布；公告；申诉书",
+                "translation": "(纳税品等的)申报；宣布；公告；申诉书",
                 "type": "n"
             }
         ]
@@ -13693,7 +13689,7 @@
                 "type": "v"
             },
             {
-                "translation": "派遣；发送（等于dispatch）",
+                "translation": "派遣；发送(等于dispatch)",
                 "type": "n"
             }
         ]
@@ -13881,7 +13877,7 @@
                 "type": "n"
             },
             {
-                "translation": "虐待，折磨；（用扯碎机）扯碎；（替作家，律师等）做助手；抹辣味料烤制或煎煮",
+                "translation": "虐待，折磨；(用扯碎机)扯碎；(替作家，律师等)做助手；抹辣味料烤制或煎煮",
                 "type": "v"
             }
         ]
@@ -13903,7 +13899,7 @@
                 "type": "n"
             },
             {
-                "translation": "（露水等）弄湿",
+                "translation": "(露水等)弄湿",
                 "type": "vt"
             },
             {
@@ -14415,7 +14411,7 @@
         "word": "disc",
         "translations": [
             {
-                "translation": "圆盘，[电子] 唱片（等于disk）",
+                "translation": "圆盘，[电子] 唱片(等于disk)",
                 "type": "n"
             },
             {
@@ -14617,7 +14613,7 @@
                 "type": "n"
             },
             {
-                "translation": "盛于碟盘中；分发；使某人的希望破灭；说（某人）的闲话",
+                "translation": "盛于碟盘中；分发；使某人的希望破灭；说(某人)的闲话",
                 "type": "v"
             }
         ]
@@ -15275,7 +15271,7 @@
                 "type": "n"
             },
             {
-                "translation": "潜水（dive的过去式）",
+                "translation": "潜水(dive的过去式)",
                 "type": "v"
             }
         ]
@@ -15340,7 +15336,7 @@
         "word": "draft",
         "translations": [
             {
-                "translation": "汇票；草稿；选派；（尤指房间、烟囱、炉子等供暖系统中的）（小股）气流",
+                "translation": "汇票；草稿；选派；(尤指房间、烟囱、炉子等供暖系统中的)(小股)气流",
                 "type": "n"
             },
             {
@@ -15348,7 +15344,7 @@
                 "type": "v"
             },
             {
-                "translation": "初步画出或（写出）的；（设计、草图、提纲或版本）正在起草中的，草拟的；以草稿形式的；草图的",
+                "translation": "初步画出或(写出)的；(设计、草图、提纲或版本)正在起草中的，草拟的；以草稿形式的；草图的",
                 "type": "adj"
             }
         ]
@@ -15458,7 +15454,7 @@
                 "type": "n"
             },
             {
-                "translation": "绘画；吸引（draw的ing形式）；拖曳",
+                "translation": "绘画；吸引(draw的ing形式)；拖曳",
                 "type": "v"
             }
         ]
@@ -15467,7 +15463,7 @@
         "word": "dread",
         "translations": [
             {
-                "translation": "恐惧；可怕的人（或物）",
+                "translation": "恐惧；可怕的人(或物)",
                 "type": "n"
             },
             {
@@ -15632,7 +15628,7 @@
         "word": "drunk",
         "translations": [
             {
-                "translation": "喝酒（drink的过去分词）",
+                "translation": "喝酒(drink的过去分词)",
                 "type": "v"
             },
             {
@@ -15654,7 +15650,7 @@
         "word": "duck",
         "translations": [
             {
-                "translation": "鸭子；鸭肉；（英）宝贝儿；零分",
+                "translation": "鸭子；鸭肉；(英)宝贝儿；零分",
                 "type": "n"
             },
             {
@@ -15814,7 +15810,7 @@
                 "type": "n"
             },
             {
-                "translation": "居住（dwell的现在分词）",
+                "translation": "居住(dwell的现在分词)",
                 "type": "v"
             }
         ]
@@ -15880,7 +15876,7 @@
                 "type": "n"
             },
             {
-                "translation": "（美俚）听见；抽穗",
+                "translation": "(美俚)听见；抽穗",
                 "type": "vi"
             }
         ]
@@ -15967,7 +15963,7 @@
                 "type": "adj"
             },
             {
-                "translation": "东方人；（美国）东部地区的人",
+                "translation": "东方人；(美国)东部地区的人",
                 "type": "n"
             }
         ]
@@ -16254,7 +16250,7 @@
                 "type": "adj"
             },
             {
-                "translation": "精心制作；详细阐述；从简单成分合成（复杂有机物）",
+                "translation": "精心制作；详细阐述；从简单成分合成(复杂有机物)",
                 "type": "v"
             }
         ]
@@ -16745,7 +16741,7 @@
         "word": "encyclopedia",
         "translations": [
             {
-                "translation": "百科全书（亦是encyclopaedia）",
+                "translation": "百科全书(亦是encyclopaedia)",
                 "type": "n"
             }
         ]
@@ -16754,11 +16750,11 @@
         "word": "endeavor",
         "translations": [
             {
-                "translation": "努力；尽力（等于endeavour）",
+                "translation": "努力；尽力(等于endeavour)",
                 "type": "n"
             },
             {
-                "translation": "努力；尽力（等于endeavour）",
+                "translation": "努力；尽力(等于endeavour)",
                 "type": "v"
             }
         ]
@@ -16909,7 +16905,7 @@
                 "type": "n"
             },
             {
-                "translation": "设计；管理（engineer的ing形式）；建造",
+                "translation": "设计；管理(engineer的ing形式)；建造",
                 "type": "v"
             }
         ]
@@ -16954,7 +16950,7 @@
         "word": "enquire",
         "translations": [
             {
-                "translation": "询问；调查；问候（等于inquire）",
+                "translation": "询问；调查；问候(等于inquire)",
                 "type": "v"
             }
         ]
@@ -17541,7 +17537,7 @@
         "word": "evening",
         "translations": [
             {
-                "translation": "晚上；傍晚；（联欢性的）晚会；后期",
+                "translation": "晚上；傍晚；(联欢性的)晚会；后期",
                 "type": "n"
             },
             {
@@ -17549,7 +17545,7 @@
                 "type": "adj"
             },
             {
-                "translation": "晚上好（等于good evening）",
+                "translation": "晚上好(等于good evening)",
                 "type": "int"
             }
         ]
@@ -17815,7 +17811,7 @@
                 "type": "adj"
             },
             {
-                "translation": "激动；刺激（excite的ing形式）；唤起",
+                "translation": "激动；刺激(excite的ing形式)；唤起",
                 "type": "v"
             }
         ]
@@ -17952,7 +17948,7 @@
         "word": "exhibit",
         "translations": [
             {
-                "translation": "展览；显示；提出（证据等）",
+                "translation": "展览；显示；提出(证据等)",
                 "type": "v"
             },
             {
@@ -18874,7 +18870,7 @@
                 "type": "n"
             },
             {
-                "translation": "别了！（常含有永别或不容易再见面的意思）；再会！",
+                "translation": "别了！(常含有永别或不容易再见面的意思)；再会！",
                 "type": "int"
             },
             {
@@ -18891,7 +18887,7 @@
                 "type": "v"
             },
             {
-                "translation": "农场；农家；畜牧场",
+                "translation": "农场；饲养场",
                 "type": "n"
             }
         ]
@@ -18913,7 +18909,7 @@
                 "type": "adv"
             },
             {
-                "translation": "进一步的；更远的（far的比较级）",
+                "translation": "进一步的；更远的(far的比较级)",
                 "type": "adj"
             }
         ]
@@ -19044,7 +19040,7 @@
         "word": "fault",
         "translations": [
             {
-                "translation": "故障；[地质] 断层；错误；缺点；毛病；（网球等）发球失误",
+                "translation": "故障；[地质] 断层；错误；缺点；毛病；(网球等)发球失误",
                 "type": "n"
             },
             {
@@ -19263,11 +19259,11 @@
         "word": "feed",
         "translations": [
             {
-                "translation": "喂养；供给；放牧；抚养（家庭等）；靠…为生",
+                "translation": "喂养；供给；放牧；抚养(家庭等)；靠…为生",
                 "type": "v"
             },
             {
-                "translation": "饲料；饲养；（动物或婴儿的）一餐",
+                "translation": "饲料；饲养；(动物或婴儿的)一餐",
                 "type": "n"
             }
         ]
@@ -19293,7 +19289,7 @@
                 "type": "adj"
             },
             {
-                "translation": "感觉；认为（feel的现在分词）；触摸",
+                "translation": "感觉；认为(feel的现在分词)；触摸",
                 "type": "v"
             }
         ]
@@ -19354,7 +19350,7 @@
         "word": "feminine",
         "translations": [
             {
-                "translation": "女性的；妇女（似）的；阴性的；娇柔的",
+                "translation": "女性的；妇女(似)的；阴性的；娇柔的",
                 "type": "adj"
             }
         ]
@@ -19380,7 +19376,7 @@
                 "type": "n"
             },
             {
-                "translation": "（乘渡船）渡过；用渡船运送；空运",
+                "translation": "(乘渡船)渡过；用渡船运送；空运",
                 "type": "v"
             }
         ]
@@ -19455,7 +19451,7 @@
         "word": "fiber",
         "translations": [
             {
-                "translation": "纤维；光纤（等于fibre）",
+                "translation": "纤维；光纤(等于fibre)",
                 "type": "n"
             }
         ]
@@ -19517,7 +19513,7 @@
         "word": "figure",
         "translations": [
             {
-                "translation": "数字；人物；图形；价格；（人的）体形；画像",
+                "translation": "数字；人物；图形；价格；(人的)体形；画像",
                 "type": "n"
             },
             {
@@ -19626,7 +19622,7 @@
                 "type": "n"
             },
             {
-                "translation": "找到；感到（find的ing形式）；遇到",
+                "translation": "找到；感到(find的ing形式)；遇到",
                 "type": "v"
             }
         ]
@@ -19814,7 +19810,7 @@
                 "type": "n"
             },
             {
-                "translation": "拍动；神经紧张；鼓翼而飞；（帽边等）垂下",
+                "translation": "拍动；神经紧张；鼓翼而飞；(帽边等)垂下",
                 "type": "v"
             }
         ]
@@ -19827,7 +19823,7 @@
                 "type": "v"
             },
             {
-                "translation": "加剧，恶化；底部展开；（鼻孔）张开的意思；闪光，闪耀；耀斑；爆发；照明弹",
+                "translation": "加剧，恶化；底部展开；(鼻孔)张开的意思；闪光，闪耀；耀斑；爆发；照明弹",
                 "type": "n"
             }
         ]
@@ -19857,7 +19853,7 @@
                 "type": "adj"
             },
             {
-                "translation": "（尤指贴着另一表面）平直地；断然地；水平地；直接地，完全地",
+                "translation": "(尤指贴着另一表面)平直地；断然地；水平地；直接地，完全地",
                 "type": "adv"
             },
             {
@@ -19865,11 +19861,11 @@
                 "type": "n"
             },
             {
-                "translation": "使变平；[音乐]使（音调）下降，尤指降半音",
+                "translation": "使变平；[音乐]使(音调)下降，尤指降半音",
                 "type": "vt"
             },
             {
-                "translation": "逐渐变平；[音乐]以降调唱（或奏）",
+                "translation": "逐渐变平；[音乐]以降调唱(或奏)",
                 "type": "vi"
             }
         ]
@@ -20000,7 +19996,7 @@
         "word": "flock",
         "translations": [
             {
-                "translation": "群；棉束（等于floc）",
+                "translation": "群；棉束(等于floc)",
                 "type": "n"
             },
             {
@@ -20030,7 +20026,7 @@
                 "type": "n"
             },
             {
-                "translation": "铺地板；打倒，击倒；（被困难）难倒",
+                "translation": "铺地板；打倒，击倒；(被困难)难倒",
                 "type": "v"
             }
         ]
@@ -20183,7 +20179,7 @@
         "word": "folk",
         "translations": [
             {
-                "translation": "民族；人们；亲属（复数）",
+                "translation": "民族；人们；亲属(复数)",
                 "type": "n"
             },
             {
@@ -20326,7 +20322,7 @@
                 "type": "prep"
             },
             {
-                "translation": "（打高尔夫球者的叫声）让开！",
+                "translation": "(打高尔夫球者的叫声)让开！",
                 "type": "int"
             }
         ]
@@ -20445,7 +20441,7 @@
         "word": "forgive",
         "translations": [
             {
-                "translation": "原谅；免除（债务、义务等）",
+                "translation": "原谅；免除(债务、义务等)",
                 "type": "v"
             }
         ]
@@ -20642,7 +20638,7 @@
         "word": "foster",
         "translations": [
             {
-                "translation": "培养；养育，抚育；抱（希望等）",
+                "translation": "培养；养育，抚育；抱(希望等)",
                 "type": "v"
             },
             {
@@ -20891,11 +20887,11 @@
         "word": "fresh",
         "translations": [
             {
-                "translation": "新鲜的；清新的；淡水的；无经验的",
+                "translation": "新鲜的；无经验的；清新的；淡水的",
                 "type": "adj"
             },
             {
-                "translation": "开始；新生；泛滥",
+                "translation": "新生；涌流",
                 "type": "n"
             },
             {
@@ -21122,7 +21118,7 @@
         "word": "fulfill",
         "translations": [
             {
-                "translation": "履行；实现；满足；使结束（等于fulfil）",
+                "translation": "履行；实现；满足；使结束(等于fulfil)",
                 "type": "v"
             }
         ]
@@ -21363,7 +21359,7 @@
         "word": "gallon",
         "translations": [
             {
-                "translation": "加仑（容量单位）",
+                "translation": "加仑(容量单位)",
                 "type": "n"
             }
         ]
@@ -21458,7 +21454,7 @@
                 "type": "n"
             },
             {
-                "translation": "把……送入车库；把（汽车）开进车库",
+                "translation": "把……送入车库；把(汽车)开进车库",
                 "type": "v"
             }
         ]
@@ -21515,7 +21511,7 @@
                 "type": "n"
             },
             {
-                "translation": "加油；毒（死）",
+                "translation": "加油；毒(死)",
                 "type": "v"
             }
         ]
@@ -21938,11 +21934,11 @@
         "word": "glamor",
         "translations": [
             {
-                "translation": "魅力；魔法；迷人的美（等于glamour）",
+                "translation": "魅力；魔法；迷人的美(等于glamour)",
                 "type": "n"
             },
             {
-                "translation": "迷惑；使有魅力（等于glamour）",
+                "translation": "迷惑；使有魅力(等于glamour)",
                 "type": "vt"
             }
         ]
@@ -22147,7 +22143,7 @@
         "word": "goat",
         "translations": [
             {
-                "translation": "山羊；替罪羊（美俚）；色鬼（美俚）",
+                "translation": "山羊；替罪羊(美俚)；色鬼(美俚)",
                 "type": "n"
             }
         ]
@@ -22156,7 +22152,7 @@
         "word": "god",
         "translations": [
             {
-                "translation": "神；（大写首字母时）上帝",
+                "translation": "神；(大写首字母时)上帝",
                 "type": "n"
             },
             {
@@ -22204,7 +22200,7 @@
         "word": "goodby",
         "translations": [
             {
-                "translation": "再见（等于goodbye）",
+                "translation": "再见(等于goodbye)",
                 "type": "int"
             },
             {
@@ -22971,7 +22967,7 @@
                 "type": "n"
             },
             {
-                "translation": "取出内脏；摧毁（建筑物等）的内部",
+                "translation": "取出内脏；摧毁(建筑物等)的内部",
                 "type": "v"
             },
             {
@@ -23028,7 +23024,7 @@
                 "type": "n"
             },
             {
-                "translation": "致敬；招呼；向欢呼；猛发；使像下雹样落下（过去式hailed，过去分词hailed，现在分词hailing，第三人称单数hails）",
+                "translation": "致敬；招呼；向欢呼；猛发；使像下雹样落下(过去式hailed，过去分词hailed，现在分词hailing，第三人称单数hails)",
                 "type": "v"
             },
             {
@@ -23189,7 +23185,7 @@
         "word": "handsome",
         "translations": [
             {
-                "translation": "（男子）英俊的；可观的；大方的，慷慨的；健美而端庄的",
+                "translation": "(男子)英俊的；可观的；大方的，慷慨的；健美而端庄的",
                 "type": "adj"
             }
         ]
@@ -23202,7 +23198,7 @@
                 "type": "n"
             },
             {
-                "translation": "亲手写（handwrite的ing形式）",
+                "translation": "亲手写(handwrite的ing形式)",
                 "type": "v"
             }
         ]
@@ -23494,11 +23490,11 @@
         "word": "heading",
         "translations": [
             {
-                "translation": "标题；（足球）头球；信头",
+                "translation": "标题；(足球)头球；信头",
                 "type": "n"
             },
             {
-                "translation": "用头顶（head的ing形式）",
+                "translation": "用头顶(head的ing形式)",
                 "type": "v"
             }
         ]
@@ -23564,7 +23560,7 @@
                 "type": "n"
             },
             {
-                "translation": "听见（hear的ing形式）",
+                "translation": "听见(hear的ing形式)",
                 "type": "v"
             }
         ]
@@ -23586,7 +23582,7 @@
         "word": "heave",
         "translations": [
             {
-                "translation": "举起；使起伏；投掷；恶心；发出（叹息等）",
+                "translation": "举起；使起伏；投掷；恶心；发出(叹息等)",
                 "type": "v"
             },
             {
@@ -23678,7 +23674,7 @@
         "word": "hell",
         "translations": [
             {
-                "translation": "地狱；究竟（作加强语气词）；训斥；黑暗势力",
+                "translation": "地狱；究竟(作加强语气词)；训斥；黑暗势力",
                 "type": "n"
             },
             {
@@ -23686,7 +23682,7 @@
                 "type": "vi"
             },
             {
-                "translation": "该死；见鬼（表示惊奇、烦恼、厌恶、恼怒、失望等）",
+                "translation": "该死；见鬼(表示惊奇、烦恼、厌恶、恼怒、失望等)",
                 "type": "int"
             }
         ]
@@ -23992,7 +23988,7 @@
                 "type": "n"
             },
             {
-                "translation": "用铰链连接；依…为转移；给…安装铰链；（门等）装有蝶铰",
+                "translation": "用铰链连接；依…为转移；给…安装铰链；(门等)装有蝶铰",
                 "type": "v"
             }
         ]
@@ -24107,7 +24103,7 @@
         "word": "holder",
         "translations": [
             {
-                "translation": "持有人；所有人；固定器；（台、架等）支持物",
+                "translation": "持有人；所有人；固定器；(台、架等)支持物",
                 "type": "n"
             }
         ]
@@ -24120,7 +24116,7 @@
                 "type": "n"
             },
             {
-                "translation": "凿洞，穿孔；（高尔夫球等）进洞",
+                "translation": "凿洞，穿孔；(高尔夫球等)进洞",
                 "type": "v"
             }
         ]
@@ -24207,7 +24203,7 @@
                 "type": "n"
             },
             {
-                "translation": "尊敬（等于honour）；给…以荣誉",
+                "translation": "尊敬(等于honour)；给…以荣誉",
                 "type": "v"
             }
         ]
@@ -24335,7 +24331,7 @@
         "word": "horsepower",
         "translations": [
             {
-                "translation": "马力（功率单位）",
+                "translation": "马力(功率单位)",
                 "type": "n"
             }
         ]
@@ -24614,11 +24610,11 @@
         "word": "humble",
         "translations": [
             {
-                "translation": "谦逊的；简陋的；（级别或地位）低下的；不大的",
+                "translation": "谦逊的；简陋的；(级别或地位)低下的；不大的",
                 "type": "adj"
             },
             {
-                "translation": "使谦恭；轻松打败（尤指强大的对手）；低声下气",
+                "translation": "使谦恭；轻松打败(尤指强大的对手)；低声下气",
                 "type": "v"
             }
         ]
@@ -24645,8 +24641,8 @@
         "word": "humiliate",
         "translations": [
             {
-                "translation": "羞辱；使…丢脸；耻辱",
-                "type": "v"
+                "translation": "羞辱；使蒙耻；使丢脸",
+                "type": "vt"
             }
         ]
     },
@@ -24737,7 +24733,7 @@
                 "type": "n"
             },
             {
-                "translation": "仓促（做某事）；催促；（朝某方向）迅速移动；迅速处理",
+                "translation": "仓促(做某事)；催促；(朝某方向)迅速移动；迅速处理",
                 "type": "v"
             }
         ]
@@ -25306,7 +25302,7 @@
         "word": "impression",
         "translations": [
             {
-                "translation": "印象；效果，影响；压痕，印记；感想；曝光（衡量广告被显示的次数。打开一个带有该广告的网页，则该广告的impression 次数增加一次）",
+                "translation": "印象；效果，影响；压痕，印记；感想；曝光(衡量广告被显示的次数。打开一个带有该广告的网页，则该广告的impression 次数增加一次)",
                 "type": "n"
             }
         ]
@@ -26280,7 +26276,7 @@
         "word": "institute",
         "translations": [
             {
-                "translation": "开始（调查）；制定；创立；提起（诉讼）",
+                "translation": "开始(调查)；制定；创立；提起(诉讼)",
                 "type": "v"
             },
             {
@@ -26293,7 +26289,7 @@
         "word": "institution",
         "translations": [
             {
-                "translation": "制度；建立；（社会或宗教等）公共机构；习俗",
+                "translation": "制度；建立；(社会或宗教等)公共机构；习俗",
                 "type": "n"
             }
         ]
@@ -26546,7 +26542,7 @@
                 "type": "n"
             },
             {
-                "translation": "（使通过界面或接口）接合，连接；[计算机]使联系",
+                "translation": "(使通过界面或接口)接合，连接；[计算机]使联系",
                 "type": "v"
             }
         ]
@@ -26638,7 +26634,7 @@
                 "type": "n"
             },
             {
-                "translation": "国际的；两国（或以上）国家的；超越国界的；国际关系的；世界的",
+                "translation": "国际的；两国(或以上)国家的；超越国界的；国际关系的；世界的",
                 "type": "adj"
             }
         ]
@@ -27091,7 +27087,7 @@
         "word": "item",
         "translations": [
             {
-                "translation": "条款，项目；一则；一件商品（或物品）",
+                "translation": "条款，项目；一则；一件商品(或物品)",
                 "type": "n"
             },
             {
@@ -27252,7 +27248,7 @@
                 "type": "n"
             },
             {
-                "translation": "镶以宝石；饰以珠宝",
+                "translation": "镶嵌",
                 "type": "v"
             }
         ]
@@ -27305,7 +27301,7 @@
         "word": "joint",
         "translations": [
             {
-                "translation": "关节；接缝；接合处，接合点；（牛，羊等的腿）大块肉",
+                "translation": "关节；接缝；接合处，接合点；(牛，羊等的腿)大块肉",
                 "type": "n"
             },
             {
@@ -27330,7 +27326,7 @@
                 "type": "adv"
             },
             {
-                "translation": "（口）用好话劝某人做…；（口）用好话使高兴",
+                "translation": "(口)用好话劝某人做…；(口)用好话使高兴",
                 "type": "v"
             },
             {
@@ -27440,7 +27436,7 @@
         "word": "juice",
         "translations": [
             {
-                "translation": "（水果）汁，液；果汁",
+                "translation": "(水果)汁，液；果汁",
                 "type": "n"
             }
         ]
@@ -27467,7 +27463,7 @@
         "word": "june",
         "translations": [
             {
-                "translation": "六月；琼（女名）",
+                "translation": "六月；琼(女名)",
                 "type": "n"
             }
         ]
@@ -27713,7 +27709,7 @@
         "word": "kiss",
         "translations": [
             {
-                "translation": "吻；（风等）轻拂",
+                "translation": "吻；(风等)轻拂",
                 "type": "v"
             },
             {
@@ -27787,7 +27783,7 @@
                 "type": "n"
             },
             {
-                "translation": "用刀切；（口）伤害",
+                "translation": "用刀切；(口)伤害",
                 "type": "v"
             }
         ]
@@ -27826,7 +27822,7 @@
         "word": "knot",
         "translations": [
             {
-                "translation": "（绳等的）结；节瘤，疙瘩；海里/小时（航速单位）",
+                "translation": "(绳等的)结；节瘤，疙瘩；海里/小时(航速单位)",
                 "type": "n"
             },
             {
@@ -27970,11 +27966,11 @@
                 "type": "n"
             },
             {
-                "translation": "（使）血球溶解",
+                "translation": "(使)血球溶解",
                 "type": "vt"
             },
             {
-                "translation": "（使）血球溶解",
+                "translation": "(使)血球溶解",
                 "type": "vi"
             }
         ]
@@ -28194,7 +28190,7 @@
         "word": "launch",
         "translations": [
             {
-                "translation": "发射（导弹、火箭等）；发起，发动；使…下水",
+                "translation": "发射(导弹、火箭等)；发起，发动；使…下水",
                 "type": "v"
             },
             {
@@ -28273,7 +28269,7 @@
                 "type": "n"
             },
             {
-                "translation": "把…分层堆放；借助压条法；生根繁殖；将（头发）剪成不同层次",
+                "translation": "把…分层堆放；借助压条法；生根繁殖；将(头发)剪成不同层次",
                 "type": "v"
             }
         ]
@@ -28326,7 +28322,7 @@
                 "type": "n"
             },
             {
-                "translation": "领导（lead的ing形式）",
+                "translation": "领导(lead的ing形式)",
                 "type": "v"
             }
         ]
@@ -28335,7 +28331,7 @@
         "word": "leaf",
         "translations": [
             {
-                "translation": "叶子；（书籍等的）一张；扇页",
+                "translation": "叶子；(书籍等的)一张；扇页",
                 "type": "n"
             },
             {
@@ -28430,7 +28426,7 @@
                 "type": "n"
             },
             {
-                "translation": "学习（learn的现在分词）",
+                "translation": "学习(learn的现在分词)",
                 "type": "v"
             }
         ]
@@ -28575,7 +28571,7 @@
         "word": "length",
         "translations": [
             {
-                "translation": "长度，长；时间的长短；（语）音长",
+                "translation": "长度，长；时间的长短；(语)音长",
                 "type": "n"
             }
         ]
@@ -29105,7 +29101,7 @@
         "word": "litre",
         "translations": [
             {
-                "translation": "[计量] 公升（米制容量单位）",
+                "translation": "[计量] 公升(米制容量单位)",
                 "type": "n"
             }
         ]
@@ -29114,7 +29110,7 @@
         "word": "litter",
         "translations": [
             {
-                "translation": "垃圾；轿，担架；一窝（动物的幼崽）；凌乱",
+                "translation": "垃圾；轿，担架；一窝(动物的幼崽)；凌乱",
                 "type": "n"
             },
             {
@@ -29157,7 +29153,7 @@
                 "type": "n"
             },
             {
-                "translation": "生活；居住（live的ing形式）；度过",
+                "translation": "生活；居住(live的ing形式)；度过",
                 "type": "v"
             }
         ]
@@ -29441,7 +29437,7 @@
         "word": "lorry",
         "translations": [
             {
-                "translation": "（英）卡车；[车辆] 货车；运料车",
+                "translation": "(英)卡车；[车辆] 货车；运料车",
                 "type": "n"
             }
         ]
@@ -29477,7 +29473,7 @@
         "word": "lounge",
         "translations": [
             {
-                "translation": "休息室；闲逛；躺椅；（英）酒吧间",
+                "translation": "休息室；闲逛；躺椅；(英)酒吧间",
                 "type": "n"
             },
             {
@@ -29696,7 +29692,7 @@
         "word": "madame",
         "translations": [
             {
-                "translation": "（法语）夫人；太太",
+                "translation": "(法语)夫人；太太",
                 "type": "n"
             }
         ]
@@ -30335,7 +30331,7 @@
         "word": "maths",
         "translations": [
             {
-                "translation": "数学（等于mathematics）",
+                "translation": "数学(等于mathematics)",
                 "type": "n"
             }
         ]
@@ -30409,7 +30405,7 @@
                 "type": "adj"
             },
             {
-                "translation": "意味；意思是（mean的ing形式）",
+                "translation": "意味；意思是(mean的ing形式)",
                 "type": "v"
             }
         ]
@@ -30453,7 +30449,7 @@
         "word": "meat",
         "translations": [
             {
-                "translation": "肉，肉类（食用）",
+                "translation": "肉，肉类(食用)",
                 "type": "n"
             }
         ]
@@ -30564,7 +30560,7 @@
                 "type": "n"
             },
             {
-                "translation": "会面；会合（meet的ing形式）",
+                "translation": "会面；会合(meet的ing形式)",
                 "type": "v"
             }
         ]
@@ -30947,7 +30943,7 @@
                 "type": "adj"
             },
             {
-                "translation": "（英国的一种）淡味麦芽啤酒",
+                "translation": "(英国的一种)淡味麦芽啤酒",
                 "type": "n"
             }
         ]
@@ -31035,7 +31031,7 @@
         "word": "mineral",
         "translations": [
             {
-                "translation": "矿物；（英）矿泉水；无机物；苏打水（常用复数表示）",
+                "translation": "矿物；(英)矿泉水；无机物；苏打水(常用复数表示)",
                 "type": "n"
             },
             {
@@ -31113,7 +31109,7 @@
         "word": "ministry",
         "translations": [
             {
-                "translation": "（政府的）部门",
+                "translation": "(政府的)部门",
                 "type": "n"
             }
         ]
@@ -31262,7 +31258,7 @@
                 "type": "adj"
             },
             {
-                "translation": "错过（miss的ing形式）；想念；漏掉",
+                "translation": "错过(miss的ing形式)；想念；漏掉",
                 "type": "v"
             },
             {
@@ -31411,7 +31407,7 @@
         "word": "mock",
         "translations": [
             {
-                "translation": "英国模拟考试（mocks）",
+                "translation": "英国模拟考试(mocks)",
                 "type": "n"
             },
             {
@@ -31862,7 +31858,7 @@
         "word": "mount",
         "translations": [
             {
-                "translation": "增加；爬上；使骑上马；安装，架置；镶嵌，嵌入；准备上演；成立（军队等）",
+                "translation": "增加；爬上；使骑上马；安装，架置；镶嵌，嵌入；准备上演；成立(军队等)",
                 "type": "v"
             },
             {
@@ -33175,7 +33171,7 @@
         "word": "numerical",
         "translations": [
             {
-                "translation": "数值的；数字的；用数字表示的（等于numeric）",
+                "translation": "数值的；数字的；用数字表示的(等于numeric)",
                 "type": "adj"
             }
         ]
@@ -33276,7 +33272,7 @@
                 "type": "n"
             },
             {
-                "translation": "划（船）",
+                "translation": "划(船)",
                 "type": "vt"
             },
             {
@@ -33741,7 +33737,7 @@
                 "type": "adj"
             },
             {
-                "translation": "开放（open的ing形式）；打开；公开",
+                "translation": "开放(open的ing形式)；打开；公开",
                 "type": "v"
             }
         ]
@@ -34205,7 +34201,7 @@
         "word": "outbreak",
         "translations": [
             {
-                "translation": "（战争的）爆发；（疾病的）发作",
+                "translation": "(战争的)爆发；(疾病的)发作",
                 "type": "n"
             },
             {
@@ -34227,7 +34223,7 @@
         "word": "outdoor",
         "translations": [
             {
-                "translation": "户外的；露天的；野外的（等于out-of-door）",
+                "translation": "户外的；露天的；野外的(等于out-of-door)",
                 "type": "adj"
             }
         ]
@@ -34375,7 +34371,7 @@
                 "type": "adj"
             },
             {
-                "translation": "向外（等于outwards）；在外；显而易见地",
+                "translation": "向外(等于outwards)；在外；显而易见地",
                 "type": "adv"
             },
             {
@@ -34623,7 +34619,7 @@
                 "type": "adj"
             },
             {
-                "translation": "压倒；淹没（overwhelm的ing形式）；制服",
+                "translation": "压倒；淹没(overwhelm的ing形式)；制服",
                 "type": "v"
             }
         ]
@@ -34649,7 +34645,7 @@
                 "type": "adj"
             },
             {
-                "translation": "欠；把…归功于（owe的ing形式）",
+                "translation": "欠；把…归功于(owe的ing形式)",
                 "type": "v"
             }
         ]
@@ -34830,7 +34826,7 @@
         "word": "paint",
         "translations": [
             {
-                "translation": "油漆；绘画；装饰；涂色于；描绘；（用语言，文字等）描写；擦脂粉等",
+                "translation": "油漆；绘画；装饰；涂色于；描绘；(用语言，文字等)描写；擦脂粉等",
                 "type": "v"
             },
             {
@@ -34856,7 +34852,7 @@
                 "type": "n"
             },
             {
-                "translation": "绘画（paint的ing形式）；涂色于",
+                "translation": "绘画(paint的ing形式)；涂色于",
                 "type": "v"
             }
         ]
@@ -35566,7 +35562,7 @@
         "word": "peach",
         "translations": [
             {
-                "translation": "桃子；桃树；桃红色；受人喜欢的人（或物）",
+                "translation": "桃子；桃树；桃红色；受人喜欢的人(或物)",
                 "type": "n"
             },
             {
@@ -35908,7 +35904,7 @@
         "word": "period",
         "translations": [
             {
-                "translation": "周期，期间；时期；月经；课时；（语法学）句点，句号",
+                "translation": "周期，期间；时期；月经；课时；(语法学)句点，句号",
                 "type": "n"
             },
             {
@@ -36010,7 +36006,7 @@
         "word": "persevere",
         "translations": [
             {
-                "translation": "坚持；不屈不挠；固执己见（在辩论中）",
+                "translation": "坚持；不屈不挠；固执己见(在辩论中)",
                 "type": "v"
             }
         ]
@@ -36072,7 +36068,7 @@
         "word": "persuade",
         "translations": [
             {
-                "translation": "说服，劝说；使某人相信；劝某人做（不做）某事",
+                "translation": "说服，劝说；使某人相信；劝某人做(不做)某事",
                 "type": "v"
             },
             {
@@ -36138,7 +36134,7 @@
         "word": "petrol",
         "translations": [
             {
-                "translation": "（英）汽油",
+                "translation": "(英)汽油",
                 "type": "n"
             }
         ]
@@ -36399,7 +36395,7 @@
         "word": "pilgrim",
         "translations": [
             {
-                "translation": "朝圣者；漫游者；（美）最初的移民",
+                "translation": "朝圣者；漫游者；(美)最初的移民",
                 "type": "n"
             },
             {
@@ -36416,7 +36412,7 @@
                 "type": "n"
             },
             {
-                "translation": "把…制成丸剂；使服用药丸；抢劫，掠夺（古语）",
+                "translation": "把…制成丸剂；使服用药丸；抢劫，掠夺(古语)",
                 "type": "v"
             }
         ]
@@ -36581,7 +36577,7 @@
         "word": "pit",
         "translations": [
             {
-                "translation": "矿井；深坑；陷阱；（物体或人体表面上的）凹陷；（英国剧场的）正厅后排；正厅后排的观众",
+                "translation": "矿井；深坑；陷阱；(物体或人体表面上的)凹陷；(英国剧场的)正厅后排；正厅后排的观众",
                 "type": "n"
             },
             {
@@ -36594,7 +36590,7 @@
         "word": "pitch",
         "translations": [
             {
-                "translation": "倾斜；投掷；搭帐篷；坠落",
+                "translation": "投掷，扔；用沥青覆盖；搭帐篷；坠落",
                 "type": "v"
             },
             {
@@ -36907,7 +36903,7 @@
                 "type": "v"
             },
             {
-                "translation": "犁；耕地（等于plow）",
+                "translation": "犁；耕地(等于plow)",
                 "type": "n"
             }
         ]
@@ -37252,7 +37248,7 @@
         "word": "pop",
         "translations": [
             {
-                "translation": "卖点广告（Point of Purchase）",
+                "translation": "卖点广告(Point of Purchase)",
                 "type": "abbr"
             }
         ]
@@ -37368,7 +37364,7 @@
         "word": "portrait",
         "translations": [
             {
-                "translation": "肖像,画像",
+                "translation": "肖像；(人物)描写；标本；半身雕塑像；肖像画",
                 "type": "n"
             }
         ]
@@ -38133,7 +38129,7 @@
                 "type": "adv"
             },
             {
-                "translation": "有吸引力的事物（尤指饰品）；漂亮的人",
+                "translation": "有吸引力的事物(尤指饰品)；漂亮的人",
                 "type": "n"
             }
         ]
@@ -38717,7 +38713,7 @@
                 "type": "adj"
             },
             {
-                "translation": "许诺，答应（promise的现在分词形式）",
+                "translation": "许诺，答应(promise的现在分词形式)",
                 "type": "v"
             }
         ]
@@ -38739,7 +38735,7 @@
                 "type": "adj"
             },
             {
-                "translation": "提示；促进；激起；（给演员）提白",
+                "translation": "提示；促进；激起；(给演员)提白",
                 "type": "v"
             },
             {
@@ -39083,7 +39079,7 @@
         "word": "provoke",
         "translations": [
             {
-                "translation": "挑动;激发;招惹",
+                "translation": "挑衅，激怒；对……挑衅；引起",
                 "type": "v"
             }
         ]
@@ -39312,7 +39308,7 @@
                 "type": "n"
             },
             {
-                "translation": "（嘴巴）皱起，使缩拢；撅嘴",
+                "translation": "(嘴巴)皱起，使缩拢；撅嘴",
                 "type": "v"
             }
         ]
@@ -39454,7 +39450,7 @@
         "word": "quart",
         "translations": [
             {
-                "translation": "夸脱（容量单位）；一夸脱的容器",
+                "translation": "夸脱(容量单位)；一夸脱的容器",
                 "type": "n"
             }
         ]
@@ -39940,7 +39936,7 @@
         "word": "rally",
         "translations": [
             {
-                "translation": "团结；重整；恢复；（网球等）连续对打",
+                "translation": "团结；重整；恢复；(网球等)连续对打",
                 "type": "v"
             },
             {
@@ -39974,7 +39970,7 @@
                 "type": "n"
             },
             {
-                "translation": "（在内）变动；平行，列为一行；延伸；漫游；射程达到",
+                "translation": "(在内)变动；平行，列为一行；延伸；漫游；射程达到",
                 "type": "v"
             }
         ]
@@ -40114,7 +40110,7 @@
         "word": "raw",
         "translations": [
             {
-                "translation": "生的；未加工的；阴冷的；刺痛的；擦掉皮的；无经验的；（在艺术等方面）不成熟的",
+                "translation": "生的；未加工的；阴冷的；刺痛的；擦掉皮的；无经验的；(在艺术等方面)不成熟的",
                 "type": "adj"
             },
             {
@@ -41354,7 +41350,7 @@
         "word": "renaissance",
         "translations": [
             {
-                "translation": "文艺复兴（欧洲14至17世纪）",
+                "translation": "文艺复兴(欧洲14至17世纪)",
                 "type": "n"
             }
         ]
@@ -41469,7 +41465,7 @@
         "word": "repertoire",
         "translations": [
             {
-                "translation": "全部节目；计算机指令系统；（美）某人或机器的全部技能",
+                "translation": "全部节目；计算机指令系统；(美)某人或机器的全部技能",
                 "type": "n"
             }
         ]
@@ -42286,7 +42282,7 @@
         "word": "ribbon",
         "translations": [
             {
-                "translation": "带；缎带；（勋章等的）绶带；带状物；勋表",
+                "translation": "带；缎带；(勋章等的)绶带；带状物；勋表",
                 "type": "n"
             },
             {
@@ -42359,7 +42355,7 @@
                 "type": "v"
             },
             {
-                "translation": "骑；乘坐；交通工具；可供骑行的路；（乘坐汽车等的）旅行；乘骑；（乘车或骑车的）短途旅程；供乘骑的游乐设施",
+                "translation": "骑；乘坐；交通工具；可供骑行的路；(乘坐汽车等的)旅行；乘骑；(乘车或骑车的)短途旅程；供乘骑的游乐设施",
                 "type": "n"
             }
         ]
@@ -42563,11 +42559,11 @@
                 "type": "n"
             },
             {
-                "translation": "（狗）沿臭迹追逐（猎物）",
+                "translation": "(狗)沿臭迹追逐(猎物)",
                 "type": "vt"
             },
             {
-                "translation": "（美）巡回的",
+                "translation": "(美)巡回的",
                 "type": "adj"
             }
         ]
@@ -42764,7 +42760,7 @@
         "word": "rose",
         "translations": [
             {
-                "translation": "玫瑰；粉红色；蔷薇（花）；粉红色的葡萄酒",
+                "translation": "玫瑰；粉红色；蔷薇(花)；粉红色的葡萄酒",
                 "type": "n"
             },
             {
@@ -42772,11 +42768,11 @@
                 "type": "adj"
             },
             {
-                "translation": "使成玫瑰色，使（面颊）发红；使有玫瑰香味",
+                "translation": "使成玫瑰色，使(面颊)发红；使有玫瑰香味",
                 "type": "vt"
             },
             {
-                "translation": "起义( rise的过去式)；升起；（数量）增加；休会",
+                "translation": "起义( rise的过去式)；升起；(数量)增加；休会",
                 "type": "vi"
             }
         ]
@@ -42793,7 +42789,7 @@
                 "type": "v"
             },
             {
-                "translation": "（表示厌恶、蔑视、烦恼等）胡说；糟了",
+                "translation": "(表示厌恶、蔑视、烦恼等)胡说；糟了",
                 "type": "int"
             }
         ]
@@ -43017,7 +43013,7 @@
         "word": "rude",
         "translations": [
             {
-                "translation": "粗鲁的；无礼的；狂暴的；未开化的",
+                "translation": "粗鲁的，无礼的；猛烈的，狂暴的",
                 "type": "adj"
             },
             {
@@ -43166,7 +43162,7 @@
         "word": "sad",
         "translations": [
             {
-                "translation": "难过的；悲哀的，令人悲痛的；凄惨的，阴郁的（形容颜色）",
+                "translation": "难过的；悲哀的，令人悲痛的；凄惨的，阴郁的(形容颜色)",
                 "type": "adj"
             }
         ]
@@ -43646,7 +43642,7 @@
                 "type": "n"
             },
             {
-                "translation": "（美）骇人的",
+                "translation": "(美)骇人的",
                 "type": "adj"
             }
         ]
@@ -43805,7 +43801,7 @@
                 "type": "n"
             },
             {
-                "translation": "剪开；删除（scissor的第三人称单数）",
+                "translation": "剪开；删除(scissor的第三人称单数)",
                 "type": "v"
             }
         ]
@@ -44490,7 +44486,7 @@
         "word": "session",
         "translations": [
             {
-                "translation": "会议；（法庭的）开庭；（议会等的）开会；学期；讲习会",
+                "translation": "会议；(法庭的)开庭；(议会等的)开会；学期；讲习会",
                 "type": "n"
             }
         ]
@@ -44512,7 +44508,7 @@
                 "type": "n"
             },
             {
-                "translation": "放置；沉没；使…处于某位置（set的ing形式）",
+                "translation": "放置；沉没；使…处于某位置(set的ing形式)",
                 "type": "v"
             }
         ]
@@ -45103,7 +45099,7 @@
                 "type": "adj"
             },
             {
-                "translation": "射击（shoot的过去式和过去分词）",
+                "translation": "射击(shoot的过去式和过去分词)",
                 "type": "v"
             }
         ]
@@ -45151,7 +45147,7 @@
         "word": "shower",
         "translations": [
             {
-                "translation": "淋浴；（倾泻般出现的）一阵，一大批；阵雨",
+                "translation": "淋浴；(倾泻般出现的)一阵，一大批；阵雨",
                 "type": "n"
             },
             {
@@ -45168,7 +45164,7 @@
                 "type": "adj"
             },
             {
-                "translation": "精明（的人）；机灵（的人）",
+                "translation": "精明(的人)；机灵(的人)",
                 "type": "n"
             }
         ]
@@ -45332,7 +45328,7 @@
                 "type": "adj"
             },
             {
-                "translation": "观光（sightsee的ing形式）；游览",
+                "translation": "观光(sightsee的ing形式)；游览",
                 "type": "v"
             }
         ]
@@ -45433,7 +45429,7 @@
                 "type": "adj"
             },
             {
-                "translation": "（玉米）处于长须的阶段中",
+                "translation": "(玉米)处于长须的阶段中",
                 "type": "vi"
             }
         ]
@@ -45622,7 +45618,7 @@
         "word": "sir",
         "translations": [
             {
-                "translation": "先生；（用于姓名前）爵士；阁下；（中小学生对男教师的称呼）先生；老师",
+                "translation": "先生；(用于姓名前)爵士；阁下；(中小学生对男教师的称呼)先生；老师",
                 "type": "n"
             }
         ]
@@ -45679,7 +45675,7 @@
                 "type": "adj"
             },
             {
-                "translation": "使位于；使处于（situate的过去分词）",
+                "translation": "使位于；使处于(situate的过去分词)",
                 "type": "v"
             }
         ]
@@ -45770,7 +45766,7 @@
                 "type": "v"
             },
             {
-                "translation": "滑雪（用）的",
+                "translation": "滑雪(用)的",
                 "type": "adj"
             }
         ]
@@ -45797,7 +45793,7 @@
         "word": "skim",
         "translations": [
             {
-                "translation": "略读；撇去…的浮物；从…表面飞掠而过；去除；（为逃税而）隐瞒（部分收入）",
+                "translation": "略读；撇去…的浮物；从…表面飞掠而过；去除；(为逃税而)隐瞒(部分收入)",
                 "type": "v"
             },
             {
@@ -46055,7 +46051,7 @@
                 "type": "adj"
             },
             {
-                "translation": "串行线路接口协议，是旧式的协议（Serial Line Interface Protocol）",
+                "translation": "串行线路接口协议，是旧式的协议(Serial Line Interface Protocol)",
                 "type": "abbr"
             }
         ]
@@ -46147,7 +46143,7 @@
         "word": "slum",
         "translations": [
             {
-                "translation": "（为猎奇或救济等）去贫民窟",
+                "translation": "(为猎奇或救济等)去贫民窟",
                 "type": "v"
             },
             {
@@ -46399,7 +46395,7 @@
         "word": "soak",
         "translations": [
             {
-                "translation": "吸收，吸入；沉浸在（工作或学习中）；使……上下湿透",
+                "translation": "吸收，吸入；沉浸在(工作或学习中)；使……上下湿透",
                 "type": "v"
             },
             {
@@ -46416,7 +46412,7 @@
                 "type": "n"
             },
             {
-                "translation": "将肥皂涂在……上；对……拍马屁（俚语）",
+                "translation": "将肥皂涂在……上；对……拍马屁(俚语)",
                 "type": "v"
             }
         ]
@@ -46438,7 +46434,7 @@
         "word": "sob",
         "translations": [
             {
-                "translation": "啜泣，呜咽；（风等）发出呜咽声",
+                "translation": "啜泣，呜咽；(风等)发出呜咽声",
                 "type": "v"
             },
             {
@@ -46742,7 +46738,7 @@
         "word": "son",
         "translations": [
             {
-                "translation": "儿子；孩子（对年轻人的称呼）；男性后裔",
+                "translation": "儿子；孩子(对年轻人的称呼)；男性后裔",
                 "type": "n"
             }
         ]
@@ -46764,7 +46760,7 @@
                 "type": "adj"
             },
             {
-                "translation": "使变得世故；使迷惑；篡改（sophisticate的过去分词形式）",
+                "translation": "使变得世故；使迷惑；篡改(sophisticate的过去分词形式)",
                 "type": "v"
             }
         ]
@@ -46773,7 +46769,7 @@
         "word": "sophomore",
         "translations": [
             {
-                "translation": "大学二年级生；（美）有二年经验的人",
+                "translation": "大学二年级生；(美)有二年经验的人",
                 "type": "n"
             },
             {
@@ -46838,7 +46834,7 @@
         "word": "sound",
         "translations": [
             {
-                "translation": "听（诊）；测量，测…深；使发声；试探；宣告",
+                "translation": "听(诊)；测量，测…深；使发声；试探；宣告",
                 "type": "v"
             },
             {
@@ -47315,7 +47311,7 @@
                 "type": "n"
             },
             {
-                "translation": "拼写；意味着（spell的ing形式）；迷住",
+                "translation": "拼写；意味着(spell的ing形式)；迷住",
                 "type": "v"
             }
         ]
@@ -47324,7 +47320,7 @@
         "word": "spend",
         "translations": [
             {
-                "translation": "度过，消磨（时光）；花费；浪费；用尽",
+                "translation": "度过，消磨(时光)；花费；浪费；用尽",
                 "type": "v"
             },
             {
@@ -47953,7 +47949,7 @@
         "word": "stalk",
         "translations": [
             {
-                "translation": "（植物的）茎，秆；（支持叶子、果实和花的）梗，柄；追踪；高视阔步",
+                "translation": "(植物的)茎，秆；(支持叶子、果实和花的)梗，柄；追踪；高视阔步",
                 "type": "n"
             },
             {
@@ -48870,7 +48866,7 @@
         "word": "stretch",
         "translations": [
             {
-                "translation": "伸展,张开；（大量地）使用，消耗（金钱，时间）；使竭尽所能；使全力以赴；",
+                "translation": "伸展,张开；(大量地)使用，消耗(金钱，时间)；使竭尽所能；使全力以赴；",
                 "type": "v"
             },
             {
@@ -48931,7 +48927,7 @@
                 "type": "adj"
             },
             {
-                "translation": "打（strike的ing形式）",
+                "translation": "打(strike的ing形式)",
                 "type": "v"
             }
         ]
@@ -48984,11 +48980,11 @@
         "word": "stroke",
         "translations": [
             {
-                "translation": "（游泳或划船的）划；中风；（打、击等的）一下；冲程；（成功的）举动；尝试；轻抚",
+                "translation": "击打；一击，一次，一举；中风；笔画；(游泳)姿势；抚摸",
                 "type": "n"
             },
             {
-                "translation": "（用笔等）画；轻抚；轻挪；敲击；划尾桨；划掉；（打字时）击打键盘",
+                "translation": "轻抚；拭去；心跳；奉献；击打",
                 "type": "v"
             }
         ]
@@ -49507,7 +49503,7 @@
         "word": "suite",
         "translations": [
             {
-                "translation": "（一套）家具；套房；组曲；（一批）随员，随从",
+                "translation": "(一套)家具；套房；组曲；(一批)随员，随从",
                 "type": "n"
             }
         ]
@@ -49886,7 +49882,7 @@
         "word": "surgery",
         "translations": [
             {
-                "translation": "外科；外科手术；手术室；诊疗室",
+                "translation": "外科手术；外科，外科学；诊所",
                 "type": "n"
             }
         ]
@@ -50535,11 +50531,11 @@
         "word": "tan",
         "translations": [
             {
-                "translation": "（日晒后皮肤的）黝黑色；棕褐色；鞣料；马戏团",
+                "translation": "(日晒后皮肤的)黝黑色；棕褐色；鞣料；马戏团",
                 "type": "n"
             },
             {
-                "translation": "鞣（革）；晒成褐色",
+                "translation": "鞣(革)；晒成褐色",
                 "type": "v"
             },
             {
@@ -50836,7 +50832,7 @@
         "word": "telephone",
         "translations": [
             {
-                "translation": "（美）电话；电话机；电话耳机",
+                "translation": "(美)电话；电话机；电话耳机",
                 "type": "n"
             },
             {
@@ -50934,7 +50930,7 @@
                 "type": "n"
             },
             {
-                "translation": "租借（常用于被动语态）",
+                "translation": "租借(常用于被动语态)",
                 "type": "v"
             }
         ]
@@ -51569,7 +51565,7 @@
         "word": "ticket",
         "translations": [
             {
-                "translation": "票；入场券，标签；（美）候选人名单；证明书；交通罚款单",
+                "translation": "票；入场券，标签；(美)候选人名单；证明书；交通罚款单",
                 "type": "n"
             },
             {
@@ -51790,7 +51786,7 @@
                 "type": "adj"
             },
             {
-                "translation": "疲倦；对…腻烦（tire的过去分词形式）",
+                "translation": "疲倦；对…腻烦(tire的过去分词形式)",
                 "type": "v"
             }
         ]
@@ -51839,7 +51835,7 @@
         "word": "toast",
         "translations": [
             {
-                "translation": "干杯；烤面包；接受敬酒的人；（在某领域）广受赞誉的人",
+                "translation": "干杯；烤面包；接受敬酒的人；(在某领域)广受赞誉的人",
                 "type": "n"
             },
             {
@@ -51966,7 +51962,7 @@
                 "type": "n"
             },
             {
-                "translation": "明天；未来地（等于to-morrow）",
+                "translation": "明天；未来地(等于to-morrow)",
                 "type": "adv"
             }
         ]
@@ -52023,7 +52019,7 @@
         "word": "topic",
         "translations": [
             {
-                "translation": "主题（等于theme）；题目；一般规则；总论",
+                "translation": "主题(等于theme)；题目；一般规则；总论",
                 "type": "n"
             }
         ]
@@ -52565,7 +52561,7 @@
         "word": "tray",
         "translations": [
             {
-                "translation": "托盘；文件盒；隔底匣；（无线电的）发射箱",
+                "translation": "托盘；文件盒；隔底匣；(无线电的)发射箱",
                 "type": "n"
             }
         ]
@@ -52692,7 +52688,7 @@
         "word": "triangle",
         "translations": [
             {
-                "translation": "三角（形）；三角关系；三角形之物；三人一组",
+                "translation": "三角(形)；三角关系；三角形之物；三人一组",
                 "type": "n"
             }
         ]
@@ -52710,7 +52706,7 @@
         "word": "tribute",
         "translations": [
             {
-                "translation": "礼物；[税收] 贡物；颂词；（尤指对死者的）致敬，悼念，吊唁礼物",
+                "translation": "礼物；[税收] 贡物；颂词；(尤指对死者的)致敬，悼念，吊唁礼物",
                 "type": "n"
             }
         ]
@@ -52762,11 +52758,11 @@
         "word": "trim",
         "translations": [
             {
-                "translation": "修剪；整理；装点",
+                "translation": "修剪；整理；装饰",
                 "type": "v"
             },
             {
-                "translation": "修剪；整齐；情形",
+                "translation": "修剪；整齐；装饰",
                 "type": "n"
             },
             {
@@ -52831,7 +52827,7 @@
         "word": "trolley",
         "translations": [
             {
-                "translation": "手推车；（美）有轨电车（等于trolley car）；（英）无轨电车（等于trolleybus）；空中吊运车",
+                "translation": "手推车；(美)有轨电车(等于trolley car)；(英)无轨电车(等于trolleybus)；空中吊运车",
                 "type": "n"
             },
             {
@@ -52975,7 +52971,7 @@
                 "type": "vt"
             },
             {
-                "translation": "洗盆浴；（衣服等）被放在桶里洗",
+                "translation": "洗盆浴；(衣服等)被放在桶里洗",
                 "type": "vi"
             }
         ]
@@ -53041,11 +53037,11 @@
         "word": "tumble",
         "translations": [
             {
-                "translation": "摔倒；倒塌；滚动；打滚；仓惶地行动",
+                "translation": "(使)跌倒，摔下，滚下；翻滚；(价格等)暴跌",
                 "type": "v"
             },
             {
-                "translation": "跌倒；翻筋斗；跌跤",
+                "translation": "跌倒，摔倒",
                 "type": "n"
             }
         ]
@@ -53098,7 +53094,7 @@
         "word": "turbine",
         "translations": [
             {
-                "translation": "[动力] 涡轮；[动力] 涡轮机",
+                "translation": "汽轮机，叶轮机；[物]涡轮机",
                 "type": "n"
             }
         ]
@@ -53173,7 +53169,7 @@
         "word": "tv",
         "translations": [
             {
-                "translation": "电视（television）",
+                "translation": "电视(television)",
                 "type": "abbr"
             }
         ]
@@ -53397,7 +53393,7 @@
                 "type": "adj"
             },
             {
-                "translation": "放在…的下面；为…的基础；优先于（underlie的ing形式）",
+                "translation": "放在…的下面；为…的基础；优先于(underlie的ing形式)",
                 "type": "v"
             }
         ]
@@ -53453,7 +53449,7 @@
                 "type": "adj"
             },
             {
-                "translation": "理解；明白（understand的ing形式）",
+                "translation": "理解；明白(understand的ing形式)",
                 "type": "v"
             }
         ]
@@ -54039,7 +54035,7 @@
         "word": "vapour",
         "translations": [
             {
-                "translation": "蒸气（等于vapor）；水蒸气",
+                "translation": "蒸气(等于vapor)；水蒸气",
                 "type": "n"
             }
         ]
@@ -54510,7 +54506,7 @@
         "word": "village",
         "translations": [
             {
-                "translation": "村庄；村民；（动物的）群落",
+                "translation": "村庄；村民；(动物的)群落",
                 "type": "n"
             }
         ]
@@ -54590,7 +54586,7 @@
         "word": "virtual",
         "translations": [
             {
-                "translation": "[计] 虚拟的；实质上的，事实上的（但未在名义上或正式获承认）",
+                "translation": "[计] 虚拟的；实质上的，事实上的(但未在名义上或正式获承认)",
                 "type": "adj"
             }
         ]
@@ -54773,7 +54769,7 @@
         "word": "volt",
         "translations": [
             {
-                "translation": "伏特（电压单位）；环骑；闪避",
+                "translation": "伏特(电压单位)；环骑；闪避",
                 "type": "n"
             }
         ]
@@ -55058,7 +55054,7 @@
                 "type": "n"
             },
             {
-                "translation": "储入仓库；以他人名义购进（股票）",
+                "translation": "储入仓库；以他人名义购进(股票)",
                 "type": "v"
             }
         ]
@@ -55280,7 +55276,7 @@
                 "type": "n"
             },
             {
-                "translation": "与…结婚（wed的ing形式）",
+                "translation": "与…结婚(wed的ing形式)",
                 "type": "v"
             }
         ]
@@ -55401,7 +55397,7 @@
                 "type": "adj"
             },
             {
-                "translation": "（苏格兰）命运；预言",
+                "translation": "(苏格兰)命运；预言",
                 "type": "n"
             }
         ]
@@ -55549,7 +55545,7 @@
         "word": "whip",
         "translations": [
             {
-                "translation": "抽打；煽动；搅打（蛋，奶油）；彻底击败",
+                "translation": "抽打；煽动；搅打(蛋，奶油)；彻底击败",
                 "type": "v"
             },
             {
@@ -55903,7 +55899,7 @@
         "word": "woman",
         "translations": [
             {
-                "translation": "(pl.）women妇女，成年女子",
+                "translation": "(pl.)women妇女，成年女子",
                 "type": "n"
             }
         ]
@@ -55991,7 +55987,7 @@
         "word": "worse",
         "translations": [
             {
-                "translation": "更坏的；更差的；更恶劣的（bad的比较级）；（病情）更重的（ill的比较级）",
+                "translation": "更坏的；更差的；更恶劣的(bad的比较级)；(病情)更重的(ill的比较级)",
                 "type": "adj"
             },
             {
@@ -56103,7 +56099,7 @@
                 "type": "n"
             },
             {
-                "translation": "环绕（等于wreathe）",
+                "translation": "环绕(等于wreathe)",
                 "type": "v"
             }
         ]
@@ -56177,7 +56173,7 @@
                 "type": "n"
             },
             {
-                "translation": "书写（write的ing形式）",
+                "translation": "书写(write的ing形式)",
                 "type": "v"
             }
         ]
@@ -56207,7 +56203,7 @@
         "word": "yard",
         "translations": [
             {
-                "translation": "院子；码（英制中丈量长度单位，1码=3英尺）；庭院；帆桁",
+                "translation": "院子；码(英制中丈量长度单位，1码=3英尺)；庭院；帆桁",
                 "type": "n"
             },
             {

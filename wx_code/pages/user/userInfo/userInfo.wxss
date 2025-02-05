@@ -1,22 +1,105 @@
+.userinfo-container {
+	padding: 40rpx;
+	min-height: 100vh;
+	background: #f5f7fa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.avatar-section {
+	margin: 60rpx 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .avatar-wrapper {
-	padding: 0;
-	width: 56px !important;
-	border-radius: 8px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	padding: 0 !important;
+	width: 180rpx !important;
+	height: 180rpx !important;
+	border-radius: 50% !important;
+	margin: 0 !important;
+	background: none !important;
+}
+
+.avatar-wrapper::after {
+	border: none;
 }
 
 .avatar {
-	display: block;
-	width: 56px;
-	height: 56px;
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
 }
 
-.container {
-	display: flex;
+.nickname-text {
+	font-size: 28rpx;
+	color: #999;
+	margin-top: 20rpx;
 }
-.but-login {
-	background-color: #35ABD9;
-	color: #fff;
-	margin: 180rpx 0;
+
+.form-section {
+	width: 100%;
+	margin-top: 40rpx;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+}
+
+.nickname-cell {
+	background: rgb(58, 35, 35) !important;
+	border-radius: 16rpx !important;
+	box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+	margin: 0 !important;
+}
+
+.nickname-input {
+  background: rgb(236, 233, 233) !important;
+	text-align: center;
+  font-size: 32rpx;
+  border-radius: 15rpx;
+	color: #333;
+	width: 100%;
+	min-height: 44px;
+}
+
+.permission-cell,
+.permission-input {
+	display: none;
+}
+
+.weui-cells {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	position: relative;
+	border: none !important;
+}
+
+.weui-cells::before,
+.weui-cells::after {
+	display: none !important;
+}
+
+.weui-cell::before,
+.weui-cell::after {
+	display: none !important;
+}
+
+.confirm-btn {
+	position: relative;
+	margin-top: 80rpx;
+	width: 90% !important;
+	height: 88rpx;
+	line-height: 88rpx;
+	background: #96dfe6;
+	color: white;
+	font-size: 32rpx;
+	border-radius: 44rpx;
+	border: none;
+}
+
+.confirm-btn:active {
+	opacity: 0.9;
 }

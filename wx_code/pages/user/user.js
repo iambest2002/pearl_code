@@ -3,7 +3,7 @@ const app = getApp()
 Page({
   data: {
     showNotice: false, // 控制公告栏显示
-    noticeContent: '欢迎使用！本次更新内容：1.修复单词索引跳转问题2.修改bill显示按日期最新排序3.修改登录显示问题', // 公告内容
+    noticeContent: '欢迎使用！本次更新内容：1.增加小功能：自定义抽奖内容（比如今天吃什么）2.优化公告弹出框显示', // 公告内容
   },
 
   onLoad() {
@@ -72,6 +72,11 @@ Page({
   toScheduleAccounting() {
     wx.navigateTo({
       url: './accounting/accounting'
+    });
+  },
+  toFunction() {
+    wx.navigateTo({
+      url: './function/function'
     });
   },
   

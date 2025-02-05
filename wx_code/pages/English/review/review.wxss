@@ -1,0 +1,93 @@
+.container {
+  padding: 30rpx;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.progress-bar {
+  margin-bottom: 30rpx;
+}
+
+.score {
+  text-align: right;
+  font-size: 32rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+
+.word-card {
+  background: white;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  margin: 30rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.word {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.meaning {
+  font-size: 36rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.phonetic {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+
+.options-container {
+  padding: 0 30rpx;
+}
+
+.option {
+  background: white;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.correct {
+  background: #6ed6da;
+  color: white;
+}
+
+.wrong {
+  background: #ff6b6b;
+  color: white;
+}
+
+.spelling-container {
+  margin-bottom: 40rpx;
+}
+
+.spelling-input {
+  background: white;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #e0e0e0;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.submit-btn {
+  background: #6ed6da;
+  color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+
+.tip-text {
+  text-align: center;
+  color: #999;
+  font-size: 28rpx;
+} 

@@ -1,5 +1,5 @@
 <view style="padding: 20rpx;">
-
+  <!-- 当前书籍信息展示 -->
   <view style="display: flex;">
     <image style="width: 30%;" src="{{book.image}}" mode="widthFix" />
     <view style="width: 70%;padding-left: 30rpx;">
@@ -11,8 +11,10 @@
     </view>
   </view>
 
-
+  <!-- 选择新的单词书按钮 -->
   <van-cell style="color: black;" title="选择新的单词书" is-link bind:click="showPopup" />
+
+  <!-- 选择书籍的弹出层 -->
   <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 50%" bind:close="onClose">
     <view style="padding: 20rpx;padding-top: 40rpx;">
       <view wx:for="{{books}}" data-index="{{index}}" wx:for-item="item" style="padding-bottom: 20rpx;display: flex;" bindtap="setBook">
@@ -29,27 +31,12 @@
     </view>
   </van-popup>
 
-
+  <!-- 每日单词数设置 -->
   <view style="display: flex;padding: 10rpx;justify-content: space-between;">
     <text>每日单词</text>
     <van-stepper value="{{everydayWord}}" min="10" max="1000" bind:change="setDanci" />
-    
   </view>
+
+  <!-- 保存按钮 -->
   <button plain class="menu-button" bind:tap="savePlan">保存计划</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </view>

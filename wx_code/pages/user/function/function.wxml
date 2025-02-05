@@ -1,0 +1,15 @@
+<view class="function-container">
+  <view class="function-group">
+    <button class="menu-button" hover-class="button-hover" bindtap="tolottery">
+      抽奖
+      <text class="arrow">›</text>
+    </button>
+  </view>
+
+  <view class="function-group">
+    <button class="menu-button" hover-class="button-hover" bindtap="tocalculator">
+      计算器
+      <text class="arrow">›</text>
+    </button>
+  </view>
+</view>

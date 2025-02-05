@@ -40,32 +40,54 @@
       </view>
     </view>
   </view>
-  <van-popup show="{{showNotice}}" bind:close="onCloseNotice" round position="top"  custom-style="height: auto;">
+  <van-popup 
+    show="{{showNotice}}" 
+    bind:close="onCloseNotice" 
+    round 
+    position="center"
+    custom-style="width: 80%;"
+  >
     <view class="notice-bar">
-      <text class="notice-title">公告栏</text>
-      <view class="notice-content">
+      <view class="notice-title">公告栏</view>
+      <scroll-view 
+        scroll-y 
+        class="notice-content"
+        style="max-height: 60vh;"
+      >
         <text>{{noticeContent}}</text>
-      </view>
+      </scroll-view>
       <view class="notice-actions">
-        <button bindtap="onNotToday">今天不再显示</button>
-        <button bindtap="onCloseNotice">关闭</button>
+        <button class="notice-btn" bindtap="onNotToday">今天不再显示</button>
+        <button class="notice-btn confirm" bindtap="onCloseNotice">我知道了</button>
       </view>
     </view>
   </van-popup>
 
 </view>
-<view class="function-buttons">
-  <!-- 个人信息按钮 -->
-  <button class="menu-button" plain wx:if="{{userInfo}}" bindtap="toUserInfo">
-    个人信息
-  </button>
+<view class="function-container">
+  <view class="function-group">
+    <!-- 个人信息按钮 -->
+    <button class="menu-button" plain wx:if="{{userInfo}}" bindtap="toUserInfo">
+      个人信息
+      <text class="arrow">›</text>
+    </button>
 
-  <!-- 定时记账按钮 -->
-  <button disabled="true" plain class="menu-button" bindtap="toScheduleAccounting">
-    定时记账
-  </button>
-  <!-- 定时记账按钮 -->
-  <button plain class="menu-button" bindtap="toGetWords">
-    获取单词
-  </button>
+    <!-- 定时记账按钮 -->
+    <button disabled="true" plain class="menu-button" bindtap="toScheduleAccounting">
+      定时记账
+      <text class="arrow">›</text>
+    </button>
+
+    <!-- 获取单词按钮 -->
+    <button plain class="menu-button" bindtap="toGetWords">
+      获取单词
+      <text class="arrow">›</text>
+    </button>
+
+    <!-- 实用功能按钮 -->
+    <button plain class="menu-button" bindtap="toFunction">
+      实用功能
+      <text class="arrow">›</text>
+    </button>
+  </view>
 </view>

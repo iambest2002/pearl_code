@@ -16,7 +16,7 @@ Page({
     detailDate: '',
     fieldValue: '',
     activeNames: [],
-    checked: false,
+    checked: true,
     showDetail: false,
     processFetchedData: '',
     listData: [],
@@ -84,12 +84,17 @@ Page({
     const now = new Date();
     const dateString = this.formatDate(now);
     this.setData({
-      selectedDate: dateString
+      selectedDate: dateString,
+      checked: true, // 默认开关为开启状态
+      activeNames: this.data.filteredData.map(item => item._id) // 默认显示所有折叠框内容
     });
 
     // 获取并保存 openid
     this.getOpenidAndFetchData(dateString);
-
+    // 默认调用 onSwitchChange 方法，将折叠框设置为打开
+    this.onSwitchChange({
+      detail: true
+    });
   },
   onShow() {
     const openid = wx.getStorageSync('openid');
@@ -141,10 +146,11 @@ Page({
     detail: checked
   }) {
     this.setData({
-      checked,
-      activeNames: checked ? this.data.filteredData.map(item => item._id) : []
+      checked, // 更新开关状态
+      activeNames: checked ? this.data.filteredData.map(item => item._id) : [] // 打开所有折叠框或关闭
     });
   },
+
   // 显示日期选择器
   onShowDatePicker() {
     this.setData({
@@ -232,6 +238,11 @@ Page({
           this.setData({
             filteredData: allData
           });
+          if (this.data.checked) {
+            this.onSwitchChange({
+              detail: true
+            }); // 如果 checked 为 true，则展开折叠框
+          }
         }
       })
       .catch((err) => {
@@ -243,40 +254,40 @@ Page({
     // 将 expenseTotal 和 incomeTotal 转换为 Decimal 实例
     let expenseTotal = new Decimal(this.data.expenseTotalPrice || 0);
     let incomeTotal = new Decimal(this.data.incomeTotalPrice || 0);
-    
+
     // 创建一个 Parser 实例
     const parser = new Parser();
 
     data.forEach((item) => {
-        const priceString = item.price; // 获取价格（假设是字符串形式）
-        let price = new Decimal(0); // 默认价格初始化为 Decimal 类型的 0
+      const priceString = item.price; // 获取价格（假设是字符串形式）
+      let price = new Decimal(0); // 默认价格初始化为 Decimal 类型的 0
 
-        try {
-            // 如果 priceString 是一个数字字符串，它将被正确解析为数字
-            const parsedPrice = parser.parse(priceString).evaluate(); // 解析和计算
-            price = new Decimal(parsedPrice); // 转换为 Decimal 实例
-        } catch (error) {
-            console.error('价格解析错误:', priceString);
-            price = new Decimal(0); // 如果解析失败，设置价格为 0
-        }
+      try {
+        // 如果 priceString 是一个数字字符串，它将被正确解析为数字
+        const parsedPrice = parser.parse(priceString).evaluate(); // 解析和计算
+        price = new Decimal(parsedPrice); // 转换为 Decimal 实例
+      } catch (error) {
+        console.error('价格解析错误:', priceString);
+        price = new Decimal(0); // 如果解析失败，设置价格为 0
+      }
 
-        if (type === 'expenses') { // 如果从支出表获取的数据
-            expenseTotal = expenseTotal.plus(price); // 使用 Decimal 的加法
-            item['category'] = '支出';
-        } else if (type === 'income') { // 如果从收入表获取的数据
-            incomeTotal = incomeTotal.plus(price); // 使用 Decimal 的加法
-            item['category'] = '收入';
-        }
-        currentData.push(item);
+      if (type === 'expenses') { // 如果从支出表获取的数据
+        expenseTotal = expenseTotal.plus(price); // 使用 Decimal 的加法
+        item['category'] = '支出';
+      } else if (type === 'income') { // 如果从收入表获取的数据
+        incomeTotal = incomeTotal.plus(price); // 使用 Decimal 的加法
+        item['category'] = '收入';
+      }
+      currentData.push(item);
     });
 
     // 使用 Decimal 的 toFixed 方法保留两位小数
     this.setData({
-        filteredData: [...this.data.filteredData, ...data], // 避免重复
-        expenseTotalPrice: expenseTotal.toFixed(2), // 保留两位小数
-        incomeTotalPrice: incomeTotal.toFixed(2)   // 保留两位小数
+      filteredData: [...this.data.filteredData, ...data], // 避免重复
+      expenseTotalPrice: expenseTotal.toFixed(2), // 保留两位小数
+      incomeTotalPrice: incomeTotal.toFixed(2) // 保留两位小数
     });
-},
+  },
 
 
   // 取消日期选择

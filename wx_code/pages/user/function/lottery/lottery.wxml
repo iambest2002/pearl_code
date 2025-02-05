@@ -1,0 +1,43 @@
+<view class="container">
+  <!-- 输入区域 -->
+  <view class="input-section">
+    <input 
+      class="prize-input" 
+      placeholder="请输入奖品内容" 
+      value="{{newPrize}}"
+      bindinput="onInputChange"
+    />
+    <button class="add-btn" bindtap="addPrize">添加</button>
+  </view>
+
+  <!-- 奖品格子区域 -->
+  <view class="prize-grid">
+    <view class="prize-items">
+      <view 
+        class="prize-item {{currentIndex === index ? 'active' : ''}}" 
+        wx:for="{{prizeList}}" 
+        wx:key="index"
+      >
+        <text>{{item}}</text>
+        <view class="delete-btn" catchtap="deletePrize" data-index="{{index}}">×</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 抽奖按钮 -->
+  <button 
+    class="lottery-btn {{isRolling ? 'rolling' : ''}}" 
+    bindtap="startLottery" 
+    disabled="{{isRolling}}"
+  >
+    {{isRolling ? '抽奖中...' : '开始抽奖'}}
+  </button>
+
+  <!-- 结果显示区域 -->
+  <view class="result-section" wx:if="{{result}}">
+    <view class="result-title">抽奖结果</view>
+    <view class="result-content">
+      <text>{{result}}</text>
+    </view>
+  </view>
+</view> 

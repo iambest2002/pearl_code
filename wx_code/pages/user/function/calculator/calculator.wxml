@@ -1,0 +1,102 @@
+<!--pages/user/function/calculator/calculator.wxml-->
+<view class="calculator-container">
+  <!-- 显示区域 -->
+  <view class="display">
+    <view class="mode-switch">
+      <text class="{{mode === 'standard' ? 'active' : ''}}" bindtap="switchMode" data-mode="standard">标准</text>
+      <text class="{{mode === 'programmer' ? 'active' : ''}}" bindtap="switchMode" data-mode="programmer">进制转换</text>
+    </view>
+    
+    <!-- 标准计算器显示区域 -->
+    <view class="calculator-display" wx:if="{{mode === 'standard'}}">
+      <view class="expression" bindtap="copyResult">{{expression || ' '}}</view>
+      <view class="result" bindtap="copyResult">{{display}}</view>
+    </view>
+    
+    <!-- 进制转换显示区域 -->
+    <view class="programmer-display" wx:if="{{mode === 'programmer'}}">
+      <view class="result" bindtap="copyResult">{{display}}</view>
+      <view class="sub-display">
+        <view bindtap="copyValue" data-value="{{hexValue}}">HEX: {{hexValue}}</view>
+        <view bindtap="copyValue" data-value="{{decValue}}">DEC: {{decValue}}</view>
+        <view bindtap="copyValue" data-value="{{octValue}}">OCT: {{octValue}}</view>
+        <view bindtap="copyValue" data-value="{{binValue}}">BIN: {{binValue}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="keyboard-container">
+    <!-- 标准计算器键盘 -->
+    <view class="keyboard {{mode === 'standard' ? '' : 'hidden'}}">
+      <view class="row">
+        <button bindtap="clearAll">C</button>
+        <button bindtap="delete">DEL</button>
+        <button bindtap="appendOperator" data-operator="%">%</button>
+        <button bindtap="appendOperator" data-operator="/">÷</button>
+      </view>
+      <view class="row">
+        <button bindtap="appendNumber" data-number="7">7</button>
+        <button bindtap="appendNumber" data-number="8">8</button>
+        <button bindtap="appendNumber" data-number="9">9</button>
+        <button bindtap="appendOperator" data-operator="*">×</button>
+      </view>
+      <view class="row">
+        <button bindtap="appendNumber" data-number="4">4</button>
+        <button bindtap="appendNumber" data-number="5">5</button>
+        <button bindtap="appendNumber" data-number="6">6</button>
+        <button bindtap="appendOperator" data-operator="-">-</button>
+      </view>
+      <view class="row">
+        <button bindtap="appendNumber" data-number="1">1</button>
+        <button bindtap="appendNumber" data-number="2">2</button>
+        <button bindtap="appendNumber" data-number="3">3</button>
+        <button bindtap="appendOperator" data-operator="+">+</button>
+      </view>
+      <view class="row">
+        <button bindtap="appendNumber" data-number="0">0</button>
+        <button bindtap="appendDot">.</button>
+        <button bindtap="calculate" class="equal">=</button>
+      </view>
+    </view>
+
+    <!-- 进制转换计算器键盘 -->
+    <view class="keyboard programmer {{mode === 'programmer' ? '' : 'hidden'}}">
+      <view class="base-buttons">
+        <button class="{{base === 16 ? 'active' : ''}}" bindtap="setBase" data-base="16">HEX</button>
+        <button class="{{base === 10 ? 'active' : ''}}" bindtap="setBase" data-base="10">DEC</button>
+        <button class="{{base === 8 ? 'active' : ''}}" bindtap="setBase" data-base="8">OCT</button>
+        <button class="{{base === 2 ? 'active' : ''}}" bindtap="setBase" data-base="2">BIN</button>
+      </view>
+      <view class="hex-buttons" wx:if="{{base === 16}}">
+        <button bindtap="appendHex" data-value="A">A</button>
+        <button bindtap="appendHex" data-value="B">B</button>
+        <button bindtap="appendHex" data-value="C">C</button>
+        <button bindtap="appendHex" data-value="D">D</button>
+        <button bindtap="appendHex" data-value="E">E</button>
+        <button bindtap="appendHex" data-value="F">F</button>
+      </view>
+      <view class="number-pad">
+        <view class="row">
+          <button bindtap="appendNumber" data-number="7" disabled="{{base < 8}}">7</button>
+          <button bindtap="appendNumber" data-number="8" disabled="{{base < 9}}">8</button>
+          <button bindtap="appendNumber" data-number="9" disabled="{{base < 10}}">9</button>
+        </view>
+        <view class="row">
+          <button bindtap="appendNumber" data-number="4" disabled="{{base < 5}}">4</button>
+          <button bindtap="appendNumber" data-number="5" disabled="{{base < 6}}">5</button>
+          <button bindtap="appendNumber" data-number="6" disabled="{{base < 7}}">6</button>
+        </view>
+        <view class="row">
+          <button bindtap="appendNumber" data-number="1">1</button>
+          <button bindtap="appendNumber" data-number="2" disabled="{{base < 3}}">2</button>
+          <button bindtap="appendNumber" data-number="3" disabled="{{base < 4}}">3</button>
+        </view>
+        <view class="row">
+          <button bindtap="appendNumber" data-number="0">0</button>
+          <button bindtap="clearAll">C</button>
+          <button bindtap="delete">DEL</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

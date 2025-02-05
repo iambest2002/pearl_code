@@ -1,11 +1,23 @@
-<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-    <image class="avatar" src="{{avatarUrl}}"></image>
-  </button> 
-  <mp-form>
-    <mp-cells>
-      <mp-cell title="昵称">
-        <input type="nickname" class="weui-input" placeholder="请输入昵称" model:value="{{nickName}}" />
-      </mp-cell>
-    </mp-cells>
-  </mp-form>
-<button class="but-login" bindtap="comit">确认</button>
+<view class="userinfo-container">
+  <view class="avatar-section">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+    </button>
+    <view class="nickname-text">点击更换头像</view>
+  </view>
+
+  <view class="form-section">
+    <mp-form>
+      <mp-cells>
+        <mp-cell title="昵称" class="nickname-cell">
+          <input type="nickname" 
+                 class="nickname-input" 
+                 placeholder="请输入昵称" 
+                 model:value="{{nickName}}" />
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+  </view>
+
+  <button class="confirm-btn" bindtap="comit">确认修改</button>
+</view>
