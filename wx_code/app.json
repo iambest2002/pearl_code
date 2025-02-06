@@ -28,7 +28,8 @@
     "pages/English/setMyPlan/setMyPlan",
     "pages/English/review/review",
     "pages/user/function/lottery/lottery",
-    "pages/user/function/calculator/calculator"
+    "pages/user/function/calculator/calculator",
+    "pages/English/spell/spell"
   ],
   "window": {
     "backgroundColor": "#ffffff",

@@ -1,48 +1,44 @@
 <view class="container">
-  <!-- 进度条 -->
-  <progress class="progress-bar" percent="{{progress}}" active color="#6ed6da" />
-
-
-  <!-- 当前得分 -->
-  <view class="score">得分：{{score}}</view>
-
-  <!-- 调试信息 -->
-  <view class="debug-info" style="padding: 10rpx; font-size: 24rpx; color: #666;">
-    <view>当前步骤: {{currentStep}}</view>
-    <view>当前单词: {{currentWord.word}}</view>
-    <view>当前释义: {{currentWord.mean}}</view>
+  <!-- 提示信息 -->
+  <view class="tip-info">
+    <view class="tip-count">第 {{currentIndex + 1}}/{{wordList.length}} 个</view>
+    <view class="tip-text">
+      <view >
+        请选择单词 "{{currentWord.word}}" 的正确含义
+      </view>
+    </view>
   </view>
+
 
   <!-- 单词显示区域 -->
   <view class="word-card">
     <!-- 选择词义阶段 -->
-    <block wx:if="{{phase === 0}}">
+    <block >
       <text class="word">{{currentWord.word}}</text>
       <text class="phonetic" wx:if="{{currentWord.phonetic}}">{{currentWord.phonetic}}</text>
-    </block>
-
-    <!-- 拼写阶段 -->
-    <block wx:else>
-      <text class="meaning">{{currentWord.mean}}</text>
+      <!-- 添加提示功能 - 显示正确意思 -->
+      <view class="hint-container">
+        <view class="hint-btn" bindtap="toggleHint">
+          <text>需要提示?</text>
+        </view>
+        <view class="hint-content" wx:if="{{showHint}}">
+          <text>{{currentWord.mean}}</text>
+        </view>
+      </view>
     </block>
   </view>
 
   <!-- 选择题部分 -->
-  <view class="options-container" wx:if="{{phase === 0}}">
-    <view wx:for="{{options}}" wx:key="index" class="option {{showResult ? (item === currentWord.mean ? 'correct' : (item === selectedOption ? 'wrong' : '')) : ''}}" bindtap="handleOptionSelect" data-option="{{item}}">
-      {{item}}
+  <view class="options-container">
+    <view class="options-row">
+      <view wx:for="{{options}}" 
+            wx:key="index" 
+            class="option {{showResult ? (item === currentWord.mean ? 'correct' : (item === selectedOption ? 'wrong' : '')) : ''}}" 
+            bindtap="handleOptionSelect" 
+            data-option="{{item}}">
+        <text>{{item}}</text>
+      </view>
     </view>
   </view>
 
-  <!-- 拼写部分 -->
-  <view class="spelling-container" wx:if="{{phase === 1}}">
-    <input class="spelling-input" placeholder="请输入单词拼写" value="{{userInput}}" bindinput="handleInput" />
-    <button class="submit-btn" bindtap="submitSpelling">确认</button>
-  </view>
-
-  <!-- 提示信息 -->
-  <view class="tip-text">
-    <block wx:if="{{phase === 0}}">第{{currentIndex + 1}}/{{wordList.length}}个 请选择单词"{{currentWord.word}}"的正确含义</block>
-    <block wx:else>第{{currentIndex + 1}}/{{wordList.length}}个 请根据含义"{{currentWord.mean}}"拼写单词</block>
-  </view>
 </view>

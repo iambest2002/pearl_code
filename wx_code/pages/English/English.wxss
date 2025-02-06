@@ -278,23 +278,32 @@ page {
   font-weight: bold;
 }
 
-/* 开始学习按钮 */
-/* 修改开始学习按钮的样式 */
-.start-btn {
-  width: 100%;
+/* 修改按钮容器样式 */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rpx;
+  margin-top: 30rpx;
+}
+
+/* 统一开始学习和拼写单词按钮样式 */
+.start-btn,
+.spell-btn {
+  width: 48% !important;
   background: #6ed6da;
   color: white;
   font-weight: bold;
   border-radius: 40rpx;
-  margin-top: 30rpx;
   border: none;
   height: 88rpx;
   line-height: 88rpx;
   font-size: 32rpx;
   transition: all 0.3s;
+  margin-top: 0 !important;
 }
 
-.start-btn:active {
+.start-btn:active,
+.spell-btn:active {
   opacity: 0.9;
   transform: scale(0.98);
 }

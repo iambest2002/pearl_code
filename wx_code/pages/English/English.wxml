@@ -45,9 +45,11 @@
         </view>
       </view>
 
-      <button class="start-btn" bindtap="startStudy">
-        开始学习
-      </button>
+      <!-- 修改按钮布局 -->
+      <view class="action-buttons">
+        <button class="start-btn" bindtap="startLearning">开始学习</button>
+        <button class="spell-btn" bindtap="startSpelling">开始拼写</button>
+      </view>
     </view>
   </view>
 </view>

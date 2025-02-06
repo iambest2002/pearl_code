@@ -10,8 +10,8 @@ Page({
     onShowGetStorageInfoPicker: false,
     //['CET4', 'CET6', 'PGEE'],['CET4', 'CET6', 'PGEE'],
     GetWordsCache: ['CET4', 'CET6', 'PGEE'],
-    RemoveWordsCache: ['CET4', 'CET6', 'PGEE','learningProgress_cet4WordsGrouped','learningProgress_cet6WordsGrouped','learningProgress_pgeeWordsGrouped'],
-    ViewWordsCache: ['ALL','EXPENSES','INCOME','CET4','CET6', 'PGEE','PRIZELIST','learningProgress','learnedWords','learningProgress_cet4WordsGrouped','currentBook','bookInfo_cet4WordsGrouped','tempReviewData'],
+    RemoveWordsCache: ['CET4', 'CET6', 'PGEE', 'learnedWords_cet4WordsGrouped', 'learnedWords_cet6WordsGrouped', 'learnedWords_pgeeWordsGrouped', 'learningProgress_cet4WordsGrouped', 'learningProgress_cet6WordsGrouped', 'learningProgress_pgeeWordsGrouped', 'spelledWords_cet4WordsGrouped', 'spelledWords_cet6WordsGrouped', 'spelledWords_pgeeWordsGrouped', ],
+    ViewWordsCache: ['ALL', 'EXPENSES', 'INCOME', 'CET4', 'CET6', 'PGEE', 'learnedWords_cet4WordsGrouped', 'learnedWords_cet6WordsGrouped', 'learnedWords_pgeeWordsGrouped', 'learningProgress_cet4WordsGrouped', 'learningProgress_cet6WordsGrouped', 'learningProgress_pgeeWordsGrouped', 'spelledWords_cet4WordsGrouped', 'spelledWords_cet6WordsGrouped', 'spelledWords_pgeeWordsGrouped', 'currentBook', 'bookInfo_cet4WordsGrouped'],
     selectGetWords: '',
   },
 
@@ -173,10 +173,19 @@ Page({
       CET4: 'cet4WordsGrouped',
       CET6: 'cet6WordsGrouped',
       PGEE: 'pgeeWordsGrouped',
-      learningProgress_cet4WordsGrouped:'learningProgress_cet4WordsGrouped',
-      learningProgress_cet6WordsGrouped:'learningProgress_cet6WordsGrouped',
-      learningProgress_pgeeWordsGrouped:'learningProgress_pgeeWordsGrouped',
-      currentBook:"currentBook",
+      learnedWords_cet4WordsGrouped: 'learnedWords_cet4WordsGrouped',//CET4学习单词
+      learnedWords_cet6WordsGrouped: 'learnedWords_cet6WordsGrouped',//CET6学习单词
+      learnedWords_pgeeWordsGrouped: 'learnedWords_pgeeWordsGrouped',//PGEE学习单词
+      learningProgress_cet4WordsGrouped: 'learningProgress_cet4WordsGrouped',//CET4学习进度
+      learningProgress_cet6WordsGrouped: 'learningProgress_cet6WordsGrouped',//CET6学习进度
+      learningProgress_pgeeWordsGrouped: 'learningProgress_pgeeWordsGrouped',//PGEE学习进度
+      spelledWords_cet4WordsGrouped: 'spelledWords_cet4WordsGrouped',//CET4拼写单词
+      spelledWords_cet6WordsGrouped: 'spelledWords_cet6WordsGrouped',//CET6拼写单词
+      spelledWords_pgeeWordsGrouped: 'spelledWords_pgeeWordsGrouped',//PGEE拼写单词
+      bookInfo_cet4WordsGrouped: 'bookInfo_cet4WordsGrouped',
+      bookInfo_cet6WordsGrouped: 'bookInfo_cet6WordsGrouped',
+      bookInfo_pgeeWordsGrouped: 'bookInfo_pgeeWordsGrouped',
+      currentBook: "currentBook",
 
     };
     const cacheKey = cacheKeyMap[value];
@@ -253,15 +262,21 @@ Page({
         CET4: 'cet4WordsGrouped',
         CET6: 'cet6WordsGrouped',
         PGEE: 'pgeeWordsGrouped',
-        EXPENSES:'expenses',
-        INCOME:'income',
-        PRIZELIST:'prizeList',
-        learningProgress:'learningProgress',
-        learnedWords:'learnedWords',
-        learningProgress_cet4WordsGrouped:'learningProgress_cet4WordsGrouped',
-        currentBook:"currentBook",
-        bookInfo_cet4WordsGrouped:'bookInfo_cet4WordsGrouped',
-        tempReviewData:'tempReviewData'
+        EXPENSES: 'expenses',
+        INCOME: 'income',
+        learnedWords_cet4WordsGrouped: 'learnedWords_cet4WordsGrouped',
+        learnedWords_cet6WordsGrouped: 'learnedWords_cet6WordsGrouped',
+        learnedWords_cet6WordsGrouped: 'learnedWords_pgeeWordsGrouped',
+        learningProgress_cet4WordsGrouped: 'learningProgress_cet4WordsGrouped',
+        learningProgress_cet6WordsGrouped: 'learningProgress_cet6WordsGrouped',
+        learningProgress_cet6WordsGrouped: 'learningProgress_pgeeWordsGrouped',
+        spelledWords_cet4WordsGrouped: 'spelledWords_cet4WordsGrouped',
+        spelledWords_cet6WordsGrouped: 'spelledWords_cet6WordsGrouped',
+        spelledWords_pgeeWordsGrouped: 'spelledWords_pgeeWordsGrouped',
+        bookInfo_cet4WordsGrouped: 'bookInfo_cet4WordsGrouped',
+        bookInfo_cet6WordsGrouped: 'bookInfo_cet6WordsGrouped',
+        bookInfo_pgeeWordsGrouped: 'bookInfo_pgeeWordsGrouped',
+        currentBook: "currentBook",
       };
       const cacheKey = cacheKeyMap[value];
 

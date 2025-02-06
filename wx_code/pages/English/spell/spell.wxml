@@ -1,0 +1,84 @@
+<view class="spell-container">
+  <!-- 进度信息 -->
+  <view class="progress-info">
+    <text>剩余单词: {{remainingCount || 0}} 个</text>
+  </view>
+
+  <!-- 单词卡片 -->
+  <view class="word-card">
+    <text class="word-meaning">{{currentWord.mean || ''}}</text>
+    <text class="phonetic" wx:if="{{currentWord.phonetic}}">{{currentWord.phonetic}}</text>
+
+    <!-- 提示按钮和提示内容 -->
+    <view class="hint-container">
+      <view class="hint-btn" bindtap="toggleHint">
+        <text>需要提示?</text>
+      </view>
+      <view class="hint-content" wx:if="{{showHint}}">
+        <text>{{currentWord.word || ''}}</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <!-- 输入区域 -->
+  <view class="input-container">
+    <input class="spell-input" type="text" placeholder="请输入单词拼写" value="{{userInput}}" disabled="true" />
+  </view>
+
+  <!-- 结果显示 -->
+  <view class="result" wx:if="{{showResult}}">
+    <text class="{{isCorrect ? 'correct' : 'incorrect'}}">
+      {{isCorrect ? '正确!' : '错误，正确拼写：' + currentWord.word}}
+    </text>
+  </view>
+
+  <!-- 键盘区域 - 固定在底部 -->
+  <view class="keyboard-wrapper">
+    <view class="keyboard">
+      <!-- 第一行 -->
+      <view class="keyboard-row">
+        <block wx:for="{{isUpperCase ? keyboardLayout.upperCase.firstRow : keyboardLayout.lowerCase.firstRow}}" 
+               wx:key="index">
+          <view class="key" 
+                bindtap="handleKeyPress" 
+                data-key="{{item}}">
+            {{item}}
+          </view>
+        </block>
+      </view>
+      <!-- 第二行 -->
+      <view class="keyboard-row">
+        <view wx:for="{{isUpperCase ? keyboardLayout.upperCase.secondRow : keyboardLayout.lowerCase.secondRow}}" 
+              wx:key="index" 
+              class="key" 
+              bindtap="handleKeyPress" 
+              data-key="{{item}}">
+          {{item}}
+        </view>
+      </view>
+      <!-- 第三行 -->
+      <view class="keyboard-row">
+        <view class="key key-shift" bindtap="toggleCase">
+          <text class="shift-icon">{{isUpperCase ? '↓' : '↑'}}</text>
+        </view>
+        <view wx:for="{{isUpperCase ? keyboardLayout.upperCase.thirdRow : keyboardLayout.lowerCase.thirdRow}}" 
+              wx:key="index" 
+              class="key" 
+              bindtap="handleKeyPress" 
+              data-key="{{item}}">
+          {{item}}
+        </view>
+        <view class="key key-delete" bindtap="handleDelete">删除</view>
+      </view>
+      <!-- 操作按钮 -->
+      <view class="keyboard-row action-buttons">
+        <view class="mastered-btn" bindtap="handleMastered">已掌握</view>
+        <button class="submit-btn" bindtap="submitSpelling">确认</button>
+      </view>
+    </view>
+
+
+  </view>
+</view>

@@ -87,7 +87,7 @@ App({
     ],
     value:0,
     mybook: 0,
-    everydayWord: 100,
+    everydayWord: 10,
     learnedWord: 0,
   }
 })

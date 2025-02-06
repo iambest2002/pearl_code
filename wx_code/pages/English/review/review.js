@@ -1,21 +1,18 @@
 const app = getApp();
 Page({
   data: {
-    currentStep: 0, // 0-选择词义阶段, 1-拼写阶段
     currentIndex: 0, // 当前单词索引
     currentWord: {}, // 当前单词对象
-    wordList: [], // 复习单词列表（10个一组）
+    wordList: [], // 复习单词列表
+    remainingWords: [], // 答错需要重新学习的单词
     options: [], // 选项列表
     userInput: '', // 用户输入的拼写
-    score: 0, // 得分
     isCorrect: false, // 答案是否正确
     showResult: false, // 是否显示结果
     progress: 0, // 进度
-    correctWords: [], // 修改为数组// 答对的单词
+    correctWords: [], // 答对的单词
     pendingSelection: [], // 待选择词义的单词
-    pendingSpelling: [], // 待拼写单词
-    phase: 0, // 0-选择词义阶段, 1-拼写阶段
-    spelledWords: [] // 已拼写正确的单词
+    showHint: false // 添加提示显示状态
   },
 
   onLoad() {
@@ -35,7 +32,6 @@ Page({
 
     let allWords = wx.getStorageSync(selectedBook.desc);
 
-
     try {
       if (typeof allWords === 'string') {
         allWords = JSON.parse(allWords);
@@ -54,7 +50,6 @@ Page({
             return {
               word: word.word,
               mean: typeof translation === 'object' ? translation.translation : translation,
-              phonetic: word.phonetic || ''
             };
           }).filter(Boolean);
           return [...acc, ...words];
@@ -67,30 +62,25 @@ Page({
 
       // 获取实际需要显示的单词列表
       const wordList = this.getRandomWords(flattenedWords, everydayWord);
-      // 读取已掌握的单词进度
-      const progress = wx.getStorageSync(`progress_${selectedBook.desc}`) || [];
-      const learnedWords = progress.length;
 
       this.setData({
         wordList,
         currentWord: wordList[0],
         options: this.generateOptions(wordList[0], wordList),
-        learnedWords: learnedWords,
-        wordsNumber: flattenedWords.length
+        remainingWords: [],
+        progress: 0
       });
 
     } catch (error) {
       console.error('数据处理错误:', error);
       wx.showToast({
-        title: error.message || '数据格式错误',
+        title: '请添加单词数据',
         icon: 'none'
       });
       setTimeout(() => {
         wx.navigateBack();
       }, 1500);
     }
-    // 保存进度
-    //this.saveProgress();
   },
 
   getRandomWords(words, count = 10) {
@@ -147,10 +137,32 @@ Page({
     const isCorrect = selected === currentWord.mean;
 
     if (isCorrect) {
-      // 将正确答案添加到 correctWords 数组
+      // 获取当前选择的书籍信息
+      const myBookIndex = app.globalData.mybook;
+      const selectedBook = app.globalData.books[myBookIndex];
+      
+      // 使用书籍描述作为缓存key的一部分
+      const learnedWordsKey = `learnedWords_${selectedBook.desc}`;
+      
+      // 获取当前书籍的已学习单词列表
+      const learnedWords = wx.getStorageSync(learnedWordsKey) || [];
+      
+      // 添加新学习的单词
+      if (!learnedWords.find(w => w.word === currentWord.word)) {
+        learnedWords.push(currentWord);
+        wx.setStorageSync(learnedWordsKey, learnedWords);
+      }
+
       if (!this.data.correctWords.includes(currentWord.word)) {
         this.data.correctWords.push(currentWord.word);
       }
+    } else {
+      // 答错时将单词添加到待重新学习列表
+      const remainingWords = this.data.remainingWords;
+      if (!remainingWords.find(w => w.word === currentWord.word)) {
+        remainingWords.push(currentWord);
+      }
+      this.setData({ remainingWords });
     }
 
     this.setData({
@@ -164,32 +176,35 @@ Page({
       wx.showToast({
         title: `正确答案: ${currentWord.mean}`,
         icon: 'none',
-        duration: 1000
+        duration: 1500
       });
     }
 
     setTimeout(() => {
-      this.nextStep();
+      this.nextWord();
     }, 1500);
   },
 
-  // review.js 中添加 updatePendingSpelling 方法
-  updatePendingSpelling(word) {
-    // 获取待拼写队列
-    let pendingSpelling = wx.getStorageSync('pendingSpelling') || [];
-
-    // 如果该单词不在待拼写队列中，则加入
-    if (!pendingSpelling.includes(word.word)) {
-      pendingSpelling.push(word.word);
-    }
-
-    // 保存更新后的待拼写队列
-    wx.setStorageSync('pendingSpelling', pendingSpelling);
+  handleInput(e) {
+    const userInput = e.detail.value;
+    this.setData({
+      userInput: userInput
+    });
   },
 
   submitSpelling() {
     const userInput = this.data.userInput.trim().toLowerCase();
     const correctWord = this.data.currentWord.word.toLowerCase();
+
+    if (userInput === '') {
+      wx.showToast({
+        title: '请输入单词',
+        icon: 'none',
+        duration: 1500
+      });
+      return;
+    }
+
     const isCorrect = userInput === correctWord;
 
     if (isCorrect) {
@@ -198,7 +213,6 @@ Page({
         correctWords.push(correctWord);
       }
 
-      // 记录拼写正确的单词
       const spelledWords = this.data.spelledWords;
       if (!spelledWords.includes(correctWord)) {
         spelledWords.push(correctWord);
@@ -206,69 +220,88 @@ Page({
       this.setData({
         spelledWords
       });
-    }
 
-    this.setData({
-      isCorrect,
-      showResult: true,
-      score: isCorrect ? this.data.score + 1 : this.data.score
-    });
+      wx.showToast({
+        title: '拼写正确',
+        icon: 'success',
+        duration: 1500
+      });
+    } else {
+      this.setData({
+        isCorrect: false,
+        showResult: true,
+        score: this.data.score
+      });
 
-    // 实时保存进度
-    this.saveProgress();
+      wx.showToast({
+        title: '拼写错误',
+        icon: 'none',
+        duration: 1500
+      });
 
-    if (!isCorrect) {
-      // 拼写错误时将单词加入待拼写队列
       this.updatePendingSpelling(this.data.currentWord);
     }
 
+    this.saveProgress();
+
     setTimeout(() => {
-      this.nextStep();
+      this.nextWord();
     }, 500);
   },
 
-  nextStep() {
-    let {
-      currentStep,
-      currentIndex,
-      wordList,
-      phase
-    } = this.data;
+  nextWord() {
+    const { currentIndex, wordList, remainingWords } = this.data;
+    const nextIndex = currentIndex + 1;
 
-    if (phase === 0) {
-      // 选择词义阶段
-      currentIndex++;
-      if (currentIndex >= wordList.length) {
-        // 完成选择词义阶段，开始拼写阶段
-        phase = 1;
-        currentIndex = 0;
-      }
-    } else {
-      // 拼写阶段
-      currentIndex++;
-      if (currentIndex >= wordList.length) {
-        // 完成所有阶段，保存进度并返回
-        this.saveProgress();
+    // 如果当前轮次的单词学习完了
+    if (nextIndex >= wordList.length) {
+      // 如果还有需要重新学习的单词
+      if (remainingWords.length > 0) {
+        this.setData({
+          wordList: remainingWords, // 将待重新学习的单词设为新的学习列表
+          remainingWords: [], // 清空待重新学习列表
+          currentIndex: 0, // 重置索引
+          currentWord: remainingWords[0],
+          options: this.generateOptions(remainingWords[0], remainingWords),
+          showResult: false,
+          selectedOption: '',
+          progress: ((wordList.length - remainingWords.length) / wordList.length) * 100,
+          showHint: false // 切换单词时隐藏提示
+        });
         return;
       }
+
+      // 如果没有需要重新学习的单词，说明全部学习完成
+      this.saveProgress();
+      wx.showToast({
+        title: '学习完成！',
+        icon: 'success',
+        duration: 1500
+      });
+      
+      // 延迟1.5秒后返回上一页
+      setTimeout(() => {
+        wx.navigateBack({
+          delta: 1
+        });
+      }, 1500);
+      
+      return;
     }
 
-    const currentWord = wordList[currentIndex];
-    let options = phase === 0 ? this.generateOptions(currentWord, wordList) : [];
-
+    // 继续学习下一个单词
+    const nextWord = wordList[nextIndex];
     this.setData({
-      phase,
-      currentIndex,
-      currentWord,
-      options,
-      userInput: '',
+      currentIndex: nextIndex,
+      currentWord: nextWord,
+      options: this.generateOptions(nextWord, wordList),
       showResult: false,
       selectedOption: '',
-      progress: ((phase * wordList.length + currentIndex) / (wordList.length * 2)) * 100
+      progress: (nextIndex / wordList.length) * 100,
+      showHint: false // 切换单词时隐藏提示
     });
   },
 
-  // 页面卸载时（返回页面）保存进度
   onUnload() {
     console.log("页面卸载，保存学习进度");
     this.saveProgress();
@@ -328,7 +361,31 @@ Page({
   
     // 每次都保存进度，即使没有完成拼写
     console.log("学习进度保存成功", progress.learnedCount);
-  }
-  
+  },
 
+  updatePendingSpelling(word) {
+    let pendingSpelling = wx.getStorageSync('pendingSpelling') || [];
+
+    if (!pendingSpelling.includes(word.word)) {
+      pendingSpelling.push(word.word);
+    }
+
+    wx.setStorageSync('pendingSpelling', pendingSpelling);
+  },
+
+  // 添加切换提示显示状态的方法
+  toggleHint() {
+    this.setData({
+      showHint: !this.data.showHint
+    });
+
+    // 如果显示了提示，3秒后自动隐藏
+    if (this.data.showHint) {
+      setTimeout(() => {
+        this.setData({
+          showHint: false
+        });
+      }, 3000);
+    }
+  }
 });

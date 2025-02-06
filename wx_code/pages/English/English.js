@@ -142,9 +142,14 @@ Page({
       url: './setMyPlan/setMyPlan',
     });
   },
+  startSpelling() {
+    wx.navigateTo({
+      url: './spell/spell'
+    });
+  },
 
   // 开始学习，跳转到复习页面
-  startStudy() {
+  startLearning() {
     if (!this.data.bookName) {
       wx.showToast({
         title: '请先设置学习计划',

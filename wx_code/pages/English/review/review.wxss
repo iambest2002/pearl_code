@@ -5,7 +5,7 @@
 }
 
 .progress-bar {
-  margin-bottom: 30rpx;
+  margin-bottom: 10rpx;
 }
 
 .score {
@@ -17,43 +17,83 @@
 
 .word-card {
   background: white;
-  padding: 40rpx;
+  padding: 40rpx 20rpx;
   border-radius: 20rpx;
-  margin: 30rpx;
+  margin-bottom: 30rpx;
   text-align: center;
   box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  width: calc(100% - 40rpx);
+  min-height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .word {
-  font-size: 48rpx;
+  font-size: 56rpx;
   font-weight: bold;
   color: #333;
-  margin-bottom: 10rpx;
+  margin-bottom: 20rpx;
+  display: block;
 }
 
 .meaning {
-  font-size: 36rpx;
+  font-size: 42rpx;
   color: #666;
-  margin-bottom: 10rpx;
+  margin-bottom: 20rpx;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .phonetic {
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #999;
   margin-bottom: 20rpx;
+  display: block;
 }
 
 .options-container {
-  padding: 0 30rpx;
+  padding: 0;
+}
+
+.options-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rpx;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
 }
 
 .option {
+  border-radius: 20px;
   background: white;
-  padding: 30rpx;
-  margin-bottom: 20rpx;
-  border-radius: 10rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
   text-align: center;
   box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  line-height: 1.4;
+  position: relative;
+}
+
+.option text {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 15rpx;
 }
 
 .correct {
@@ -86,8 +126,58 @@
   padding: 20rpx;
 }
 
-.tip-text {
+.tip-info {
+  background: white;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  margin-bottom: 10rpx;
   text-align: center;
-  color: #999;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.tip-count {
   font-size: 28rpx;
+  color: #6ed6da;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.tip-text {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+}
+
+.hint-container {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hint-btn {
+  background: #f0f0f0;
+  padding: 10rpx 30rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.hint-content {
+  font-size: 32rpx;
+  color: #999;
+  padding: 10rpx;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 } 
